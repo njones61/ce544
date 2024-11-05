@@ -1,0 +1,96 @@
+site_name: BYU CE 544
+site_url: https://ce544.readthedocs.io/en/latest/
+site_description: Course materials for CE 544 at BYU
+site_author: Norm Jones (instructor) and TAs of CE 544 at BYU
+repo_url: https://github.com/cce544/
+favicon: 'images/favicon.ico'
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+    - mdx_math
+    - attr_list
+    - sane_lists
+theme:
+  name: null
+  custom_dir: 'cinder'
+nav:
+  - Home: index.md
+  - Class Resources:
+    - Lecture Notes: notes/notes.md
+    - UTEXASED: 05_utexased/05_utexased.md
+    - Case Study: casestudy.md
+    - GMS Software: gms.md
+  - Unit 1 - Seepage Analysis:
+    - Hydraulic Head Concepts:
+        - Reading: unit1/01_head/head_read.md
+        - In Class: unit1/01_head/head_class.md
+        - Homework: unit1/01_head/head_hw.md
+    - Darcy's Law:
+        - Reading: unit1/02_darcy/darcy_read.md
+        - In Class: unit1/02_darcy/darcy_class.md
+        - Homework: unit1/02_darcy/darcy_hw.md
+    - Flow Nets:
+        - Reading: unit1/03_flownets/flow_read.md
+        - In Class: unit1/03_flownets/flow_class.md
+        - Homework: unit1/03_flownets/flow_hw.md
+    - Analytical Solutions:
+        - Reading: unit1/04_analytical/analytical_read.md
+        - In Class: unit1/04_analytical/analytical_class.md
+        - Homework: unit1/04_analytical/analytical_hw.md
+    - Well Equations:
+        - Reading: unit1/05_wells/wells_read.md
+        - In Class: unit1/05_wells/wells_class.md
+        - Homework: unit1/05_wells/wells_hw.md
+    - Construction Dewatering:
+        - Reading: unit1/06_dewatering/dewatering_read.md
+        - In Class: unit1/06_dewatering/dewatering_class.md
+        - Homework: unit1/06_dewatering/dewatering_hw.md
+    - Finite Difference Method:
+        - Reading: unit1/07_findiff/findiff_read.md
+        - In Class: unit1/07_findiff/findiff_class.md
+        - Homework: unit1/07_findiff/findiff_hw.md
+    - SEEP2D Finite Element Analysis:
+        - Reading: unit1/08_seep2d/seep2d_read.md
+        - In Class: unit1/08_seep2d/seep2d_class.md
+        - Homework: unit1/08_seep2d/seep2d_hw.md
+  - Unit 2 - Slope Stability:
+    - Shear Strength Concepts:
+        - Reading: unit2/01_shear/shear_read.md
+        - In Class: unit2/01_shear/shear_class.md
+        - Homework: unit2/01_shear/shear_hw.md
+    - Infinite Slope Analysis:
+        - Reading: unit2/02_infinite/infinite_read.md
+        - In Class: unit2/02_infinite/infinite_class.md
+        - Homework: unit2/02_infinite/infinite_hw.md
+    - Limit Equilibrium Method:
+        - Reading: unit2/03_limiteq/limiteq_read.md
+        - In Class: unit2/03_limiteq/limiteq_class.md
+        - Homework: unit2/03_limiteq/limiteq_hw.md
+    - Slope Stability Charts:
+        - Reading: unit2/04_charts/charts_read.md
+        - In Class: unit2/04_charts/charts_class.md
+        - Homework: unit2/04_charts/charts_hw.md
+    - UTEXASED Slope Stability Analysis:
+        - Reading: unit2/05_utexased/utexased_read.md
+        - In Class: unit2/05_utexased/utexased_class.md
+        - Homework: unit2/05_utexased/utexased_hw.md
+    - Reinforced Slopes:
+        - Reading: unit2/06_reinforced/reinforced_read.md
+        - In Class: unit2/06_reinforced/reinforced_class.md
+        - Homework: unit2/06_reinforced/reinforced_hw.md
+    - Rapid Drawdown Analysis:
+        - Reading: unit2/07_rapid/rapid_read.md
+        - In Class: unit2/07_rapid/rapid_class.md
+        - Homework: unit2/07_rapid/rapid_hw.md
+    - Seismic Slope Stability:
+        - Reading: unit2/08_seismic/seismic_read.md
+        - In Class: unit2/08_seismic/seismic_class.md
+        - Homework: unit2/08_seismic/seismic_hw.md
+    - Important Details of Stability Analysis:
+        - Reading: unit2/09_details/details_read.md
+        - In Class: unit2/09_details/details_class.md
+        - Homework: unit2/09_details/details_hw.md
+    - Reliability Analysis:
+        - Reading: unit2/10_reliability/reliability_read.md
+        - In Class: unit2/10_reliability/reliability_class.md
+        - Homework: unit2/10_reliability/reliability_hw.md
