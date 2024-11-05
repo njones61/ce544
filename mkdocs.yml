@@ -10,15 +10,13 @@ markdown_extensions:
     - mdx_math
     - attr_list
     - sane_lists
-theme:
-  name: null
-  custom_dir: 'cinder'
+theme: cinder
 nav:
   - Home: index.md
   - Class Resources:
-    - Lecture Notes: notes/notes.md
-    - UTEXASED: 05_utexased/05_utexased.md
-    - Case Study: casestudy.md
+    - Lecture Notes: resources/notes/notes.md
+    - UTEXASED: resources/utexased/utexased.md
+    - Case Study: resources/casestudy.md
     - GMS Software: gms.md
   - Unit 1 - Seepage Analysis:
     - Hydraulic Head Concepts:
