@@ -27,6 +27,14 @@ nav:
         - Reading: unit1/02_darcy/darcy_read.md
         - In Class: unit1/02_darcy/darcy_class.md
         - Homework: unit1/02_darcy/darcy_hw.md
+    - Darcy's Law - Layered Systems:
+        - Reading: unit1/02_darcy/darcy_layered_read.md
+        - In Class: unit1/02_darcy/darcy_layered_class.md
+        - Homework: unit1/02_darcy/darcy_layered_hw.md
+    - Darcy's Law - 2D Flow:
+        - Reading: unit1/02_darcy/darcy_2d_read.md
+        - In Class: unit1/02_darcy/darcy_2d_class.md
+        - Homework: unit1/02_darcy/darcy_2d_hw.md
     - Flow Nets:
         - Reading: unit1/03_flownets/flow_read.md
         - In Class: unit1/03_flownets/flow_class.md
