@@ -10,7 +10,10 @@ markdown_extensions:
     - mdx_math
     - attr_list
     - sane_lists
+    - md_in_html
 theme: cinder
+extra_css:
+  - css/custom.css
 nav:
   - Home: index.md
   - Class Resources:

@@ -21,33 +21,18 @@ $$
 
 Assume following parameters:
 
-<table style="width: 30%;">
-  <tr>
-    <th style="width: 33%;">Parameter</th>
-    <th style="width: 33%;">Value</th>
-    <th style="width: 33%;">Units</th>
-  </tr>
-  <tr>
-    <td>K</td>
-    <td>0.001</td>
-    <td>cm/s</td>
-  </tr>
-  <tr>
-    <td>D</td>
-    <td>100</td>
-    <td>m </td>
-  </tr>
-  <tr>
-    <td>\(H_o\)</td>
-    <td>5</td>
-    <td>m </td>
-  </tr>
-  <tr>
-    <td>\(H_D\)</td>
-    <td>1</td>
-    <td>m </td>
-  </tr>
-</table>
+<div style="width: 30%;" markdown="1">
+
+| Parameter | Value | Units |
+|-----------|-------|-------|
+| K         | 0.001 | cm/s  |
+| D         | 100   | m     |
+| \(H_o\)   | 5     | m     |
+| \(H_D\)   | 1     | m     |
+
+</div>
+
+
 
 Calculate the flow rate (Q) and generated a plot of the head (h) as a function of x for the parameter values given above.
 
