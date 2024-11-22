@@ -19,6 +19,7 @@ In order to encourage full participation in the term project, everyone is requir
 ## Scoring
 
 The case study will be worth 7 points. The breakdown is as follows:
+
 | Item | Pts | % |
 |------|-----|---|
 | Participation Score | 0.5 | 7.1% |

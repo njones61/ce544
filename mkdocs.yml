@@ -11,16 +11,16 @@ markdown_extensions:
     - attr_list
     - sane_lists
     - md_in_html
-theme: cinder
+theme: readthedocs
 extra_css:
   - css/custom.css
 nav:
   - Home: index.md
   - Class Resources:
-    - Lecture Notes: resources/notes/notes.md
-    - UTEXASED: resources/utexased/utexased.md
+    - Syllabus: resources/syllabus.md
     - Case Study: resources/casestudy.md
-    - GMS Software: gms.md
+    - GMS Software: resources/gms.md
+    - UTEXASED: resources/utexased/installation.md
   - Unit 1 - Seepage Analysis:
     - Hydraulic Head Concepts:
         - Reading: unit1/01_head/head_read.md

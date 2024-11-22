@@ -1,7 +1,24 @@
-# Home
+# BYU CE 544 - Seepage and Slope Stability Analysis
 
-Welcome to the content repository for **BYU CE 544 - Seepage and Slope Stability Analysis**. This repository contains the homework assignments and exercises associated with the class. The content is organized by unit and category and can be browsed using the navigation bar on the left. You can also access this content from the Schedule page on the BYU Learning Suite page for the class.  The schedule will contain links to the content for each unit and category. This content is maintained by the Prof. Jones and TAs and is subject to change. If you have any questions, comments, or suggestions, please contact the course instructors.
 
-![slope_image.png](resources%2Fslope_image.png)
+<div class="container-fluid">
+	<div style ="float:left;width:200px;padding:1em;">
+		<img src="images/jones_pic.jpg" width="200" height="242" alt="" />
+	</div>
+	<div style ="margin-left:190px;padding:1em;">
+		<h2>Norm Jones</h2>
+		<p>430T Engineering Building<br>
+		<a href="mailto:njones@byu.edu">njones@byu.edu</a><br>
+		801-422-7569 (office)<br>
+		<strong>Lectures</strong>: 234CB 9:30 - 10:45 am T-Th</p>
+        <p>&nbsp;</p>
+	</div>
+</div>
 
-(image from [predictsite.com.au](https://predictsite.com.au/wp-content/uploads/AdobeStock_297927732-1.jpeg))
+
+Welcome to the content repository for **CE 544 - Seepage and Slope Stability Analysis**. This repository contains the homework assignments and exercises associated with the class. The content is organized by unit and category and can be browsed using the navigation bar on the left. You can also access this content from the Schedule page on the BYU Learning Suite page for the class.  The schedule will contain links to the content for each unit and category. This content is maintained by the Prof. Jones and TAs and is subject to change. If you have any questions, comments, or suggestions, please contact Prof. Jones.
+
+![slope_image.png](images%2Fslope_image.png){width=900px}
+
+<div style="float:left;"><img src="images/byu-medallion.png" width="60" height="60" alt=""/></div>
+<div style="margin-left:75px;line-height:60px;">Brigham Young University - Dept. of Civil and Construction Engineering</div>
