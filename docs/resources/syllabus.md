@@ -27,6 +27,20 @@ After successfully completing this course, you should:
 12. Be able to solve special cases of slope stability including, reinforced slopes, rapid drawdown, and seismic 
     conditions.
 
+## Lecture Format
+
+The course will be taught in a hybrid format. The lectures will be pre-recorded and available on Youtube. The youtube videos will generally be broken into 10-15 minute segments. A link to the videos associated with each lecture will be provided on the Learning Suite schedule. You should watch the lectures prior to the class period. For the slope stability portion of the class, there will also be assigned reading. The class period will be used for discussing the lecture video content and working through exercises together. 
+
+## Quizzes
+
+There will be pre-class quiz associated with each lecture where you can report if you have completed watching the video and doing the assigned reading. There will also be a few simple questions on the content. The quizzes will be on Learning Suite and will be due 30 minutes prior to class.
+
+## Exams
+
+Exams will be given on-line. You will have a 2-3 days to take the exam. The exam will be timed and you will have 3 hours to complete it. The exam will be closed book, closed notes, and closed internet. You may not discuss the exam with anyone else until the exam period is over. You may not use any other person to help you with the exam. You may not use any other person's work as your own.
+
+Since we are covering two distinct topics, there will be two exams. The first exam will cover the seepage portion of the class and the second exam will cover the slope stability portion.
+
 ## Policies
 
 In most cases, the homework will be due at midnight one week from the day it is assigned. All homework should be submitted via Learning Suite. Late homework will be reduced 10% each day that it is late (not including Saturdays and Sundays) up to a maximum penalty of 50%. Late homework will always be worth at least 50%. Late penalties may be waived under extreme circumstances such as illness or travel. Forgetting to upload your completed assignment, uploading the wrong assignment, etc. are not extreme circumstances.
@@ -52,6 +66,12 @@ Grades will be assigned based on the following formula. See Learning Suite for a
 | Exam #2 | 30% |
 | Quizzes | 8% |
 | Total | 100% |
+
+## Microsoft Teams
+
+There will be a **Micorsoft Teams** group for this class. You will be invited to join the group by the instructor. The group will be used for announcements, discussions, and questions. You are encouraged to ask questions and participate in discussions. We will also use the group for virtual office hours. I can jump on video chat to help you with your homework or answer questions.
+
+You can access Teams through the web interface or by downloading the app to your computer or phone. You should get in the habit of checking the group regularly for announcements and discussions. You can also set up notifications to be alerted when there is new activity in the group.
 
 ## Textbooks
 

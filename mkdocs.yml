@@ -23,83 +23,85 @@ nav:
     - UTEXASED: resources/utexased/installation.md
   - Unit 1 - Seepage Analysis:
     - Hydraulic Head Concepts:
-        - Reading: unit1/01_head/head_read.md
-        - In Class: unit1/01_head/head_class.md
+        - Pre-Class: unit1/01_head/head_read.md
+        - In-Class: unit1/01_head/head_class.md
         - Homework: unit1/01_head/head_hw.md
     - Darcy's Law:
-        - Reading: unit1/02_darcy/darcy_read.md
-        - In Class: unit1/02_darcy/darcy_class.md
+        - Pre-Class: unit1/02_darcy/darcy_read.md
+        - In-Class: unit1/02_darcy/darcy_class.md
         - Homework: unit1/02_darcy/darcy_hw.md
     - Darcy's Law - Layered Systems:
-        - Reading: unit1/02_darcy/darcy_layered_read.md
-        - In Class: unit1/02_darcy/darcy_layered_class.md
+        - Pre-Class: unit1/02_darcy/darcy_layered_read.md
+        - In-Class: unit1/02_darcy/darcy_layered_class.md
         - Homework: unit1/02_darcy/darcy_layered_hw.md
     - Darcy's Law - 2D Flow:
-        - Reading: unit1/02_darcy/darcy_2d_read.md
-        - In Class: unit1/02_darcy/darcy_2d_class.md
+        - Pre-Class: unit1/02_darcy/darcy_2d_read.md
+        - In-Class: unit1/02_darcy/darcy_2d_class.md
         - Homework: unit1/02_darcy/darcy_2d_hw.md
+    - Governing Equations:
+        - Pre-Class: unit1/03_goveqs/goveqs_read.md
     - Flow Nets:
-        - Reading: unit1/03_flownets/flow_read.md
-        - In Class: unit1/03_flownets/flow_class.md
-        - Homework: unit1/03_flownets/flow_hw.md
+        - Pre-Class: unit1/04_flownets/flow_read.md
+        - In-Class: unit1/04_flownets/flow_class.md
+        - Homework: unit1/04_flownets/flow_hw.md
     - Analytical Solutions:
-        - Reading: unit1/04_analytical/analytical_read.md
-        - In Class: unit1/04_analytical/analytical_class.md
-        - Homework: unit1/04_analytical/analytical_hw.md
+        - Pre-Class: unit1/05_analytical/analytical_read.md
+        - In-Class: unit1/05_analytical/analytical_class.md
+        - Homework: unit1/05_analytical/analytical_hw.md
     - Well Equations:
-        - Reading: unit1/05_wells/wells_read.md
-        - In Class: unit1/05_wells/wells_class.md
-        - Homework: unit1/05_wells/wells_hw.md
+        - Pre-Class: unit1/06_wells/wells_read.md
+        - In-Class: unit1/06_wells/wells_class.md
+        - Homework: unit1/06_wells/wells_hw.md
     - Construction Dewatering:
-        - Reading: unit1/06_dewatering/dewatering_read.md
-        - In Class: unit1/06_dewatering/dewatering_class.md
-        - Homework: unit1/06_dewatering/dewatering_hw.md
+        - Pre-Class: unit1/07_dewatering/dewatering_read.md
+        - In-Class: unit1/07_dewatering/dewatering_class.md
+        - Homework: unit1/07_dewatering/dewatering_hw.md
     - Finite Difference Method:
-        - Reading: unit1/07_findiff/findiff_read.md
-        - In Class: unit1/07_findiff/findiff_class.md
-        - Homework: unit1/07_findiff/findiff_hw.md
+        - Pre-Class: unit1/08_findiff/findiff_read.md
+        - In-Class: unit1/08_findiff/findiff_class.md
+        - Homework: unit1/08_findiff/findiff_hw.md
     - SEEP2D Finite Element Analysis:
-        - Reading: unit1/08_seep2d/seep2d_read.md
-        - In Class: unit1/08_seep2d/seep2d_class.md
-        - Homework: unit1/08_seep2d/seep2d_hw.md
+        - Pre-Class: unit1/09_seep2d/seep2d_read.md
+        - In-Class: unit1/09_seep2d/seep2d_class.md
+        - Homework: unit1/09_seep2d/seep2d_hw.md
   - Unit 2 - Slope Stability:
     - Shear Strength Concepts:
-        - Reading: unit2/01_shear/shear_read.md
-        - In Class: unit2/01_shear/shear_class.md
+        - Pre-Class: unit2/01_shear/shear_read.md
+        - In-Class: unit2/01_shear/shear_class.md
         - Homework: unit2/01_shear/shear_hw.md
     - Infinite Slope Analysis:
-        - Reading: unit2/02_infinite/infinite_read.md
-        - In Class: unit2/02_infinite/infinite_class.md
+        - Pre-Class: unit2/02_infinite/infinite_read.md
+        - In-Class: unit2/02_infinite/infinite_class.md
         - Homework: unit2/02_infinite/infinite_hw.md
     - Limit Equilibrium Method:
-        - Reading: unit2/03_limiteq/limiteq_read.md
-        - In Class: unit2/03_limiteq/limiteq_class.md
+        - Pre-Class: unit2/03_limiteq/limiteq_read.md
+        - In-Class: unit2/03_limiteq/limiteq_class.md
         - Homework: unit2/03_limiteq/limiteq_hw.md
     - Slope Stability Charts:
-        - Reading: unit2/04_charts/charts_read.md
-        - In Class: unit2/04_charts/charts_class.md
+        - Pre-Class: unit2/04_charts/charts_read.md
+        - In-Class: unit2/04_charts/charts_class.md
         - Homework: unit2/04_charts/charts_hw.md
     - UTEXASED Slope Stability Analysis:
-        - Reading: unit2/05_utexased/utexased_read.md
-        - In Class: unit2/05_utexased/utexased_class.md
+        - Pre-Class: unit2/05_utexased/utexased_read.md
+        - In-Class: unit2/05_utexased/utexased_class.md
         - Homework: unit2/05_utexased/utexased_hw.md
     - Reinforced Slopes:
-        - Reading: unit2/06_reinforced/reinforced_read.md
-        - In Class: unit2/06_reinforced/reinforced_class.md
+        - Pre-Class: unit2/06_reinforced/reinforced_read.md
+        - In-Class: unit2/06_reinforced/reinforced_class.md
         - Homework: unit2/06_reinforced/reinforced_hw.md
     - Rapid Drawdown Analysis:
-        - Reading: unit2/07_rapid/rapid_read.md
-        - In Class: unit2/07_rapid/rapid_class.md
+        - Pre-Class: unit2/07_rapid/rapid_read.md
+        - In-Class: unit2/07_rapid/rapid_class.md
         - Homework: unit2/07_rapid/rapid_hw.md
     - Seismic Slope Stability:
-        - Reading: unit2/08_seismic/seismic_read.md
-        - In Class: unit2/08_seismic/seismic_class.md
+        - Pre-Class: unit2/08_seismic/seismic_read.md
+        - In-Class: unit2/08_seismic/seismic_class.md
         - Homework: unit2/08_seismic/seismic_hw.md
     - Important Details of Stability Analysis:
-        - Reading: unit2/09_details/details_read.md
-        - In Class: unit2/09_details/details_class.md
+        - Pre-Class: unit2/09_details/details_read.md
+        - In-Class: unit2/09_details/details_class.md
         - Homework: unit2/09_details/details_hw.md
     - Reliability Analysis:
-        - Reading: unit2/10_reliability/reliability_read.md
-        - In Class: unit2/10_reliability/reliability_class.md
+        - Pre-Class: unit2/10_reliability/reliability_read.md
+        - In-Class: unit2/10_reliability/reliability_class.md
         - Homework: unit2/10_reliability/reliability_hw.md
