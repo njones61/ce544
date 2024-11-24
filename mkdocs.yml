@@ -11,6 +11,7 @@ markdown_extensions:
     - attr_list
     - sane_lists
     - md_in_html
+    - admonition
 theme: readthedocs
 extra_css:
   - css/custom.css
@@ -31,39 +32,38 @@ nav:
         - In-Class: unit1/02_darcy/darcy_class.md
         - Homework: unit1/02_darcy/darcy_hw.md
     - Darcy's Law - Layered Systems:
-        - Pre-Class: unit1/02_darcy/darcy_layered_read.md
-        - In-Class: unit1/02_darcy/darcy_layered_class.md
-        - Homework: unit1/02_darcy/darcy_layered_hw.md
+        - Pre-Class: unit1/03_darcy_layered/darcy_layered_read.md
+        - In-Class: unit1/03_darcy_layered/darcy_layered_class.md
+        - Homework: unit1/03_darcy_layered/darcy_layered_hw.md
     - Darcy's Law - 2D Flow:
-        - Pre-Class: unit1/02_darcy/darcy_2d_read.md
-        - In-Class: unit1/02_darcy/darcy_2d_class.md
-        - Homework: unit1/02_darcy/darcy_2d_hw.md
+        - Pre-Class: unit1/04_darcy_2d/darcy_2d_read.md
+        - In-Class: unit1/04_darcy_2d/darcy_2d_class.md
     - Governing Equations:
-        - Pre-Class: unit1/03_goveqs/goveqs_read.md
+        - Pre-Class: unit1/05_goveqs/goveqs_read.md
     - Flow Nets:
-        - Pre-Class: unit1/04_flownets/flow_read.md
-        - In-Class: unit1/04_flownets/flow_class.md
-        - Homework: unit1/04_flownets/flow_hw.md
+        - Pre-Class: unit1/06_flownets/flow_read.md
+        - In-Class: unit1/06_flownets/flow_class.md
+        - Homework: unit1/06_flownets/flow_hw.md
     - Analytical Solutions:
-        - Pre-Class: unit1/05_analytical/analytical_read.md
-        - In-Class: unit1/05_analytical/analytical_class.md
-        - Homework: unit1/05_analytical/analytical_hw.md
+        - Pre-Class: unit1/07_analytical/analytical_read.md
+        - In-Class: unit1/07_analytical/analytical_class.md
+        - Homework: unit1/07_analytical/analytical_hw.md
     - Well Equations:
-        - Pre-Class: unit1/06_wells/wells_read.md
-        - In-Class: unit1/06_wells/wells_class.md
-        - Homework: unit1/06_wells/wells_hw.md
+        - Pre-Class: unit1/08_wells/wells_read.md
+        - In-Class: unit1/08_wells/wells_class.md
+        - Homework: unit1/08_wells/wells_hw.md
     - Construction Dewatering:
-        - Pre-Class: unit1/07_dewatering/dewatering_read.md
-        - In-Class: unit1/07_dewatering/dewatering_class.md
-        - Homework: unit1/07_dewatering/dewatering_hw.md
+        - Pre-Class: unit1/09_dewatering/dewatering_read.md
+        - In-Class: unit1/09_dewatering/dewatering_class.md
+        - Homework: unit1/09_dewatering/dewatering_hw.md
     - Finite Difference Method:
-        - Pre-Class: unit1/08_findiff/findiff_read.md
-        - In-Class: unit1/08_findiff/findiff_class.md
-        - Homework: unit1/08_findiff/findiff_hw.md
+        - Pre-Class: unit1/10_findiff/findiff_read.md
+        - In-Class: unit1/10_findiff/findiff_class.md
+        - Homework: unit1/10_findiff/findiff_hw.md
     - SEEP2D Finite Element Analysis:
-        - Pre-Class: unit1/09_seep2d/seep2d_read.md
-        - In-Class: unit1/09_seep2d/seep2d_class.md
-        - Homework: unit1/09_seep2d/seep2d_hw.md
+        - Pre-Class: unit1/11_seep2d/seep2d_read.md
+        - In-Class: unit1/11_seep2d/seep2d_class.md
+        - Homework: unit1/11_seep2d/seep2d_hw.md
   - Unit 2 - Slope Stability:
     - Shear Strength Concepts:
         - Pre-Class: unit2/01_shear/shear_read.md
