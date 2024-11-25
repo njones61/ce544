@@ -94,7 +94,7 @@ Solve in either Excel or Python.
 Excel starter file: [two_wells.xlsx](two_wells.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/08_wells/two_wells.ipynnb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+com/github/njones61/ce544/blob/main/docs/unit1/08_wells/two_wells.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Submission
 
