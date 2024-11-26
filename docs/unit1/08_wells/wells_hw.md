@@ -4,7 +4,7 @@
 
 a. Calculate the permeability of the sand [ft/day] assuming the aquifer is **confined** and D = **10** ft.
 
-b. Calculate the permeability of the sand [ft/day]assuming the aquifer is **unconfined**.
+b. Calculate the permeability of the sand [ft/day] assuming the aquifer is **unconfined**.
 
 **2.** The Dupuit assumptions used to derive the unconfined aquifer well equation results in an inaccurate estimate of 
    the drawdown at the well and out to a distance from the well as shown below:
