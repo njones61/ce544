@@ -60,7 +60,8 @@ nav:
         - Homework: unit1/09_dewatering/dewatering_hw.md
     - Finite Difference Method:
         - Pre-Class: unit1/10_findiff/findiff_read.md
-        - In-Class: unit1/10_findiff/findiff_class.md
+        - In-Class 1: unit1/10_findiff/findiff_class1.md
+        - In-Class 2: unit1/10_findiff/findiff_class2.md
         - Homework 1: unit1/10_findiff/findiff_hw1.md
         - Homework 2: unit1/10_findiff/findiff_hw2.md
     - SEEP2D Finite Element Analysis:

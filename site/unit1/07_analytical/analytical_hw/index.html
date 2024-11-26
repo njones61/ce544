@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Norm Jones (instructor) and TAs of CE 544 at BYU" /><link rel="canonical" href="https://ce544.readthedocs.io/en/latest/unit1/07_analytical/analytical_hw/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Homework - BYU CE 544</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Homework";
+        var mkdocs_page_input_path = "unit1/07_analytical/analytical_hw.md";
+        var mkdocs_page_url = "/en/latest/unit1/07_analytical/analytical_hw/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> BYU CE 544
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Class Resources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../resources/syllabus/">Syllabus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../resources/casestudy/">Case Study</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../resources/gms/">GMS Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../resources/utexased/installation/">UTEXASED</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 - Seepage Analysis</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Hydraulic Head Concepts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../01_head/head_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../01_head/head_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../01_head/head_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Darcy's Law</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../02_darcy/darcy_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../02_darcy/darcy_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../02_darcy/darcy_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Darcy's Law - Layered Systems</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../03_darcy_layered/darcy_layered_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../03_darcy_layered/darcy_layered_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../03_darcy_layered/darcy_layered_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Darcy's Law - 2D Flow</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_darcy_2d/darcy_2d_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../04_darcy_2d/darcy_2d_class/">In-Class</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Governing Equations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../05_goveqs/goveqs_read/">Pre-Class</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Flow Nets</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../06_flownets/flow_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../06_flownets/flow_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../06_flownets/flow_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Analytical Solutions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../analytical_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../analytical_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Homework</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#submission">Submission</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Well Equations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../08_wells/wells_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../08_wells/wells_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../08_wells/wells_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Construction Dewatering</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../09_dewatering/dewatering_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../09_dewatering/dewatering_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../09_dewatering/dewatering_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Finite Difference Method</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../10_findiff/findiff_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../10_findiff/findiff_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../10_findiff/findiff_hw1/">Homework 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../10_findiff/findiff_hw2/">Homework 2</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >SEEP2D Finite Element Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../11_seep2d/seep2d_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../11_seep2d/seep2d_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../11_seep2d/seep2d_hw1/">Homework 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../11_seep2d/seep2d_hw2/">Homework 2</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 - Slope Stability</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Shear Strength Concepts</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/01_shear/shear_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/01_shear/shear_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/01_shear/shear_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Infinite Slope Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/02_infinite/infinite_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/02_infinite/infinite_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/02_infinite/infinite_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Limit Equilibrium Method</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/03_limiteq/limiteq_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/03_limiteq/limiteq_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/03_limiteq/limiteq_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Slope Stability Charts</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/04_charts/charts_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/04_charts/charts_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/04_charts/charts_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >UTEXASED Slope Stability Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/05_utexased/utexased_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/05_utexased/utexased_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/05_utexased/utexased_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Reinforced Slopes</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/06_reinforced/reinforced_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/06_reinforced/reinforced_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/06_reinforced/reinforced_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Rapid Drawdown Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/07_rapid/rapid_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/07_rapid/rapid_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/07_rapid/rapid_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Seismic Slope Stability</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/08_seismic/seismic_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/08_seismic/seismic_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/08_seismic/seismic_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Important Details of Stability Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/09_details/details_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/09_details/details_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/09_details/details_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Reliability Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../../unit2/10_reliability/reliability_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/10_reliability/reliability_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../unit2/10_reliability/reliability_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">BYU CE 544</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Unit 1 - Seepage Analysis</li>
+          <li class="breadcrumb-item">Analytical Solutions</li>
+      <li class="breadcrumb-item active">Homework</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/cce544/edit/master/docs/unit1/07_analytical/analytical_hw.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="homework-analytical-solution-to-profile-model">Homework - Analytical Solution to Profile Model</h1>
+<p>In class we discussed the Dupuit problem with an infiltration term (e):</p>
+<p><img alt="rect_section_e.gif" src="../rect_section_e.gif" /></p>
+<p>The equation for the flow rate as a function of x is:</p>
+<div class="arithmatex">\[
+Q = k\frac{\left(H_o^2-H_D^2\right)}{2D}-e\left(\frac{D}{2}-x\right)
+\]</div>
+<p>Derive an equation for h in terms of x. Start with:</p>
+<div class="arithmatex">\[
+h^2 = -\frac{e}{k}x^2 + C1x + C2
+\]</div>
+<p>and insert the left and right boundary conditions and solve for C1 and C2. Solve the resulting equation for h.</p>
+<p>Put your solution in a word document and show each of your steps. Or you can derive on paper and submit a scan or photo of your work.</p>
+<p>Once you have found your equation for h, created a modified version of the solution to the Dupuit problem that we did in class that uses your new equation for h. You can do it in Python or Excel. </p>
+<p>Excel starter file: <a href="../dupuit_with_recharge.xlsx">dupuit_with_recharge.xlsx</a></p>
+<p>Python starter file: <a href="https://colab.research.google.
+com/github/njones61/ce544/blob/main/docs/unit1/04_analytical/dupuit_with_recharge.ipynb" target="_blank"><img 
+src="https://colab.
+research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<h2 id="submission">Submission</h2>
+<p>Submit your Word document with your derivation and your Excel file or a link to your Colab notebook in Learning Suite.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../analytical_class/" class="btn btn-neutral float-left" title="In-Class"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../08_wells/wells_read/" class="btn btn-neutral float-right" title="Pre-Class">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/cce544/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../analytical_class/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../08_wells/wells_read/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+      <script src="../../../js/mathjax-config.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Norm Jones (instructor) and TAs of CE 544 at BYU" /><link rel="canonical" href="https://ce544.readthedocs.io/en/latest/resources/casestudy/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Case Study - BYU CE 544</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Case Study";
+        var mkdocs_page_input_path = "resources/casestudy.md";
+        var mkdocs_page_url = "/en/latest/resources/casestudy/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BYU CE 544
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Class Resources</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../syllabus/">Syllabus</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Case Study</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#executive-summary">Executive Summary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#presentation">Presentation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#participation">Participation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scoring">Scoring</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#groups">Groups</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gms/">GMS Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../utexased/installation/">UTEXASED</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 - Seepage Analysis</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Hydraulic Head Concepts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/01_head/head_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/01_head/head_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/01_head/head_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Darcy's Law</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/02_darcy/darcy_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/02_darcy/darcy_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/02_darcy/darcy_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Darcy's Law - Layered Systems</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/03_darcy_layered/darcy_layered_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/03_darcy_layered/darcy_layered_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/03_darcy_layered/darcy_layered_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Darcy's Law - 2D Flow</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/04_darcy_2d/darcy_2d_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/04_darcy_2d/darcy_2d_class/">In-Class</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Governing Equations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/05_goveqs/goveqs_read/">Pre-Class</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Flow Nets</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/06_flownets/flow_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/06_flownets/flow_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/06_flownets/flow_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Analytical Solutions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/07_analytical/analytical_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/07_analytical/analytical_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/07_analytical/analytical_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Well Equations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/08_wells/wells_read/">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/08_wells/wells_class/">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/08_wells/wells_hw/">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Construction Dewatering</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit1/09_dewatering/dewatering_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit1/09_dewatering/dewatering_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit1/09_dewatering/dewatering_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Finite Difference Method</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit1/10_findiff/findiff_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit1/10_findiff/findiff_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/10_findiff/findiff_hw1/">Homework 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/10_findiff/findiff_hw2/">Homework 2</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >SEEP2D Finite Element Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit1/11_seep2d/seep2d_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit1/11_seep2d/seep2d_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/11_seep2d/seep2d_hw1/">Homework 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../unit1/11_seep2d/seep2d_hw2/">Homework 2</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 - Slope Stability</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Shear Strength Concepts</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/01_shear/shear_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/01_shear/shear_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/01_shear/shear_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Infinite Slope Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/02_infinite/infinite_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/02_infinite/infinite_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/02_infinite/infinite_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Limit Equilibrium Method</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/03_limiteq/limiteq_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/03_limiteq/limiteq_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/03_limiteq/limiteq_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Slope Stability Charts</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/04_charts/charts_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/04_charts/charts_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/04_charts/charts_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >UTEXASED Slope Stability Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/05_utexased/utexased_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/05_utexased/utexased_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/05_utexased/utexased_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Reinforced Slopes</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/06_reinforced/reinforced_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/06_reinforced/reinforced_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/06_reinforced/reinforced_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Rapid Drawdown Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/07_rapid/rapid_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/07_rapid/rapid_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/07_rapid/rapid_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Seismic Slope Stability</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/08_seismic/seismic_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/08_seismic/seismic_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/08_seismic/seismic_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Important Details of Stability Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/09_details/details_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/09_details/details_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/09_details/details_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Reliability Analysis</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../../unit2/10_reliability/reliability_read.md">Pre-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/10_reliability/reliability_class.md">In-Class</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../unit2/10_reliability/reliability_hw.md">Homework</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BYU CE 544</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Class Resources</li>
+      <li class="breadcrumb-item active">Case Study</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/cce544/edit/master/docs/resources/casestudy.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="case-study">Case Study</h1>
+<p>This semester we will be doing a case study exercise which will be part of your grade. This is kind of like a term project or term paper, but a little more low-key. First of all, the case study will be done in groups of 3-4 students. The group assignments are listed below. Everyone is expected to contribute equally to the case study. Each group is expected to find and research a case study that involves seepage, dewatering, and/or slope stability analysis. Not just a slope failure or seepage problem for example, but a case where some sort of analysis was peformed similar to the types of analysis we cover in class. This could be a design project or an investigation into a slope failure or seepage problem.</p>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>Each group will submit a one-page executive summary of your case study. Include a title, an overview, and a list of references (minimum of three). This should be a high-level summary of the case study and the analysis that was performed.</p>
+<h2 id="presentation">Presentation</h2>
+<p>You will be expected to prepare and deliver a powerpoint presentation to the class. The presentations will be 10-12 minutes long with a few minutes in each case for Q/A. Each person on your team should make part of the presentation. The presentations should be as professional as possible. Try to minimize bulleted lists and focus more on photos, drawings, videos, etc. You will also be expected to prepare a one-page written executive summary of your case study.</p>
+<p>The presentation files will be due at midnight on the evening prior to the first day of presentations. One person per team should upload the case study presentation. Each of the other members of the team will upload the title slide only(this simplifies my grading process). The title slide should include the group number.</p>
+<h2 id="participation">Participation</h2>
+<p>In order to encourage full participation in the term project, everyone is required to submit a participation score from 0-100 for each of the fellow members of your group, INCLUDING YOURSELF. The objective is to help ensure that everyone joins in and one member of the group does not unfairly take advantage of the other member(s) by not helping. You will upload a text or Word document or spreadsheet listing the scores for your fellow team members. I will treat this as a scaling factor (percentage-based) and scale the scores accordingly. For example, if your teammates give you a score of 50, and your term project gets a score of 85, your final score would be 0.5*85=42.5. As you assign these scores, please remember that everyone has a different set of talents and abilities. In most cases, I expect to see a score of 100% for everyone. But this is a mechanism to deal with cases where someone does a very light share of the work (or no work at all).</p>
+<h2 id="scoring">Scoring</h2>
+<p>The case study will be worth 7 points. The breakdown is as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Pts</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Participation Score</td>
+<td>0.5</td>
+<td>7.1%</td>
+</tr>
+<tr>
+<td>Executive Summary</td>
+<td>1.5</td>
+<td>21.5%</td>
+</tr>
+<tr>
+<td>Presentation</td>
+<td>5</td>
+<td>71.4%</td>
+</tr>
+<tr>
+<td>Total:</td>
+<td>7</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="groups">Groups</h2>
+<p><groups will be added here later></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../syllabus/" class="btn btn-neutral float-left" title="Syllabus"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../gms/" class="btn btn-neutral float-right" title="GMS Software">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/cce544/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../syllabus/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../gms/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+      <script src="../../js/mathjax-config.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

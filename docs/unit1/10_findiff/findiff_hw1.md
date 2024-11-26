@@ -12,7 +12,7 @@ outer edge of the cofferdam. This should give you 9 rows and 21 columns in your 
 Lay out your spreadsheet so that you have a spreadsheet cell for each node of the grid (for each red dot). Enter an equation for the head at each node. Using the default approach in Excel, you may get an error message about a circular reference. To avoid this and to properly iterate to a solution, do the following:
 
 !!! Note
-    Before entering the equations in Excel, select the File|Options command. Click on the Formulas link on the left. Turn on the Enable iteractive iteration option and the Manual calculate option. Once you have the equations entered, hit the F9 button repeatedly until you converge.
+    Before entering the equations in Excel, select the **Formulas** ribbon, and click on the **Calculation Options** button on the right end of the ribbon and select **Manual**. This will prevent Excel from automatically recalculating. You can select **Calculate Now** from the Formulas ribbon to recalculate the sheet or you can hit the **F9** button. Do this repeatedly until you converge.
 
 (2) Add a section to your spreadsheet to compute the flow rate from your solution (assume a unit thickness in the transverse direction). To do this, compute the flux across the outgoing boundary. Using the head values at nodes on and adjacent to the nodes on the boundary to estimate the hydraulic gradient (dh/dx or dh/dy). Using this value, the appropriate contributing area, and Darcy's law, compute the flow rate. Remember to hit the F9 key to update your calculations.
 

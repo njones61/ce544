@@ -1,5 +1,9 @@
 # Homework - Finite Difference Model of Levee & Grout Curtain
 
+For this assignment, we will be using the findiff-2 spreadsheet to model flow beneath a cofferdam and a levee with a grout curtain. 
+
+Excel starter file: [findiff-2.xlsm](findiff-2.xlsm)
+
 **a) Cofferdam Problem**
 
 Find a solution for flow beneath the copper dam shown below using the findiff-2 spreadsheet. Use a **10** ft x **10** ft grid cell spacing. Assume that the cofferdam is **260** ft long.
