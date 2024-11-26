@@ -83,7 +83,6 @@ $$
 h = \sqrt{H^2 - \frac{1}{\pi k}\sum_{i=1}^n{q_i \ln\left(\frac{R}{r_i}\right)}}
 $$
 
-
 Combine the original head, h1, h2, and h_combined all on the same plot. If you have done it correctly, it should 
 look something like this:
 

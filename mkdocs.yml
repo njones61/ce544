@@ -5,13 +5,15 @@ site_author: Norm Jones (instructor) and TAs of CE 544 at BYU
 repo_url: https://github.com/cce544/
 favicon: 'images/favicon.ico'
 extra_javascript:
-    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
+  - js/mathjax-config.js
 markdown_extensions:
-    - mdx_math
     - attr_list
     - sane_lists
     - md_in_html
     - admonition
+    - pymdownx.arithmatex:
+        generic: true
 theme: readthedocs
 extra_css:
   - css/custom.css

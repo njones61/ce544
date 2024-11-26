@@ -4,19 +4,19 @@
 
 The radius of influence of a well is the distance from the well at which the drawdown is negligible. The radius of influence can be estimated using the following equations:
 
-| Name      | Type | Equation                           |
-|-----------|------|------------------------------------|
-| Lembke    |Semi-Empirical| \(R = H\sqrt{\frac{k}{2N}}\)       | 
-| Weber     | Semi-Empirical | \(R = 2.45\sqrt{\frac{Hkt}{n_e}}\) |
-| Kusakin   | Semi-Empirical | \(R = 1.9\sqrt{\frac{Hkt}{n_e}}\)  |
-| Siechardt | Empirical | \(R = 3000s_w\sqrt{k}\)            |
-| Kusakin   | Empirical | \(R = 575s_w\sqrt{\frac{H}{k}}\)   |
+| Name      | Type | Equation                         |
+|-----------|------|----------------------------------|
+| Lembke    |Semi-Empirical| $R = H\sqrt{\frac{k}{2N}}$       | 
+| Weber     | Semi-Empirical | $R = 2.45\sqrt{\frac{Hkt}{n_e}}$ |
+| Kusakin   | Semi-Empirical | $R = 1.9\sqrt{\frac{Hkt}{n_e}}$  |
+| Siechardt | Empirical | $R = 3000s_w\sqrt{k}$            |
+| Kusakin   | Empirical | \(R = 575s_w\sqrt{\frac{H}{k}}\) |
 
 Where:
 
 H = initial thickness (B for confined aquifers, h for unconfined aquifers) [m]<br>
 k = hydraulic conductivity [m/sec]<br>
-\(s_w\) = drawdown at the well [m]<br>
+$s_w$ = drawdown at the well [m]<br>
 \(n_e\) = effective porosity (storativity S, for confined) [-]<br>
 t = time since pumping began [sec]<br>
 N = accretion from rainfall [m/sec]
