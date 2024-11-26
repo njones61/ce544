@@ -1,2 +1,3 @@
 python-markdown-math
 mkdocs-cinder
+pymdownx
