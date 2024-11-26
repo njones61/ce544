@@ -1,4 +1,4 @@
-# Exercise - Seep2D Unconfined Problems
+# Exercise - SEEP2D Unconfined Problems
 
 In this exercise, we will solve two different unconfined seepage problems using SEEP2D. The first problem corresponds to a simple earth dam with a low-permeability core and the second problem corresponds to a dam with a core, filter, and drain.
 
