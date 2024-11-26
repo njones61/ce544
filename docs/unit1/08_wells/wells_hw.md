@@ -34,8 +34,8 @@ q = flow rate [L³/T]<br>
 R = radius of influence of the well [L]<br>
 r = distance from the well [L]<br>
 k = hydraulic conductivity [L/T]<br>
-\(r_w\) = radius of the well [L]<br>
-H' = height of drawdown surface at r = 500\(r_w\) [L]<br>
+$r_w$ = radius of the well [L]<br>
+H' = height of drawdown surface at r = 500$r_w$ [L]<br>
 
 Assume the following values for the unconfined aquifer:
 
