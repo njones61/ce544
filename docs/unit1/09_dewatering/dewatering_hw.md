@@ -1,4 +1,4 @@
-# Construction Dewatering
+# Homework - Construction Dewatering
 
 In this exercise, we will design a dewatering trench using the Dupuit analytical solution and we will design a 
 dewatering system for the Provo City Center Temple excavation site using a Python script in a Google Colab notebook.
