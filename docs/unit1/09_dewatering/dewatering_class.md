@@ -18,6 +18,8 @@ $R$ = distance from the well to the observation point (m)<br>
 $r_i$ = distance from the well $i$ to the point in question (m)<br>
 $n$ = number of wells
 
+This assumes we have a simple, uniform isotropic aquifer underlain by a low K unit. The heads are measured from the top of the low K unit. 
+
 When dealign with an excavation, we can create a grid of points that covers the excavation and then calculate the drawdown at each point resulting from a set of dewatering wells that surround the excavation. At each point, we calculate the separation distance ($r_i$) from each well to the point and apply the equation above to get the water level. The well spacing and pumping rate can be adjusted to achieve a condition where the water level at all points inside the excavation are below the target depth of the excavation.
 
 The following Colab notebook has been designed to help you calculate the well spacing and pumping rate required to dewater a construction site. The notebook is divided into sections that guide you through the process of calculating the drawdown at each point in the grid and visualizing the results. The notebook also includes interactive widgets that allow you to adjust the well spacing and pumping rate and see the results in real-time. 
@@ -55,10 +57,7 @@ The goal of this exercise is to design a dewatering system that will lower the w
 | $R$      | 500  | m     |
 | Design H | 35   | m     |
 
-Launch the notebook using the link above. Before running the code, you will need to upload the GEOJSON file to the 
-Colab notebook. To do so, click on the folder icon on the left side of the notebook and then click on the upload button.
-
-Once you have uploaded the GEOJSON file, following the instructions in the notebook.
+Launch the notebook using the link above. You will upload the GEOJSON file using the upload button that will appear when you run one of the first cells in the notebook. Once you have uploaded the GEOJSON file, following the remaining instructions in the notebook.
 
 ## Part 1 - Manual Well Spacing
 
