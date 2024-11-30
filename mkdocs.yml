@@ -74,16 +74,15 @@ nav:
   - Unit 2 - Slope Stability:
     - Shear Strength Concepts:
         - Pre-Class: unit2/01_shear/shear_read.md
-        - In-Class: unit2/01_shear/shear_class.md
         - Homework: unit2/01_shear/shear_hw.md
-    - Infinite Slope Analysis:
-        - Pre-Class: unit2/02_infinite/infinite_read.md
-        - In-Class: unit2/02_infinite/infinite_class.md
-        - Homework: unit2/02_infinite/infinite_hw.md
-    - Limit Equilibrium Method:
-        - Pre-Class: unit2/03_limiteq/limiteq_read.md
-        - In-Class: unit2/03_limiteq/limiteq_class.md
-        - Homework: unit2/03_limiteq/limiteq_hw.md
+    - Limit Equilibrium Method - Part 1 :
+        - Pre-Class: unit2/02_limiteq1/limiteq1_read.md
+        - In-Class: unit2/02_limiteq1/limiteq1_class.md
+        - Homework: unit2/02_limiteq1/limiteq1_hw.md
+    - Limit Equilibrium Method - Part 2:
+        - Pre-Class: unit2/03_limiteq2/limiteq2_read.md
+        - In-Class: unit2/03_limiteq2/limiteq2_class.md
+        - Homework: unit2/03_limiteq2/limiteq2_hw.md
     - Slope Stability Charts:
         - Pre-Class: unit2/04_charts/charts_read.md
         - In-Class: unit2/04_charts/charts_class.md

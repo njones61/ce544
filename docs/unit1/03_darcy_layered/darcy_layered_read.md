@@ -1,4 +1,4 @@
-# Pre-Clas - Darcy's Law in Layered Systems
+# Pre-Class - Darcy's Law in Layered Systems
 
 This video introduces Darcy's Law in layered systems. It illustrates how to calculate the flow of water through a layered system where each layer has different hydraulic properties. The lecture explains how we can come up with an equivalent hydraulic conductivity (Keq) for the layered system when flowing either perpendicular to or parallel to the layering and how to use the Keq to  calculate the flow rate through the system.
 

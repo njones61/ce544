@@ -1,0 +1,3 @@
+Homework - Infinite Slope Method
+
+The infinite slope method is a simplified approach to analyze the stability of slopes. This method is based on the assumption that the slope is infinitely long and the driving forces are balanced by the resisting forces along the potential failure surface. The infinite slope method is widely used in geotechnical engineering to assess the stability of natural slopes and embankments.
