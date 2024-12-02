@@ -19,7 +19,7 @@ $$
 
 where:
 
-$c$ = the undrained cohesion of the soil<br>
+>>$c$ = the undrained cohesion of the soil<br>
 $\Delta l$ = the length of the slice along the failure surface<br>
 $W$ = the weight of the slice<br>
 $\alpha$ = the angle of the failure surface with the horizontal

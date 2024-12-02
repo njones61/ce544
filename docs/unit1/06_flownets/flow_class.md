@@ -14,7 +14,7 @@ a) Calculate the total flow rate in ft^3/day through the soil section. Assume k 
 
 where:
 
-\(q\) = flow rate (ft^3/day)<br>
+>>\(q\) = flow rate (ft^3/day)<br>
 \(k\) = hydraulic conductivity (ft/d)<br>
 \(n_f\) = number of flow channels crossing a given flow line<br>
 \(n_e\) = number of equipotential lines crossing a given flow line<br>

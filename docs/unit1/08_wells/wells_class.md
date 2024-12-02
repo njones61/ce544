@@ -14,7 +14,7 @@ The radius of influence of a well is the distance from the well at which the dra
 
 Where:
 
-H = initial thickness (B for confined aquifers, h for unconfined aquifers) [m]<br>
+>>H = initial thickness (B for confined aquifers, h for unconfined aquifers) [m]<br>
 k = hydraulic conductivity [m/sec]<br>
 $s_w$ = drawdown at the well [m]<br>
 \(n_e\) = effective porosity (storativity S, for confined) [-]<br>
@@ -39,7 +39,7 @@ $$
 
 Where:
 
-h = head [L]<br>
+>>h = head [L]<br>
 H = initial head prior to pumping [L]<br>
 q = flow rate [L³/T]<br>
 k = hydraulic conductivity [L/T]<br>

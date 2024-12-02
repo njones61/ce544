@@ -10,7 +10,7 @@ $$
 
 Where:
 
-$h$ = water level at a given location (m)<br>
+>>$h$ = water level at a given location (m)<br>
 $H$ = initial water table elevation (m)<br>
 $k$ = hydraulic conductivity of the aquifer (m/s)<br>
 $q_{i}$ = pumping rate of well $i$ (m³/s)<br>

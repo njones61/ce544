@@ -27,7 +27,7 @@ $$
 
 Where:
 
-h' = corrected head [L]<br>
+>>h' = corrected head [L]<br>
 h = head [L]<br>
 H = initial head prior to pumping [L]<br>
 q = flow rate [L³/T]<br>
@@ -63,9 +63,11 @@ google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 **3.** Two wells are installed a distance of **60** feet apart in an unconfined aquifer **40** feet thick. The water table is **5** 
 feet below the ground surface. The hydraulic conductivity of the aquifer is **0.02** ft/min. The following information is also known for the wells:
 
-Radius of well influence: **3000** ft<br>
-Diameter of well: **6** inches<br>
-Pumping rate per well: **35** gallons per minute per well
+| Parameter | Value | Units |
+|-----------|-------|-------|
+| Radius of well influence | 3000 | ft |
+| Diameter of well | 6 | inches |
+| Pumping rate per well | 35 | gallons per minute per well |
 
 Compute and plot the drawdown surface produced by pumping the two wells under steady state conditions. Use a 
 cross-section which passes through both wells. Do not use the "a" term to correct the drawdown. Let x range from 

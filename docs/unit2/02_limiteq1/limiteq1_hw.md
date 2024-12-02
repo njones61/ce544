@@ -24,7 +24,7 @@ $$
 
 where:
 
-$c$ = undrained cohesion of the soil<br>
+>>$c$ = undrained cohesion of the soil<br>
 $\gamma'$ = effective unit weight of the soil<br>
 $z$ = depth of the slope<br>
 $\beta$ = angle of the slope with the horizontal
@@ -37,20 +37,7 @@ $$
 
 where:
 
-$\gamma_{sat}$ = saturated unit weight of the soil<br>
-$\gamma_w$ = unit weight of water
-
-The unit weight of water is 62.4 pcf.
-
-The saturated unit weight of the soil can be calculated as:
-
-$$
-\gamma_{sat} = \left(\frac{1+w}{1+wG_s}\right) G_s \gamma_w
-$$
-
-where:
-
-$G_s$ = specific gravity of the soil<br>
+>>$G_s$ = specific gravity of the soil<br>
 $w$ = moisture content of the soil
 
 As a first approximation for the stability during an earthquake compute the static factor of safety of the slope 

@@ -12,7 +12,7 @@ Extend your mesh 40 ft both upstream and downstream from the sheetpiles (solve t
 
 Set up the problem using GMS/SEEP2D and analyzie the flow rate (total) assuming various K values for the grout curtain. Make a table showing the total flow rate vs. k for the grout curtain where the k values varies as follows:
 
-k = 2 m/d (same as no grout curtain)<br>
+>>k = 2 m/d (same as no grout curtain)<br>
 k = 1 m/d<br>
 k = .5 m/d<br>
 k = .2 m/d<br>
