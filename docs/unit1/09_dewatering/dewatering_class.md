@@ -51,11 +51,11 @@ The goal of this exercise is to design a dewatering system that will lower the w
 
 | Parameter | Value | units |
 |----------|------|-------|
-| $H$      | 40   | m     |
 | $k$      | 5e-4 | cm/s  |
-| $Q$      | 0.01 | m³/s  |
+| $H$      | 40   | m     |
 | $R$      | 500  | m     |
 | Design H | 35   | m     |
+| $Q$      | 0.01 | m³/s  |
 
 Launch the notebook using the link above. You will upload the GEOJSON file using the upload button that will appear when you run one of the first cells in the notebook. Once you have uploaded the GEOJSON file, following the remaining instructions in the notebook.
 

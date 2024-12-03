@@ -54,13 +54,12 @@ Assume the following parameters for the problem:
 
 | Parameter | Value | units  |
 |----------|-------|--------|
-| $H$      | 85    | ft     |
-| $k$      | 20    | ft/day |
-| $Q$      | 1     | ft³/s  |
-| $R$      | 500   | ft     |
-| Design H | 70    | ft     |
+| $k$      | 0.007 | cm/sec |
+| $H$      | 30    | m      |
+| $R$      | 400   | ft     |
+| Design H | 25    | ft     |
+| $Q$      | 0.025 | m³/s   |
 
-Convert the K to ft/s in the notebook.
 
 (a)  Manual Placement
 
