@@ -77,7 +77,7 @@ You can access Teams through the web interface or by downloading the app to your
 
 **Required**: _Soil Strength and Slope Stability, 2nd Edition_, Duncan, Wright, and Brandon
 
-We will use text primarily during the second part of the semester.
+We will use text primarily during the second part of the semester. You can access this textbook for free through the BYU library as described in the [Textbook](./textbook.md) section.
 
 **Optional**: _Construction Dewatering and Groundwater Control_, Powers, Et al.
 

@@ -24,6 +24,7 @@ nav:
     - Case Study: resources/casestudy.md
     - GMS Software: resources/gms.md
     - UTEXASED: resources/utexased/installation.md
+    - Textbook: resources/textbook.md
   - Unit 1 - Seepage Analysis:
     - Hydraulic Head Concepts:
         - Pre-Class: unit1/01_head/head_read.md
@@ -72,44 +73,46 @@ nav:
         - Homework 1: unit1/11_seep2d/seep2d_hw1.md
         - Homework 2: unit1/11_seep2d/seep2d_hw2.md
   - Unit 2 - Slope Stability:
+    - Causes of Slope Failure:
+        - Pre-Class: unit2/01_causes/causes_read.md
     - Shear Strength Concepts:
-        - Pre-Class: unit2/01_shear/shear_read.md
-        - Homework: unit2/01_shear/shear_hw.md
+        - Pre-Class: unit2/02_shear/shear_read.md
+        - Homework: unit2/02_shear/shear_hw.md
     - Limit Equilibrium Method - Part 1 :
-        - Pre-Class: unit2/02_limiteq1/limiteq1_read.md
-        - In-Class: unit2/02_limiteq1/limiteq1_class.md
-        - Homework: unit2/02_limiteq1/limiteq1_hw.md
+        - Pre-Class: unit2/03_limiteq1/limiteq2_read.md
+        - In-Class: unit2/03_limiteq1/limiteq1_class.md
+        - Homework: unit2/03_limiteq1/limiteq1_hw.md
     - Limit Equilibrium Method - Part 2:
-        - Pre-Class: unit2/03_limiteq2/limiteq2_read.md
-        - In-Class: unit2/03_limiteq2/limiteq2_class.md
-        - Homework: unit2/03_limiteq2/limiteq2_hw.md
+        - Pre-Class: unit2/04_limiteq2/limiteq2_read.md
+        - In-Class: unit2/04_limiteq2/limiteq2_class.md
+        - Homework: unit2/04_limiteq2/limiteq2_hw.md
     - Slope Stability Charts:
-        - Pre-Class: unit2/04_charts/charts_read.md
-        - In-Class: unit2/04_charts/charts_class.md
-        - Homework: unit2/04_charts/charts_hw.md
+        - Pre-Class: unit2/05_charts/charts_read.md
+        - In-Class: unit2/05_charts/charts_class.md
+        - Homework: unit2/05_charts/charts_hw.md
     - UTEXASED Slope Stability Analysis:
-        - Pre-Class: unit2/05_utexased/utexased_read.md
-        - In-Class 1: unit2/05_utexased/utexased_class1.md
-        - In-Class 2: unit2/05_utexased/utexased_class2.md
-        - Homework 1: unit2/05_utexased/utexased_hw1.md
-        - Homework 2: unit2/05_utexased/utexased_hw2.md
+        - Pre-Class: unit2/06_utexased/utexased_read.md
+        - In-Class 1: unit2/06_utexased/utexased_class1.md
+        - In-Class 2: unit2/06_utexased/utexased_class2.md
+        - Homework 1: unit2/06_utexased/utexased_hw1.md
+        - Homework 2: unit2/06_utexased/utexased_hw2.md
     - Reinforced Slopes:
-        - Pre-Class: unit2/06_reinforced/reinforced_read.md
-        - In-Class: unit2/06_reinforced/reinforced_class.md
-        - Homework: unit2/06_reinforced/reinforced_hw.md
+        - Pre-Class: unit2/07_reinforced/reinforced_read.md
+        - In-Class: unit2/07_reinforced/reinforced_class.md
+        - Homework: unit2/07_reinforced/reinforced_hw.md
     - Rapid Drawdown Analysis:
-        - Pre-Class: unit2/07_rapid/rapid_read.md
-        - In-Class: unit2/07_rapid/rapid_class.md
-        - Homework: unit2/07_rapid/rapid_hw.md
+        - Pre-Class: unit2/08_rapid/rapid_read.md
+        - In-Class: unit2/08_rapid/rapid_class.md
+        - Homework: unit2/08_rapid/rapid_hw.md
     - Seismic Slope Stability:
-        - Pre-Class: unit2/08_seismic/seismic_read.md
-        - In-Class: unit2/08_seismic/seismic_class.md
-        - Homework: unit2/08_seismic/seismic_hw.md
+        - Pre-Class: unit2/09_seismic/seismic_read.md
+        - In-Class: unit2/09_seismic/seismic_class.md
+        - Homework: unit2/09_seismic/seismic_hw.md
     - Important Details of Stability Analysis:
-        - Pre-Class: unit2/09_details/details_read.md
-        - In-Class: unit2/09_details/details_class.md
-        - Homework: unit2/09_details/details_hw.md
+        - Pre-Class: unit2/10_details/details_read.md
+        - In-Class: unit2/10_details/details_class.md
+        - Homework: unit2/10_details/details_hw.md
     - Reliability Analysis:
-        - Pre-Class: unit2/10_reliability/reliability_read.md
-        - In-Class: unit2/10_reliability/reliability_class.md
-        - Homework: unit2/10_reliability/reliability_hw.md
+        - Pre-Class: unit2/11_reliability/reliability_read.md
+        - In-Class: unit2/11_reliability/reliability_class.md
+        - Homework: unit2/11_reliability/reliability_hw.md
