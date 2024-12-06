@@ -23,7 +23,7 @@ N = accretion from rainfall [m/sec]
 
 The following spreadsheet a sample set of calculations for each of the equations above.
 
-Excel file: [radius_of_influence.xlsx](..%2F07_analytical%2Fradius_of_influence.xlsx)
+Excel file: [radius_of_influence.xlsx](radius_of_influence.xlsx)
 
 ## Part 2 - Confined Aquifer
 

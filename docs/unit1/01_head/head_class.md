@@ -4,6 +4,6 @@ Consider the following cylinder of soil. There is a standpipe filled with 2 ft o
 
 ![cylinder.png](cylinder.png)
 
-Excel starter file: [cylinder.xlsx](../03_darcy_layered/cylinder.xlsx)
+Excel starter file: [cylinder.xlsx](cylinder.xlsx)
 
-Excel solution: [cylinder_key.xlsx](../03_darcy_layered/cylinder_key.xlsx)
+Excel solution: [cylinder_key.xlsx](cylinder_key.xlsx)

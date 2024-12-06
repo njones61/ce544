@@ -6,15 +6,15 @@ The following problems were solved in the previous assignment using the stabilit
 
 Be sure to use total unit wt and model the external water using a distributed load.
 
-![hw_fig_1.gif](../04_charts/hw_fig_1.gif)
+![hw_fig_1.gif](../05_charts/hw_fig_1.gif)
 
 (b) Slope with surcharge.
 
-![hw_fig_2.gif](../04_charts/hw_fig_2.gif)
+![hw_fig_2.gif](../05_charts/hw_fig_2.gif)
 
 (c) Slope with two materials.
 
-![hw_fig_3.gif](../04_charts/hw_fig_3.gif)
+![hw_fig_3.gif](../05_charts/hw_fig_3.gif)
 
 ## Submission
 

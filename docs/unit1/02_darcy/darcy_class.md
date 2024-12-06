@@ -13,7 +13,7 @@ b) Assuming ne = 0.2, what is the travel time [yrs] for the leachate to move thr
 
 Excel starter file: [clayliner.xlsx](clayliner.xlsx)
 
-Excel solution: [claylinner_key.xlsx](clayliner_key.xlsx)
+Excel solution: [clayliner_key.xlsx](clayliner_key.xlsx)
 
 # Part 2 - Flow Through a Slurry Wall
 
@@ -27,9 +27,9 @@ a) Calculate the amount of water flowing through a 1 ft thick section of the wal
 
 b) Calculate the travel time for water flowing through the wall. Assume ne = 0.3.
 
-Excel starter file: [slurry.xlsx](slurry.xlsx)
+Excel starter file: [slurrywall.xlsx](slurrywall.xlsx)
 
-Excel solution: [slurry_KEY.xlsx](slurry_KEY.xlsx)
+Excel solution: [slurrywall_KEY.xlsx](slurrywall_KEY.xlsx)
 
 !!! Note
     This is not the correct way to analyze flow through a rectangular section like this. We will learn a more accurate method (Dupuit Equation) later in the semester. However, this is a simple solution that is conservative (flow estimate is high).
