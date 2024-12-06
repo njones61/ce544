@@ -28,7 +28,7 @@ Assume the following:
 
 (a) Calculate the hydraulic conductivity tensor for the given domain assuming \(\alpha\) = -60 degrees.
 
-(b) Let alpha range from 0 to -90 degrees. Calculate and plot \(k_{xx}\) and \(k_{yy}\) as a function of \(\alpha\).
+(b) Let alpha range from 0 to -90 degrees. Calculate and plot $k_{xx}$ and $k_{yy}$ as a function of $\alpha$.
 
 Excel starter file: [darcy2d.xlsx](darcy2d.xlsx)
 
