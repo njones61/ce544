@@ -79,7 +79,7 @@ nav:
         - Pre-Class: unit2/02_shear/shear_read.md
         - Homework: unit2/02_shear/shear_hw.md
     - Limit Equilibrium Method - Part 1 :
-        - Pre-Class: unit2/03_limiteq1/limiteq2_read.md
+        - Pre-Class: unit2/03_limiteq1/limiteq1_read.md
         - In-Class: unit2/03_limiteq1/limiteq1_class.md
         - Homework: unit2/03_limiteq1/limiteq1_hw.md
     - Limit Equilibrium Method - Part 2:
@@ -102,7 +102,6 @@ nav:
         - Homework: unit2/07_reinforced/reinforced_hw.md
     - Rapid Drawdown Analysis:
         - Pre-Class: unit2/08_rapid/rapid_read.md
-        - In-Class: unit2/08_rapid/rapid_class.md
         - Homework: unit2/08_rapid/rapid_hw.md
     - Seismic Slope Stability:
         - Pre-Class: unit2/09_seismic/seismic_read.md
