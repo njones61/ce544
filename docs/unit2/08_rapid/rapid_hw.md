@@ -23,12 +23,7 @@ The slope has the following properties:
 | $slope$    | 3:1   | -                |
 | $\beta$    | 18.4  | degrees          |
 
-Calculate the factor of safety for the slope under rapid drawdown conditions. Use the 
-following Excel file to perform the calculations:
-
-Excel starter file: [rapdraw.xlsx](rapdraw.xlsx)
-
-Do your calculations in the following steps:
+Calculate the factor of safety for the slope under rapid drawdown conditions using the following steps:
 
 ## Step 1: Pre-Drawdown
 
@@ -83,6 +78,16 @@ $FS = \dfrac{\tau_{drn}}{\tau_2}$
 ## Critical Factor of Safety
 
 The ultimate factor of safety is the minimum of the two factors of safety calculated in steps 2 and 3.
+
+Using the equations on the spreadsheet and the example problem described on pages 174-177 of your textbook, complete the spreadsheet by entering formulas in each of the yellow cells. Test your spreadsheet using two depths (z=5ft, z=30ft) and compare to solution found on table 9.2
+
+## Excel Spreadsheet
+
+Use the following Excel file to perform the calculations:
+
+Excel starter file: [rapdraw.xlsx](rapdraw.xlsx)
+
+Complete the spreadsheet by entering formulas in each of the yellow cells. This corresponds to the example problem described on pages 174-177 of your textbook. Test your spreadsheet using two depths (z=5ft, z=30ft) and compare your answers to solution found on table 9.2.
 
 ## Submission
 
