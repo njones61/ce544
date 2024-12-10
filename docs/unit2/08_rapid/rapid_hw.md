@@ -25,7 +25,7 @@ The slope has the following properties:
 
 Calculate the factor of safety for the slope under rapid drawdown conditions using the following steps:
 
-## Step 1: Pre-Drawdown
+## Stage 1: Pre-Drawdown
 
 Calculate shear stresss and effective normal stress on failure surface based on pre-drawdown conditions
 
@@ -34,7 +34,7 @@ $\tau_1$ = shear stress under pre-drawdown conditions
 
 $\sigma' = \gamma' z cos^2\beta \qquad \tau_1 = \gamma' z sin\beta cos\beta$
 
-## Step 2: Post-Drawdown, Total Stress Analysis
+## Stage 2: Post-Drawdown, Total Stress Analysis
 
 Compute FS for post-drawdown conditions using total stress analysis
 
@@ -47,7 +47,7 @@ $t_{ff(K_c=1)} = d + \sigma'_{fc} tan\psi \qquad t_{ff(K_c=K_f)} = c + \sigma'_{
 $K_1$ = Actual anisotropy on on the failure plane<br>
 $K_f$ = Anisotropy corresponding to verge-of-failure condition
 
-$K_1 = \dfrac{\sigma'+\tau \left[\left(sin\phi'+1\right)/cos\phi'\right]}{\sigma'+\tau \left[\left(sin\phi'-1\right)
+$K_1 = \dfrac{\sigma'+\tau_1 \left[\left(sin\phi'+1\right)/cos\phi'\right]}{\sigma'+\tau_1 \left[\left(sin\phi'-1\right)
 /cos\phi'\right]} \qquad K_f = \dfrac{\left(\sigma'+ c'cos\phi'\right)\left(1+sin\phi'\right)}
 {\left(\sigma'- c'cos\phi'\right)\left(1-sin\phi'\right)}$
 
@@ -62,14 +62,14 @@ Factor of safety for stage 2 is given by:
 
 $FS = \dfrac{t_{ff}}{t_2}$
 
-## Step 3: Post-Drawdown, Drained Strength Analysis
+## Stage 3: Post-Drawdown, Drained Strength Analysis
 
 Compute FS for post-drawdown conditions using drained strengths
 
 $\sigma'_{drn}$ = effective normal stress under drained (post-drawdown) conditions<br>
 $\tau_{drn}$ =  shear strength under drained (post-drawdown) conditions
 
-$\sigma'_{drn} = \gamma z cos^2\beta \qquad \tau_{drn} = c' + \sigma' tan\phi'$
+$\sigma'_{drn} = \gamma z cos^2\beta \qquad \tau_{drn} = c' + \sigma'_{drn} tan\phi'$
 
 Factor of safety for stage 3 is given by:
 
@@ -77,18 +77,20 @@ $FS = \dfrac{\tau_{drn}}{\tau_2}$
 
 ## Critical Factor of Safety
 
-The ultimate factor of safety is the minimum of the two factors of safety calculated in steps 2 and 3.
+The ultimate factor of safety is the minimum of the two factors of safety calculated in stages 2 and 3.
 
 Using the equations on the spreadsheet and the example problem described on pages 174-177 of your textbook, complete the spreadsheet by entering formulas in each of the yellow cells. Test your spreadsheet using two depths (z=5ft, z=30ft) and compare to solution found on table 9.2
 
-## Excel Spreadsheet
+## Starter Files
 
-Use the following Excel file to perform the calculations:
+Use either of the following files to perform the calculations:
 
-Excel starter file: [rapdraw.xlsx](rapdraw.xlsx)
+Excel starter file: [rapdraw.xlsx](rapdraw.xlsx) 
 
-Complete the spreadsheet by entering formulas in each of the yellow cells. This corresponds to the example problem described on pages 174-177 of your textbook. Test your spreadsheet using two depths (z=5ft, z=30ft) and compare your answers to solution found on table 9.2.
+Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/08_rapid/rapid.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+ This corresponds to the example problem described on pages 174-177 of your textbook. Test your solution using two depths (z=5ft, z=30ft) and compare your answers to solution found on table 9.2.
 
 ## Submission
 
-Submit your completed Excel file to the assignment on Learning Suite.
+Submit either your completed Excel file or a link to your completed Colab notebook to Learning Suite.
