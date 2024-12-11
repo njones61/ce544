@@ -10,7 +10,7 @@ Each of the non-zero parameters have been anayzed and a standard deviation has b
 |:----------:|:---:|:--------:|
 |  $\phi_1$  | 30  |   4.5    |
 |   $c_1$    | 100 |    20    |
-| $\gamma_1$ | 120 |   9.1    |
+| $\gamma_1$ | 125 |   9.1    |
 |   $Su_2$   | 700 |   150    |
 | $\gamma_1$ | 115 |   7.2    |
 
