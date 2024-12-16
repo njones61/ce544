@@ -1,0 +1,7 @@
+# Pre-Class - The Finite Element Method
+
+The finite element method (FEM) is a numerical technique for solving partial differential equations (PDEs). It is a powerful tool for solving a wide range of engineering problems, including structural analysis, heat transfer, fluid flow, and many others. The FEM divides a complex problem into smaller, simpler elements, which are then connected to form a mesh. The solution is approximated by solving the equations for each element and combining them to obtain the overall solution.
+
+The SEEP2D model uses the finite element method to solve the seepage equation in two dimensions. The model discretizes the domain into a mesh of elements, each representing a small portion of the domain. The seepage equation is then solved for each element, taking into account the boundary conditions and material properties. The results are combined to obtain the overall seepage pattern in the domain.
+
+In this pre-class activity, we will explore the basics of the finite element method and its application to seepage problems. We will discuss the key concepts and steps involved in the FEM, as well as its advantages and limitations. By the end of this activity, you should have a good understanding of how the FEM works and its relevance to seepage analysis.
