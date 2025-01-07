@@ -23,3 +23,14 @@ c) Fill your tension crack with water and update the solution.
 ## Submission
 
 Zip up all four solutions (the INPUT file for UTEXASED) and the spreadsheet into a single zip archive. Upload your zip archive via Learning Suite.
+
+## Grading Rubric
+
+Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+
+| Criteria                                    | Points |
+|---------------------------------------------|:------:|
+| Completed on time and all or mostly correct |   3    |
+| Completed more than half of assignment      |   2    |
+| Made an effort                              |   1    |
+| Did nothing                                 |   0    |

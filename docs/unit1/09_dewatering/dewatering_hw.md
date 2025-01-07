@@ -80,3 +80,14 @@ report. Discuss the results.
 
 Make a zip archive of your spreadsheet for part 1 and your Word document for part 2. Submit the zip archive to 
 Learning Suite. 
+
+## Grading Rubric
+
+Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+
+| Criteria                                    | Points |
+|---------------------------------------------|:------:|
+| Completed on time and all or mostly correct |   3    |
+| Completed more than half of assignment      |   2    |
+| Made an effort                              |   1    |
+| Did nothing                                 |   0    |

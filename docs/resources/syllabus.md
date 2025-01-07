@@ -29,11 +29,11 @@ After successfully completing this course, you should:
 
 ## Lecture Format
 
-The course will be taught in a hybrid format. The lectures will be pre-recorded and available on Youtube. The youtube videos will generally be broken into 10-15 minute segments. A link to the videos associated with each lecture will be provided on the Learning Suite schedule. You should watch the lectures prior to the class period. For the slope stability portion of the class, there will also be assigned reading. The class period will be used for discussing the lecture video content and working through exercises together. 
+The course will be taught in a "flipped" format. For each class period, you are expected to carefully study the "pre-class" content which will consist of videos and/or reading. A link to the pre-class content for each lecture will be provided on the Learning Suite schedule. You should complete the pre-class content before the associated calss period. The class period will be used for discussing the pre-class content and working through exercises together. 
 
 ## Quizzes
 
-There will be pre-class quiz associated with each lecture where you can report if you have completed watching the video and doing the assigned reading. There will also be a few simple questions on the content. The quizzes will be on Learning Suite and will be due 30 minutes prior to class.
+There will be pre-class quiz associated with each lecture based on the pre-class content. Each quiz is worth 7 points. The first question which is worth 2 pts, is "Did you complete the pre-class content?". Then there will be 4 questions based on that content, and finally there will be an open response question where you are asked if there was anything from the pre-class content that was not clear that you would like to review in class. The quizzes will be on Learning Suite and will be due 15 minutes prior to class.
 
 ## Exams
 

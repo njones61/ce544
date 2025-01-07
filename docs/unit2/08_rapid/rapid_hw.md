@@ -94,3 +94,14 @@ Python starter file: <a href="https://colab.research.google.com/github/njones61/
 ## Submission
 
 Submit either your completed Excel file or a link to your completed Colab notebook to Learning Suite.
+
+## Grading Rubric
+
+Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+
+| Criteria                                    | Points |
+|---------------------------------------------|:------:|
+| Completed on time and all or mostly correct |   3    |
+| Completed more than half of assignment      |   2    |
+| Made an effort                              |   1    |
+| Did nothing                                 |   0    |

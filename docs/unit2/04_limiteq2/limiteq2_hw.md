@@ -35,3 +35,13 @@ Excel starter file: [bsp.xlsx](bsp.xlsx)
 
 Upload the completed Excel file to Learning Suite.
 
+## Grading Rubric
+
+Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+
+| Criteria                                    | Points |
+|---------------------------------------------|:------:|
+| Completed on time and all or mostly correct |   3    |
+| Completed more than half of assignment      |   2    |
+| Made an effort                              |   1    |
+| Did nothing                                 |   0    |

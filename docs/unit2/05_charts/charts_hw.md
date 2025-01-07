@@ -22,3 +22,14 @@ Use the Excel solution we used for the class exercise ([link](chart_solution_KEY
 
 Save a copy of the Excel file with a solution for each problem. Zip the four solutions to a zip file and upload 
 the zip file to Learning Suite.
+
+## Grading Rubric
+
+Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+
+| Criteria                                    | Points |
+|---------------------------------------------|:------:|
+| Completed on time and all or mostly correct |   3    |
+| Completed more than half of assignment      |   2    |
+| Made an effort                              |   1    |
+| Did nothing                                 |   0    |

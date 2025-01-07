@@ -27,3 +27,14 @@ Put your table and summary in a word document. Save a copy of your spreadsheet w
 ## Submission
 
 Zip up all three documents (one spreadsheet from part (a) and a spreadsheet and a word document from part (b)) into a single zip archive. Upload your zip arvhive via Learning Suite.
+
+## Grading Rubric
+
+Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+
+| Criteria                                    | Points |
+|---------------------------------------------|:------:|
+| Completed on time and all or mostly correct |   3    |
+| Completed more than half of assignment      |   2    |
+| Made an effort                              |   1    |
+| Did nothing                                 |   0    |

@@ -12,3 +12,14 @@ graphics and instructions. Follow the instructions included on the slides.
 ## Submission
 
 Show your flow net and your calculations on the powerpoint slides. You can add extra slides if you need to. Show as much of your work as you can. Upload your Powerpoint file via Learning Suite.
+
+## Grading Rubric
+
+Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+
+| Criteria                                    | Points |
+|---------------------------------------------|:------:|
+| Completed on time and all or mostly correct |   3    |
+| Completed more than half of assignment      |   2    |
+| Made an effort                              |   1    |
+| Did nothing                                 |   0    |
