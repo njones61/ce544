@@ -12,7 +12,7 @@ a) how much leachate would potentially escape the landfill each day?<br>
 b) Assuming ne = 0.2, what is the travel time [yrs] for the leachate to move through the liner?
 
 Excel starter file: [clayliner.xlsx](clayliner.xlsx)<br>
-Excel solution: [clayliner_key.xlsx](clayliner_key.xlsx)
+Excel solution: [clayliner_key.xlsx](clayliner_key.xlsx) 
 
 # Part 2 - Flow Through a Slurry Wall
 
