@@ -8,11 +8,10 @@ A 3-ft thick compacted clay liner is to be constructed at the bottom of a munici
 
 You have been asked to perform an analysis of the potential seepage of the leachate. The landfill covers an area that is roughly 10 acres in size.  Assuming that the vertical hydraulic conductivity of the landfill = 1e-7 cm/s, answer the following:
 
-a) how much leachate would potentially escape the landfill each day?
+a) how much leachate would potentially escape the landfill each day?<br>
 b) Assuming ne = 0.2, what is the travel time [yrs] for the leachate to move through the liner?
 
-Excel starter file: [clayliner.xlsx](clayliner.xlsx)
-
+Excel starter file: [clayliner.xlsx](clayliner.xlsx)<br>
 Excel solution: [clayliner_key.xlsx](clayliner_key.xlsx)
 
 # Part 2 - Flow Through a Slurry Wall
@@ -23,12 +22,10 @@ A 3-ft wide by 20-ft deep slurry trench cutoff wall has been constructed as a fl
 
 ![slurry.png](slurry.png)
 
-a) Calculate the amount of water flowing through a 1 ft thick section of the wall (ft^3/day).
-
+a) Calculate the amount of water flowing through a 1 ft thick section of the wall (ft^3/day).<br>
 b) Calculate the travel time for water flowing through the wall. Assume ne = 0.3.
 
-Excel starter file: [slurrywall.xlsx](slurrywall.xlsx)
-
+Excel starter file: [slurrywall.xlsx](slurrywall.xlsx)<br>
 Excel solution: [slurrywall_KEY.xlsx](slurrywall_KEY.xlsx)
 
 !!! Note
