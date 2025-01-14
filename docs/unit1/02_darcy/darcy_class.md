@@ -28,7 +28,5 @@ b) Calculate the travel time for water flowing through the wall. Assume ne = 0.3
 Excel starter file: [slurrywall.xlsx](slurrywall.xlsx)<br>
 Excel solution: [slurrywall_KEY.xlsx](slurrywall_KEY.xlsx)
 
-TESTING.
-
 !!! Note
     This is not the correct way to analyze flow through a rectangular section like this. We will learn a more accurate method (Dupuit Equation) later in the semester. However, this is a simple solution that is conservative (flow estimate is high).
