@@ -9,11 +9,11 @@ Consider the following set of layered soils.
 Calculate the equivalent hydraulic conductivity (Keq) and flow (q) in both the vertical and horizontal directions. Use the following equations:
 
 $$
-k_{eq}(parallel) = \frac{\sum_{i=1}^{n}k_iH_i}{\sum_{i=1}^{n}H_i} \hspace{1cm} k_{eq}(perp) = \frac{\sum_{i=1}^{n}H_i}{\sum_{i=1}^{n}\frac{H_i}{k_i}}
+k_{eq}(parallel) = \dfrac{\sum_{i=1}^{n}k_iH_i}{\sum_{i=1}^{n}H_i} \hspace{1cm} k_{eq}(perp) = \dfrac{\sum_{i=1}^{n}H_i}{\sum_{i=1}^{n}\dfrac{H_i}{k_i}}
 $$
 
 $$
-q=k\frac{\Delta h}{L}A \hspace{1cm} \Delta h = \frac{qL}{kA}
+q=k\dfrac{\Delta h}{L}A \hspace{1cm} \Delta h = \dfrac{qL}{kA}
 $$
 
 
