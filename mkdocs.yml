@@ -39,11 +39,10 @@ nav:
         - Pre-Class: unit1/03_darcy_layered/darcy_layered_read.md
         - In-Class: unit1/03_darcy_layered/darcy_layered_class.md
         - Homework: unit1/03_darcy_layered/darcy_layered_hw.md
-    - Darcy's Law - 2D Flow:
-        - Pre-Class: unit1/04_darcy_2d/darcy_2d_read.md
-        - In-Class: unit1/04_darcy_2d/darcy_2d_class.md
     - Governing Equations:
-        - Pre-Class: unit1/05_goveqs/goveqs_read.md
+        - Pre-Class (Darcy 2D): unit1/04_darcy_2d/darcy_2d_read.md
+        - Pre-Class (Gov Eqs): unit1/05_goveqs/goveqs_read.md
+        - In-Class: unit1/04_darcy_2d/darcy_2d_class.md
     - Flow Nets:
         - Pre-Class: unit1/06_flownets/flow_read.md
         - In-Class: unit1/06_flownets/flow_class.md
