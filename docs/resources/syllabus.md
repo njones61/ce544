@@ -41,18 +41,21 @@ Exams will be given on-line. You will have a 2-3 days to take the exam. The exam
 
 Since we are covering two distinct topics, there will be two exams. The first exam will cover the seepage portion of the class and the second exam will cover the slope stability portion.
 
-## Policies
+## Homework
 
-In most cases, the homework will be due at midnight one week from the day it is assigned. All homework should be submitted via Learning Suite. Late homework will be reduced 10% each day that it is late (not including Saturdays and Sundays) up to a maximum penalty of 50%. Late homework will always be worth at least 50%. Late penalties may be waived under extreme circumstances such as illness or travel. Forgetting to upload your completed assignment, uploading the wrong assignment, etc. are not extreme circumstances.
+The homework is essential to reinforce the topics covered in class. The homework will also prepare you for the exams. Since we do not have a TA for the class, we will grade the homework together at the beginning of class in the class 
+period immediately following when an assignment is due. You don't need to upload your completed assignment until after we have graded it, so technically it is not due until that time. However, you should have the assignment completed before class so we can grade it together. I will show you the solution to the homework and you will grade your own work using the 
+3-pt rubric provided at the end of each assignment. You will then upload your completed assignment to Learning Suite 
+and enter your grade in the "Submission notes" section for the assignment on Learning Suite. 
 
-No late homework will be accepted after midnight on the last day of the semester (first day prior to reading days).
+Since we go over the solutions together in class and self-grade the homework, late homework will not be accepted. If 
+you have a legitimate reason for not having the homework completed before we grade it in class, you should contact 
+me to get permission for a late submission.
 
-There will be one midterm exams and a final exam. The first exam will cover the seepage portion of the class and the second exam will cover the slope stability portion. Both exams will be given on-line. There will be no make-up exams. All exams must be taken in one of the CAEDM labs.
+## Academic Honesty
 
 If I discover that you have cheated on one of my exams, I will give you a failing grade for the course and refer you to the BYU Honor Code Office.
 I encourage you to work together on the homework as long as everyone is contributing and learning. You may not simply copy one another's work. You may not copy old homework. You must understand the lectures and the homework in order to perform well on the exams
-
-For the slope stability section, there will be a set of quizzes associated with the reading. The quizzes are on Learning Suite and should be completed prior to class.
 
 ## Grades
 

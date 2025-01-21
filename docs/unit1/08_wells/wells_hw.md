@@ -99,11 +99,11 @@ com/github/njones61/ce544/blob/main/docs/unit1/08_wells/two_wells.ipynb" target=
 
 ## Submission
 
-Combine your spreadsheets and links to your Python notebooks into a single zip archive and submit it to Learning Suite.
+Combine your spreadsheets and links to your Python notebooks into a single zip archive and upload it on Learning Suite after we grade it together in class.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|

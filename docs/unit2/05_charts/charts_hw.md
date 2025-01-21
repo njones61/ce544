@@ -21,11 +21,11 @@ Use the Excel solution we used for the class exercise ([link](chart_solution_KEY
 ## Submission
 
 Save a copy of the Excel file with a solution for each problem. Zip the four solutions to a zip file and upload 
-the zip file to Learning Suite.
+the zip file to Learning Suite after we grade it together in class.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|

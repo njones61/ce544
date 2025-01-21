@@ -18,11 +18,11 @@ Perform a reliability analysis on the slope to find both the reliability (R) and
 
 ## Submission
 
-Zip up a copy of your UTEXASED input file (with MLV parameters) and the spreadsheet into a single zip archive. Upload your zip archive via Learning Suite.
+Zip up a copy of your UTEXASED input file (with MLV parameters) and the spreadsheet into a single zip archive. Upload your zip archive via Learning Suite after we grade it together in class.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|

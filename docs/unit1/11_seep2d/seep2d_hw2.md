@@ -30,14 +30,14 @@ Excel File: [lost_lake_coords.xlsx](lost_lake_coords.xlsx)
 
 ## Submission
 
-Zip up your GMS project files and upload. Upload your zip archive via Learning Suite.
+Zip up your GMS project files and upload. Upload your zip archive via Learning Suite after we grade it together in class.
 
 !!! Note
     You are allowed to work in pairs on this assignment if you wish. Just copy and upload the assignment when you are done and be sure to make a note who you worked with.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|

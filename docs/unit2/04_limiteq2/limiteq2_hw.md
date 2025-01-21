@@ -33,11 +33,11 @@ Excel starter file: [bsp.xlsx](bsp.xlsx)
 
 ## Submission
 
-Upload the completed Excel file to Learning Suite.
+Upload the completed Excel file to Learning Suite after we grade it together in class.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|
