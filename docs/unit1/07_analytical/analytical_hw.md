@@ -31,11 +31,11 @@ research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Submission
 
-Submit your Word document with your derivation and your Excel file or a link to your Colab notebook in Learning Suite.
+Submit your Word document with your derivation and your Excel file or a link to your Colab notebook in Learning Suite. Upload your files after we grade the homework together in class.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your files. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|

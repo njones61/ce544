@@ -24,14 +24,15 @@ For each k value, show two flowrates: one for a unit width and one for the total
 
 ## Submission
 
-For part two, submit a copy of the k=0.2 m/d version of your GMS project. Zip up the GMS projects for parts one and two along with your word document for part two and upload the zip archive via Learning Suite.
+For part two, submit a copy of the k=0.2 m/d version of your GMS project. Zip up the GMS projects for parts one and 
+two along with your word document for part two and upload the zip archive via Learning Suite after we grade it together in class.
 
 !!! Note
     You are allowed to work in pairs on this assignment if you wish. Just copy and upload the assignment when you are done and be sure to make a note who you worked with.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|

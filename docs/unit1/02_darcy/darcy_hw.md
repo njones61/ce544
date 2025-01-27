@@ -31,11 +31,11 @@ Solve the following problems using Excel or Google Sheets. Show all of your work
 
 ## Submission
 
-Save your work in a file named `darcy_hw.xlsx` and submit it on Learning Suite.
+Save your work in a file named `darcy_hw.xlsx` and upload it on Learning Suite after we grade it together in class.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|

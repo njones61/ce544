@@ -18,11 +18,11 @@ Be sure to use total unit wt and model the external water using a distributed lo
 
 ## Submission
 
-Use the File|Save As command in UTEXASED to save a copy of each of your input files. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+Use the File|Save As command in UTEXASED to save a copy of each of your input files. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite after we grade it together in class.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the comment section for the assignment on Learning Suite.
+Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|
