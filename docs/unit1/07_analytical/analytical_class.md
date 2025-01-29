@@ -12,7 +12,7 @@ $$Q = K \frac{\left(H_o^2 - H_D^2\right)}{2D}$$
 
 And the head (h) as a function of x is given by:
 
-$$h = \sqrt{\frac{\left(H_o^2 - H_D^2\right)}{2D} x + H_o^2}$$
+$$h = \sqrt{\frac{\left(H_D^2 - H_o^2\right)}{D} x + H_o^2}$$
 
 
 Assume following parameters:
