@@ -41,40 +41,50 @@ Python starter file: <a href="https://colab.research.google.
 com/github/njones61/ce544/blob/main/docs/unit1/09_dewatering/dewatering.ipynb" target="_blank"><img src="https://colab.
 research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
+**(a)  Setup Problem**
+
 Before starting, download the following GEOJSON file:
 
-GEOJSON File: [temple.geojson](temple.geojson)
+GEOJSON File: [temple.geojson](temple.geojson) (right-click and select "Save Link As")
 
 This represents the footprint of the excavation:
 
 ![temple_polygon.png](images/temple_polygon.png)
 
-Assume the following parameters for the problem:
+Run the cells to upload the file and visualize the excavation site. You will then interactively create wells by using the point tool to create points corresponding to the well locations. Start by creating 2 wells.
 
+**(b)  Drawdown Calculations and Manual Design**
+
+Assume the following parameters for the problem:
 
 | Parameter | Value | units  |
 |----------|-------|--------|
 | $k$      | 0.007 | cm/sec |
 | $H$      | 30    | m      |
-| $R$      | 400   | ft     |
-| Design H | 25    | ft     |
+| $R$      | 400   | m      |
+| Design H | 25    | m      |
 | $Q$      | 0.025 | m³/s   |
 
+Enter these values and run the cells to calculate the drawdown at each point in a grid covering the site and visualize the results with the contour plot options.
 
-(a)  Manual Placement
+Now design a dewatering system under three conditions: 2 wells, 4 wells, and 6 wells. In each case, 
+assume that the you can only place the wells outside of the temple footprint. You should change the location of the wells and the total pumping rate. To change the location of the wells, run the optional cell just under the map to delete your prior set of wells and create new wells and then run the following sequence of cells to generate the drawdown map.
 
-Design a dewatering system under three conditions: 2 wells, 4 wells, and 6 wells. In each case, 
-assume 
-that the you can only place the wells outside of the temple footprint. You should change the location of the wells and the total pumping rate.
+Save a copy of each of your designs. Right-click on one of the contour plots showing the water level or head difference inside the excavation and click "Save Image As". Open a Word document and write a short section for each of your three designs (including the contour plots) and discuss the results. Indicate which of the three designs you would suggest using for the actual project.
 
-Save a screen copy of each of each of your designs. Open a Word document and write a short section for each of your three designs (including the screen shots) and discuss the results. Indicate which of the three designs you would suggest using for the actual project.
+**(c) Rectangular Well System Design**
 
-(b) Automated Placement
-
-In the second part of the notebook, use the algorithm that automatically places a line of wells around the perimeter of 
+Next, use the algorithm that automatically places a line of wells around the perimeter of 
 the excavation based on an offset distance from the excavation boundary and a specified well spacing. Use an offset 
-of 20 ft. Experiment with the well spacing. Make a plot of total pumping rate vs well spacing and include in your 
-report. Discuss the results. 
+of 20 ft and 8 points along the x-direction.  
+
+**(d) Pumping Rate Optimization**
+
+For the rectangular well system, use the optimization algorithm to find the optimal pumping rate that will dewater the site with the well configuration described above. Save a copy of the contour plot showing the drawdown and include it in your report along with your pumping rate in gpm.
+
+**(e) Design Curve**
+
+Finally, run the code in the last section of the notebook to generate a design curve for the well system. Save a copy of the plot and include it in your report. Also indicate how many wells you would recommend using, based on the design curve.
 
 ## Submission
 

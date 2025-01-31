@@ -109,27 +109,6 @@ excavation. In other words, at some point, adding more wells will not significan
 
 ![q_vs_wells.png](images/q_vs_wells.png)
 
-manual optimization:
-
-nwells=8
-qi_low = 0.000001
-qi_high = 0.0005
-
-for plot:
-
-min_wells_x = 3
-max_wells_x = 20
-
-q_low = 0.005   # Gives negative value
-q_high = 0.001  # Give positive value
-
-But once you get to this point, the optimization algorithm will not converge. Something gets messed up.
-
-If you go all the way back to the beginning of part 3 and redo, it gets back on track. But then messes up again when you get to the end of part 4.
-
-If you run cell 2 in part 5 with the optimal q from prior section and 8 wells, you get objective function = 0. So it is working at that point.
-
-I think there is an error in the opt_q_nwells function.
 
 
 
