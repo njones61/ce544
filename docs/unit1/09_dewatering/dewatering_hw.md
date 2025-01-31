@@ -7,7 +7,7 @@ dewatering system for the Provo City Center Temple excavation site using a Pytho
 
 The Los Pollos Hermanos Corporation is planning to build a new manufacturing facility near the Rio Grande River in the outskirts of Albuquerque, New Mexico. The facility will include a hermetically-sealed underground unit with state-of-the-art ventillation and chemical-processing equipment. In order to dewater the site during construction and to ensure that it stays dry while in operation, the company decides to build a french drain between the river and excavation as follows:
 
-![trench.png](trench.png)
+![trench.png](images/trench.png)
 
 A pump will be attached to the drain and the water will be returned to the river. Calculate what capacity will be required (gpm) for the pump. To simplify your calculations, assume that there is a lower permeability layer at the elevation corresponding to the bottom of the excavation. Use a spreadsheet for your calculations.
 
@@ -20,17 +20,17 @@ The Provo City Center Temple is a temple of The Church of Jesus Christ of Latter
 temple is located on the site of the former Provo Tabernacle, which was destroyed by fire in December 2010, leaving 
 only the outer brick facade intact.
 
-![tabernacle_fire.jpg](tabernacle_fire.jpg)
+![tabernacle_fire.jpg](images/tabernacle_fire.jpg)
 
 The Church of Jesus Christ of Latter-day Saints announced during the October 2011 general conference that the structure 
 woud be rebuilt as the 
 Provo City Center Temple. This is an architect's rendering of the planned temple:
 
-![temple.jpg](temple.jpg)
+![temple.jpg](images/temple.jpg)
 
 The engineers in charge of the reconstruction faced a difficult task. As a temple, the structure would need to have a basement to house a baptismal font. Furthermore, there was a need to ensure that the reconstructed building is supported by an adequate, modern foundation. This would have to be done without damaging the fragile brick facade. To this they designed an elaborate system of piles:
 
-![excavation.jpg](excavation.jpg)
+![excavation.jpg](images/excavation.jpg)
 
 The excavation went down to a depth of 30 feet below the original ground surface. This presented another challenge because the water table in this region is shallow. In order to accomplish the construction, the site had to be dewatered. This is typically accomplished using a set of shallow wells where each well lowers the water table and creates a "cone of depression" surrounding the well. Multiples wells provide a combined effect resulting in an aggregate zone of drawdown.
 
@@ -47,7 +47,7 @@ GEOJSON File: [temple.geojson](temple.geojson)
 
 This represents the footprint of the excavation:
 
-![temple_polygon.png](temple_polygon.png)
+![temple_polygon.png](images/temple_polygon.png)
 
 Assume the following parameters for the problem:
 

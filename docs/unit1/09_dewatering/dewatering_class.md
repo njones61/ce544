@@ -30,54 +30,106 @@ Python starter file: <a href="https://colab.research.google.
 com/github/njones61/ce544/blob/main/docs/unit1/09_dewatering/dewatering.ipynb" target="_blank"><img src="https://colab.
 research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Before starting, we need to define the location of our excavation. The excavation size and location are specified using GeoJSON file. To create a geojson file of a region of interest, go here:
+## Part 1 - Define the Excavation Site and Create Wells (Setup)
+
+In the first part of the notebook, you will interactively create points on a map corresponding to the locations of 
+the dewatering wells. The wells are placed around the perimeter of the excavation site. Therefore, we need to first 
+define the location of our excavation. The excavation size and location are specified using GeoJSON file. 
+
+In general, to create a geojson file of a region of interest, you can go here:
 
 [https://geojson.io/#map=2.85/32.25/-98.07](https://geojson.io/#map=2.85/32.25/-98.07){:target="_blank"}
 
-and zoom in on a region of interest. Then use the draw polygon tool to draw your region. When you are done, select the Save option and save your polygon to a geojson file.
+and zoom in on a region of interest. Then use the draw polygon tool to draw your region. When you are done, you 
+can select the Save option and save your polygon to a geojson file. However, for this problem, we will use the following GEOJSON file:
 
-For this problem, we will use the following GEOJSON file:
+GEOJSON File: [byu_brewster.geojson](byu_brewster.geojson) (right-click and select "Save Link As")
 
-GEOJSON File: [byu_brewster.geojson](byu_brewster.geojson)
-
-This file contains the coordinates of a polygon that represents the excavation site. For this problem we will assume 
-that BYU intends to build a new building to replace the Clyde Building and has decided to build the new building at 
-the location of the current Brewster Building on the east side of campus. The GEOJSON file contains the coordinates 
-of a rectangular excavation site that represents the footprint of the new building. The following image shows the location of the excavation site on the BYU campus:
-
-![byu_brewster.png](byu_brewster.png)
-
-The goal of this exercise is to design a dewatering system that will lower the water table below the bottom of the excavation. The following parameters are provided for the problem:
-
-| Parameter | Value | units |
-|----------|------|-------|
-| $k$      | 5e-4 | cm/s  |
-| $H$      | 40   | m     |
-| $R$      | 500  | m     |
-| Design H | 35   | m     |
-| $Q$      | 0.01 | m³/s  |
-
-Launch the notebook using the link above. You will upload the GEOJSON file using the upload button that will appear when you run one of the first cells in the notebook. Once you have uploaded the GEOJSON file, following the remaining instructions in the notebook.
-
-## Part 1 - Manual Well Spacing
-
-In the first part of the notebook, you will interactively create wells by using the point tool shown below to create 
-points corresponding to the well locations shown by the blue symbols.
-
-![point_tool.png](point_tool.png)
-
-The total pumping rate is then divided equally among the wells. The drawdown at each point is calculated using the 
-equation above and the well locations displayed on the map. Play with the number and spacing of the wells and the 
-total pumping rate to see how the drawdown changes. Use the plotting tools in the notebook to visualize the results 
-and determine when the drawdown is below the target depth of the excavation at all points.
-
-## Part 2 - Automated Well Spacing
-
-In the second part of the notebook labelled **Rectangular Well Design**, you will use an algorithm to automatically 
-place a line of wells around the perimeter of the excavation based on an offset distance from the excavation 
-boundary and a specified well spacing. The notebook also includes an algorithm to calculate the pumping rate 
-required to achieve the target drawdown at all points inside the excavation. 
+This file contains the coordinates of a polygon that represents an excavation site. For this problem we will assume that BYU intends to build a new building to replace the Clyde Building and has decided to build the new building at the location of the current Brewster Building on the east side of campus. The GEOJSON file contains the coordinates 
+of a rectangular excavation site that represents the footprint of the new building. 
 
 !!! Note
     An excavation at this location would not likely require dewatering as the water table is well below the 
     elevation of the site. This is for illustrative purposes only.
+
+Follow the instructions in part 1 of the the notebook to upload the GEOJSON file and visualize the excavation site. You 
+will then interactively create wells by using the point tool shown below to create 
+points corresponding to the well locations shown by the blue symbols.
+
+![point_tool.png](images/point_tool.png)
+
+If you need to change the locations of the wells, the easiest way is to delete the existing wells and create new ones using the two cells below the map.  
+
+## Part 2 - Drawdown Calculations
+
+The goal of this exercise is to design a dewatering system that will lower the water table below the bottom of the 
+excavation. In this step, we will use the wells defined above to calculate the drawdown at each point in a grid 
+coverting the site and visualize the results. 
+
+Run the code in this section to define the functions, and then enter the following parameters for the site:
+
+| Parameter | Value | units |
+|----------|-------|-------|
+| $k$      | 5e-4  | cm/s  |
+| $H$      | 50    | m     |
+| $R$      | 500   | m     |
+| Design H | 35    | m     |
+| $Q$      | 0.015 | m³/s  |
+
+The total pumping rate you enter is divided equally among the wells. Run the cells to create a grid of points that surround the excavation and calculate the head at each point in the grid. You can then generate a series of contour plots showing head/drawdown resulting from the well configuration and the pumping rate. Play with the pumping rate and the plotting tools in the notebook to visualize the results and determine when the drawdown is below the target depth of the excavation at all points.
+
+## Part 2 - Rectangular Well System Design
+
+In the next part of the notebook labelled **Rectangular Well System Design**, you will use an algorithm to automatically 
+place a line of wells around the perimeter of the excavation based on an offset distance from the excavation 
+boundary and a specified well spacing. The results should look something like the image below:
+
+![rect_grid.png](images/rect_grid.png)
+
+Play with the number of wells, the offset distance, and the pumping rate. Compare your results to the previous section 
+where you manually placed the wells.
+
+## Part 4 - Pumping Rate Optimization
+
+In the next part of the notebook labelled **Pumping Rate Optimization**, you will use an optimization algorithm to 
+find the optimal pumping rate using the rectangular well system you have designed. The algorithm will 
+adjust the total pumping rate to find a minimum value that puts the water level inside the excavation just below the depth of the excavation at all points.
+
+## Part 5 - Q vs NumWells Design Curve
+
+In the final part of the notebook, you will use the optimization algorithm to generate a design curve that shows the 
+relationship between the total pumping rate and the number of wells required to dewater the excavation. You will 
+give a min and max number of points along the major edge and the code will loop from the min to max number of points.
+In each iteration it will generate a rectangular grid of wells around the excavation and then find the optimal pumping 
+rate for the configuration. 
+
+Finally, the results are presented in a curve of optimal pumping rate vs number of wells.
+The design curve will help you determine the optimal number of wells and pumping rate required to dewater the 
+excavation. In other words, at some point, adding more wells will not significantly reduce the pumping rate required to dewater the excavation. Your design curve should look something like this:
+
+![q_vs_wells.png](images/q_vs_wells.png)
+
+manual optimization:
+
+nwells=8
+qi_low = 0.000001
+qi_high = 0.0005
+
+for plot:
+
+min_wells_x = 3
+max_wells_x = 20
+
+q_low = 0.005   # Gives negative value
+q_high = 0.001  # Give positive value
+
+But once you get to this point, the optimization algorithm will not converge. Something gets messed up.
+
+If you go all the way back to the beginning of part 3 and redo, it gets back on track. But then messes up again when you get to the end of part 4.
+
+If you run cell 2 in part 5 with the optimal q from prior section and 8 wells, you get objective function = 0. So it is working at that point.
+
+I think there is an error in the opt_q_nwells function.
+
+
+
