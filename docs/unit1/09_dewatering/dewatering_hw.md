@@ -76,7 +76,7 @@ Save a copy of each of your designs. Right-click on one of the contour plots sho
 
 Next, use the algorithm that automatically places a line of wells around the perimeter of 
 the excavation based on an offset distance from the excavation boundary and a specified well spacing. Use an offset 
-of 20 ft and 8 points along the x-direction.  
+of 20m and 8 points along the x-direction.  
 
 **(d) Pumping Rate Optimization**
 
