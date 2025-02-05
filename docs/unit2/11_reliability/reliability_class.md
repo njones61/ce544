@@ -25,9 +25,7 @@ Marin County, CA (see Table 13.3 in text).
 Calculate the log-normal reliability index ($\beta_{LN}$), reliability (R) and probability of failure (Pf). Compare to 
 the chart solution in the text. Recall that the reliability index is given by:
 
-$$
-\beta_{LN} = \frac{ln\left(\dfrac{F_{MLV}}{\sqrt{1 + COV_F^2}}\right)}{\sqrt{ln\left(1 + COV_F^2\right)}}
-$$
+>>$\beta_{LN} = \dfrac{ln\left(\dfrac{F_{MLV}}{\sqrt{1 + COV_F^2}}\right)}{\sqrt{ln\left(1 + COV_F^2\right)}}$
 
 Use the following Excel or Python file to perform your calculations. For the Python solution, you will need upload 
 the CSV file with the bay mud data values.
@@ -61,14 +59,10 @@ The numbers shown in parentheses next to the unit weight and undrained strength 
 2) Use the Taylor Series method to find the COV of the factor of safety ($COV_F$). For each parameter, find the 
    $MLV+\sigma$ and $MLV-\sigma$ values. Use UTEXASED to find the factor of safety for each. Then calculate $\Delta F$ and $(\Delta F/2)^2$ for each parameter. The standard deviation and covariance of failure are then given by:
 
-$$
-\sigma_F = \sqrt{\left(\dfrac{\Delta F_1}{2}\right)^2 + \left(\dfrac{\Delta F_2}{2}\right)^2 + ... + \left(\dfrac
-{\Delta F_N}{2}\right)^2}
-$$
+>>$\sigma_F = \sqrt{\left(\dfrac{\Delta F_1}{2}\right)^2 + \left(\dfrac{\Delta F_2}{2}\right)^2 + ... + \left(\dfrac
+{\Delta F_N}{2}\right)^2}$
 
-$$
-COV_F = \dfrac{\sigma_F}{F_{MLV}}
-$$
+>>$COV_F = \dfrac{\sigma_F}{F_{MLV}}$
 
 3) Using the $\sigma_F$ and $COV_F$ values, calculate the $\beta_{LN}$, reliability (R) and probability of failure 
    (Pf) for the slope.

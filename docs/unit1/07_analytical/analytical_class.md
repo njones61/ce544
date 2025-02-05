@@ -8,11 +8,11 @@ Consider the following profile representing the classic Dupuit problem with a re
 
 The flow through the section is given by:
 
-$$Q = K \frac{\left(H_o^2 - H_D^2\right)}{2D}$$
+>>$Q = K \dfrac{\left(H_o^2 - H_D^2\right)}{2D}$
 
 And the head (h) as a function of x is given by:
 
-$$h = \sqrt{\frac{\left(H_D^2 - H_o^2\right)}{D} x + H_o^2}$$
+>$h = \sqrt{\dfrac{\left(H_D^2 - H_o^2\right)}{D} x + H_o^2}$
 
 
 Assume following parameters:
@@ -52,13 +52,11 @@ Consider the following profile representing the flow through an earth dam:
 
 The flow through the section is given by:
 
-$$
-q = k L \tan(\alpha) \sin(\alpha)
-$$
+>>$q = k L \tan(\alpha) \sin(\alpha)$
 
 where:
 
-$$L = \frac{d}{cos(\alpha)}-\sqrt{\frac{d^2}{cos^2(\alpha)}-\frac{H^2}{sin^2(\alpha)}}$$
+>>$L = \dfrac{d}{cos(\alpha)}-\sqrt{\dfrac{d^2}{cos^2(\alpha)}-\dfrac{H^2}{sin^2(\alpha)}}$
 
 Solve for the flow rate (q) using the set of parameters contained in the following Excel file.
 

@@ -11,11 +11,11 @@ infinite slopes, the factor of safety is given by:
 
 ![infslope_fig.png](infslope_fig.png)
 
-$FS = \dfrac{S_u}{\gamma z cos\beta sin\beta + k\gamma z cos^2\beta}$
+>>$FS = \dfrac{S_u}{\gamma z cos\beta sin\beta + k\gamma z cos^2\beta}$
 
 where:
 
->$S_u$ = undrained shear strength of the soil (psf)<br>
+>>$S_u$ = undrained shear strength of the soil (psf)<br>
 $\gamma$ = unit weight of the soil (pcf)<br>
 $z$ = depth to the failure plane (ft)<br>
 $\beta$ = slope angle (degrees)
@@ -62,9 +62,7 @@ For this problem, we will revisit the method of slices problem that we solved ea
 
 The original factor of safety for the OMS method is calculated as follows:
 
-$$
-FS = \frac{\sum {\left[c'\Delta l + \left(W cos\alpha - u \Delta l cos^2\alpha\right)\tan\phi'\right]}}{\sum {W\sin\alpha}}
-$$
+>>$FS = \dfrac{\sum {\left[c'\Delta l + \left(W cos\alpha - u \Delta l cos^2\alpha\right)\tan\phi'\right]}}{\sum {W\sin\alpha}}$
 
 For a seismic analysis, we must compute the weight of each soil layer in each slice as follows:
 
@@ -74,10 +72,8 @@ Note that $a_i$ is the moment arm from the center of the circle to the centroid 
 
 The factor of safety is calculated as follows:
 
-$$
-FS = \dfrac{R\sum {\left[c'\Delta l + \left(W cos\alpha - kWsin\alpha - u \Delta l\right)\tan\phi'\right]}}{R\sum 
-{W\sin\alpha} + k\sum {Wa}}
-$$
+>>$FS = \dfrac{R\sum {\left[c'\Delta l + \left(W cos\alpha - kWsin\alpha - u \Delta l\right)\tan\phi'\right]}}{R\sum 
+{W\sin\alpha} + k\sum {Wa}}$
 
 The following Excel spreadsheet is provided for your calculations. Fill in the missing formulas in the cells 
 highlighted in yellow and compute the factor of safety for the slope under seismic conditions.

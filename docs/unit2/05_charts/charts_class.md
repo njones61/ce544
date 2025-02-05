@@ -9,13 +9,9 @@ conditions. The variables used in the charts are:
 
 The equations used to calculate the factor of safety are:
 
-$$
-F = N_o\frac{c}{P_d}
-$$
+>>$F = N_o\dfrac{c}{P_d}$
 
-$$
-P_d = \frac{\gamma H + q - \gamma_w H_w}{\mu_q \mu_w \mu_t}
-$$
+>>$P_d = \dfrac{\gamma H + q - \gamma_w H_w}{\mu_q \mu_w \mu_t}$
 
 Where:
 

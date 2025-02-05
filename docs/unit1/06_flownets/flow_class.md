@@ -10,15 +10,15 @@ The soil section is shown below:
 
 a) Calculate the total flow rate in ft^3/day through the soil section. Assume k = 0.0001 cm/s. Recall that:
 
-\[q=k\frac{n_f}{n_e}h\]
+>>$q=k\dfrac{n_f}{n_e}h$
 
 where:
 
->>\(q\) = flow rate (ft^3/day)<br>
-\(k\) = hydraulic conductivity (ft/d)<br>
-\(n_f\) = number of flow channels crossing a given flow line<br>
-\(n_e\) = number of equipotential lines crossing a given flow line<br>
-\(h\) = head difference between two adjacent flow lines (ft)
+>>$q$ = flow rate (ft^3/day)<br>
+$k$ = hydraulic conductivity (ft/d)<br>
+$n_f$ = number of flow channels crossing a given flow line<br>
+$n_e$ = number of equipotential lines crossing a given flow line<br>
+$h$ = head difference between two adjacent flow lines (ft)
 
 b) Calculate the total head, elevation head, pressure head, and pore pressure at points A, B, and C. 
 

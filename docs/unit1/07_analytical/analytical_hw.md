@@ -6,15 +6,11 @@ In class we discussed the Dupuit problem with an infiltration term (e):
 
 The equation for the flow rate as a function of x is:
 
-$$
-Q = k\frac{\left(H_o^2-H_D^2\right)}{2D}-e\left(\frac{D}{2}-x\right)
-$$
+>>$Q = k\dfrac{\left(H_o^2-H_D^2\right)}{2D}-e\left(\dfrac{D}{2}-x\right)$
 
 Derive an equation for h in terms of x. Start with:
 
-$$
-h^2 = -\frac{e}{k}x^2 + C1x + C2
-$$
+>>$h^2 = -\dfrac{e}{k}x^2 + C1x + C2$
 
 and insert the left and right boundary conditions and solve for C1 and C2. Solve the resulting equation for h.
 

@@ -38,13 +38,9 @@ Consider the following slope:
 
 Because the top layer has a cohesion > 0, if you solve this problem with UTEXASED, you will get a warning about tension at the top of the slope. This is unconservative because the tension will increase the factor of safety. To avoid this, we can add a tension crack at the top of the slope. The depth of the crack is computed as follows:
 
-$$
-d_{crack} = \dfrac{2c_d}{\gamma tan\left(45 - \dfrac{tan\phi_d}{2}\right)}
-$$
+>>$d_{crack} = \dfrac{2c_d}{\gamma tan\left(45 - \dfrac{tan\phi_d}{2}\right)}$
 
-$$
-c_d = \dfrac{c}{F} \quad tan\phi_d = \dfrac{tan\phi}{F}
-$$
+>>$c_d = \dfrac{c}{F} \quad tan\phi_d = \dfrac{tan\phi}{F}$
 
 Note that the depth of the crack is a function of the factor of safety, F. This required you to guess a value of F, compute the depth of the crack, and then recompute the factor of safety. You will need to iterate until the factor of safety converges.
 

@@ -10,9 +10,7 @@ Once again, we will we analyze each individual slice using the following paramat
 
 The factor of safety for the OMS method is calculated as follows:
 
-$$
-FS = \frac{\sum {\left[c'\Delta l + \left(W cos\alpha - u \Delta l cos^2\alpha\right)\tan\phi'\right]}}{\sum {W\sin\alpha}}
-$$
+>>$FS = \dfrac{\sum {\left[c'\Delta l + \left(W cos\alpha - u \Delta l cos^2\alpha\right)\tan\phi'\right]}}{\sum {W\sin\alpha}}$
 
 Where:
 
@@ -25,9 +23,7 @@ $u$ = the pore water pressure at the base of the slice
 
 To get the pore pressure (u) at the base of the slice, we can use the following equation:
 
-$$
-u = \gamma_w \cdot h_w
-$$
+>>$u = \gamma_w \cdot h_w$
 
 Where:
 

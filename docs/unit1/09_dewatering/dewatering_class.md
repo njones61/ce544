@@ -4,9 +4,7 @@ In this exercise, we will use a Python script in a Google Colab notebook to desi
 
 ![unconfined.png](..%2F08_wells%2Funconfined.png)
 
-$$
-h = \sqrt{H^{2} - \frac{1}{\pi k} \sum_{i=1}^n q_{i}ln\left(R/r\right)}
-$$
+>>$h = \sqrt{H^{2} - \dfrac{1}{\pi k} \sum_{i=1}^n q_{i}ln\left(R/r\right)}$
 
 Where:
 

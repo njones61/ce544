@@ -13,9 +13,7 @@ the width of the slice and the unit weight of the material ($\gamma_i h_i \Delta
 The length along the slice can be computed as $\Delta l = \Delta x / cos \alpha$. The overall factor of safety for the slope is then 
 calculated as:
 
-$$
-F = \frac{\sum{c\Delta l}}{\sum{W sin\alpha}}
-$$
+>>$F = \dfrac{\sum{c\Delta l}}{\sum{W sin\alpha}}$
 
 where:
 

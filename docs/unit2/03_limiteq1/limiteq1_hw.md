@@ -18,9 +18,7 @@ measured in unconsolidated undrained triaxial compression tests.
 
 Recall that for a submerged slope under undrained conditions the infinite slope factor of safety can be found using the following equation:
 
-$$
-FS = \frac{c}{\gamma'z} \frac{2}{sin(2\beta)}
-$$
+>>$FS = \dfrac{c}{\gamma'z} \dfrac{2}{sin(2\beta)}$
 
 where:
 
@@ -31,9 +29,7 @@ $\beta$ = angle of the slope with the horizontal
 
 The effective unit weight of the soil can be calculated as:
 
-$$
-\gamma' = \gamma_{sat} - \gamma_w
-$$
+>>$\gamma' = \gamma_{sat} - \gamma_w$
 
 where:
 
