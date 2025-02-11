@@ -6,13 +6,16 @@ equations. The script is included in the Excel file that you will download.
 
 Excel starter file: [findiff-2.xlsm](findiff-2.xlsm)
 
-Since this file contains a macro, you will need to enable macros in Excel. To do this:
+Note the extension to this file is .xlsm. This indicates that the file contains macros. Furthermore, the file contains ActiveX controls that are used to interact with the user. These are only supposed on Windows versions of Excel. Furthermore, since this file contains a macro, you will need to enable macros in Excel. To do this, do the following:
 
-1. Open the file in Excel.
-2. Click on the File menu and select Options.
-3. Click on Trust Center and then click on Trust Center Settings.
-4. Click on Macro Settings and select "Enable VBA macros". Also select "Trust access to the VBA project object model".
-5. Click OK to close the dialog boxes.
+
+1. Right-click on the file and select Properties.
+2. Click on the Unblock button in the lower right corner of the Properties dialog box.
+3. Open the file in Excel.
+4. Click on the File menu and select Options.
+5. Click on Trust Center and then click on Trust Center Settings.
+6. Click on Macro Settings and select "Enable VBA macros". Also select "Trust access to the VBA project object model".
+7. Click OK to close the dialog boxes.
 
 When you open the Exel file, it will look like this:
 
