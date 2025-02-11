@@ -13,17 +13,12 @@ b. Calculate the permeability of the sand [ft/day] assuming the aquifer is **unc
 
 The correction factor is given by:
 
-$$
-h' = h + a
-$$
+>>$h' = h + a$
 
-$$
-h =  \sqrt{H^2 - \frac{q \ln\left(\frac{R}{r}\right)}{\pi k} }
-$$
+>>$h =  \sqrt{H^2 - \dfrac{q \ln\left(\frac{R}{r}\right)}{\pi k} }$
 
-$$
-a = \frac{\left(H'-H_w\right)\left[1-\left(\frac{H_w}{H'}\right)^{2.4}\right]}{7.2 \left(1+\frac{5 r_w}{H}\right)}
-$$
+>>$a = \dfrac{\left(H'-H_w\right)\left[1-\left(\dfrac{H_w}{H'}\right)^{2.4}\right]}{7.2 \left(1+\dfrac{5 r_w}{H}
+> \right)}$
 
 Where:
 
@@ -75,15 +70,11 @@ cross-section which passes through both wells. Do not use the "a" term to correc
 calculate the distance from x to each well (r1 and r2). Then calculate  and head for each well independently (h1 
 and h2) using the unconfined aquifer well equation:
 
-$$
-h =  \sqrt{H^2 - \frac{q \ln\left(\frac{R}{r}\right)}{\pi k} }
-$$
+>>$h =  \sqrt{H^2 - \dfrac{q \ln\left(\dfrac{R}{r}\right)}{\pi k} }$
 
 Finally, calculate the head resulting from both wells pumping simultaneously (h_comb) using the superposition equation:
 
-$$
-h = \sqrt{H^2 - \frac{1}{\pi k}\sum_{i=1}^n{q_i \ln\left(\frac{R}{r_i}\right)}}
-$$
+>>$h = \sqrt{H^2 - \dfrac{1}{\pi k}\sum_{i=1}^n{q_i \ln\left(\dfrac{R}{r_i}\right)}}$
 
 Combine the original head, h1, h2, and h_combined all on the same plot. If you have done it correctly, it should 
 look something like this:
