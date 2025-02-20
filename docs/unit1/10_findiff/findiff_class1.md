@@ -27,11 +27,18 @@ the flow rate out of the system. Enter the formulas to calculate the flow rate u
 spreadsheet. Assume k = 0.1 ft/day and the head values are in ft. Assume the sheetpile is impermeable and that it is 
 200 ft long.
 
-!!! Note
-    You will end up with circular references. Before entering the equations in Excel, select the **Formulas** ribbon, and click on the **Calculation Options** 
-    button on the right end of the ribbon and select **Manual**. This will prevent Excel from automatically 
-    recalculating. You can select **Calculate Now** from the **Formulas** ribbon to recalculate the sheet or you can 
-    hit the **F9** button. Do this repeatedly until you converge.
+## Setting up Excel for Dealing with Circular References
+
+When you set up the Excel file, you will have to deal with circular references. The equations are set up so that the head values are calculated based on the head values in the adjacent cells. This will create a circular reference. To deal with this, you will need to do the following before entering your formulas:
+
+1. Go to the **File** menu and select **Options**.
+2. In the Excel Options dialog box, select **Formulas**.
+3. Check the box for **Enable iterative calculation**.
+4. Set the maximum iterations to 100 and the maximum change to 0.0001.
+5. Turn on the box for **Manual calculation**.
+6. Click **OK**.
+
+Now you can enter your formulas and use the **Calculate Now** button on the **Formulas** ribbon to recalculate the sheet. You can also hit the F9 button to recalculate the sheet.
 
 ## To track down minor errors
 
