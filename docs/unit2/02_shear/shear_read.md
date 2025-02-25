@@ -15,4 +15,10 @@ Read the following sections from the textbook:
 
 ## Videos
 
-[UNDER CONSTRUCTION]
+Slides: [shear strength review.pptx](shear%20strength%20review.pptx)
+
+<iframe width="900" height="700" src="https://www.youtube.com/embed/FdjZp8Rzbfs?si=9-srEraeLCmEYO6y" title="YouTube 
+video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="900" height="700" src="https://www.youtube.com/embed/6_IQFaZHzb8?si=CBzcj5GuAK3F1qh-" title="YouTube 
+video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
