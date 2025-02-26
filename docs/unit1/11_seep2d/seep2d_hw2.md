@@ -8,15 +8,15 @@ shell, riprap, filter, and a drain as shown below.
 The material properties are as follows:
 
 | Material        | kx [ft/yr] | Ky [ft/yr] |
-|-----------------|------------|------------|
-| Core            | 0.1        | 0.1        |
-| Glacial Till    | 4000       | 2000       |
-| Bedrock         | 2000       | 1000       |
-| Rip Rap         | 100,000    | 100,0000   |
-| Shell           | 250        | 50         |
-| Grouted Bedrock | 250        | 50         |
-| Filter   | 1000       | 1000       |
-| Drain    | 10,000     | 10,000     |
+|-----------------|------------|-----------|
+| Core            | 0.1        | 0.1       |
+| Glacial Till    | 4000       | 2000      |
+| Bedrock         | 2000       | 1000      |
+| Rip Rap         | 100,000    | 100,000   |
+| Shell           | 250        | 50        |
+| Grouted Bedrock | 250        | 50        |
+| Filter   | 1000       | 1000      |
+| Drain    | 10,000     | 10,000    |
 
 Build a SEEP2D model of the system. Refine the mesh in the core, bedrock, drain, etc. so that you have small enough 
 elements to sufficiently capture the flow in these regions. Select approriate boundary conditions for the model.
