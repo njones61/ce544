@@ -12,6 +12,14 @@ In the following reading and videos, we will review the basic concepts of the Li
 
 ## Videos
 
-Watch the following videos:
+Slides: [limit equil proc - pt 1.pptx](limit%20equil%20proc%20-%20pt%201.pptx)
 
-[UNDER CONSTRUCTION]
+<iframe width="900" height="700" src="https://www.youtube.com/embed/ORKthhqI_Zc?si=o7c3kkWxkTH3vOjC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="900" height="700" src="https://www.youtube.com/embed/7BZsO-HUEtc?si=LEEiVNB6hIfsfsGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="900" height="700" src="https://www.youtube.com/embed/BV29Ksm1zXQ?si=98RBxkwFC44068df" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="900" height="700" src="https://www.youtube.com/embed/fA8jtZyWzMc?si=SlUXRCOqy_lUnX6u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="900" height="700" src="https://www.youtube.com/embed/Ny58nDqDPbg?si=q6LxeyumXqVm4VMG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
