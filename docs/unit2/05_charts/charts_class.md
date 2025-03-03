@@ -57,3 +57,24 @@ Excel starter file: [chart_solution.xlsx](chart_solution.xlsx)
 
 Excel solution file: [chart_solution_KEY.xlsx](chart_solution_KEY.xlsx)
 
+## Sample Problem #1
+
+Solve the following problem using the slope stability charts:
+
+![sample_prob_1.png](sample_prob_1.png){width=800px}
+
+Variations:<br>
+>1) q = 750 psf<br>
+2) Ht = 3 ft<br>
+3) Submerged (Hw=Ht)
+
+## Sample Problem #2
+
+Solve the following problem using the slope stability charts:
+
+![sample_prob_2.png](sample_prob_2.png){width=800px}
+
+Variations:<br>
+>1) q = 600 psf<br>
+2) Ht = 3 ft, crack filled with water<br>
+3) Submerged (Hw=H/2)
