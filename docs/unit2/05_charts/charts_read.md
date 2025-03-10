@@ -10,8 +10,5 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Watch the following videos:
+Slides: [stability charts.pptx](stability%20charts.pptx)
 
-[UNDER CONSTRUCTION]
-
-[]: # (END)

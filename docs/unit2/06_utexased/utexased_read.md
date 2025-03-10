@@ -4,6 +4,6 @@ In this section we will learn how to use the UTEXASED slope stability software. 
 
 ## Videos
 
-Watch the following videos:
+Slides: [utexas.pptx](utexas.pptx)
 
-[Under Construction]
+
