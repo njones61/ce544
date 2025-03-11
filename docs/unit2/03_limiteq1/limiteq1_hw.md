@@ -34,15 +34,12 @@ The unit weight of the soil can be calculated from the specific gravity of the s
 where:
 
 >>$G_s$ = specific gravity of the soil<br>
-$w$ = moisture content of the soil
+$w$ = moisture content of the soil<br>
+$\gamma_{w}$ = unit weight of water
 
 The effective unit weight of the soil can then be calculated as:
 
 >>$\gamma' = \gamma_{sat} - \gamma_w$
-
-where:
-
->>$\gamma_{w}$ = unit weight of water
 
 As a first approximation for the stability during an earthquake compute the static factor of safety of the slope 
 using an infinite slope analysis and a cross-section along the line A-A'.  For many clay slopes a factor of safety 
