@@ -27,14 +27,22 @@ $\gamma'$ = effective unit weight of the soil<br>
 $z$ = depth of the slope<br>
 $\beta$ = angle of the slope with the horizontal
 
-The effective unit weight of the soil can be calculated as:
+The unit weight of the soil can be calculated from the specific gravity of the soil and the moisture content of the soil as follows:
 
->>$\gamma' = \gamma_{sat} - \gamma_w$
+>>$\gamma_{sat} = \left(\dfrac{1+w}{1+w G_s}\right)G_s\gamma_{w}$
 
 where:
 
 >>$G_s$ = specific gravity of the soil<br>
 $w$ = moisture content of the soil
+
+The effective unit weight of the soil can then be calculated as:
+
+>>$\gamma' = \gamma_{sat} - \gamma_w$
+
+where:
+
+>>$\gamma_{w}$ = unit weight of water
 
 As a first approximation for the stability during an earthquake compute the static factor of safety of the slope 
 using an infinite slope analysis and a cross-section along the line A-A'.  For many clay slopes a factor of safety 
