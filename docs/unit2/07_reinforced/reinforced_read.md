@@ -10,6 +10,8 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Watch the following videos:
+Slides: [reinforcement.pptx](reinforcement.pptx)
 
-[Under Construction]
+<iframe width="900" height="700" src="https://www.youtube.com/embed/f1LeaqpqhLk?si=6B6lHkXNTdWQT-ty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="900" height="700" src="https://www.youtube.com/embed/SkEivB3LjxY?si=54qWeHv8soVobq89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

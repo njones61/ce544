@@ -10,8 +10,8 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Watch the following videos:
+Slides: [seismic analysis.pptx](seismic%20analysis.pptx)
 
-[UNDER CONSTRUCTION]
+<iframe width="900" height="700" src="https://www.youtube.com/embed/dEGvwddZJzw?si=eqj6sdsnvA9gw4cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[]: # (END)
+<iframe width="900" height="700" src="https://www.youtube.com/embed/cjEs63tBAcM?si=dVBEsI9POjsTb8fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
