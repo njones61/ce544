@@ -31,30 +31,9 @@ $\mu_q$ = Surcharge adjustment factor<br>
 $\mu_w$ = Submergence adjustment factor<br>
 $\mu_t$ = Tension crack adjustment factor<br>
 
-The following Excel file can be used to calculate the factor of safety for using inputs from the stability charts. 
-Use the Excel file to calculate the factor of safety for a slope with the properties given below:
+The following Excel file can be used to calculate the factor of safety for using inputs from the stability charts. Edit the Excel file to include the formulass for ratios used in the charts, and for the equations for $F$ and $P_d$. Then solve the problems below.
 
-| Property  | Value | Units |
-|-----------|-------|-------|
-| $c (S_u)$ | 500   | psf |
-| $\phi$    | 0     | degrees |
-| $H$       | 20    | ft |
-| $D$       | 0     | ft |
-| $H_t$     | 0     | ft |
-| $H_w$     | 0     | ft |
-| $q$       | 0     | psf |
-| $\gamma$  | 120   | pcf |
-
-You will need to enter the property values, the factors from the charts, and the formulas for $F$ and $P_d$. After 
-finding a 
-solution, experiment 
-with the other 
-variables to see how they 
-affect 
-the factor of safety.
-
-Excel starter file: [chart_solution.xlsx](chart_solution.xlsx)
-
+Excel starter file: [chart_solution.xlsx](chart_solution.xlsx)<br>
 Excel solution file: [chart_solution_KEY.xlsx](chart_solution_KEY.xlsx)
 
 ## Sample Problem #1
