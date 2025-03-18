@@ -45,7 +45,7 @@ Solve the following problem using the slope stability charts:
 Variations:<br>
 >1) q = 750 psf<br>
 2) Ht = 3 ft<br>
-3) Submerged (Hw=Ht)
+3) Submerged (Hw=H)
 
 ## Sample Problem #2
 
