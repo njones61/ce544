@@ -9,9 +9,9 @@ There are two files that you need:
 
 Download this copy to your local drive and unzip it into a local folder. There is no formal installation utility.
 
-(2) UTEXASED4.SSR
+(2) [UTEXASED4.SSR](UTEXASED4.SSR)
 
-Send a message to the Dr. Jones to get a copy of this file.
+Download this copy to your local drive and unzip it into a local folder. There is no formal installation utility.
 
 This file is related to the copy protection. You should place one copy in the same folder as the UTEXASED executable and save a virgin copy of the file (it is modified each time you run UTEXASED) in a separate directory in case your other copy gets messed up.
 
