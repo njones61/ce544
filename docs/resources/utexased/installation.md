@@ -1,6 +1,6 @@
 # UTEXASED Installation
 
-This semester we are using the student edition of UTEXAS, called UTEXASED4. This software is pre-installed on all of the computers in room 234. You may also download and install a copy of UTEXASED on your laptop or personal computer provided that it be used only for academic work associated with this class and that you do not forward it to anyone not enrolled in the class.
+This semester we are using the student edition of UTEXAS, called UTEXASED4. This software is not installed on the computers in room 234. You will need to download and install it on the D: drive of the computer you use in the lab. You may also download and install a copy of UTEXASED on your laptop or personal computer provided that it be used only for academic work associated with this class and that you do not forward it to anyone not enrolled in the class.
 
 ## Software
 There are two files that you need:
@@ -9,9 +9,9 @@ There are two files that you need:
 
 Download this copy to your local drive and unzip it into a local folder. There is no formal installation utility.
 
-(2) [UTEXASED4.SSR](UTEXASED4.SSR)
+(2) UTEXASED4.SSR
 
-Download this copy to your local drive and unzip it into a local folder. There is no formal installation utility.
+Send a message to the Dr. Jones to get a copy of this file.
 
 This file is related to the copy protection. You should place one copy in the same folder as the UTEXASED executable and save a virgin copy of the file (it is modified each time you run UTEXASED) in a separate directory in case your other copy gets messed up.
 
