@@ -4,16 +4,16 @@ Use UTEXASED to solve for the critical factor of safety against slope failure fo
 
 ![earthdamfig.gif](earthdamfig.gif)
 
-You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Please do your coordinate calculations in a spreadsheet so that I can easily check your calculations.
+You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Do your coordinate calculations in a spreadsheet.
 
 The material properties are as follows:
 
-|  Mat   | c' (psf) | φ' (degrees) | γ (pcf) |
-|:------:|:--------:|:------------:|:-------:|
-| Shell  |    0     |      34      |   125   |
-|  Core  |   100    |      26      |   122   |
-|  Clay  |    0     |      24      |   123   |
-|  Sand  |    0     |      32      |   127   |
+|  Mat   | c' (psf) | $\phi$' (degrees) | γ (pcf) |
+|:------:|:--------:|:-----------------:|:-------:|
+| Shell  |    0     |        34         |   125   |
+|  Core  |   100    |        26         |   122   |
+|  Clay  |    0     |        24         |   123   |
+|  Sand  |    0     |        32         |   127   |
 
 The coordinates of the piezometric line are as follows:
 
@@ -26,7 +26,7 @@ The coordinates of the piezometric line are as follows:
 |  590   |  227   |
 |  740   |  227   |
 
-Be sure to include external loads to represent the water on the upstream side.
+Be sure to include external loads to represent the water on the upstream side. Calculate your distributed loads in the same spreadsheet you used for the coordinate calculations.
 
 Use a circular failure surface. Perform two sets of calculations: one for the upstream side and one for the downstream side. The side that is analyzed depends on the locations of your starting circles.
 
