@@ -32,11 +32,11 @@ The case study will be worth 7 points. The breakdown is as follows:
 
 For this semester, we will have 3 groups of 3. The groups are listed below. If you have a preference for a group, please let me know. I will try to accommodate everyone's preferences as best as I can.
 
-| Group | Members        |
-|:-----:|----------------|
-|   1   | Lauren, Austin, Jerson |
-|   2   |                |
-|   3   |         |
+| Group | Members                  |
+|:-----:|--------------------------|
+|   1   | Lauren, Austin, Jerson   |
+|   2   | John C, Mason, and Tyler |
+|   3   | John N, Allison, Isaac   |
 
 
 
