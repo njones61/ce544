@@ -30,8 +30,6 @@ Solve the following problem using UTEXASED. Use the non-circular surface option.
 
 **Variations:**
 
-a) Circular failure surface
-
-b) Individual non-circular surface
-
+a) Circular failure surface<br>
+b) Individual non-circular surface<br>
 c) Automatic search non-circular surface
