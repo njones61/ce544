@@ -10,8 +10,11 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Watch the following videos:
+Slides: [important details.pptx](important%20details.pptx)
 
-[UNDER CONSTRUCTION]
+<iframe width="900" height="700" src="https://www.youtube.com/embed/KG300MfWI-0?si=jJaArZb4CwybtP-l" title="YouTube 
+video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[]: # (END)
+<iframe width="900" height="700" src="https://www.youtube.com/embed/FATtdqVRofg?si=ln2xoc9eu7QZv94j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="900" height="700" src="https://www.youtube.com/embed/FjthvHgdzp8?si=69VZOwPhs-dRhJje" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
