@@ -17,8 +17,7 @@ reinforcement. Assume the full tensile force in the geogrids develops over a len
 
 The following table provides the geometry of the profile lines, distributed loads, and the reinforcement lines:
 
-Excel starter file: [geogrid_slope_input.xlsx](geogrid_slope_input.xlsx)
-
+Excel starter file: [geogrid_slope_input.xlsx](geogrid_slope_input.xlsx)<br>
 UTEXASED solution file: [geogrid.input-utexased](geogrid.input-utexased)
 
 ## Problem 2 - Underwater Slope with Piers
@@ -45,10 +44,7 @@ The concrete piers inside the slope act as a form of reinforcement. Solve the pr
 
 Use the following Excel starter file to set up the problem. You will need to set up the distributed load table.
 
-Excel starter file: [underwater_slope_input.xlsx](underwater_slope_input.xlsx)
-
-Excel solution file: [underwater_slope_input_KEY.xlsx](underwater_slope_input_KEY.xlsx)
-
-UTEXASED solution file - part (a): [underwater-1.input-utexased](underwater-1.input-utexased)
-
+Excel starter file: [underwater_slope_input.xlsx](underwater_slope_input.xlsx)<br>
+Excel solution file: [underwater_slope_input_KEY.xlsx](underwater_slope_input_KEY.xlsx)<br>
+UTEXASED solution file - part (a): [underwater-1.input-utexased](underwater-1.input-utexased)<br>
 UTEXASED solution file - part (b): [underwater-2.input-utexased](underwater-2.input-utexased)
