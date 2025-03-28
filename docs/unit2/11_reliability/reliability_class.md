@@ -30,15 +30,12 @@ the chart solution in the text. Recall that the reliability index is given by:
 Use the following Excel or Python file to perform your calculations. For the Python solution, you will need upload 
 the CSV file with the bay mud data values.
 
-Excel starter file: [reliability_calc.xlsx](reliability_calc.xlsx)
-
-Excel solution file: [reliability_calc_KEY.xlsx](reliability_calc_KEY.xlsx)
-
+Excel starter file: [reliability_calc.xlsx](reliability_calc.xlsx)<br>
+Excel solution file: [reliability_calc_KEY.xlsx](reliability_calc_KEY.xlsx)<br>
 Python starter file: <a href="https://colab.research.google.
 com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/reliability_calc.ipynb" target="_blank"><img 
 src="https://colab.
-research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
+research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><br>
 Python solution file: <a href="https://colab.research.google.
 com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/reliability_calc_KEY.ipynb" target="_blank"><img 
 src="https://colab.
@@ -69,7 +66,6 @@ The numbers shown in parentheses next to the unit weight and undrained strength 
 
 Use the following Excel file to perform your calculations. 
 
-Excel starter file: [covf.xlsx](covf.xlsx)
-
+Excel starter file: [covf.xlsx](covf.xlsx)<br>
 Excel solution file: [covf_KEY.xlsx](covf_KEY.xlsx)
 

@@ -10,8 +10,9 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Watch the following videos:
+Slides: [reliability analysis.pptx](reliability%20analysis.pptx)
 
-[UNDER CONSTRUCTION]
+<iframe width="900" height="700" src="https://www.youtube.com/embed/33MuWnvThVY?si=ZMvj5-q_ntJVYDE4" title="YouTube 
+video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[]: # (END)
+<iframe width="900" height="700" src="https://www.youtube.com/embed/BxBA96DmZBg?si=1ti4Qm6kIICX159P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
