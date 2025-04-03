@@ -10,7 +10,7 @@ In this exercise we will revisit the Bishop's Simplified Procedure method of sli
 The original equation for the BSP method is:
 
 $$
-F = \frac{\sum {\left[\frac{c'\Delta l + \left(W cos\alpha - u \Delta l cos^2\alpha\right)\tan\phi'}{cos\alpha + \left(sin\alpha\tan\phi'\right)/F}\right]}}{\sum {W\sin\alpha}}
+F = \dfrac{\sum {\left[\dfrac{c'\Delta l + \left(W cos\alpha - u \Delta l cos^2\alpha\right)\tan\phi'}{cos\alpha + \left(sin\alpha\tan\phi'\right)/F}\right]}}{\sum {W\sin\alpha}}
 $$
 
 For seismic loads, we need to add the seismic forces to the equation. The seismic forces are calculated using the seismic coefficient, $k$, and the weight of the slice, $W$. The seismic forces are calculated as follows:

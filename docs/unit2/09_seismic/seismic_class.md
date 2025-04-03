@@ -48,8 +48,7 @@ c.  For the third case in the table, find the peak acceleration that results in 
 
 Use following Excel spreadsheet for your calculations:
 
-Excel starter file: [seismic_infslope.xlsx](seismic_infslope.xlsx)
-
+Excel starter file: [seismic_infslope.xlsx](seismic_infslope.xlsx)<br>
 Excel solution file: [seismic_infslope_KEY.xlsx](seismic_infslope_KEY.xlsx)
 
 ## Problem 2 - Method of Slices Problem
@@ -78,6 +77,5 @@ The factor of safety is calculated as follows:
 The following Excel spreadsheet is provided for your calculations. Fill in the missing formulas in the cells 
 highlighted in yellow and compute the factor of safety for the slope under seismic conditions.
 
-Excel starter file: [seismic_oms.xlsx](seismic_oms.xlsx)
-
+Excel starter file: [seismic_oms.xlsx](seismic_oms.xlsx)<br>
 Excel solution file: [seismic_oms_KEY.xlsx](seismic_oms_KEY.xlsx)

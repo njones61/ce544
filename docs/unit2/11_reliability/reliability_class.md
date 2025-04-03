@@ -31,7 +31,8 @@ Use the following Excel or Python file to perform your calculations. For the Pyt
 the CSV file with the bay mud data values.
 
 Excel starter file: [reliability_calc.xlsx](reliability_calc.xlsx)<br>
-Excel solution file: [reliability_calc_KEY.xlsx](reliability_calc_KEY.xlsx)<br>
+Excel solution file: [reliability_calc_KEY.xlsx](reliability_calc_KEY.xlsx)
+
 Python starter file: <a href="https://colab.research.google.
 com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/reliability_calc.ipynb" target="_blank"><img 
 src="https://colab.
