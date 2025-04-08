@@ -30,7 +30,7 @@ Note the formula in the spreadsheet for computing the total cost of the geogrid.
 * Minimize the total cost
 * FS must be >= 1.5
 
-You should examine the formulas in the reinforcement tables. All you need to do is adjust the elevation of each geogrid and the coordinates will automatically be computed for you. We will assume that the tensile strength is developed linearly over a distance of four feet. You should also edit the **Geogrid Length** input value.
+You should examine the formulas in the reinforcement tables. All you need to do the number of geogrid layers and the length and the coordinates will automatically be computed for you. We will assume that the tensile strength is developed linearly over a distance of four feet. You should also edit the **Geogrid Length** input value.
 
 To ensure that the total cost is calculated correctly, make sure you keep the **# geogrid layers** value properly updated. If you need more than six geogrids, copy and paste to create more tables.
 
