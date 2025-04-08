@@ -14,11 +14,11 @@ Create the inputs for the problem using UTEXASED. Find global-minimum factor saf
 
 Create the inputs for the problem using UTEXASED. Then compute a solution for the following three conditions (save each version to a different file name):
 
-a) As-is with no tension crack.
+a) As-is with no tension crack. Save a copy of your solution.
 
-b) Note that you have tension in the active zone. Use a spreadsheet to estimate the appropriate depth for a tension crack using the equations we discussed in class. Estimate the factor of safety. Turn on the tension crack and recompute the factor of safety. Update your tension crack depth estimate based on the factor of safety and repeat until the estimated factor of safety is close to the computed factor of safety.
+b) Note that you have tension in the active zone. Use a spreadsheet to estimate the appropriate depth for a tension crack using the equations we discussed in class using an estimated factor of safety. Enter this tension crack depth and recompute the factor of safety. Adjust the depth of the crack up and down until you find a depth that is just on the threshold of eliminating tension. Save a copy of your solution.
 
-c) Fill your tension crack with water and update the solution.
+c) Fill your tension crack with water iterate again. Save a copy of your solution.
 
 ## Submission
 
