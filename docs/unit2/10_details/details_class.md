@@ -24,10 +24,8 @@ Using the Excel file below and UTEXASED, do the following:
 
 4) Compute the infinite slope solution for the slope. Compare to previous answers.
 
-Excel starter file: [mutiple_min_inputs.xlsx](mutiple_min_inputs.xlsx)
-
-Excel solution file: [mutiple_min_inputs_KEY.xlsx](mutiple_min_inputs_KEY.xlsx)
-
+Excel starter file: [mutiple_min_inputs.xlsx](mutiple_min_inputs.xlsx)<br>
+Excel solution file: [mutiple_min_inputs_KEY.xlsx](mutiple_min_inputs_KEY.xlsx)<br>
 UTEXASED solution file: [multiple min.input-utexased](multiple%20min.input-utexased)
 
 ## Problem 2 - Tension Cracks
@@ -46,8 +44,6 @@ Note that the depth of the crack is a function of the factor of safety, F. This 
 
 Use the following Excel file and UTEXASED to solve this problem:
 
-Excel starter file: [tension_crack_inputs.xlsx](tension_crack_inputs.xlsx)
-
-Excel solution file: [tension_crack_inputs_KEY.xlsx](tension_crack_inputs_KEY.xlsx)
-
+Excel starter file: [tension_crack_inputs.xlsx](tension_crack_inputs.xlsx)<br>
+Excel solution file: [tension_crack_inputs_KEY.xlsx](tension_crack_inputs_KEY.xlsx)<br>
 UTEXASED solution file: [tension crack.input-utexased](tension%20crack.input-utexased)
