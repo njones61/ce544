@@ -5,7 +5,7 @@ This semester we will be doing a case study exercise which will be part of your 
 
 ## Executive Summary
 
-Each group will submit a one-page executive summary of your case study. Include a title, an overview, and a list of references (minimum of three). This should be a high-level summary of the case study and the analysis that was performed.
+Each group will submit a two-page executive summary of your case study. Include a title, an overview, and a list of references (minimum of three). This should be a high-level summary of the case study and the analysis that was performed.
 
 ## Presentation
 
