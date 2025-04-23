@@ -33,7 +33,11 @@ The course will be taught in a "flipped" format. For each class period, you are 
 
 ## Quizzes
 
-There will be pre-class quiz associated with each lecture based on the pre-class content. Each quiz is worth 7 points. The first question which is worth 2 pts, is "Did you complete the pre-class content?". Then there will be 4 questions based on that content, and finally there will be an open response question where you are asked if there was anything from the pre-class content that was not clear that you would like to review in class. The quizzes will be on Learning Suite and will be due 15 minutes prior to class.
+There will be pre-class quiz associated with each lecture based on the pre-class content. Each quiz is worth 7 
+points. The first question which is worth 2 pts, is "Did you complete the pre-class content?". Then there will be 4 
+questions based on that content, and finally there will be an open response question where you are asked if there 
+was anything from the pre-class content that was not clear that you would like to review in class. The quizzes will 
+be on Learning Suite and will be due 15 minutes prior to class. I will drop your 3 lowest quiz scores.
 
 ## Exams
 
