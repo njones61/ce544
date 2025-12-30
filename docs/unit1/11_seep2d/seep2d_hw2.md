@@ -1,13 +1,15 @@
 # Homework - SEEP2D Finite Element Model, Unconfined Conditions
 
-For this exercise, you will build a SEEP2D finite element model of **Lost Lake**. It includes a grout curtain, core, 
+For this exercise, you will build a SEEP2D finite element model of the **Lost Lake** dam. It includes a grout curtain, core, 
 shell, riprap, filter, and a drain as shown below. 
 
-![lost_lake.png](lost_lake.png)
+![lost_lake.png](lost_lake.png){width="1400"}
+
+The water is impounded on the left side of the cross section at **H = 225 ft**. Water seeping out of the right side drains freely.
 
 The material properties are as follows:
 
-| Material        | kx [ft/yr] | Ky [ft/yr] |
+| Material        | kx [ft/yr] | Ky [ft/yr] | 
 |-----------------|------------|-----------|
 | Core            | 0.1        | 0.1       |
 | Glacial Till    | 4000       | 2000      |
@@ -18,19 +20,38 @@ The material properties are as follows:
 | Filter   | 1000       | 1000      |
 | Drain    | 10,000     | 10,000    |
 
-Build a SEEP2D model of the system. Refine the mesh in the core, bedrock, drain, etc. so that you have small enough 
-elements to sufficiently capture the flow in these regions. Select approriate boundary conditions for the model.
+For each material, use:
 
-The following Excel file contains a set of XY coordinates of each of main features of the cross section above and a 
-copy of the 
-material properties. Create a SEEP2D coverage in GMS and paste in the XY coordinates as point features and then use 
-these points to create your conceptual model and the SEEP2D mesh.
+>>$\alpha = 0.0$<br>$k_{r0} = 0.0001$<br>$h_0 = -1$
 
-Excel File: [lost_lake_coords.xlsx](lost_lake_coords.xlsx)
+Build a finite element model of the solution using XSLOPE using the seepage colab notebook:
+
+>><a href="https://colab.research.google.com/github/njones61/xslope/blob/main/docs/seepage/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Start with the base XSLOPE template and modify it to fit the cross section above.
+
+>>[XSLOPE Input Template](https://xslope.readthedocs.io/en/latest/inputs/slope/input_template_MASTER7.xlsx)
+
+Use elements that are sufficiently small to capture the details in the thin zones. Select appropriate boundary conditions for the model.
+
+You will need to create your profile lines carefully to ensure that the model is well-posed. You will need a total 
+of 12 profile lines and 12 corresponding materials. The coordinates of the points making up the center part of the 
+cross 
+section are shown below.
+
+![lost_lake_coords_main.png](lost_lake_coords_main.png)
+
+The coordinates of the left and right sides of the cross section are shown below:
+
+![lost_lake_coords_sides.png](lost_lake_coords_sides.png)
+
+Remember that your profiles lines should be listed in order from top to bottom and the points on each line should be listed in order from left to right.
+
+Create a PNG of the solution with 25 head contours and use base material = bedrock (12). 
 
 ## Submission
 
-Zip up your GMS project files and upload. Upload your zip archive via Learning Suite after we grade it together in class.
+Zip up your Excel file and a PNG of the solution PNG file and upload your zip archive via Learning Suite.
 
 !!! Note
     You are allowed to work in pairs on this assignment if you wish. Just copy and upload the assignment when you are done and be sure to make a note who you worked with.
