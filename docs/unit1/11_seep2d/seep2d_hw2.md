@@ -14,7 +14,7 @@ The material properties are as follows:
 | Bedrock         | 2000       | 1000      |
 | Rip Rap         | 100,000    | 100,000   |
 | Shell           | 250        | 50        |
-| Grouted Bedrock | 250        | 50        |
+| Grouted Bedrock | 250        | 250        |
 | Filter   | 1000       | 1000      |
 | Drain    | 10,000     | 10,000    |
 
