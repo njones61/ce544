@@ -11,33 +11,30 @@ elevation of the ground surface where the piezometer is located is **2193.0** ft
      
      c) What is the total head? [ft]
 
-   2. The figure below shows a pressurized reservoir with the water level at point A.  The discharge is into the atmosphere at point C. The connecting pipe is of constant diameter with a cross-section of **0.02** m^2 and is filled with a sand with hydraulic conductivity of **0.015** m/s.  The average length of the pipe is **9.0** m.  Point B is exactly halfway along the length of the pipe.  The discharge at C is **0.0001** m3/s.  
+2. The following diagram represents a flow net describing seepage of water below a concrete coffer dam resting on a permeable soil which rests on impermeable bedrock. Recall that the the solid lines are flow lines and the dashed lines are equipotential lines. There is an equal amount of water through the flow channels defined by pairs of flow lines and the equipotential lines are contours of total head indicating head loss as water flows from the upstream side to the downstream side through the soil below the dam.
 
-       ![tank.gif](tank.gif)
+>![cofferdam.jpeg](cofferdam.jpeg)
 
-       Compute the following:
+>Assume:
 
-       a) The head loss from A to C.
-    
-       b) The total head at A.
-    
-       c) The pressure head at A.
-    
-       d) The total head at B.
-    
-       e) The pressure head at B
-    
-       f) Is there flow from a region of low pressure to a region of high pressure? Where and why?
-    
-       g) What would happen to the heads and discharge if the hydraulic conductivity of the medium decreased to 0.001m/s assuming that the water levels and pressures remain constant?
+>H1 = 30 m<br>
+H2 = 8 m<br>
+D = 50 m<br>
+Ha = 22 m<br>
+Datum = Base of saturated soil (top of bedrock).
+
+>Calculate:
+
+>a) Total head at point A.<br>
+b) Elevation head at point A.<br>
+c) Pressure head at point A.<br>
+d) Pore pressure (kN/m2) at point A.
 
 ## Submission
 
-Save your work in a file named `head_hw.xlsx` and upload it on Learning Suite after we grade it together in class.
+Save your work in a file named **head_hw.xlsx** and upload it on Learning Suite.
 
 ## Grading Rubric
-
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
 
 | Criteria                                    | Points |
 |---------------------------------------------|:------:|

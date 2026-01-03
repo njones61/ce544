@@ -47,14 +47,7 @@ Since we are covering two distinct topics, there will be two exams. The first ex
 
 ## Homework
 
-The homework is essential to reinforce the topics covered in class. The homework will also prepare you for the exams. Since we do not have a TA for the class, we will grade the homework together at the beginning of class in the class 
-period immediately following when an assignment is due. You don't need to upload your completed assignment until after we have graded it, so technically it is not due until that time. However, you should have the assignment completed before class so we can grade it together. I will show you the solution to the homework and you will grade your own work using the 
-3-pt rubric provided at the end of each assignment. You will then upload your completed assignment to Learning Suite 
-and enter your grade in the "Submission notes" section for the assignment on Learning Suite. 
-
-Since we go over the solutions together in class and self-grade the homework, late homework will not be accepted. If 
-you have a legitimate reason for not having the homework completed before we grade it in class, you should contact 
-me to get permission for a late submission.
+The homework is essential to reinforce the topics covered in class. The homework will also prepare you for the exams. You will upload your homework to Learning Suite and our TA will grade it. Homework will be due on Learning Suite on the due date indicated - typically 1 week after the class period. Late homework will be reduced by 10% per day up to a maximum penalty of 50%.
 
 ## Academic Honesty
 
