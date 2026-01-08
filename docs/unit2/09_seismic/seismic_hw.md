@@ -53,11 +53,13 @@ Upload your completed Excel file to Learning Suite after we grade it together in
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Seismic coefficient calculation | 4 |
+| Strength parameter adjustment with R factor | 6 |
+| Proper application of seismic force term | 6 |
+| Iterative solution setup | 4 |
+| Factor of safety convergence | 6 |
+| Documentation and work shown clearly | 4 |

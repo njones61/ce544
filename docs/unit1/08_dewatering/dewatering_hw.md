@@ -92,11 +92,17 @@ Make a zip archive of your spreadsheet for part 1 and your Word document for par
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Exercise 1: Pump capacity calculation | 8 |
+| Exercise 2a: Problem setup and file upload | 2 |
+| Exercise 2b: Manual design - 2 wells | 3 |
+| Exercise 2b: Manual design - 4 wells | 3 |
+| Exercise 2b: Manual design - 6 wells | 3 |
+| Exercise 2b: Design comparison and recommendation | 3 |
+| Exercise 2c: Rectangular well system results | 2 |
+| Exercise 2d: Optimized pumping rate | 3 |
+| Exercise 2e: Design curve and well recommendation | 2 |
+| Documentation and presentation quality | 1 |

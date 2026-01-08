@@ -97,11 +97,14 @@ Submit either your completed Excel file or a link to your completed Colab notebo
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Stage 1: Pre-drawdown stress calculations | 6 |
+| Stage 2: K1 and Kf calculations | 5 |
+| Stage 2: Shear strength interpolation | 5 |
+| Stage 2: Factor of safety calculation | 4 |
+| Stage 3: Drained strength calculations | 4 |
+| Stage 3: Factor of safety calculation | 4 |
+| Critical FS determination and verification | 2 |

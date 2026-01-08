@@ -36,9 +36,15 @@ Save your work in a file named **head_hw.xlsx** and upload it on Learning Suite.
 
 ## Grading Rubric
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+**Total: 30 points**
+
+| Criteria | Points |
+|----------|:------:|
+| Problem 1a: Elevation head calculation | 4 |
+| Problem 1b: Pressure head calculation | 4 |
+| Problem 1c: Total head calculation | 4 |
+| Problem 2a: Total head at point A | 4 |
+| Problem 2b: Elevation head at point A | 4 |
+| Problem 2c: Pressure head at point A | 4 |
+| Problem 2d: Pore pressure at point A | 4 |
+| Documentation and work shown clearly | 2 |

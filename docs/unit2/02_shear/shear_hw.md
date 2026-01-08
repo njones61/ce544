@@ -28,11 +28,17 @@ Upload your document to the Learning Suite after we grade it together in class.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Problem 1: Piezometer rise calculation | 5 |
+| Problem 2: φ_cu determination | 5 |
+| Problem 2: φ' determination | 5 |
+| Problem 3a: Mohr's circles plotted correctly | 3 |
+| Problem 3b: Friction angle determination | 2 |
+| Problem 3c: Failure plane orientation | 2 |
+| Problem 3d: Shear stress on failure plane | 2 |
+| Problem 3e: Maximum shear stress | 2 |
+| Problem 3f: Orientation of maximum shear stress | 2 |
+| Documentation and work shown clearly | 2 |

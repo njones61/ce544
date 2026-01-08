@@ -43,11 +43,12 @@ Use the **File|Save As** command in UTEXASED to save a copy of your input files 
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Part A: Unreinforced slope FS calculation | 10 |
+| Part B: Reinforcement design meets FS ≥ 1.5 | 8 |
+| Part B: Design is economical (minimized cost) | 6 |
+| Part B: Proper placement of geogrid layers | 3 |
+| Documentation and justification of design | 3 |

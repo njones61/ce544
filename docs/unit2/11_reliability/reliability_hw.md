@@ -22,11 +22,15 @@ Zip up a copy of your UTEXASED input file (with MLV parameters) and the spreadsh
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| UTEXASED model setup with MLV parameters | 5 |
+| FS calculation with MLV parameters | 4 |
+| Partial derivatives for each parameter | 6 |
+| COV_F calculation using Taylor Series Method | 5 |
+| Standard deviation of F calculation | 3 |
+| Reliability (R) calculation | 3 |
+| Probability of failure (Pf) calculation | 3 |
+| Documentation in spreadsheet | 1 |

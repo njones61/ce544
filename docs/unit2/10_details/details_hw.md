@@ -26,11 +26,15 @@ Zip up all four solutions (the INPUT file for UTEXASED) and the spreadsheet into
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Problem 1: UTEXASED model setup | 5 |
+| Problem 1: Multiple search locations attempted | 3 |
+| Problem 1: Global minimum FS found | 4 |
+| Problem 2a: As-is solution | 5 |
+| Problem 2b: Tension crack depth determination | 6 |
+| Problem 2b: Iterative adjustment and new FS | 3 |
+| Problem 2c: Water-filled crack solution | 3 |
+| Documentation quality | 1 |

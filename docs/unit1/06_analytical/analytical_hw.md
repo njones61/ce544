@@ -31,11 +31,15 @@ Submit your Word document with your derivation and your Excel file or a link to 
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your files. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Derivation: Applying left boundary condition | 4 |
+| Derivation: Applying right boundary condition | 4 |
+| Derivation: Solving for C1 | 3 |
+| Derivation: Solving for C2 | 3 |
+| Derivation: Final equation for h(x) | 4 |
+| Implementation: Excel or Python solution correctly set up | 6 |
+| Implementation: Results plotted and verified | 4 |
+| Documentation and clarity of work | 2 |

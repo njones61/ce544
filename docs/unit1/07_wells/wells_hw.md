@@ -94,11 +94,13 @@ Combine your spreadsheets and links to your Python notebooks into a single zip a
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Problem 1a: Permeability for confined aquifer | 5 |
+| Problem 1b: Permeability for unconfined aquifer | 5 |
+| Problem 2a: Corrected head at well center | 5 |
+| Problem 2b: Plot with and without correction | 7 |
+| Problem 3: Two-well drawdown calculation and plot | 6 |
+| Documentation and work shown clearly | 2 |

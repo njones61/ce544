@@ -35,11 +35,15 @@ Upload the completed Excel file to Learning Suite after we grade it together in 
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Proper setup of iterative solution | 6 |
+| Correct calculation of slice base lengths | 4 |
+| Correct calculation of slice weights | 4 |
+| Correct calculation of pore water pressures | 4 |
+| Numerator term calculations | 5 |
+| Denominator term calculations | 3 |
+| Iterative solution converges to correct FS | 2 |
+| Documentation and work shown clearly | 2 |

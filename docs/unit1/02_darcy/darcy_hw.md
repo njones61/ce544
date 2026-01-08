@@ -52,11 +52,19 @@ Save your work in a file named `darcy_hw.xlsx` and upload it on Learning Suite a
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
+**Total: 30 points**
 
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria | Points |
+|----------|:------:|
+| Problem 1a: Hydraulic gradient | 2 |
+| Problem 1b: Seepage velocity | 2 |
+| Problem 1c: Travel time | 2 |
+| Problem 2a: Head loss from A to C | 2 |
+| Problem 2b: Total head at A | 2 |
+| Problem 2c: Pressure head at A | 2 |
+| Problem 2d: Total head at B | 2 |
+| Problem 2e: Pressure head at B | 2 |
+| Problem 2f: Flow analysis and explanation | 3 |
+| Problem 3a: Pore volume calculation | 3 |
+| Problem 3b: Time to flush 5 pore volumes | 3 |
+| Documentation and work shown clearly | 5 |
