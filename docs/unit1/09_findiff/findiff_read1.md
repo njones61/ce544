@@ -1,6 +1,9 @@
-# The Finite Difference Method, Part 1
+# The Finite Difference Method
 
 In this set of videos, we will introduce the finite difference method (FDM) and how it can be used to solve seepage problems. The FDM is a numerical method that approximates the solution to a differential equation by discretizing the domain into a grid of points and approximating the derivatives at each point using finite differences. We will also introduce how to use an Excel spreadsheet to solve seepage problems using the FDM.
+
+!!!Note
+    These notes are labelled "part 1", but we will not be covering part 2 of the notes and videos this semester. Those notes and videos cover advanced topics (specified flow boundary conditions, anisotropic soils, boundaries between different soils, etc.) and are not required for this course. If you are interested in learning more about these topics, please check out the [Seepage and Slope Stability Analysis](https://www.youtube.com/@seepslope) channel on YouTube.
 
 Slides: [finitedifference-1.pptx](finitedifference-1.pptx)
 

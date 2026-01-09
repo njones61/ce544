@@ -56,12 +56,9 @@ nav:
         - In-Class: unit1/08_dewatering/dewatering_class.md
         - Homework: unit1/08_dewatering/dewatering_hw.md
     - Finite Difference Method:
-        - Pre-Class 1: unit1/09_findiff/findiff_read1.md
-        - Pre-Class 2: unit1/09_findiff/findiff_read2.md
-        - In-Class 1: unit1/09_findiff/findiff_class1.md
-        - In-Class 2: unit1/09_findiff/findiff_class2.md
-        - Homework 1: unit1/09_findiff/findiff_hw1.md
-        - Homework 2: unit1/09_findiff/findiff_hw2.md
+        - Pre-Class: unit1/09_findiff/findiff_read1.md
+        - In-Class: unit1/09_findiff/findiff_class1.md
+        - Homework: unit1/09_findiff/findiff_hw1.md
     - Finite Element Seepage Analysis:
         - Pre-Class 1: unit1/10_seepage/seep_read1.md
         - Pre-Class 2: unit1/10_seepage/seep_read2.md

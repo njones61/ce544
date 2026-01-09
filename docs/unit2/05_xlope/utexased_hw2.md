@@ -1,6 +1,6 @@
-# Homework - UTEXASED, Part 2
+# Homework - XSLOPE LEM, Part 2
 
-Use UTEXASED to solve for the critical factor of safety against slope failure for the following problem based on a circular failure surface (compare to page 121 in your textbook):
+Use XSLOPE to solve for the critical factor of safety against slope failure for the following problem based on a circular failure surface (compare to page 121 in your textbook):
 
 ![earthdamfig.gif](earthdamfig.gif)
 
@@ -32,15 +32,21 @@ Use a circular failure surface. Perform two sets of calculations: one for the up
 
 ## Submission
 
-Use the File|Save As command in UTEXASED to save a copy of each of your input files. Zip up your files (including your spreadsheet showing your coordinate and distributed load calculations) into a single zip archive. Upload your zip archive via Learning Suite after we grade it together in class.
+Save a copy of your Excel input file and a PNG of the solution plot. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
-
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria                                                                              | Points |
+|---------------------------------------------------------------------------------------|:------:|
+| Profile line coordinates calculated correctly in spreadsheet                         |   5    |
+| Problem domain extends 150 ft left and right of upstream/downstream toes             |   2    |
+| Coordinate system set up correctly (x=0 at upstream toe, given elevations for y)     |   2    |
+| All four materials defined with correct properties (c', φ', γ)                       |   4    |
+| Piezometric line coordinates entered correctly                                        |   3    |
+| Distributed loads calculated correctly in spreadsheet for upstream water             |   4    |
+| External loads applied correctly to represent water on upstream side                 |   2    |
+| Circular failure surface method used                                                  |   1    |
+| Upstream side analysis performed and minimum FOS identified                          |   2    |
+| Downstream side analysis performed and minimum FOS identified                        |   2    |
+| Excel input file and PNG solution plot properly submitted in zip archive             |   3    |
+| **Total**                                                                             | **30** |

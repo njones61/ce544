@@ -1,6 +1,6 @@
 # Homework - SEEP2D Finite Element Model, Unconfined Conditions
 
-For this exercise, you will build a SEEP2D finite element model of the **Lost Lake** dam. It includes a grout curtain, core, 
+For this exercise, you will build a finite element seepage model of the **Lost Lake** dam. It includes a grout curtain, core, 
 shell, riprap, filter, and a drain as shown below. 
 
 ![lost_lake.png](lost_lake.png){width="1400"}
@@ -51,18 +51,23 @@ Create a PNG of the solution with 25 head contours and use base material = bedro
 
 ## Submission
 
-Zip up your Excel file and a PNG of the solution PNG file and upload your zip archive via Learning Suite.
+Zip up your Excel file and a PNG of the solution plot and upload your zip archive via Learning Suite.
 
 !!! Note
     You are allowed to work in pairs on this assignment if you wish. Just copy and upload the assignment when you are done and be sure to make a note who you worked with.
 
 ## Grading Rubric
 
-Self-grade your assignment using the following rubric. Enter your points in the "Submission notes" section for the assignment on Learning Suite when you upload your file. You can use fractional points if you like (e.g. 2.5).
-
-| Criteria                                    | Points |
-|---------------------------------------------|:------:|
-| Completed on time and all or mostly correct |   3    |
-| Completed more than half of assignment      |   2    |
-| Made an effort                              |   1    |
-| Did nothing                                 |   0    |
+| Criteria                                                                              | Points |
+|---------------------------------------------------------------------------------------|:------:|
+| XSLOPE Excel template modified correctly for Lost Lake dam geometry                  |   4    |
+| 12 profile lines created in correct order (top to bottom)                            |   4    |
+| Points on each profile line listed in correct order (left to right)                  |   2    |
+| All 12 materials defined with correct hydraulic conductivity values (kx, ky)         |   5    |
+| Material parameters (α, kr0, h0) set correctly for all materials                     |   2    |
+| Boundary conditions appropriately selected (H=225 ft left, free drainage right)      |   3    |
+| Element mesh sufficiently refined to capture details in thin zones                   |   3    |
+| Model solves successfully without errors                                              |   2    |
+| PNG output shows 25 head contours with base material = bedrock (12)                  |   3    |
+| Proper file submission (zipped Excel file and PNG solution)                          |   2    |
+| **Total**                                                                             | **30** |
