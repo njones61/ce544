@@ -4,6 +4,6 @@ This video introduces Darcy's Law in multi-dimensional systems. It illustrates h
 
 This video was originally developed for CE 547 - Groundwater Modeling at Brigham Young University. But the content is applicable to our course as well.
 
-Slides: [darcy - multidim.pptx](darcy%20-%20multidim.pptx)
+Slides: [darcy - multidim.pptx](darcy - multidim.pptx)
 
 <iframe width="900" height="700" src="https://www.youtube.com/embed/LGw9u9PCshU?si=dFCn2xIRogl1Il_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -36,37 +36,37 @@ nav:
         - In-Class: unit1/02_darcy/darcy_class.md
         - Homework: unit1/02_darcy/darcy_hw.md
     - Governing Equations:
-        - Pre-Class (Darcy 2D): unit1/03_darcy_2d/darcy_2d_read.md
-        - Pre-Class (Gov Eqs): unit1/04_goveqs/goveqs_read.md
-        - In-Class: unit1/03_darcy_2d/darcy_2d_class.md
+        - Pre-Class (Darcy 2D): unit1/03_goveqs/darcy_2d_read.md
+        - Pre-Class (Gov Eqs): unit1/03_goveqs/goveqs_read.md
+        - In-Class: unit1/03_goveqs/darcy_2d_class.md
     - Flow Nets:
-        - Pre-Class: unit1/05_flownets/flow_read.md
-        - In-Class: unit1/05_flownets/flow_class.md
-        - Homework: unit1/05_flownets/flow_hw.md
+        - Pre-Class: unit1/04_flownets/flow_read.md
+        - In-Class: unit1/04_flownets/flow_class.md
+        - Homework: unit1/04_flownets/flow_hw.md
     - Analytical Solutions:
-        - Pre-Class: unit1/06_analytical/analytical_read.md
-        - In-Class: unit1/06_analytical/analytical_class.md
-        - Homework: unit1/06_analytical/analytical_hw.md
+        - Pre-Class: unit1/05_analytical/analytical_read.md
+        - In-Class: unit1/05_analytical/analytical_class.md
+        - Homework: unit1/05_analytical/analytical_hw.md
     - Well Equations:
-        - Pre-Class: unit1/07_wells/wells_read.md
-        - In-Class: unit1/07_wells/wells_class.md
-        - Homework: unit1/07_wells/wells_hw.md
+        - Pre-Class: unit1/06_wells/wells_read.md
+        - In-Class: unit1/06_wells/wells_class.md
+        - Homework: unit1/06_wells/wells_hw.md
     - Construction Dewatering:
-        - Pre-Class: unit1/08_dewatering/dewatering_read.md
-        - In-Class: unit1/08_dewatering/dewatering_class.md
-        - Homework: unit1/08_dewatering/dewatering_hw.md
+        - Pre-Class: unit1/07_dewatering/dewatering_read.md
+        - In-Class: unit1/07_dewatering/dewatering_class.md
+        - Homework: unit1/07_dewatering/dewatering_hw.md
     - Finite Difference Method:
-        - Pre-Class: unit1/09_findiff/findiff_read1.md
-        - In-Class: unit1/09_findiff/findiff_class1.md
-        - Homework: unit1/09_findiff/findiff_hw1.md
+        - Pre-Class: unit1/08_findiff/findiff_read1.md
+        - In-Class: unit1/08_findiff/findiff_class1.md
+        - Homework: unit1/08_findiff/findiff_hw1.md
     - Finite Element Seepage Analysis:
-        - Pre-Class 1: unit1/10_seepage/seep_read1.md
-        - Pre-Class 2: unit1/10_seepage/seep_read2.md
-        - In-Class 1: unit1/10_seepage/seep_class1.md
-        - In-Class 2: unit1/10_seepage/seep_class2.md
-        - In-Class 3: unit1/10_seepage/seep_class3.md
-        - Homework 1: unit1/10_seepage/seep_hw1.md
-        - Homework 2: unit1/10_seepage/seep_hw2.md
+        - Pre-Class 1: unit1/09_seepage/seep_read1.md
+        - Pre-Class 2: unit1/09_seepage/seep_read2.md
+        - In-Class 1: unit1/09_seepage/seep_class1.md
+        - In-Class 2: unit1/09_seepage/seep_class2.md
+        - In-Class 3: unit1/09_seepage/seep_class3.md
+        - Homework 1: unit1/09_seepage/seep_hw1.md
+        - Homework 2: unit1/09_seepage/seep_hw2.md
   - Unit 2 - Slope Stability:
     - Causes of Slope Failure:
         - Pre-Class: unit2/01_causes/causes_read.md
@@ -112,5 +112,5 @@ nav:
         - Homework: unit2/11_reliability/reliability_hw.md
     - FE Slope Stability Analysis:
         - Pre-Class: unit2/12_fem/fem_read.md
-        - In-Class: unit2/12_fem/fem_class.m
-        - Homework: unit2/12_fem/fem_hw.m
+        - In-Class: unit2/12_fem/fem_class.md
+        - Homework: unit2/12_fem/fem_hw.md
