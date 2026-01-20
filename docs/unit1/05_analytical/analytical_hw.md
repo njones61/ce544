@@ -21,7 +21,7 @@ Once you have found your equation for h, created a modified version of the solut
 Excel starter file: [dupuit_with_recharge.xlsx](dupuit_with_recharge.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/07_analytical/dupuit_with_recharge.ipynb" target="_blank"><img 
+com/github/njones61/ce544/blob/main/docs/unit1/05_analytical/dupuit_with_recharge.ipynb" target="_blank"><img 
 src="https://colab.
 research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 

@@ -25,7 +25,7 @@ The following Colab notebook has been designed to help you calculate the well sp
 To get started, click the "Open in Colab" button below and follow the instructions in the notebook.
 
 Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/09_dewatering/dewatering.ipynb" target="_blank"><img src="https://colab.
+com/github/njones61/ce544/blob/main/docs/unit1/07_dewatering/dewatering.ipynb" target="_blank"><img src="https://colab.
 research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Part 1 - Define the Excavation Site and Create Wells (Setup)

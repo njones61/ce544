@@ -65,12 +65,12 @@ Excel starter file: [confined.xlsx](confined.xlsx)
 Excel solution file: [confined_KEY.xlsx](confined_KEY.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/08_wells/confined.ipynb" target="_blank"><img src="https://colab.
+com/github/njones61/ce544/blob/main/docs/unit1/06_wells/confined.ipynb" target="_blank"><img src="https://colab.
 research.
 google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Python solution file:  <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/08_wells/confined_KEY.ipynb" target="_blank"><img src="https://colab.
+com/github/njones61/ce544/blob/main/docs/unit1/06_wells/confined_KEY.ipynb" target="_blank"><img src="https://colab.
 research.
 google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
@@ -111,12 +111,12 @@ Excel starter file: [unconfined.xlsx](unconfined.xlsx)
 Excel solution file: [unconfined_KEY.xlsx](unconfined_KEY.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/08_wells/unconfined.ipynb" target="_blank"><img src="https://colab.
+com/github/njones61/ce544/blob/main/docs/unit1/06_wells/unconfined.ipynb" target="_blank"><img src="https://colab.
 research.
 google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Python solution file:  <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/08_wells/unconfined_KEY.ipynb" target="_blank"><img src="https://colab.
+com/github/njones61/ce544/blob/main/docs/unit1/06_wells/unconfined_KEY.ipynb" target="_blank"><img src="https://colab.
 research.
 google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
