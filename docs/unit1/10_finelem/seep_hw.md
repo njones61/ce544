@@ -26,7 +26,7 @@ For each material, use:
 
 Start with the base XSLOPE template and modify it to fit the cross section above.
 
->>[XSLOPE Input Template](https://xslope.readthedocs.io/en/latest/inputs/slope/input_template_MASTER7.xlsx)
+[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
 
 Use elements that are sufficiently small to capture the details in the thin zones. Select appropriate boundary conditions for the model.
 
@@ -45,7 +45,7 @@ Remember that your profiles lines should be listed in order from top to bottom a
 
 Once the input file is complete, upload the file and solve the problem using XSLOPE using the seepage colab notebook:
 
->><a href="https://colab.research.google.com/github/njones61/xslope/blob/main/docs/seepage/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Create a PNG of the solution with 25 head contours and use base material = bedrock (12). 
 

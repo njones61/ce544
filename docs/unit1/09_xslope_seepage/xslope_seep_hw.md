@@ -1,4 +1,13 @@
-# Homework - `Finite Element Seepage Analysis, Confined Conditions`
+# Homework - Finite Element Seepage Analysis, Confined Conditions
+
+For this exercise, you will build two finite element seepage models of sites with confined (fully saturated) 
+conditions. For each problem, start with the base XSLOPE template.
+
+[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
+
+Make a separate Excel file for each problem. After preparing the input file, upload the file and solve the problem using XSLOPE using the seepage colab notebook:
+
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 (1) Redo the double sheetpile problem using XSLOPE:
 
