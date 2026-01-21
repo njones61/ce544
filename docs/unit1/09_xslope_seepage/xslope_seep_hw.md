@@ -1,14 +1,14 @@
-# Homework - Finite Element Seepage Model, Confined Conditions
+# Homework - `Finite Element Seepage Analysis, Confined Conditions`
 
 (1) Redo the double sheetpile problem using XSLOPE:
 
-![sheetpile_dual.gif](sheetpile_dual.gif)
+![sheetpile_dual.gif](../10_finelem/images/sheetpile_dual.gif)
 
 Extend your mesh 40 ft both upstream and downstream from the sheetpiles (solve the entire problem, not just one half).
 
 (2) Redo the grout curtain problem we solved in the previous assignment. As before, extend your problem domain 35 m beyond the toe of the levee in both directions. Once again, assume that the levee is relatively impermeable. But this time, assume that the grout curtain extends all the way to bedrock and that the grout curtain is permeable but has a lower K than the foundation.
 
-![levee.gif](levee.gif)
+![levee.gif](../10_finelem/images/levee.gif)
 
 Set up the problem using XSLOPE and analyze the flow rate (total) assuming various K values for the grout curtain. Make a table showing the total flow rate vs. k for the grout curtain where the k values varies as follows:
 

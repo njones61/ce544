@@ -1,9 +1,9 @@
-# Homework - SEEP2D Finite Element Model, Unconfined Conditions
+# Homework - Finite Element Seepage Analysis, Unconfined Conditions
 
 For this exercise, you will build a finite element seepage model of the **Lost Lake** dam. It includes a grout curtain, core, 
 shell, riprap, filter, and a drain as shown below. 
 
-![lost_lake.png](lost_lake.png){width="1400"}
+![lost_lake.png](images/lost_lake.png){width="1400"}
 
 The water is impounded on the left side of the cross section at **H = 225 ft**. Water seeping out of the right side drains freely.
 
@@ -24,10 +24,6 @@ For each material, use:
 
 >>$\alpha = 0.0$<br>$k_{r0} = 0.0001$<br>$h_0 = -1$
 
-Build a finite element model of the solution using XSLOPE using the seepage colab notebook:
-
->><a href="https://colab.research.google.com/github/njones61/xslope/blob/main/docs/seepage/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
 Start with the base XSLOPE template and modify it to fit the cross section above.
 
 >>[XSLOPE Input Template](https://xslope.readthedocs.io/en/latest/inputs/slope/input_template_MASTER7.xlsx)
@@ -39,13 +35,17 @@ of 12 profile lines and 12 corresponding materials. The coordinates of the point
 cross 
 section are shown below.
 
-![lost_lake_coords_main.png](lost_lake_coords_main.png)
+![lost_lake_coords_main.png](images/lost_lake_coords_main.png)
 
 The coordinates of the left and right sides of the cross section are shown below:
 
-![lost_lake_coords_sides.png](lost_lake_coords_sides.png)
+![lost_lake_coords_sides.png](images/lost_lake_coords_sides.png)
 
 Remember that your profiles lines should be listed in order from top to bottom and the points on each line should be listed in order from left to right.
+
+Once the input file is complete, upload the file and solve the problem using XSLOPE using the seepage colab notebook:
+
+>><a href="https://colab.research.google.com/github/njones61/xslope/blob/main/docs/seepage/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Create a PNG of the solution with 25 head contours and use base material = bedrock (12). 
 

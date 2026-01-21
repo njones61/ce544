@@ -59,14 +59,15 @@ nav:
         - Pre-Class: unit1/08_findiff/findiff_read1.md
         - In-Class: unit1/08_findiff/findiff_class1.md
         - Homework: unit1/08_findiff/findiff_hw1.md
+    - XSLOPE - Seepage Analysis:
+        - Pre-Class: unit1/09_xslope_seepage/xslope_seep_read.md
+        - In-Class: unit1/09_xslope_seepage/xslope_seep_class.md
+        - Homework: unit1/09_xslope_seepage/xslope_seep_hw.md
     - Finite Element Seepage Analysis:
-        - Pre-Class 1: unit1/09_seepage/seep_read1.md
-        - Pre-Class 2: unit1/09_seepage/seep_read2.md
-        - In-Class 1: unit1/09_seepage/seep_class1.md
-        - In-Class 2: unit1/09_seepage/seep_class2.md
-        - In-Class 3: unit1/09_seepage/seep_class3.md
-        - Homework 1: unit1/09_seepage/seep_hw1.md
-        - Homework 2: unit1/09_seepage/seep_hw2.md
+        - Pre-Class: unit1/10_finelem/seep_read.md
+        - In-Class 1: unit1/10_finelem/seep_class1.md
+        - In-Class 2: unit1/10_finelem/seep_class2.md
+        - Homework: unit1/10_finelem/seep_hw.md
   - Unit 2 - Slope Stability:
     - Causes of Slope Failure:
         - Pre-Class: unit2/01_causes/causes_read.md
