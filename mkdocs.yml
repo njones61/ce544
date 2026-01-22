@@ -83,11 +83,11 @@ nav:
         - In-Class: unit2/04_limiteq2/limiteq2_class.md
         - Homework: unit2/04_limiteq2/limiteq2_hw.md
     - XSLOPE - Slope Stability Analysis:
-        - Pre-Class: unit2/05_xlope/utexased_read.md
-        - In-Class 1: unit2/05_xlope/utexased_class1.md
-        - In-Class 2: unit2/05_xlope/utexased_class2.md
-        - Homework 1: unit2/05_xlope/utexased_hw1.md
-        - Homework 2: unit2/05_xlope/utexased_hw2.md
+        - Pre-Class: unit2/05_xlope/xslope_read.md
+        - In-Class 1: unit2/05_xlope/xslope_class1.md
+        - In-Class 2: unit2/05_xlope/xslope_class2.md
+        - Homework 1: unit2/05_xlope/xslope_hw1.md
+        - Homework 2: unit2/05_xlope/xslope_hw2.md
     - Reinforced Slopes:
         - Pre-Class: unit2/06_reinforced/reinforced_read.md
         - In-Class: unit2/06_reinforced/reinforced_class.md

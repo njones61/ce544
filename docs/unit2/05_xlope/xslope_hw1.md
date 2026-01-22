@@ -1,6 +1,14 @@
 # Homework - XSLOPE LEM, Part 1
 
-Solve the following problems using XSLOPE. Perform an automated search using Spencer's method.
+Solve the following problems using XSLOPE. For each problem, start with the standard Excel input template:
+
+[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
+
+After preparing each set of inputs, launch the XSLOPE Google Colab notebook for stability analysis and upload your Excel input file and solve.
+
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+For each problem, perform an automated search using Spencer's method. 
 
 (a) Submerged slope. 
 

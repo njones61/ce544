@@ -4,7 +4,15 @@ Use XSLOPE to solve for the critical factor of safety against slope failure for 
 
 ![earthdamfig.gif](images/earthdamfig.gif)
 
-You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Do your coordinate calculations in a spreadsheet.
+Start with the standard Excel input template:
+
+[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
+
+Solve using the XSLOPE Google Colab notebook for stability analysis:
+
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Do your coordinate calculations in the Excel input spreadsheet. 
 
 The material properties are as follows:
 
@@ -28,11 +36,11 @@ The coordinates of the piezometric line are as follows:
 
 Be sure to include external loads to represent the water on the upstream side. Calculate your distributed loads in the same spreadsheet you used for the coordinate calculations.
 
-Use a circular failure surface. Perform two sets of calculations: one for the upstream side and one for the downstream side. The side that is analyzed depends on the locations of your starting circles.
+Use a circular failure surface. Perform two sets of calculations: one for the upstream side and one for the downstream side. The side that is analyzed depends on the locations of your starting circles. Save a copy of the solution for each side.
 
 ## Submission
 
-Save a copy of your Excel input file and a PNG of the solution plot. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+Save a copy of your Excel input file (either side) and a PNG of the two solution plots. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
