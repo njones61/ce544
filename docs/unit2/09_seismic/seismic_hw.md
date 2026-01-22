@@ -49,7 +49,7 @@ Excel starter file: [seismic_bsp.xlsx](seismic_bsp.xlsx)
 
 ## Submission
 
-Upload your completed Excel file to Learning Suite after we grade it together in class.
+Upload your completed Excel file to Learning Suite.
 
 ## Grading Rubric
 

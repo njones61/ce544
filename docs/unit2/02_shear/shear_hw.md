@@ -24,7 +24,7 @@ Solve the following problems. Put your solution in a Word, or Excel document. As
 
 ## Submission
 
-Upload your document to the Learning Suite after we grade it together in class.
+Upload your document to the Learning Suite.
 
 ## Grading Rubric
 

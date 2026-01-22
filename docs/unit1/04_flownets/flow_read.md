@@ -2,7 +2,7 @@
 
 The following videos introduces flow nets. They explain how to construct a flow net for a simple 2D system and how to use the flow net to calculate the flow rate through the system. The videos also explain how to use the flow net to calculate the pore pressures in the system and how to deal with anisotropic soils.
 
-Slides: [flownets.pptx](flownets.pptx)
+Slides: [flownets.pptx](files/flownets.pptx)
 
 **Part 1 - Constructing a Flow Net**
 

@@ -2,7 +2,7 @@
 
 In class we discussed the Dupuit problem with an infiltration term (e):
 
-![rect_section_e.gif](rect_section_e.gif)
+![rect_section_e.gif](images/rect_section_e.gif)
 
 The equation for the flow rate as a function of x is:
 
@@ -18,7 +18,7 @@ Put your solution in a word document and show each of your steps. Or you can der
 
 Once you have found your equation for h, created a modified version of the solution to the Dupuit problem that we did in class that uses your new equation for h. You can do it in Python or Excel. 
 
-Excel starter file: [dupuit_with_recharge.xlsx](dupuit_with_recharge.xlsx)
+Excel starter file: [dupuit_with_recharge.xlsx](files/dupuit_with_recharge.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
 com/github/njones61/ce544/blob/main/docs/unit1/05_analytical/dupuit_with_recharge.ipynb" target="_blank"><img 

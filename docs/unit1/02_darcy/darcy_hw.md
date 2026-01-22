@@ -48,7 +48,7 @@ Solve the following problems using Excel or Google Sheets. Show all of your work
 
 ## Submission
 
-Save your work in a file named `darcy_hw.xlsx` and upload it on Learning Suite after we grade it together in class.
+Save your work in a file named `darcy_hw.xlsx` and upload it on Learning Suite.
 
 ## Grading Rubric
 

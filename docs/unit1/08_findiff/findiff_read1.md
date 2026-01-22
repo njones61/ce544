@@ -5,7 +5,7 @@ In this set of videos, we will introduce the finite difference method (FDM) and 
 !!!Note
     These notes are labelled "part 1", but we will not be covering part 2 of the notes and videos this semester. Those notes and videos cover advanced topics (specified flow boundary conditions, anisotropic soils, boundaries between different soils, etc.) and are not required for this course. If you are interested in learning more about these topics, please check out the [Seepage and Slope Stability Analysis](https://www.youtube.com/@seepslope) channel on YouTube.
 
-Slides: [finitedifference-1.pptx](finitedifference-1.pptx)
+Slides: [finitedifference-1.pptx](files/finitedifference-1.pptx)
 
 <iframe width="900" height="700" src="https://www.youtube.com/embed/CN58kdWd6xc?si=ev93Wlm6xA-AHAnR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

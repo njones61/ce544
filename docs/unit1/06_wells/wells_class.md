@@ -23,13 +23,13 @@ N = accretion from rainfall [m/sec]
 
 The following spreadsheet a sample set of calculations for each of the equations above.
 
-Excel file: [radius_of_influence.xlsx](radius_of_influence.xlsx)
+Excel file: [radius_of_influence.xlsx](files/radius_of_influence.xlsx)
 
 ## Part 2 - Confined Aquifer
 
 In this exercise, you will calculate the water level at the center of the well and as a function of distance from the well for a confined aquifer.
 
-![confined.png](confined.png)
+![confined.png](images/confined.png)
 
 The following equations can be used to calculate the head (h) as a function of distance (x) from the well:
 
@@ -60,9 +60,9 @@ a) Calculate the head at the center of the well (r = \(r_w\)).
 
 b) Let r vary from rw to R. Calculate and plot the head as a function of distance (r) from the well.
 
-Excel starter file: [confined.xlsx](confined.xlsx)
+Excel starter file: [confined.xlsx](files/confined.xlsx)
 
-Excel solution file: [confined_KEY.xlsx](confined_KEY.xlsx)
+Excel solution file: [confined_KEY.xlsx](files/confined_KEY.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
 com/github/njones61/ce544/blob/main/docs/unit1/06_wells/confined.ipynb" target="_blank"><img src="https://colab.
@@ -78,7 +78,7 @@ google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 In this exercise, you will calculate the water level at the center of the well and as a function of distance from the well for an unconfined aquifer.
 
-![unconfined.png](unconfined.png)
+![unconfined.png](images/unconfined.png)
 
 The following equations can be used to calculate the head (h) as a function of distance (x) from the well:
 
@@ -106,9 +106,9 @@ a) Calculate the head at the center of the well (r = \(r_w\)).
 
 b) Let r vary from rw to R. Calculate and plot the head as a function of distance (r) from the well.
 
-Excel starter file: [unconfined.xlsx](unconfined.xlsx)
+Excel starter file: [unconfined.xlsx](files/unconfined.xlsx)
 
-Excel solution file: [unconfined_KEY.xlsx](unconfined_KEY.xlsx)
+Excel solution file: [unconfined_KEY.xlsx](files/unconfined_KEY.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
 com/github/njones61/ce544/blob/main/docs/unit1/06_wells/unconfined.ipynb" target="_blank"><img src="https://colab.

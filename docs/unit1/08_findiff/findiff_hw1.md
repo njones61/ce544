@@ -2,12 +2,12 @@
 
 (1) Write a spreadsheet to solve for the total head values for the problem shown below using the finite difference technique
 
-![sheetpile_dual.gif](sheetpile_dual.gif)
+![sheetpile_dual.gif](images/sheetpile_dual.gif)
 
 Use a 2.5 foot square grid. Extend the grid from the centerline of the cofferdam to 40 feet downstream from the 
 outer edge of the cofferdam. This should give you 9 rows and 21 columns in your grid. Don't forget to add an extra grid node at the location of the sheet pile for the first four rows of nodes (21 columns on the bottom half - 22 on the top half). The grid looks like this:
 
-![sheetpile_dual_grid.gif](sheetpile_dual_grid.gif)
+![sheetpile_dual_grid.gif](images/sheetpile_dual_grid.gif)
 
 Lay out your spreadsheet so that you have a spreadsheet cell for each node of the grid (for each red dot). Enter an equation for the head at each node. Using the default approach in Excel, you may get an error message about a circular reference. To avoid this and to properly iterate to a solution, do the following:
 
@@ -18,7 +18,7 @@ Lay out your spreadsheet so that you have a spreadsheet cell for each node of th
 
 ## Submission
 
-Upload your completed spreadsheet via Learning Suite after we grade it together in class.
+Upload your completed spreadsheet via Learning Suite.
 
 ## Grading Rubric
 

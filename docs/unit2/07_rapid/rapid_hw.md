@@ -93,7 +93,7 @@ Python starter file: <a href="https://colab.research.google.com/github/njones61/
 
 ## Submission
 
-Submit either your completed Excel file or a link to your completed Colab notebook to Learning Suite after we grade it together in class.
+Submit either your completed Excel file or a link to your completed Colab notebook to Learning Suite.
 
 ## Grading Rubric
 

@@ -45,7 +45,7 @@ research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Before starting, download the following GEOJSON file:
 
-GEOJSON File: [temple.geojson](temple.geojson) (right-click and select "Save Link As")
+GEOJSON File: [temple.geojson](files/temple.geojson) (right-click and select "Save Link As")
 
 This represents the footprint of the excavation:
 
@@ -88,7 +88,7 @@ Finally, run the code in the last section of the notebook to generate a design c
 
 ## Submission
 
-Make a zip archive of your spreadsheet for part 1 and your Word document for part 2. Submit the zip archive on Learning Suite after we grade it together in class.
+Make a zip archive of your spreadsheet for part 1 and your Word document for part 2. Submit the zip archive on Learning Suite.
 
 ## Grading Rubric
 

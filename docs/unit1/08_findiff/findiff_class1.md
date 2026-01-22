@@ -2,21 +2,21 @@
 
 In this exercise, you will implement a finite difference solution to 2D seepage using equations in an Excel file. This problem we will be solving is flow under a sheetpile with a clay blanket on the upstream side of the sheetpile. The problem dimensions and properties are as follows:
 
-![clay_blanket.png](clay_blanket.png)
+![clay_blanket.png](images/clay_blanket.png)
 
 To solve this problem, we will set up a grid with a spacing of 3 ft x 3 ft as follows:
 
-![clay_blanket_grid.png](clay_blanket_grid.png)
+![clay_blanket_grid.png](images/clay_blanket_grid.png)
 
 To solve the problem, we will use an Excel file set up as follows:
 
-![clayblanket_excel.png](clayblanket_excel.png)
+![clayblanket_excel.png](images/clayblanket_excel.png)
 
 Download a copy of the file here:
 
-Excel starter file: [findiff-1_clayblanket.xlsx](findiff-1_clayblanket.xlsx)
+Excel starter file: [findiff-1_clayblanket.xlsx](files/findiff-1_clayblanket.xlsx)
 
-Excel solution file: [findiff-1_clayblankey_KEY.xlsx](findiff-1_clayblanket_KEY.xlsx)
+Excel solution file: [findiff-1_clayblankey_KEY.xlsx](files/findiff-1_clayblanket_KEY.xlsx)
 
 (a) Fill in the salmon-colored cells with the appropriate formulas to solve the problem using the 
 equations we discussed in class. You should first apply boundary conditions to the upstrem and downstream sides. 

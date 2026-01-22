@@ -2,7 +2,7 @@
 
 These videos introduce the equations used to calculate the flow rate to a well and to compute the drawdown at the well and the head (h) as a function of distance (r) from the well. The video also explains how to use these equations to calculate the hydraulic conductivity and/or transmissivity of an aquifer. They cover both confined and unconfined aquifers.
 
-Slides: [wellequations.pptx](wellequations.pptx)
+Slides: [wellequations.pptx](files/wellequations.pptx)
 
 **Part 1 - Confined Aquifers**
 

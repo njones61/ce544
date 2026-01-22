@@ -22,7 +22,7 @@ c) Fill your tension crack with water iterate again. Save a copy of your solutio
 
 ## Submission
 
-Zip up all four solutions (the INPUT file for UTEXASED) and the spreadsheet into a single zip archive. Upload your zip archive via Learning Suite after we grade it together in class.
+Zip up all four solutions (the INPUT file for UTEXASED) and the spreadsheet into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 

@@ -2,7 +2,7 @@
 
 The following videos introduce the concept of analytical solutions to the governing flow equations. They explain how to use analytical solutions to solve simple seepage problems. The videos also explains the limitations of analytical solutions and when they are appropriate to use.
 
-Slides: [profile.pptx](profile.pptx)
+Slides: [profile.pptx](files/profile.pptx)
 
 **Part 1: Introduction to Analytical Solutions (the Dupuit-Forchheimer Equation**
 

@@ -31,7 +31,7 @@ Excel starter file: [bsp.xlsx](bsp.xlsx)
 
 ## Submission
 
-Upload the completed Excel file to Learning Suite after we grade it together in class.
+Upload the completed Excel file to Learning Suite.
 
 ## Grading Rubric
 

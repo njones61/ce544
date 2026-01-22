@@ -41,7 +41,7 @@ In general, to create a geojson file of a region of interest, you can go here:
 and zoom in on a region of interest. Then use the draw polygon tool to draw your region. When you are done, you 
 can select the Save option and save your polygon to a geojson file. However, for this problem, we will use the following GEOJSON file:
 
-GEOJSON File: [byu_brewster.geojson](byu_brewster.geojson) (right-click and select "Save Link As")
+GEOJSON File: [byu_brewster.geojson](files/byu_brewster.geojson) (right-click and select "Save Link As")
 
 This file contains the coordinates of a polygon that represents an excavation site. For this problem we will assume that BYU intends to build a new building to replace the Clyde Building and has decided to build the new building at the location of the current Brewster Building on the east side of campus. The GEOJSON file contains the coordinates 
 of a rectangular excavation site that represents the footprint of the new building. 

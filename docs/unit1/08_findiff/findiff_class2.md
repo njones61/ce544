@@ -4,7 +4,7 @@ For this exercise, we will use a modified version of the finite difference solut
 version uses a script in Visual Basic for Applications (VBA) to to automaticallly create the finite difference 
 equations. The script is included in the Excel file that you will download. 
 
-Excel starter file: [findiff-2.xlsm](findiff-2.xlsm)
+Excel starter file: [findiff-2.xlsm](files/findiff-2.xlsm)
 
 Note the extension to this file is .xlsm. This indicates that the file contains macros. Furthermore, the file contains ActiveX controls that are used to interact with the user. These are only supposed on Windows versions of Excel. Furthermore, since this file contains a macro, you will need to enable macros in Excel. To do this, do the following:
 
@@ -19,7 +19,7 @@ Note the extension to this file is .xlsm. This indicates that the file contains 
 
 When you open the Exel file, it will look like this:
 
-![findiff-2_screenshot.png](findiff-2_screenshot.png)
+![findiff-2_screenshot.png](images/findiff-2_screenshot.png)
 
 To set up a problem, you will need to enter the following information:
 
@@ -43,35 +43,35 @@ where $dh/dx$ and $dh/dy$ are the gradients in the x and y directions.
 
 The gradient sheet looks like this:
 
-![findiff-2_gradient.png](findiff-2_gradient.png)
+![findiff-2_gradient.png](images/findiff-2_gradient.png)
 
 The Excel file also includes a sheet for calculating the flow rate through the system. Enter the hydraulic 
 conductivity and the length of problem in the cells at the top of the sheet. Also indicate which side of the problem 
 to apply the flow rate calculation. Click on the **Calculate Flow Rate** button to calculate the flow rate.
 
-![findiff-2_flowrate.png](findiff-2_flowrate.png)
+![findiff-2_flowrate.png](images/findiff-2_flowrate.png)
 
 
 ## Problem 1 - Levee
 
 For this problem, we will use the Excel file described above to solve the seepage problem for the levee shown below:
 
-![findiff-2_levee.png](findiff-2_levee.png)
+![findiff-2_levee.png](images/findiff-2_levee.png)
 
 This is the same problem we solved with flow nets. Compare your simulated flow rate to what we calculated with the 
 flow net.
 
-Excel solution file: [findiff-2_levee_KEY.xlsm](findiff-2_levee_KEY.xlsm)  
+Excel solution file: [findiff-2_levee_KEY.xlsm](files/findiff-2_levee_KEY.xlsm)  
 
 ## Problem 2 - Excavation
 
 For this problem, we will use the Excel file described above to solve the seepage problem for the excavation shown below:
 
-![findiff-2_excavation.png](findiff-2_excavation.png)
+![findiff-2_excavation.png](images/findiff-2_excavation.png)
 
 Since the problem is symmetric, we only need to model the left half of the problem. This will give us the correct flow rate for the entire problem.
 
 Assume the trench length = 500 ft.
 
-Excel solution file: [findiff-2_excavation_KEY.xlsm](findiff-2_excavation_KEY.xlsm)
+Excel solution file: [findiff-2_excavation_KEY.xlsm](files/findiff-2_excavation_KEY.xlsm)
 

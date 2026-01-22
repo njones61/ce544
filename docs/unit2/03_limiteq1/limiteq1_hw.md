@@ -61,7 +61,7 @@ Excel starter file: [infslope.xlsx](infslope.xlsx)
 
 ## Submission
 
-Submit the completed Excel file to Learning Suite after we grade it together in class.
+Submit the completed Excel file to Learning Suite.
 
 ## Grading Rubric
 

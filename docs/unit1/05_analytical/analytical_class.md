@@ -4,7 +4,7 @@
 
 Consider the following profile representing the classic Dupuit problem with a rectangular cross-section:
 
-![rect_section.png](rect_section.png){width=700px}
+![rect_section.png](images/rect_section.png){width=700px}
 
 The flow through the section is given by:
 
@@ -34,9 +34,9 @@ Calculate the flow rate (Q) and generated a plot of the head (h) as a function o
 
 ### Excel Solution
 
-Excel starter file: [dupuit.xlsx](dupuit.xlsx)
+Excel starter file: [dupuit.xlsx](files/dupuit.xlsx)
 
-Excel solution: [dupuit_KEY.xlsx](dupuit_KEY.xlsx)
+Excel solution: [dupuit_KEY.xlsx](files/dupuit_KEY.xlsx)
 
 ### Python Solution
 
@@ -48,7 +48,7 @@ Python solution: <a href="https://colab.research.google.com/github/njones61/ce54
 
 Consider the following profile representing the flow through an earth dam:
 
-![earthdam.png](earthdam.png){width=700px}
+![earthdam.png](images/earthdam.png){width=700px}
 
 The flow through the section is given by:
 
@@ -60,6 +60,6 @@ where:
 
 Solve for the flow rate (q) using the set of parameters contained in the following Excel file.
 
-Excel starter file: [earthdam.xlsx](earthdam.xlsx)
+Excel starter file: [earthdam.xlsx](files/earthdam.xlsx)
 
-Excel solution: [earthdam_KEY.xlsx](earthdam_KEY.xlsx)
+Excel solution: [earthdam_KEY.xlsx](files/earthdam_KEY.xlsx)

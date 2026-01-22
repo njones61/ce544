@@ -39,7 +39,7 @@ To ensure that the total cost is calculated correctly, make sure you keep the **
 
 ## Submission
 
-Use the **File|Save As** command in UTEXASED to save a copy of your input files for parts A and B. The version you submit for part B should correspond to your final design. Zip up your files (including the spreadsheet showing your final design configuration and total cost) into a single zip archive. Upload your zip archive via Learning Suite after we grade it together in class.
+Use the **File|Save As** command in UTEXASED to save a copy of your input files for parts A and B. The version you submit for part B should correspond to your final design. Zip up your files (including the spreadsheet showing your final design configuration and total cost) into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
