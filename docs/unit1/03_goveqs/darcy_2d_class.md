@@ -2,7 +2,7 @@
 
 Assume you have a 2D domain with bedding planes declining at a sharp angle as shown below. 
 
-![darcy_2d.png](darcy_2d.png)
+![darcy_2d.png](images/darcy_2d.png)
 
 Recall the following equations:
 
@@ -30,10 +30,10 @@ Assume the following:
 
 (b) Let alpha range from 0 to -90 degrees. Calculate and plot $k_{xx}$ and $k_{yy}$ as a function of $\alpha$.
 
-Excel starter file: [darcy2d.xlsx](darcy2d.xlsx)
+Excel starter file: [darcy2d.xlsx](files/darcy2d.xlsx)
 
-Excel solution: [darcy2d_KEY.xlsx](darcy2d_KEY.xlsx)
+Excel solution: [darcy2d_KEY.xlsx](files/darcy2d_KEY.xlsx)
 
-Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/03_goveqs/darcy_2d.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/03_goveqs/files/darcy_2d.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Python solution: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/03_goveqs/darcy_2d_KEY.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Python solution: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/03_goveqs/files/darcy_2d_KEY.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>

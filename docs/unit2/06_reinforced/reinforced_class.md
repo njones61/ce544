@@ -6,7 +6,7 @@ In this exercise, we will examine two cases of reinforced slopes. The first case
 
 Consider the following reinforced slope:
 
-![geogrid_fig.png](geogrid_fig.png)
+![geogrid_fig.png](images/geogrid_fig.png)
 
 (a) Set up the problem and solve for the factor of safety using UTEXASED without the reinforcement. Note the factor of 
 safety.
@@ -17,14 +17,14 @@ reinforcement. Assume the full tensile force in the geogrids develops over a len
 
 The following table provides the geometry of the profile lines, distributed loads, and the reinforcement lines:
 
-Excel starter file: [geogrid_slope_input.xlsx](geogrid_slope_input.xlsx)<br>
-UTEXASED solution file: [geogrid.input-utexased](geogrid.input-utexased)
+Excel starter file: [geogrid_slope_input.xlsx](files/geogrid_slope_input.xlsx)<br>
+UTEXASED solution file: [geogrid.input-utexased](files/geogrid.input-utexased)
 
 ## Problem 2 - Underwater Slope with Piers
 
 Consider the following underwater slope with concrete piers:
 
-![underwater_fig.png](underwater_fig.png)
+![underwater_fig.png](images/underwater_fig.png)
 
 Solve the problem using UTEXASED. You will need to add the weight of the water as 
 a distributed load. The pile caps above the top of the slope weigh 20000 lb/ft. Since UTEXASED does not support 
@@ -44,7 +44,7 @@ The concrete piers inside the slope act as a form of reinforcement. Solve the pr
 
 Use the following Excel starter file to set up the problem. You will need to set up the distributed load table.
 
-Excel starter file: [underwater_slope_input.xlsx](underwater_slope_input.xlsx)<br>
-Excel solution file: [underwater_slope_input_KEY.xlsx](underwater_slope_input_KEY.xlsx)<br>
-UTEXASED solution file - part (a): [underwater-1.input-utexased](underwater-1.input-utexased)<br>
-UTEXASED solution file - part (b): [underwater-2.input-utexased](underwater-2.input-utexased)
+Excel starter file: [underwater_slope_input.xlsx](files/underwater_slope_input.xlsx)<br>
+Excel solution file: [underwater_slope_input_KEY.xlsx](files/underwater_slope_input_KEY.xlsx)<br>
+UTEXASED solution file - part (a): [underwater-1.input-utexased](files/underwater-1.input-utexased)<br>
+UTEXASED solution file - part (b): [underwater-2.input-utexased](files/underwater-2.input-utexased)

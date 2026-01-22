@@ -6,17 +6,17 @@ In this exercise, we will solve three additional slope stability problems using 
 
 This is the same problem we solved earlier using an Excel spreadsheet. Solve using UTEXASED.
 
-![part2a_fig.png](part2a_fig.png)
+![part2a_fig.png](images/part2a_fig.png)
 
 Use the following spreadsheet to get the coordinates of the piezometric line:
 
-[method-of-slices-input.xlsx](method-of-slices-input.xlsx)
+[method-of-slices-input.xlsx](files/method-of-slices-input.xlsx)
 
 ## Problem 2 - Multi-Layer Foundation Problem
 
 Solve the following problem using UTEXASED. Use the interactive search option.
 
-![part2b_fig.png](part2b_fig.png)
+![part2b_fig.png](images/part2b_fig.png)
 
 Use the following UTEXASED input file as a starting point:
 
@@ -26,7 +26,7 @@ Use the following UTEXASED input file as a starting point:
 
 Solve the following problem using UTEXASED. Use the non-circular surface option.
 
-![part2c_fig.png](part2c_fig.png)
+![part2c_fig.png](images/part2c_fig.png)
 
 **Variations:**
 

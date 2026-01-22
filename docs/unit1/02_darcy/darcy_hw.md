@@ -12,7 +12,7 @@ Solve the following problems using Excel or Google Sheets. Show all of your work
 
 2. The figure below shows a pressurized reservoir with the water level at point A.  The discharge is into the atmosphere at point C. The connecting pipe is of constant diameter with a cross-section of **0.02** m^2 and is filled with a sand with hydraulic conductivity of **0.015** m/s.  The average length of the pipe is **9.0** m.  Point B is exactly halfway along the length of the pipe.  The discharge at C is **0.0001** m3/s.  
 
-    ![tank.gif](tank.gif)
+    ![tank.gif](images/tank.gif)
 
     Compute the following:
 
@@ -36,7 +36,7 @@ Solve the following problems using Excel or Google Sheets. Show all of your work
    trench on the right will be kept as full as possible. For the sand layer, assume than n = **0.35** and k = 
    **0.01** cm/s.
 
->![trench.gif](trench.gif)
+>![trench.gif](images/trench.gif)
 
 >a) For a one meter thick slice of the sand layer, how much water would need to be pumped to flush through one 
     pore volume**?

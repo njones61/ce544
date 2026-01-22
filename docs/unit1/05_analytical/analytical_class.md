@@ -40,9 +40,9 @@ Excel solution: [dupuit_KEY.xlsx](files/dupuit_KEY.xlsx)
 
 ### Python Solution
 
-Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/05_analytical/dupuit.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/05_analytical/files/dupuit.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Python solution: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/05_analytical/dupuit_KEY.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Python solution: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/05_analytical/files/dupuit_KEY.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
  
 ## Part 2 - Flow Through an Earth Dam
 

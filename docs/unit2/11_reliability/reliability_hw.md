@@ -2,7 +2,7 @@
 
 Consider the following slope:
 
-![hw_fig.png](hw_fig.png)
+![hw_fig.png](images/hw_fig.png)
 
 Each of the non-zero parameters have been anayzed and a standard deviation has been estimated for each as follows:
 

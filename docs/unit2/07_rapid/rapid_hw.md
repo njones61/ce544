@@ -6,7 +6,7 @@ In this assignment we will be performing a rapid drawdown analysis on an infinit
 
 We will be analyzing the following slope:
 
-![infslope_fig.png](infslope_fig.png)
+![infslope_fig.png](images/infslope_fig.png)
 
 The slope has the following properties:
 
@@ -85,9 +85,9 @@ Using the equations on the spreadsheet and the example problem described on page
 
 Use either of the following files to perform the calculations:
 
-Excel starter file: [rapdraw.xlsx](rapdraw.xlsx) 
+Excel starter file: [rapdraw.xlsx](files/rapdraw.xlsx) 
 
-Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/08_rapid/rapid.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/08_rapid/files/rapid.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
  This corresponds to the example problem described on pages 174-177 of your textbook. Test your solution using two depths (z=5ft, z=30ft) and compare your answers to solution found on table 9.2.
 

@@ -2,11 +2,11 @@
 
 For this assignment, you will use the Bishop's Simplified Procedure to analyze the stability of a slope using Excel. You will be solving the same slope we analyzed as a class exercise using the Ordinary Method of Slices (OMS). The slope is partially saturated with a piezometric line.
 
-![oms1.png](oms1.png)
+![oms1.png](images/oms1.png)
 
 The slice details are as follows:
 
-![oms2.png](oms2.png)
+![oms2.png](images/oms2.png)
 
 The factor of safety for the Bishop's Simplified Procedure is calculated as follows:
 
@@ -27,7 +27,7 @@ Note that the factor of safety (F) is a function of the unknown factor of safety
 
 Download the Excel file below and use it to calculate the factor of safety for the slope.
 
-Excel starter file: [bsp.xlsx](bsp.xlsx)
+Excel starter file: [bsp.xlsx](files/bsp.xlsx)
 
 ## Submission
 

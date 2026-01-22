@@ -6,7 +6,7 @@ In this exercise, we will solve three slope stability problems using the UTEXASE
 
 Solve the following problem using UTEXASED:
 
-![part1a_fig.png](part1a_fig.png)
+![part1a_fig.png](images/part1a_fig.png)
 
 **Variations:**
 
@@ -20,13 +20,13 @@ c) Submerged by 10 ft depth of water (use distributed load)
 
 Solve the following problem using UTEXASED:
 
-![part1b_fig.png](part1b_fig.png)
+![part1b_fig.png](images/part1b_fig.png)
 
 ## Problem 3 - Slope with Multiple Layers
 
 Solve the following problem using UTEXASED. Be careful to find the location of the critical circle (global minimum FS).
 
-![part1c_fig.png](part1c_fig.png)
+![part1c_fig.png](images/part1c_fig.png)
 
 **Variations:**
 

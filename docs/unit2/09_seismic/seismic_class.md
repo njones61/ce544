@@ -9,7 +9,7 @@ County, Utah. There is a slope at the base of the mountain that shows evidence o
 events. Boring logs indicate that there is a layer of rock parallel to the slope at a depth of approximatley 25 ft. UU triaxial tests were conducted from samples taken from the site in a sandy clay layer near the bedrock. For 
 infinite slopes, the factor of safety is given by:
 
-![infslope_fig.png](infslope_fig.png)
+![infslope_fig.png](images/infslope_fig.png)
 
 >>$FS = \dfrac{S_u}{\gamma z cos\beta sin\beta + k\gamma z cos^2\beta}$
 
@@ -48,8 +48,8 @@ c.  For the third case in the table, find the peak acceleration that results in 
 
 Use following Excel spreadsheet for your calculations:
 
-Excel starter file: [seismic_infslope.xlsx](seismic_infslope.xlsx)<br>
-Excel solution file: [seismic_infslope_KEY.xlsx](seismic_infslope_KEY.xlsx)
+Excel starter file: [seismic_infslope.xlsx](files/seismic_infslope.xlsx)<br>
+Excel solution file: [seismic_infslope_KEY.xlsx](files/seismic_infslope_KEY.xlsx)
 
 ## Problem 2 - Method of Slices Problem
 
@@ -65,7 +65,7 @@ The original factor of safety for the OMS method is calculated as follows:
 
 For a seismic analysis, we must compute the weight of each soil layer in each slice as follows:
 
-![oms_kw_fig.png](oms_kw_fig.png)
+![oms_kw_fig.png](images/oms_kw_fig.png)
 
 Note that $a_i$ is the moment arm from the center of the circle to the centroid of the soil in each layer, $W_i$ is the weight of the soil in the layer, and $k$ is the seismic coefficient.
 
@@ -77,5 +77,5 @@ The factor of safety is calculated as follows:
 The following Excel spreadsheet is provided for your calculations. Fill in the missing formulas in the cells 
 highlighted in yellow and compute the factor of safety for the slope under seismic conditions.
 
-Excel starter file: [seismic_oms.xlsx](seismic_oms.xlsx)<br>
-Excel solution file: [seismic_oms_KEY.xlsx](seismic_oms_KEY.xlsx)
+Excel starter file: [seismic_oms.xlsx](files/seismic_oms.xlsx)<br>
+Excel solution file: [seismic_oms_KEY.xlsx](files/seismic_oms_KEY.xlsx)

@@ -7,7 +7,7 @@ In this exercise, we will perform reliablity analyses related to slope stability
 The following data represent undrained shear strength values for San Francisco Bay Mud - Hamilton Air Force Base in 
 Marin County, CA (see Table 13.3 in text).
 
-![bay_mud_data.png](bay_mud_data.png)
+![bay_mud_data.png](images/bay_mud_data.png)
 
 1) Calculate the standard deviation and coefficient of variation (COV) of the undrained shear strength values.
 
@@ -30,25 +30,25 @@ the chart solution in the text. Recall that the reliability index is given by:
 Use the following Excel or Python file to perform your calculations. For the Python solution, you will need upload 
 the CSV file with the bay mud data values.
 
-Excel starter file: [reliability_calc.xlsx](reliability_calc.xlsx)<br>
-Excel solution file: [reliability_calc_KEY.xlsx](reliability_calc_KEY.xlsx)
+Excel starter file: [reliability_calc.xlsx](files/reliability_calc.xlsx)<br>
+Excel solution file: [reliability_calc_KEY.xlsx](files/reliability_calc_KEY.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/reliability_calc.ipynb" target="_blank"><img 
+com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/files/reliability_calc.ipynb" target="_blank"><img 
 src="https://colab.
 research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><br>
 Python solution file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/reliability_calc_KEY.ipynb" target="_blank"><img 
+com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/files/reliability_calc_KEY.ipynb" target="_blank"><img 
 src="https://colab.
 research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-CSV file with bay mud data values: [bay_mud_data.csv](bay_mud_data.csv)
+CSV file with bay mud data values: [bay_mud_data.csv](files/bay_mud_data.csv)
 
 ## Problem 2 - Reliability Analysis
 
 Consider the following slope:
 
-![two_layer_slope.png](two_layer_slope.png)
+![two_layer_slope.png](images/two_layer_slope.png)
 
 The numbers shown in parentheses next to the unit weight and undrained strength represent estimates of the standard deviation for the two parameters. Using a spreadsheet and the UTEXASED program, calculate the reliablity and the propability of failure for the slope using the Taylor Series method.
 
@@ -67,6 +67,6 @@ The numbers shown in parentheses next to the unit weight and undrained strength 
 
 Use the following Excel file to perform your calculations. 
 
-Excel starter file: [covf.xlsx](covf.xlsx)<br>
-Excel solution file: [covf_KEY.xlsx](covf_KEY.xlsx)
+Excel starter file: [covf.xlsx](files/covf.xlsx)<br>
+Excel solution file: [covf_KEY.xlsx](files/covf_KEY.xlsx)
 

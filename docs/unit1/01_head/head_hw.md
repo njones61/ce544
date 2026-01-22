@@ -13,7 +13,7 @@ elevation of the ground surface where the piezometer is located is **2193.0** ft
 
 2. The following diagram represents a flow net describing seepage of water below a concrete coffer dam resting on a permeable soil which rests on impermeable bedrock. Recall that the the solid lines are flow lines and the dashed lines are equipotential lines. There is an equal amount of water through the flow channels defined by pairs of flow lines and the equipotential lines are contours of total head indicating head loss as water flows from the upstream side to the downstream side through the soil below the dam.
 
->![cofferdam.jpeg](cofferdam.jpeg)
+>![cofferdam.jpeg](images/cofferdam.jpeg)
 
 >Assume:
 

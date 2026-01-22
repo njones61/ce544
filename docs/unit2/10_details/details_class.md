@@ -6,7 +6,7 @@ In this exercise, we will examine two important details of stability analysis. I
 
 Consider the following slope with two layers of soil.
 
-![multi_min_fig.png](multi_min_fig.png){width=800px}
+![multi_min_fig.png](images/multi_min_fig.png){width=800px}
 
 Using the Excel file below and UTEXASED, do the following:
 
@@ -24,15 +24,15 @@ Using the Excel file below and UTEXASED, do the following:
 
 4) Compute the infinite slope solution for the slope. Compare to previous answers.
 
-Excel starter file: [mutiple_min_inputs.xlsx](mutiple_min_inputs.xlsx)<br>
-Excel solution file: [mutiple_min_inputs_KEY.xlsx](mutiple_min_inputs_KEY.xlsx)<br>
+Excel starter file: [mutiple_min_inputs.xlsx](files/mutiple_min_inputs.xlsx)<br>
+Excel solution file: [mutiple_min_inputs_KEY.xlsx](files/mutiple_min_inputs_KEY.xlsx)<br>
 UTEXASED solution file: [multiple min.input-utexased](multiple%20min.input-utexased)
 
 ## Problem 2 - Tension Cracks
 
 Consider the following slope:
 
-![tension_fig.png](tension_fig.png){width=800px}
+![tension_fig.png](images/tension_fig.png){width=800px}
 
 Because the top layer has a cohesion > 0, if you solve this problem with UTEXASED, you will get a warning about tension at the top of the slope. This is unconservative because the tension will increase the factor of safety. To avoid this, we can add a tension crack at the top of the slope. The depth of the crack is computed as follows:
 
@@ -44,6 +44,6 @@ Note that the depth of the crack is a function of the factor of safety, F. This 
 
 Use the following Excel file and UTEXASED to solve this problem:
 
-Excel starter file: [tension_crack_inputs.xlsx](tension_crack_inputs.xlsx)<br>
-Excel solution file: [tension_crack_inputs_KEY.xlsx](tension_crack_inputs_KEY.xlsx)<br>
+Excel starter file: [tension_crack_inputs.xlsx](files/tension_crack_inputs.xlsx)<br>
+Excel solution file: [tension_crack_inputs_KEY.xlsx](files/tension_crack_inputs_KEY.xlsx)<br>
 UTEXASED solution file: [tension crack.input-utexased](tension%20crack.input-utexased)

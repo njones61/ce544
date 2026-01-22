@@ -2,7 +2,7 @@
 
 Use XSLOPE to solve for the critical factor of safety against slope failure for the following problem based on a circular failure surface (compare to page 121 in your textbook):
 
-![earthdamfig.gif](earthdamfig.gif)
+![earthdamfig.gif](images/earthdamfig.gif)
 
 You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Do your coordinate calculations in a spreadsheet.
 

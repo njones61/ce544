@@ -10,7 +10,7 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Slides: [reinforcement.pptx](reinforcement.pptx)
+Slides: [reinforcement.pptx](files/reinforcement.pptx)
 
 <iframe width="900" height="700" src="https://www.youtube.com/embed/f1LeaqpqhLk?si=6B6lHkXNTdWQT-ty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

@@ -4,7 +4,7 @@ Solve the following problems. Put your solution in a Word, or Excel document. As
 
 1. A surchage was placed over a deposit of soil as shown below. How high would the water rise in the piezometer (Δh) as a result of the surcharge? Assume the clay was full saturated prior to placement of the surcharge.
 
-![surcharge.png](surcharge.png)
+![surcharge.png](images/surcharge.png)
 
 2. A normally-consolidated clay was subjected to a consolidated-undrained (CU) test. At failure, $σ_3$ = 100 $kN/m^2$, $σ_1$ = 205 $kN/m^2$, and $u_d$ (pore pressure at failure) = 50 $kN/m^2$. Determine $\phi_{cu}$ and $\phi'$.<br><br>
 

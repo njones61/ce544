@@ -4,13 +4,13 @@ Complete the following two problems:
 
 1) Consider the following slope:
 
-![hw_fig1.png](hw_fig1.png)
+![hw_fig1.png](images/hw_fig1.png)
 
 Create the inputs for the problem using UTEXASED. Find global-minimum factor safety by trying several different starting locations for the automated search. Save your solution.
 
 2) Consider the following slope:
 
-![hw_fig2.png](hw_fig2.png)
+![hw_fig2.png](images/hw_fig2.png)
 
 Create the inputs for the problem using UTEXASED. Then compute a solution for the following three conditions (save each version to a different file name):
 

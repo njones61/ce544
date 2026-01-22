@@ -15,7 +15,7 @@ $$
 
 For seismic loads, we need to add the seismic forces to the equation. The seismic forces are calculated using the seismic coefficient, $k$, and the weight of the slice, $W$. The seismic forces are calculated as follows:
 
-![oms_kw_fig.png](oms_kw_fig.png)
+![oms_kw_fig.png](images/oms_kw_fig.png)
 
 The seismic forces are then added to the factor of safety equation as follows:
 
@@ -45,7 +45,7 @@ Adjust the strength parameters for the seismic loads using the strength reductio
 
 Use the following Excel file to calculate the factor of safety for the slope. Note that the factor of safety is on both sides of the equation. Therefore, you must guess at the F, solve for F, and iterate until the calculated F is equal to the guessed F. The Excel file has a formula for the residual ($F_{guess} - F_{calculated}$) to help you determine when the calculated F is equal to the guessed F. You can also use the **Goal Seek** function in Excel to solve for F.
 
-Excel starter file: [seismic_bsp.xlsx](seismic_bsp.xlsx)
+Excel starter file: [seismic_bsp.xlsx](files/seismic_bsp.xlsx)
 
 ## Submission
 

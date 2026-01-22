@@ -38,7 +38,7 @@ Our objective in this exercise is to design a dewatering system using the Google
 in-class exercise. The notebook is available at the following link:
 
 Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/07_dewatering/dewatering.ipynb" target="_blank"><img src="https://colab.
+com/github/njones61/ce544/blob/main/docs/unit1/07_dewatering/files/dewatering.ipynb" target="_blank"><img src="https://colab.
 research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 **(a)  Setup Problem**

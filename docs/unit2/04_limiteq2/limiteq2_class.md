@@ -2,11 +2,11 @@
 
 In this exercise, you will apply the Ordinary Method of Slices (OMS) to analyze the stability of a slope. The Ordinary Method of Slices is a common approach to analyze the stability of slopes using the Limit Equilibrium Method and can be used for effective stress (drained) cases where $\phi \ne 0$. In this case, we will apply it to the following slope that is partially saturated with a piezometric line.
 
-![oms1.png](oms1.png)
+![oms1.png](images/oms1.png)
 
 Once again, we will we analyze each individual slice using the following paramaters:
 
-![oms2.png](oms2.png)
+![oms2.png](images/oms2.png)
 
 The factor of safety for the OMS method is calculated as follows:
 
@@ -32,8 +32,8 @@ Where:
 
 Download the Excel file below and use it to calculate the factor of safety for the slope.
 
-Excel starter file: [oms.xlsx](oms.xlsx)
+Excel starter file: [oms.xlsx](files/oms.xlsx)
 
-Excel solution file: [oms_KEY.xlsx](oms_KEY.xlsx)
+Excel solution file: [oms_KEY.xlsx](files/oms_KEY.xlsx)
 
 

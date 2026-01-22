@@ -2,14 +2,14 @@
 
 The following slope is similar to the geogrid problem we solved in class:
 
-![hw_slope_fig.gif](hw_slope_fig.gif)
+![hw_slope_fig.gif](images/hw_slope_fig.gif)
 
 The objective of this assignment is to design a reinforced slope using geogrids that is both safe and economical. You 
 will determine the number of geogrid layers, their elevations, and their lengths. Use UTEXASED to perform the slope stability analysis and to design the reinforcement.
 
 The inputs to the slope (coordinates, etc.) have been prepared for you and can be downloaded in spreadsheet form by clicking on the following link:
 
-[slope_design_input.xlsx](slope_design_input.xlsx)
+[slope_design_input.xlsx](files/slope_design_input.xlsx)
 
 Complete the assignment in two parts:
 

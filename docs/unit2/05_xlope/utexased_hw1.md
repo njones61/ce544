@@ -6,15 +6,15 @@ Solve the following problems using XSLOPE. Perform an automated search using Spe
 
 Be sure to use total unit wt and model the external water using a distributed load.
 
-![hw_fig_1.gif](hw_fig_1.gif)
+![hw_fig_1.gif](images/hw_fig_1.gif)
 
 (b) Slope with surcharge.
 
-![hw_fig_2.gif](hw_fig_2.gif)
+![hw_fig_2.gif](images/hw_fig_2.gif)
 
 (c) Slope with two materials.
 
-![hw_fig_3.gif](hw_fig_3.gif)
+![hw_fig_3.gif](images/hw_fig_3.gif)
 
 ## Submission
 

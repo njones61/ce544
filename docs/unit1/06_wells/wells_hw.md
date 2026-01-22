@@ -51,7 +51,7 @@ term out to a value of zero at r = 1.5*H. Plot the head with and without the cor
 Excel starter file: [correction.xlsx](files/correction.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/06_wells/correction.ipynb" target="_blank"><img src="https://colab.
+com/github/njones61/ce544/blob/main/docs/unit1/06_wells/files/correction.ipynb" target="_blank"><img src="https://colab.
 research.
 google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
@@ -86,7 +86,7 @@ Solve in either Excel or Python.
 Excel starter file: [two_wells.xlsx](files/two_wells.xlsx)
 
 Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/06_wells/two_wells.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+com/github/njones61/ce544/blob/main/docs/unit1/06_wells/files/two_wells.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Submission
 

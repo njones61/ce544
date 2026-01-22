@@ -4,14 +4,14 @@ The proposed site for an offshore structure is located in a region of gradually 
 
 The significant water depth contours (in fathoms) are shown on the plan view of the site in the following map:
 
-![infslope_fig1.png](infslope_fig1.png)
+![infslope_fig1.png](images/infslope_fig1.png)
  
 Previous exploration in 
 the vicinity of the site indicates that the soil profile is relatively uniform over a large area, and for this and 
 economic reasons only one soil boring was taken for the current investigation. The location of this boring (Boring A)
 is shown in the map above and the boring log details are as follows:
 
-![infslope_fig2.gif](infslope_fig2.gif)
+![infslope_fig2.gif](images/infslope_fig2.gif)
 
 The shear strength values shown on the boring log were 
 measured in unconsolidated undrained triaxial compression tests.
@@ -46,7 +46,7 @@ using an infinite slope analysis and a cross-section along the line A-A'.  For m
 of 2.0 or greater with respect to static stability is adequate to ensure that stability will be maintained during an 
 earthquake. Using the data above, calculate the factor of safety of the slope.
 
-Excel starter file: [infslope.xlsx](infslope.xlsx)
+Excel starter file: [infslope.xlsx](files/infslope.xlsx)
 
 **TIPS:**
 
