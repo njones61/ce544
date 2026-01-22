@@ -36,9 +36,6 @@ For each k value, show two flowrates: one for a unit width and one for the total
 For part two, submit a copy of the k=0.2 m/d version of your Excel input template. Zip up the XSLOPE input templates and a PNG of the solution for parts 1 and 
 2 along with your Word document for part 2 and upload the zip archive via Learning Suite.
 
-!!! Note
-    You are allowed to work in pairs on this assignment if you wish. Just copy and upload the assignment when you are done and be sure to make a note who you worked with.
-
 ## Grading Rubric
 
 | Criteria                                                                             | Points |
