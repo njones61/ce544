@@ -2,7 +2,7 @@
 
 In this exercise, we will use a Python script in a Google Colab notebook to design a well-based dewateirng system for a construction site. The script will calculate the well spacing and pumping rate required to lower the water table to a desired level. We will assume unconfined conditions and apply the superposition principle to calculate the drawdown at the well using the following equation:
 
-![unconfined.png](..%2F08_wells%2Funconfined.png)
+![unconfined.png](../06_wells/images/unconfined.png)
 
 >>$h = \sqrt{H^{2} - \dfrac{1}{\pi k} \sum_{i=1}^n q_{i}ln\left(R/r\right)}$
 
