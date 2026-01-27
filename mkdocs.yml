@@ -25,6 +25,7 @@ nav:
     - GMS Software: resources/gms.md
     - UTEXASED: resources/utexased/installation.md
     - Textbook: resources/textbook.md
+    - Equations: resources/equations.md
     - Course Overview: resources/overview/intro_read.md
   - Unit 1 - Seepage Analysis:
     - Hydraulic Head Concepts:
