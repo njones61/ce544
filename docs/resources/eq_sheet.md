@@ -1,5 +1,4 @@
 # Equation Sheet
-## Hydraulic Concepts 
 
 **Hydraulic Gradient:**  
 
@@ -9,21 +8,43 @@
 
 >$q = k \dfrac{dh}{dl} A = kiA$
 
->$q = CD * A$
-
->$CD = \dfrac{KA}{L}$
-
 >$v_d = ki$
 
 >$v_s = \dfrac{v_d}{n_e}$
 
-**Flow parallel to stratification:**  
+**Equation of Continuity:**  
 
->$k_{eq} = \dfrac{\sum_{i=1}^{n} k_i H_i}{\sum_{i=1}^{n} H_i}$
- 
-**Flow perpendicular to stratification:** 
+>$k_x \dfrac{\partial^2 h}{\partial x^2} + k_y \dfrac{\partial^2 h}{\partial y^2} = 0$
 
->$k_{eq} = \dfrac{\sum_{i=1}^{n} H_i}{\sum_{i=1}^{n} \dfrac{H_i}{k_i}}$
+**Flow Net:**  
+
+>$q = k \dfrac{n_f}{n_e} \dfrac{b}{l} h$
+
+**Dupuit Solution (Rectangular Section, Unconfined):**  
+
+>$h = \sqrt{\dfrac{H_D^2 - H_o^2}{D} x + H_o^2}$
+
+>$q = k \dfrac{\left(H_o^2 - H_D^2\right)}{2D}$
+
+**Well Equation (Confined Aquifer):**  
+
+>$q = 2\pi k D \dfrac{H - H_w}{\ln(R/r_w)}$
+
+>$h = H_w + \dfrac{q}{2\pi k D}\ln(r/r_w)$
+
+>$h = H + \dfrac{q}{2\pi k D}\ln(r/R)$
+
+>$h = H - \dfrac{1}{2\pi k D}\sum_{i=1}^{n} q_i \ln(R/r_i)$
+
+**Well Equation (Unconfined Aquifer):**  
+
+>$q = \pi k \dfrac{H^2 - H_w^2}{\ln(R/r_w)}$
+
+>$h^2 = H^2 - \dfrac{q \ln(R/r)}{\pi k}$
+
+>$k = \dfrac{q \ln(R/r_w)}{\pi\left(H^2 - H_w^2\right)}$
+
+>$h^2 = H^2 - \dfrac{1}{\pi k}\sum_{i=1}^{n} q_i \ln(R/r_i)$
 
 ## Unit Conversions:
 - 1 ft = 3.28 m
