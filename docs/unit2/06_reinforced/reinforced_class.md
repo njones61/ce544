@@ -1,50 +1,33 @@
 # Exercise - Reinforced Slopes
 
-In this exercise, we will examine two cases of reinforced slopes. The first case is a slope with a series of geogrid layers and the second is an underwater slope with some concrete piers.
-
-## Problem 1 - Geogrid Reinforcement
-
-Consider the following reinforced slope:
+In this exercise, we will explore how to simulate soil reinforcement from layers of geogrid material built into an 
+embankement. This problem was featured in the user manual for the UTEXASED slope stability analysis software 
+developed by Stephen G. Wright at the University of Texas at Austin.
 
 ![geogrid_fig.png](images/geogrid_fig.png)
 
-(a) Set up the problem and solve for the factor of safety using UTEXASED without the reinforcement. Note the factor of 
-safety.
+(1) Set up the problem and solve for the factor of safety using XSLOPE without the reinforcement. Note the factor of 
+safety. The toe of the slope corresponds to (0, 0) and the top of the slope corresponds to (30, 24). Extend the 
+problem to the left to x = -30 ft and to the right to x = 100 ft. Compute the factor of safety for the slope with no reinforcement.
 
-(b) Solve again but include the impact of the geogrid layers. Compare the factor of safety and the location of the 
-critical circle with and without the 
-reinforcement. Assume the full tensile force in the geogrids develops over a length of 4 ft.
+(2) Solve again but include the impact of the geogrid layers. Assume that each layer of geogrid is 20 ft long and the full 
+tensile force in the geogrids develops over a length of 4 ft. Set up your reinforcement table with formulas such 
+that the length of the reinforcement, tensile strength, and slope angle are all variables. Compare the factor of 
+safety and the location of the critical circle to the solution without the reinforcement.
 
-The following table provides the geometry of the profile lines, distributed loads, and the reinforcement lines:
+(3) Experiment with following parameters to determine the impact of each on the factor of safety:
 
-Excel starter file: [geogrid_slope_input.xlsx](files/geogrid_slope_input.xlsx)<br>
-UTEXASED solution file: [geogrid.input-utexased](files/geogrid.input-utexased)
+>(a) Change the tensile strength to 1200 lbs/ft.<br> 
+>(b) Change the length of the geogrid layers to 30 ft.<br>
+>(c) Experiment with different values of the slope angle. 
 
-## Problem 2 - Underwater Slope with Piers
+Start with the standard Excel input template:
 
-Consider the following underwater slope with concrete piers:
+[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
 
-![underwater_fig.png](images/underwater_fig.png)
+After the input file, launch the XSLOPE Google Colab notebook for stability analysis and upload your Excel input file 
+and solve:
 
-Solve the problem using UTEXASED. You will need to add the weight of the water as 
-a distributed load. The pile caps above the top of the slope weigh 20000 lb/ft. Since UTEXASED does not support 
-line loads, convert them to an equivalent 
-distributed load and add them to the distibuted load from the water. For the clay soil, assume the following:
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
->>Unit weight of soil = 120 lb/ft^3<br>
-Strength = linear increase with depth (c/p ratio)<br>
-At y = 8, $S_u$ = 100 lb/ft^2<br>
-$\Delta S_u/\Delta y$ = 10 lb/ft^2
-
-The concrete piers inside the slope act as a form of reinforcement. Solve the problem in two steps as follows:
-
-(a) Solve the problem with the pile cap only. Neglect the internal reinforcement provided by the piers.
-
-(b) Solve the problem with the internal reinforcement provided by the piers.
-
-Use the following Excel starter file to set up the problem. You will need to set up the distributed load table.
-
-Excel starter file: [underwater_slope_input.xlsx](files/underwater_slope_input.xlsx)<br>
-Excel solution file: [underwater_slope_input_KEY.xlsx](files/underwater_slope_input_KEY.xlsx)<br>
-UTEXASED solution file - part (a): [underwater-1.input-utexased](files/underwater-1.input-utexased)<br>
-UTEXASED solution file - part (b): [underwater-2.input-utexased](files/underwater-2.input-utexased)
+Solution: [xslope_reinforce.xlsx](https://xslope.readthedocs.io/en/latest/lem/samples/files/xslope_reinforce.xlsx)
