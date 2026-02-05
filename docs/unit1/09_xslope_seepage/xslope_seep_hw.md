@@ -15,7 +15,11 @@ Make a separate Excel file for each problem. After preparing the input file, upl
 
 Extend your mesh 40 ft both upstream and downstream from the sheetpiles (solve the entire problem, not just one half).
 
-(2) Redo the grout curtain problem we solved in the previous assignment. As before, extend your problem domain 35 m beyond the toe of the levee in both directions. Once again, assume that the levee is relatively impermeable. But this time, assume that the grout curtain extends all the way to bedrock and that the grout curtain is permeable but has a lower K than the foundation.
+(2) Consider the following problem involving a permeable foundation below a relatively impermeable levee. Build a 
+mesh of just the foundation, including the grout curtain, and perform a seepage anlysis. Extend your problem domain 
+35 m beyond the toe of the levee in both directions. Assume that the levee is relatively impermeable (do not include 
+it in your problem domain). Assume that the grout curtain extends all the way to bedrock and that the grout curtain 
+is permeable but has a different (lower) K than the foundation.
 
 ![levee.gif](../10_finelem/images/levee.gif)
 
@@ -29,12 +33,19 @@ k = .1 m/d<br>
 k = .01 m/d<br>
 k = .001 m/d<br>
 
-For each k value, show two flowrates: one for a unit width and one for the total levee section (once again, assume that the levee is **300** m long in the transverse direction). The total flowrate is displayed above the XSLOPE solution plot in the title. Write a paragraph summarizing your observations from the exercise.
+For each k value, show two flowrates: one for a unit width and one for the total levee section (assume that the 
+levee is **300** m long in the transverse direction). The total flowrate is displayed above the XSLOPE solution plot 
+in the title. Write a paragraph summarizing your observations from the exercise. Put your solution in a word document.
 
 ## Submission
 
-For part two, submit a copy of the k=0.2 m/d version of your Excel input template. Zip up the XSLOPE input templates and a PNG of the solution for parts 1 and 
-2 along with your Word document for part 2 and upload the zip archive via Learning Suite.
+Put the following files in a zip archive:
+
+- XSLOPE input template and a PNG of the solution for part 1
+- XSLOPE input template and a PNG of the solution for part 2 (for the K=0.2 m/d solution only)
+- Word document with analyis of flow vs K for part 2
+
+Upload the zip archive via Learning Suite.
 
 ## Grading Rubric
 
