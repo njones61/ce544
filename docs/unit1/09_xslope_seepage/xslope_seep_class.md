@@ -36,7 +36,12 @@ The properties of the soil layers are as follows:
 |    Silt    | 0.5 | 0.5 |
 | Silty Clay | 0.1 | 0.1 |
 
-Since this is a fully saturated problem, the kr0 and h0 material parameters are ignored. The problem set up requires 3 profile lines: 1 at the top of the silt layer on the left side, 1 at the top of the silt layer on the right, and 1 at the top of the silty clay layer that goes all the way from the left side to the right side of the problem. This profile line includes a small gap at the location of each sheetpile penetration to create a no-flow boundary along the edge of the sheetpile. 
+Since this is a fully saturated problem, the kr0 and h0 material parameters are ignored. The problem set up requires 
+3 profile lines: 1 at the top of the silt layer on the left side, 1 at the top of the silt layer on the right, and 1 
+at the top of the silty clay layer that goes all the way from the left side to the right side of the problem. This 
+profile line includes a small gap at the location of each sheetpile penetration to create a no-flow boundary along 
+the edge of the sheetpile. The first two profile lines will reference material 1 (Silt) and the third profile line 
+will reference material 2 (Silty Clay).
 
 As you build the problem input, you may wish to use the following coordinates:
 
