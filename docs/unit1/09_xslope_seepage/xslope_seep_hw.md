@@ -21,7 +21,7 @@ mesh of just the foundation, including the grout curtain, and perform a seepage 
 it in your problem domain). Assume that the grout curtain extends all the way to bedrock and that the grout curtain 
 is permeable but has a different (lower) K than the foundation.
 
-![levee.gif](../10_finelem/images/levee.gif)
+![levee.png](../10_finelem/images/levee.png)
 
 Set up the problem using XSLOPE and analyze the flow rate (total) assuming various K values for the grout curtain. Make a table showing the total flow rate vs. k for the grout curtain where the k values varies as follows:
 
