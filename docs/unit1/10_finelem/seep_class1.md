@@ -1,6 +1,6 @@
 # Exercise - Unconfined Seepage Problems, Part 1
 
-For this exercise, we will peform a pair of seepage analyses using XSLOPE for sites with unconfined (partially-saturated) conditions. For both cases, we will first prepare the problem inputs in an XSLOPE Excel input file starting with the standard template:
+For this exercise, we will perform a pair of seepage analyses using XSLOPE for sites with unconfined (partially-saturated) conditions. For both cases, we will first prepare the problem inputs in an XSLOPE Excel input file starting with the standard template:
 
 [input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
 
