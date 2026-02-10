@@ -47,6 +47,6 @@ Use the following coordinates to define the profile lines and boundary condition
 
 ![levee_coords.png](images/levee_coords.png)
 
-Solution: https://xslope.readthedocs.io/en/latest/seep/files/xslope_levee_full.xlsx
+Solution: [xslope_levee_full.xlsx](https://xslope.readthedocs.io/en/latest/seep/files/xslope_levee_full.xlsx)
 
 
