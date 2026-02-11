@@ -90,7 +90,9 @@ com/github/njones61/ce544/blob/main/docs/unit1/06_wells/files/two_wells.ipynb" t
 
 ## Submission
 
-Combine your spreadsheets and links to your Python notebooks into a single zip archive and upload it on Learning Suite.
+If you completed the second or third part of the problem using Google Colab, use the "File|Download|Download .ipynb" command to download your notebook as an .ipynb file.
+
+Combine your PDFs, spreadsheets, and *.ipynb notebook files into a single zip archive and upload it on Learning Suite.
 
 ## Grading Rubric
 

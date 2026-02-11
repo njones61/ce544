@@ -14,7 +14,7 @@ Derive an equation for h in terms of x. Start with:
 
 and insert the left and right boundary conditions and solve for C1 and C2. Solve the resulting equation for h.
 
-Put your solution in a word document and show each of your steps. Or you can derive on paper and submit a scan or photo of your work.
+Put your solution in a **Word document** and show each of your steps. Or you can derive on paper and submit a scan or photo of your work.
 
 Once you have found your equation for h, created a modified version of the solution to the Dupuit problem that we did in class that uses your new equation for h. You can do it in Python or Excel. 
 
@@ -27,7 +27,11 @@ research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Submission
 
-Submit your Word document with your derivation and your Excel file or a link to your Colab notebook in Learning Suite.
+Do **not** put your derivation in the Excel or Python file. It should be in a Word document or scan (photo or PDF).
+
+If you completed the second part of the problem using Google Colab, use the "File|Download|Download .ipynb" command to download your notebook as an .ipynb file.
+
+Create a zip archive with your Word document (or scan) and the solution file (either the *.xlsx Excel file or the .ipynb notebook file) and upload the zip archive to Learning Suite.
 
 ## Grading Rubric
 
