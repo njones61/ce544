@@ -47,7 +47,7 @@ Once the input file is complete, upload the file and solve the problem using XSL
 
 <a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Create a PNG of the solution with 25 head contours and use base material = bedrock (12). 
+Create a PNG of the solution with 25 head contours and use base material = bedrock. 
 
 ## Submission
 
