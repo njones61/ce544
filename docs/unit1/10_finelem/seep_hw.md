@@ -65,16 +65,13 @@ Create a PNG of the solution with 25 head contours and use base material = bedro
 
 ## Grading Rubric
 
-| Criteria                                                                              | Points |
-|---------------------------------------------------------------------------------------|:------:|
-| XSLOPE Excel template modified correctly for Lost Lake dam geometry                  |   4    |
-| 12 profile lines created in correct order (top to bottom)                            |   4    |
-| Points on each profile line listed in correct order (left to right)                  |   2    |
-| All 12 materials defined with correct hydraulic conductivity values (kx, ky)         |   5    |
-| Material parameters (α, kr0, h0) set correctly for all materials                     |   2    |
-| Boundary conditions appropriately selected (H=225 ft left, free drainage right)      |   3    |
-| Element mesh sufficiently refined to capture details in thin zones                   |   3    |
-| Model solves successfully without errors                                              |   2    |
-| PNG output shows 25 head contours with base material = bedrock (12)                  |   3    |
-| Proper file submission (zipped Excel file and PNG solution)                          |   2    |
-| **Total**                                                                             | **30** |
+| Criteria                                                             | Points |
+|----------------------------------------------------------------------|:------:|
+| 12 profile lines created in correct order (top to bottom)            |   10   |
+| Points on each profile line listed in correct order (left to right)  |   2    |
+| All 8 materials defined with correct hydraulic conductivity values (kx, ky) |   4    |
+| Material parameters (α, kr0, h0) set correctly for all materials     |   4    |
+| Boundary conditions appropriately selected (H=225 ft left, exit face right) |   6    |
+| PNG output shows head contours with base material = bedrock        |   3    |
+| Proper file submission (zipped Excel file and PNG solution)          |   3    |
+| **Total**                                                            | **30** |
