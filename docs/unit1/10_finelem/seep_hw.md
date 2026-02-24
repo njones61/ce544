@@ -44,7 +44,7 @@ The coordinates of the points making up the center part of the cross section are
 
 The coordinates of the left and right sides of the cross section are shown below:
 
-![lost_lake_coords_sides.png](images/lost_lake_coords_sides.png)
+![lost_lake_coords_sides.png](images/lost_lake_coords_sides.png){width="800"}
 
 ## Tips
 
