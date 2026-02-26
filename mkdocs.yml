@@ -92,13 +92,14 @@ nav:
         - Pre-Class: unit2/06_reinforced/reinforced_read.md
         - In-Class: unit2/06_reinforced/reinforced_class.md
         - Homework: unit2/06_reinforced/reinforced_hw.md
-    - Rapid Drawdown Analysis:
-        - Pre-Class: unit2/07_rapid/rapid_read.md
-        - Homework: unit2/07_rapid/rapid_hw.md
     - Seepage/Slope Stability Integration:
-        - Pre-Class: unit2/08_seep_slope/seep_slope_read.md
-        - In-Class: unit2/08_seep_slope/seep_slope_classs.md
-        - Homework: unit2/08_seep_slope/seep_slope_hw.md
+        - Pre-Class: unit2/07_seep_slope/seep_slope_read.md
+        - In-Class: unit2/07_seep_slope/seep_slope_classs.md
+        - Homework: unit2/07_seep_slope/seep_slope_hw.md
+    - Rapid Drawdown Analysis:
+        - Pre-Class: unit2/08_rapid/rapid_read.md
+        - In-Class: unit2/08_rapid/rapid_class.md
+        - Homework: unit2/08_rapid/rapid_hw.md
     - Seismic Slope Stability:
         - Pre-Class: unit2/09_seismic/seismic_read.md
         - In-Class: unit2/09_seismic/seismic_class.md
