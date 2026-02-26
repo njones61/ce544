@@ -26,7 +26,7 @@ Using the Excel file below and UTEXASED, do the following:
 
 Excel starter file: [mutiple_min_inputs.xlsx](files/mutiple_min_inputs.xlsx)<br>
 Excel solution file: [mutiple_min_inputs_KEY.xlsx](files/mutiple_min_inputs_KEY.xlsx)<br>
-UTEXASED solution file: [multiple min.input-utexased](multiple%20min.input-utexased)
+UTEXASED solution file: [multiple min.input-utexased](files/multiple%20min.input-utexased)
 
 ## Problem 2 - Tension Cracks
 
@@ -46,4 +46,4 @@ Use the following Excel file and UTEXASED to solve this problem:
 
 Excel starter file: [tension_crack_inputs.xlsx](files/tension_crack_inputs.xlsx)<br>
 Excel solution file: [tension_crack_inputs_KEY.xlsx](files/tension_crack_inputs_KEY.xlsx)<br>
-UTEXASED solution file: [tension crack.input-utexased](tension%20crack.input-utexased)
+UTEXASED solution file: [tension crack.input-utexased](files/tension%20crack.input-utexased)

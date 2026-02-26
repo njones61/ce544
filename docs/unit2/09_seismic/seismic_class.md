@@ -55,9 +55,9 @@ Excel solution file: [seismic_infslope_KEY.xlsx](files/seismic_infslope_KEY.xlsx
 
 For this problem, we will revisit the method of slices problem that we solved earlier. The slope is shown in the figure below:
 
-![oms1.png](..%2F04_limiteq2%2Foms1.png)
+![oms1.png](../04_limiteq2/images/oms1.png)
 
-![oms2.png](..%2F04_limiteq2%2Foms2.png)
+![oms2.png](../04_limiteq2/images/oms2.png)
 
 The original factor of safety for the OMS method is calculated as follows:
 

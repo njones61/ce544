@@ -2,9 +2,9 @@
 
 In this exercise we will revisit the Bishop's Simplified Procedure method of slices solution, but this time we will consider seismic loads. The slope details are as follows:
 
-![oms1.png](..%2F04_limiteq2%2Foms1.png)
+![oms1.png](../04_limiteq2/images/oms1.png)
 
-![oms2.png](..%2F04_limiteq2%2Foms2.png)
+![oms2.png](../04_limiteq2/images/oms2.png)
 
 
 The original equation for the BSP method is:
