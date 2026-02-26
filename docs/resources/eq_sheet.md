@@ -47,7 +47,7 @@
 >$h^2 = H^2 - \dfrac{1}{\pi k}\sum_{i=1}^{n} q_i \ln(R/r_i)$
 
 ## Unit Conversions:
-- 1 ft = 3.28 m
+- 1 m = 3.28 ft
 - 1 ft = 12 in 
 - 1 in = 2.54 cm 
 - 1 lb = 2.2 kg 
