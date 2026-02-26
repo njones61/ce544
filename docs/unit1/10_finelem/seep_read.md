@@ -4,7 +4,7 @@ The finite element method (FEM) is a numerical technique for solving partial dif
 
 In this set of videos, we will explore the basics of the finite element method and its application to seepage problems. We will explore the formulation of the finite element equations in both one and two dimensions and will review how finite element meshes are constructed.
 
-**Slides:** [finite element method.pptx](../09_xslope_seepage/finite%20element%20method.pptx)
+**Slides:** [finite element method.pptx](../09_xslope_seepage/files/finite%20element%20method.pptx)
 
 ## The Finite Element Method - Introduction and 1D Formulation
 

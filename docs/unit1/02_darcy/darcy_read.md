@@ -6,7 +6,7 @@ This video was originally developed for CE 547 - Groundwater Modeling at Brigham
 content is applicable to our 
 course as well.
 
-Slides: [darcy - intro.pptx](darcy%20-%20intro.pptx)
+Slides: [darcy - intro.pptx](files/darcy%20-%20intro.pptx)
 
 <iframe width="900" height="700" src="https://www.youtube.com/embed/KY8Yl4xRhbE?si=x9o7L6FnzUpBzc8-" title="YouTube 
 video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

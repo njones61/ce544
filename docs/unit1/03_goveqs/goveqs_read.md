@@ -2,7 +2,7 @@
 
 In these videos we will use Darcy's Law and conservation of mass to derive a set of governing equations that we can use to solve for the flow of water in a porous media. We will explore the 2D and 3D forms of the equation and discuss how the equations are solved in a numerical model.
 
-Slides: [governing equations.pptx](governing%20equations.pptx)
+Slides: [governing equations.pptx](files/governing%20equations.pptx)
 
 **Part 1 - Derivation of Governing Equations**
 

@@ -10,7 +10,7 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Slides: [rapid drawdown.pptx](rapid%20drawdown.pptx)
+Slides: [rapid drawdown.pptx](files/rapid%20drawdown.pptx)
 
 <iframe width="900" height="700" src="https://www.youtube.com/embed/PQ-Pl4-4bnQ?si=2hCLTbmIuMVVMM0L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

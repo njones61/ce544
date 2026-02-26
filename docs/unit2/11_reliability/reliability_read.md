@@ -10,7 +10,7 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Slides: [reliability analysis.pptx](reliability%20analysis.pptx)
+Slides: [reliability analysis.pptx](files/reliability%20analysis.pptx)
 
 <iframe width="900" height="700" src="https://www.youtube.com/embed/33MuWnvThVY?si=ZMvj5-q_ntJVYDE4" title="YouTube 
 video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

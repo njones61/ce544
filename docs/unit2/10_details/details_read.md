@@ -10,7 +10,7 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Slides: [important details.pptx](important%20details.pptx)
+Slides: [important details.pptx](files/important%20details.pptx)
 
 <iframe width="900" height="700" src="https://www.youtube.com/embed/KG300MfWI-0?si=jJaArZb4CwybtP-l" title="YouTube 
 video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

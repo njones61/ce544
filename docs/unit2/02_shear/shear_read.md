@@ -15,7 +15,7 @@ Read the following sections from the textbook:
 
 ## Videos
 
-Slides: [shear strength review.pptx](shear%20strength%20review.pptx)
+Slides: [shear strength review.pptx](files/shear%20strength%20review.pptx)
 
 <iframe width="900" height="700" src="https://www.youtube.com/embed/FdjZp8Rzbfs?si=9-srEraeLCmEYO6y" title="YouTube 
 video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

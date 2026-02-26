@@ -4,7 +4,7 @@ In the previous pre-class, we introduced the Limit Equilibrium Method and discus
 
 ## Videos
 
-Slides: [limit equil proc - pt 2.pptx](limit%20equil%20proc%20-%20pt%202.pptx)
+Slides: [limit equil proc - pt 2.pptx](files/limit%20equil%20proc%20-%20pt%202.pptx)
 
 <iframe width="900" height="700" src="https://www.youtube.com/embed/JYXE9GRNouU?si=xMiXTJ-A7Nk8AJr2" title="YouTube 
 video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

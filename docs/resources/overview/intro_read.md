@@ -2,4 +2,4 @@
 
 The following is a brief introduction to the course.
 
-[intro.pptx](intro.pptx)
+[intro.pptx](files/intro.pptx)
