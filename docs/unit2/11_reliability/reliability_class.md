@@ -4,15 +4,15 @@ In this exercise, we will perform reliablity analyses related to slope stability
 
 ## Problem 1 - Reliability Calculations
 
-The following data represent undrained shear strength values for San Francisco Bay Mud - Hamilton Air Force Base in 
+The following data represent undrained shear strength values for San Francisco Bay Mud - Hamilton Air Force Base in
 Marin County, CA (see Table 13.3 in text).
 
 ![bay_mud_data.png](images/bay_mud_data.png)
 
 1) Calculate the standard deviation and coefficient of variation (COV) of the undrained shear strength values.
 
-2) Use the graphical/Simplified method of calculating the standard deviation of the undrained shear strength values. 
-   Use both the 3$\sigma$ (factor of 6) method. Repeat using a factor of 4. Compare to the value found in part (1). 
+2) Use the graphical/Simplified method of calculating the standard deviation of the undrained shear strength values.
+   Use both the 3$\sigma$ (factor of 6) method. Repeat using a factor of 4. Compare to the value found in part (1).
    Which is the most conservative?
 
 3) Given the following values:
@@ -22,25 +22,19 @@ Marin County, CA (see Table 13.3 in text).
 | $F_{MLV}$ | 1.17  |
 |  $COV_F$  | 15.8% |
 
-Calculate the log-normal reliability index ($\beta_{LN}$), reliability (R) and probability of failure (Pf). Compare to 
+Calculate the log-normal reliability index ($\beta_{LN}$), reliability (R) and probability of failure (Pf). Compare to
 the chart solution in the text. Recall that the reliability index is given by:
 
 >>$\beta_{LN} = \dfrac{ln\left(\dfrac{F_{MLV}}{\sqrt{1 + COV_F^2}}\right)}{\sqrt{ln\left(1 + COV_F^2\right)}}$
 
-Use the following Excel or Python file to perform your calculations. For the Python solution, you will need upload 
+Use the following Excel or Python file to perform your calculations. For the Python solution, you will need upload
 the CSV file with the bay mud data values.
 
 Excel starter file: [reliability_calc.xlsx](files/reliability_calc.xlsx)<br>
 Excel solution file: [reliability_calc_KEY.xlsx](files/reliability_calc_KEY.xlsx)
 
-Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/files/reliability_calc.ipynb" target="_blank"><img 
-src="https://colab.
-research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><br>
-Python solution file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/files/reliability_calc_KEY.ipynb" target="_blank"><img 
-src="https://colab.
-research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/files/reliability_calc.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><br>
+Python solution file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/files/reliability_calc_KEY.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 CSV file with bay mud data values: [bay_mud_data.csv](files/bay_mud_data.csv)
 
@@ -50,23 +44,29 @@ Consider the following slope:
 
 ![two_layer_slope.png](images/two_layer_slope.png)
 
-The numbers shown in parentheses next to the unit weight and undrained strength represent estimates of the standard deviation for the two parameters. Using a spreadsheet and the UTEXASED program, calculate the reliablity and the propability of failure for the slope using the Taylor Series method.
+The numbers shown in parentheses next to the unit weight and undrained strength represent estimates of the standard deviation for the two parameters. Using a spreadsheet and XSLOPE, calculate the reliablity and the propability of failure for the slope using the Taylor Series method.
 
-1) Find the factor of safety for the most likely values ($F_{MLV}$). The profile line, distributed load, and starting circle location are included in the Excel file below. Solve for the $F_{MLV}$ using UTEXASED.
+Start with the standard Excel input template:
 
-2) Use the Taylor Series method to find the COV of the factor of safety ($COV_F$). For each parameter, find the 
-   $MLV+\sigma$ and $MLV-\sigma$ values. Use UTEXASED to find the factor of safety for each. Then calculate $\Delta F$ and $(\Delta F/2)^2$ for each parameter. The standard deviation and covariance of failure are then given by:
+[input_template.xlsx](https://xslope.org/en/latest/inputs/input_template.xlsx)
 
->>$\sigma_F = \sqrt{\left(\dfrac{\Delta F_1}{2}\right)^2 + \left(\dfrac{\Delta F_2}{2}\right)^2 + ... + \left(\dfrac
-{\Delta F_N}{2}\right)^2}$
+Solve using the XSLOPE Google Colab notebook for stability analysis:
+
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+1) Find the factor of safety for the most likely values ($F_{MLV}$). The profile line, distributed load, and starting circle location are included in the Excel file below. Set up the XSLOPE input template and solve for $F_{MLV}$.
+
+2) Use the Taylor Series method to find the COV of the factor of safety ($COV_F$). For each parameter, find the
+   $MLV+\sigma$ and $MLV-\sigma$ values. Use XSLOPE to find the factor of safety for each. Then calculate $\Delta F$ and $(\Delta F/2)^2$ for each parameter. The standard deviation and covariance of failure are then given by:
+
+>>$\sigma_F = \sqrt{\left(\dfrac{\Delta F_1}{2}\right)^2 + \left(\dfrac{\Delta F_2}{2}\right)^2 + ... + \left(\dfrac{\Delta F_N}{2}\right)^2}$
 
 >>$COV_F = \dfrac{\sigma_F}{F_{MLV}}$
 
-3) Using the $\sigma_F$ and $COV_F$ values, calculate the $\beta_{LN}$, reliability (R) and probability of failure 
+3) Using the $\sigma_F$ and $COV_F$ values, calculate the $\beta_{LN}$, reliability (R) and probability of failure
    (Pf) for the slope.
 
-Use the following Excel file to perform your calculations. 
+Use the following Excel file to perform your calculations.
 
 Excel starter file: [covf.xlsx](files/covf.xlsx)<br>
 Excel solution file: [covf_KEY.xlsx](files/covf_KEY.xlsx)
-

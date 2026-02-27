@@ -1,55 +1,46 @@
-# Homework - Bishop's Simplified Procedure with Seismic Loads
+# Homework - Seismic Slope Stability with XSLOPE
 
-In this exercise we will revisit the Bishop's Simplified Procedure method of slices solution, but this time we will consider seismic loads. The slope details are as follows:
+In this assignment, you will use XSLOPE to perform seismic slope stability analyses on problems from earlier exercises. The seismic coefficient ($k_h$) is entered on the **main** sheet of the Excel input template.
 
-![oms1.png](../04_limiteq2/images/oms1.png)
+Start with the standard Excel input template:
 
-![oms2.png](../04_limiteq2/images/oms2.png)
+[input_template.xlsx](https://xslope.org/en/latest/inputs/input_template.xlsx)
 
+Solve using the XSLOPE Google Colab notebook for stability analysis:
 
-The original equation for the BSP method is:
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-$$
-F = \dfrac{\sum {\left[\dfrac{c'\Delta l + \left(W cos\alpha - u \Delta l cos^2\alpha\right)\tan\phi'}{cos\alpha + \left(sin\alpha\tan\phi'\right)/F}\right]}}{\sum {W\sin\alpha}}
-$$
+## Problem 1 - Earth Dam with Seismic Loading
 
-For seismic loads, we need to add the seismic forces to the equation. The seismic forces are calculated using the seismic coefficient, $k$, and the weight of the slice, $W$. The seismic forces are calculated as follows:
+Use the earth dam problem from your previous XSLOPE homework:
 
-![oms_kw_fig.png](images/oms_kw_fig.png)
+![earthdamfig.gif](../05_xlope/images/earthdamfig.gif)
 
-The seismic forces are then added to the factor of safety equation as follows:
+Start with your existing Excel input file from the XSLOPE LEM Part 2 homework (with the piezometric line).
 
-$$
-F = \frac{\sum{\left[\left(c'\Delta l cos\alpha + \left(W - u \Delta l cos\alpha\right)\tan\phi'\right)\left(\dfrac{sec\alpha}{1+tan\alpha\frac{tan\phi'}{F}}\right)\right]}}{\sum{W\sin\alpha+\dfrac{k}{R}\sum{Wa}}}
-$$
+a) Run the static analysis ($k_h = 0$) and record the factor of safety for the downstream side.
 
-The seismic parameters are as follows:
+b) Add a seismic coefficient of $k_h = 0.1$ on the **main** sheet and re-run the analysis for the downstream side. Report the new factor of safety.
 
-| Parameter                      | Value |
-|--------------------------------|-------|
-| Peak Ground Acceleration (PGA) | 0.18g |
-| Acceleration Multiplier        | 0.5   |
-| Strength Reduction Factor (R)  | 0.8   |
+c) Find the value of $k_h$ that results in a factor of safety of approximately 1.0 for the downstream side. Do this by adjusting $k_h$ and re-running the analysis until you converge on the critical value. Report the critical $k_h$ value and corresponding factor of safety.
 
-Use the PGA and the acceleration multiplier to calculate the seismic coefficient, $k$.
+## Problem 2 - Reinforced Slope with Seismic Loading
 
-The soil properties are as follows:
+Use the reinforced slope from the reinforced slopes exercise:
 
-| Layer | $\gamma \quad [lb/ft^3]$ | $c_r \quad [lb/ft^2]$ | $\phi_r \quad [deg]$ |
-|:-----:|:------------------------:|:----------------:|:---------------:|
-|   1   |           130            |       800        |       30        |
-|   2   |           120            |       600        |       25        |
-|   3   |           110            |       400        |       20        |
+![geogrid_fig.png](../06_reinforced/images/geogrid_fig.png)
 
-Adjust the strength parameters for the seismic loads using the strength reduction factor, $R$. Remember to apply the reduction factor to $tan\phi_r$, not $\phi_r$.
+Start with your existing XSLOPE input file that includes the geogrid reinforcement.
 
-Use the following Excel file to calculate the factor of safety for the slope. Note that the factor of safety is on both sides of the equation. Therefore, you must guess at the F, solve for F, and iterate until the calculated F is equal to the guessed F. The Excel file has a formula for the residual ($F_{guess} - F_{calculated}$) to help you determine when the calculated F is equal to the guessed F. You can also use the **Goal Seek** function in Excel to solve for F.
+a) Run the static analysis ($k_h = 0$) and record the factor of safety with reinforcement.
 
-Excel starter file: [seismic_bsp.xlsx](files/seismic_bsp.xlsx)
+b) Add a seismic coefficient of $k_h = 0.15$ and re-run. Report the new factor of safety.
+
+c) Compare how the seismic loading affects the reinforced slope vs. the unreinforced slope. Run the $k_h = 0.15$ case with the reinforcement removed and compare.
 
 ## Submission
 
-Upload your completed Excel file to Learning Suite.
+Save a copy of your Excel input files and PNGs of the solution plots for each case. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
@@ -57,9 +48,10 @@ Upload your completed Excel file to Learning Suite.
 
 | Criteria | Points |
 |----------|:------:|
-| Seismic coefficient calculation | 4 |
-| Strength parameter adjustment with R factor | 6 |
-| Proper application of seismic force term | 6 |
-| Iterative solution setup | 4 |
-| Factor of safety convergence | 6 |
-| Documentation and work shown clearly | 4 |
+| Problem 1a: Static analysis FS for downstream side | 3 |
+| Problem 1b: Seismic analysis with $k_h = 0.1$ | 4 |
+| Problem 1c: Critical $k_h$ for FS = 1.0 found and reported | 6 |
+| Problem 2a: Static analysis FS with reinforcement | 3 |
+| Problem 2b: Seismic analysis with $k_h = 0.15$ | 4 |
+| Problem 2c: Comparison of reinforced vs. unreinforced under seismic loading | 5 |
+| Excel input files and PNG solution plots properly submitted in zip archive | 5 |

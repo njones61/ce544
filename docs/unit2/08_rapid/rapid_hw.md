@@ -1,99 +1,73 @@
 # Homework - Rapid Drawdown Analysis
 
-In this assignment we will be performing a rapid drawdown analysis on an infinite slope using the equations and methodology outlined in the textbook:
+In this assignment, you will perform a rapid drawdown analysis on the earth dam from the previous homework using XSLOPE. This builds on your seepage/slope stability homework by adding a second set of boundary conditions to model the post-drawdown water level.
 
-[Chapter 9 - Analyses for Rapid Drawdown](https://ebookcentral.proquest.com/lib/byu/reader.action?docID=7104230&ppg=185){:target="_blank"}
+![earthdamfig.gif](../05_xlope/images/earthdamfig.gif)
 
-We will be analyzing the following slope:
+For background on the three-stage rapid drawdown methodology, see:
 
-![infslope_fig.png](images/infslope_fig.png)
+[XSLOPE Rapid Drawdown Documentation](https://xslope.org/en/latest/lem/rapid/){:target="_blank"}
 
-The slope has the following properties:
+Use the XSLOPE Google Colab seepage notebook for the seepage analysis:
 
-| Property   | Value | Units            |
-|------------|-------|------------------|
-| $\gamma_w$ | 62.4  | $\text{lb/ft}^3$ |
-| $\gamma$   | 125   | $\text{lb/ft}^3$ |
-| $\gamma'$  | 62.6  | $\text{lb/ft}^3$ |
-| $c'$       | 0     | $\text{lb/ft}^2$ |
-| $\phi'$    | 40    | degrees          |
-| $d$        | 2000  | $\text{lb/ft}^2$ |
-| $\psi'$    | 20    | degrees          |
-| $h_w$      | 100   | $ft$             |
-| $slope$    | 3:1   | -                |
-| $\beta$    | 18.4  | degrees          |
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Calculate the factor of safety for the slope under rapid drawdown conditions using the following steps:
+Use the XSLOPE Google Colab LEM notebook for the slope stability analysis:
 
-## Stage 1: Pre-Drawdown
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Calculate shear stresss and effective normal stress on failure surface based on pre-drawdown conditions
+## Instructions
 
-$\sigma'$ = effective normal stress under pre-drawdown conditions<br>
-$\tau_1$ = shear stress under pre-drawdown conditions
+Start with your Excel input file from the seepage/slope stability homework. You will modify it to support the two-stage seepage analysis required for rapid drawdown.
 
-$\sigma' = \gamma' z cos^2\beta \qquad \tau_1 = \gamma' z sin\beta cos\beta$
+### 1. Add Undrained Strength Parameters
 
-## Stage 2: Post-Drawdown, Total Stress Analysis
+Add $d$ and $\psi$ parameters to the **mat** sheet for each material with poor drainage. Leave these blank for freely draining materials (Sand).
 
-Compute FS for post-drawdown conditions using total stress analysis
+| Material | c' (psf) | $\phi'$ (deg) | $\gamma$ (pcf) | d (psf) | $\psi$ (deg) |
+|:--------:|:--------:|:--------------:|:-------:|:-------:|:-------:|
+| Shell    |    0     |       34       |   125   |    0    |   25    |
+| Core     |   100    |       26       |   122   |   50    |   18    |
+| Clay     |    0     |       24       |   123   |         |         |
+| Sand     |    0     |       32       |   127   |         |         |
 
-$t_{ff(K_c=1)}$ = Shear strength on the failure plane at failure with isotropic consolidation<br>
-$t_{ff(K_c=K_f)}$ = Shear strength on the failure plane at failure with anisotropic consolidation corresponding to 
-verge-of-failure conditions
+### 2. Set Up Two Sets of Seepage Boundary Conditions
 
-$t_{ff(K_c=1)} = d + \sigma'_{fc} tan\psi \qquad t_{ff(K_c=K_f)} = c + \sigma'_{fc} tan\phi'$
+On the **seep bc** sheet, set up two sets of boundary conditions:
 
-$K_1$ = Actual anisotropy on on the failure plane<br>
-$K_f$ = Anisotropy corresponding to verge-of-failure condition
+**Solution 1 - Full Pool (Pre-Drawdown):**
 
-$K_1 = \dfrac{\sigma'+\tau_1 \left[\left(sin\phi'+1\right)/cos\phi'\right]}{\sigma'+\tau_1 \left[\left(sin\phi'-1\right)
-/cos\phi'\right]} \qquad K_f = \dfrac{\left(\sigma'+ c'cos\phi'\right)\left(1+sin\phi'\right)}
-{\left(\sigma'- c'cos\phi'\right)\left(1-sin\phi'\right)}$
+- Upstream specified head: H = 302 ft
+- Downstream specified head: H = 227 ft
+- Exit face on downstream slope
 
+**Solution 2 - Lowered Pool (Post-Drawdown):**
 
-$t_{ff}$  = Shear strength found by interpolating the $K_c=1$ and $K_c=K_f$ strength envelopes using $K_1$<br>
-$t_2$ = shear stress on the failure plane using post-drawdown conditions.
+- Upstream specified head: H = 250 ft (lowered pool level)
+- Downstream specified head: H = 227 ft
+- Exit face on downstream slope
 
-$t_{ff} =\dfrac{\left(K_f-K_1\right)\tau_{ff(K_c=1)}+\left(K_1-1\right)\tau_{ff(K_c=K_f)}}{K_f-1} \qquad 
-\tau_2=\gamma z sin\beta cos\beta$
+### 3. Set Up Two Sets of Distributed Loads
 
-Factor of safety for stage 2 is given by:
+On the **dloads** sheet, set up two sets of distributed loads corresponding to the two pool levels:
 
-$FS = \dfrac{t_{ff}}{t_2}$
+**Solution 1 - Full Pool:** Distributed load for water at the full pool level (El. 302 ft) on the upstream face.
 
-## Stage 3: Post-Drawdown, Drained Strength Analysis
+**Solution 2 - Lowered Pool:** Distributed load for water at the lowered pool level (El. 250 ft) on the upstream face.
 
-Compute FS for post-drawdown conditions using drained strengths
+### 4. Run the Seepage Analysis
 
-$\sigma'_{drn}$ = effective normal stress under drained (post-drawdown) conditions<br>
-$\tau_{drn}$ =  shear strength under drained (post-drawdown) conditions
+Upload your Excel file to the **seepage notebook** and run the analysis. The notebook will generate two seepage solutions. Download the resulting zip archive.
 
-$\sigma'_{drn} = \gamma z cos^2\beta \qquad \tau_{drn} = c' + \sigma'_{drn} tan\phi'$
+### 5. Run the Rapid Drawdown Analysis
 
-Factor of safety for stage 3 is given by:
+Upload the zip archive to the **LEM notebook**. Set up starting circles on the upstream side of the dam and run the rapid drawdown analysis using Spencer's method.
 
-$FS = \dfrac{\tau_{drn}}{\tau_2}$
-
-## Critical Factor of Safety
-
-The ultimate factor of safety is the minimum of the two factors of safety calculated in stages 2 and 3.
-
-Using the equations on the spreadsheet and the example problem described on pages 174-177 of your textbook, complete the spreadsheet by entering formulas in each of the yellow cells. Test your spreadsheet using two depths (z=5ft, z=30ft) and compare to solution found on table 9.2
-
-## Starter Files
-
-Use either of the following files to perform the calculations:
-
-Excel starter file: [rapdraw.xlsx](files/rapdraw.xlsx) 
-
-Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/08_rapid/files/rapid.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
- This corresponds to the example problem described on pages 174-177 of your textbook. Test your solution using two depths (z=5ft, z=30ft) and compare your answers to solution found on table 9.2.
+Review the three-stage results and report the critical factor of safety.
 
 ## Submission
 
-Submit either your completed Excel file or a link to your completed Colab notebook to Learning Suite.
+Save a copy of your Excel input file and a PNG of the rapid drawdown solution plot. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
@@ -101,10 +75,13 @@ Submit either your completed Excel file or a link to your completed Colab notebo
 
 | Criteria | Points |
 |----------|:------:|
-| Stage 1: Pre-drawdown stress calculations | 6 |
-| Stage 2: K1 and Kf calculations | 5 |
-| Stage 2: Shear strength interpolation | 5 |
-| Stage 2: Factor of safety calculation | 4 |
-| Stage 3: Drained strength calculations | 4 |
-| Stage 3: Factor of safety calculation | 4 |
-| Critical FS determination and verification | 2 |
+| Undrained strength parameters (d, $\psi$) entered correctly for appropriate materials | 4 |
+| Solution 1 seepage BCs set up correctly (full pool H = 302 ft) | 3 |
+| Solution 2 seepage BCs set up correctly (lowered pool H = 250 ft) | 3 |
+| Exit face defined on downstream slope for both solutions | 2 |
+| Solution 1 distributed loads calculated correctly (full pool) | 3 |
+| Solution 2 distributed loads calculated correctly (lowered pool) | 3 |
+| Seepage analysis runs successfully with two solutions | 3 |
+| Spencer's method used for rapid drawdown analysis on upstream side | 3 |
+| Three-stage results reviewed and critical FS reported | 3 |
+| Excel input file and PNG solution plot properly submitted in zip archive | 3 |
