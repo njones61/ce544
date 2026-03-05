@@ -10,33 +10,7 @@ Use the XSLOPE Google Colab LEM notebook for the slope stability analysis:
 
 <a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-## Problem 1 - Johnson Reservoir
-
-This problem corresponds to the Johnson Reservoir example from the XSLOPE documentation:
-
-![johnson_res.png](../../unit1/10_finelem/images/johnson_res.png)
-
-The strength parameters for the three materials are:
-
-| Material   | γ (pcf) | Option | c (psf) | φ (deg) |
-|:----------:|:-------:|:------:|:-------:|:-------:|
-| Shell      | 130     | mc     | 100     | 35      |
-| Core       | 125     | mc     | 400     | 18      |
-| Foundation | 127     | mc     | 100     | 27      |
-
-Download the following Excel input file:
-
-[xslope_johnson_res.xlsx](https://xslope.org/en/latest/seep/files/xslope_johnson_res.xlsx) 
-
-Use the following steps to solve the problem:
-
-1. Upload the Excel file to the **seepage notebook** and run the seepage analysis. After the analysis is complete, download the zip archive that the notebook generates. The archive contains the Excel input file, the mesh file, and the seepage solution.
-
-2. Upload the zip archive to the **LEM notebook** and run the slope stability analysis. The pore pressures from the seepage solution will automatically be used in the stability analysis.
-
-3. Review the results. Note how the pore pressures from the seepage analysis affect the factor of safety.
-
-## Problem 2 - Method of Slices Problem with Seepage
+## Problem 1 - Method of Slices Problem with Seepage
 
 This is the same problem we solved earlier in the XSLOPE exercises.
 
@@ -44,7 +18,7 @@ This is the same problem we solved earlier in the XSLOPE exercises.
 
 Use the following Excel input file to get started:
 
-[xslope_rface.xlsx](../07_seep_slope/files/xslope_rface.xlsx)
+[xslope_rface.xlsx](./files/files/xslope_rface.xlsx)
 
 ### Part a - Piezometric Line
 
@@ -89,9 +63,11 @@ Solutions:
 [xslope_rface_SEEP_KEY.xlsx](../07_seep_slope/files/xslope_rface_SEEP_KEY.xlsx)<br>
 [xslope_rface_SEEP_KEY_results.zip](../07_seep_slope/files/xslope_rface_SEEP_KEY_results.zip)
 
-## Problem 3 - Earth Dam Problem with Seepage
+## Problem 2 - Earth Dam Problem with Seepage
 
 This is the same problem we solved in the previous XSLOPE homework, but this time we will use a seepage analysis to define the pore pressures instead of a piezometric line.
+
+![earthdamfig.gif](../05_xlope/images/earthdamfig.gif)
 
 Start with this file: [xslope_earth_dam_down.xlsx](../07_seep_slope/files/xslope_earth_dam_down.xlsx)
 

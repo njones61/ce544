@@ -1,10 +1,10 @@
 # Homework - Seepage/Slope Stability Integration
 
-In this assignment, you will redo the earth dam problem from the previous XSLOPE homework, but this time using a seepage analysis to define the pore pressures instead of a piezometric line.
+This problem corresponds to the Johnson Reservoir example from the XSLOPE documentation:
 
-![earthdamfig.gif](../05_xlope/images/earthdamfig.gif)
+![johnson_res.png](../../unit1/10_finelem/images/johnson_res.png)
 
-Start with your solution from the previous homework (XSLOPE LEM, Part 2). You will modify it to use seepage-derived pore pressures instead of the piezometric line.
+we will combine seepage and slope stability analyses using XSLOPE. We will first run a seepage analysis to compute pore pressures and then use those pore pressures in a slope stability analysis. 
 
 Use the XSLOPE Google Colab seepage notebook for the seepage analysis:
 
@@ -16,22 +16,23 @@ Use the XSLOPE Google Colab LEM notebook for the slope stability analysis:
 
 ## Instructions
 
-1. Open your Excel input file from the previous homework for the analysis of the **downstream** side and change the pore pressure option for each material from `piezo` to `seep`. Delete the piezometric line coordinates from the **piezo** sheet. You will no longer need this sheet for the seepage analysis.
+1. Download the following Excel input file:
 
-2. Add the following seepage material properties to the **mat** sheet:
+[xslope_johnson_res.xlsx](./files/xslope_johnson_res.xlsx)
 
-| Material | k1  | k2  | alpha | kr0  | h0 |
-|:--------:|:---:|:---:|:-----:|:----:|:--:|
-| Shell    | 864   | 864   | 0     | 0.0001 | -1 |
-| Core     | 0.0864 | 0.0864 | 0  | 0.0001 | -1 |
-| Clay     | 0.864 | 0.864 | 0   | 0.0001 | -1 |
-| Sand     | 86.4   | 86.4   | 0     | 0.0001 | -1 |
+2. The strength parameters for the three materials are:
 
-3. Set up the seepage boundary conditions on the **seep bc** sheet. Use a specified head of H = 302 ft on the upstream boundary and an exit face on the downstream slope of the dam.
+| Material   | γ (pcf) | Option | c (psf) | φ (deg) |
+|:----------:|:-------:|:------:|:-------:|:-------:|
+| Shell      | 130     | mc     | 100     | 35      |
+| Core       | 125     | mc     | 400     | 18      |
+| Foundation | 127     | mc     | 100     | 27      |
 
-4. Upload the Excel file to the **seepage notebook** and run the seepage analysis. Use base_mat=3 to view your solution. Download the zip archive. Also, save a PNG of the seepage solution plot.
+Enter the material properties into the **mat** sheet of the Excel input file. Set the pore pressure option for each material to `seep`.
 
-5. Upload the zip archive to the **LEM notebook** and run the slope stability analysis using Spencer's method. Only analyze the downstream side. Compare the minimum factor of safety for this case to your previous solution that used the piezometric line. Save a PNG of the slope stability solution plot.
+3. Upload the Excel file to the **seepage notebook** and run the seepage analysis. After the analysis is complete, download the zip archive that the notebook generates. The archive contains the Excel input file, the mesh file, and the seepage solution. Also download the PNG of the seepage solution plot.
+
+4. Upload the zip archive to the **LEM notebook** and run the slope stability analysis. The pore pressures from the seepage solution will automatically be used in the stability analysis. Download the PNG of the slope stability solution plot.
 
 ## Submission
 
@@ -41,14 +42,10 @@ Save a copy of your Excel input file and a PNG of the solution plots (both seepa
 
 | Criteria                                                                  | Points |
 |---------------------------------------------------------------------------|:------:|
-| Pore pressure option changed to `seep` for all materials                  |   3    |
-| Seepage material properties entered correctly                             |   4    |
-| Upstream specified head boundary condition (H = 302 ft) set up correctly  |   3    |
-| Downstream specified head boundary condition (H = 227 ft) set up correctly|   3    |
-| Exit face defined on downstream slope                                     |   3    |
-| Seepage analysis runs successfully                                        |   3    |
-| Spencer's method used for slope stability analysis                        |   2    |
-| Upstream side analysis performed and minimum FOS identified               |   3    |
-| Downstream side analysis performed and minimum FOS identified             |   3    |
+| Material properties (γ, c, φ) entered correctly for all three materials   |   8    |
+| Pore pressure option set to `seep` for all materials                      |   4    |
+| Seepage analysis runs successfully and solution is reasonable             |   6    |
+| Slope stability analysis runs successfully using seepage pore pressures   |   6    |
+| Seepage and slope stability solution plots saved as PNGs                  |   3    |
 | Excel input file and PNG solution plots properly submitted in zip archive |   3    |
 | **Total**                                                                 | **30** |
