@@ -22,7 +22,7 @@ Use the following spreadsheet to get the coordinates of the piezometric line:
 
 ## Problem 2 - Multi-Layer Foundation Problem
 
-Solve the following problem using UTEXASED. 
+Solve the following problem using XSLOPE. 
 
 ![part2b_fig.png](images/part2b_fig.png)
 

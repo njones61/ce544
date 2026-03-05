@@ -44,17 +44,9 @@ This is the same problem we solved earlier in the XSLOPE exercises.
 
 ![part2a_fig.png](../05_xlope/images/part2a_fig.png)
 
-Use the following spreadsheet to get the coordinates of the profile lines:
+Use the following Excel input file to get started:
 
-[method-of-slices-input.xlsx](../05_xlope/files/method-of-slices-input.xlsx)
-
-Add the following seepage properties for the three materials:
-
-| Material | k1  | k2  | alpha | kr0    | h0 |
-|:--------:|:---:|:---:|:-----:|:------:|:--:|
-| Silt     | 0.5 | 0.5 | 0     | 0.0001 | -1 |
-| Sand     | 1   | 1   | 0     | 0.0001 | -1 |
-| Clay     | 0.01| 0.01| 0     | 0.0001 | -1 |
+[xslope_rface.xlsx](../07_seep_slope/files/xslope_rface.xlsx)
 
 ### Part a - Piezometric Line
 
@@ -62,14 +54,14 @@ First, solve the problem using a piezometric line to define the pore pressures. 
 
 |   x   |  y  |
 |:-----:|:---:|
-|   0   | 40  |
-| 115.7 | 40  |
-| 130.5 | 52  |
-|  150  | 61  |
-|  180  | 70  |
-|  208  | 76  |
-|  245  | 79  |
-|  320  | 80  |
+|   0   | 80  |
+|  75   | 79  |
+|  112  | 76  |
+|  140  | 70  |
+|  170  | 61  |
+| 189.5 | 52  |
+| 204.3 | 40  |
+|  320  | 40  |
 
 Use a single starting circle to find the factor of safety.
 
@@ -77,10 +69,24 @@ Use a single starting circle to find the factor of safety.
 
 Now solve the same problem using a seepage analysis.
 
-1. Change the pore pressure option for each material to `seep`.
-2. Set up the seepage boundary conditions on the **seep bc** sheet using a specified head of H = 80 ft on the upstream boundary.
-3. Run the seepage analysis using the **seepage notebook** and download the zip archive.
-4. Upload the zip archive to the **LEM notebook** and run the slope stability analysis. Use a single starting circle.
-5. Compare the factor of safety to the piezometric line solution from Part a.
+Use the following seepage properties for the three materials:
 
-Solution: [TODO](TODO)
+| Material | k1  | k2  | alpha | kr0    | h0 |
+|:--------:|:---:|:---:|:-----:|:------:|:--:|
+| Silt     | 0.5 | 0.5 | 0     | 0.0001 | -1 |
+| Sand     | 1   | 1   | 0     | 0.0001 | -1 |
+| Clay     | 0.01| 0.01| 0     | 0.0001 | -1 |
+
+1. Change the pore pressure option for each material to `seep` on the **mat** sheet.
+2. Enter the seepage properties for each material on the **mat** sheet using the values from the table above.
+3. Remove the piezometric line coordinates from the **piezo** sheet.
+4. Set up the seepage boundary conditions on the **seep bc** sheet using a specified head of H = 80 ft on the upstream boundary and an exit face on the downstream boundary.
+5. Run the seepage analysis using the **seepage notebook** and download the zip archive.
+6. Upload the zip archive to the **LEM notebook** and run the slope stability analysis. Use a single starting circle.
+7. Compare the factor of safety to the piezometric line solution from Part a.
+
+Solutions:
+
+[xslope_rface_PIEZO_KEY.xlsx](../07_seep_slope/files/xslope_rface_PIEZO_KEY.xlsx)<br>
+[xslope_rface_SEEP_KEY.xlsx](../07_seep_slope/files/xslope_rface_SEEP_KEY.xlsx)<br>
+[xslope_rface_SEEP_KEY_results.zip](../07_seep_slope/files/xslope_rface_SEEP_KEY_results.zip)
