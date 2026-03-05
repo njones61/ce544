@@ -16,26 +16,26 @@ Use the XSLOPE Google Colab LEM notebook for the slope stability analysis:
 
 ## Instructions
 
-1. Open your Excel input file from the previous homework and change the pore pressure option for each material from `piezo` to `seep`.
+1. Open your Excel input file from the previous homework for the analysis of the **downstream** side and change the pore pressure option for each material from `piezo` to `seep`. Delete the piezometric line coordinates from the **piezo** sheet. You will no longer need this sheet for the seepage analysis.
 
 2. Add the following seepage material properties to the **mat** sheet:
 
 | Material | k1  | k2  | alpha | kr0  | h0 |
 |:--------:|:---:|:---:|:-----:|:----:|:--:|
-| Shell    | 1   | 1   | 0     | 0.01 | -1 |
-| Core     | 0.001 | 0.001 | 0  | 0.01 | -1 |
-| Clay     | 0.01 | 0.01 | 0   | 0.01 | -1 |
-| Sand     | 1   | 1   | 0     | 0.01 | -1 |
+| Shell    | 864   | 864   | 0     | 0.0001 | -1 |
+| Core     | 0.0864 | 0.0864 | 0  | 0.0001 | -1 |
+| Clay     | 0.864 | 0.864 | 0   | 0.0001 | -1 |
+| Sand     | 86.4   | 86.4   | 0     | 0.0001 | -1 |
 
-3. Set up the seepage boundary conditions on the **seep bc** sheet. Use a specified head of H = 302 ft on the upstream boundary and H = 227 ft on the downstream boundary. Define an exit face on the downstream slope of the dam.
+3. Set up the seepage boundary conditions on the **seep bc** sheet. Use a specified head of H = 302 ft on the upstream boundary and an exit face on the downstream slope of the dam.
 
-4. Upload the Excel file to the **seepage notebook** and run the seepage analysis. Download the zip archive.
+4. Upload the Excel file to the **seepage notebook** and run the seepage analysis. Use base_mat=3 to view your solution. Download the zip archive. Also, save a PNG of the seepage solution plot.
 
-5. Upload the zip archive to the **LEM notebook** and run the slope stability analysis using Spencer's method. Perform two sets of calculations: one for the upstream side and one for the downstream side.
+5. Upload the zip archive to the **LEM notebook** and run the slope stability analysis using Spencer's method. Only analyze the downstream side. Compare the minimum factor of safety for this case to your previous solution that used the piezometric line. Save a PNG of the slope stability solution plot.
 
 ## Submission
 
-Save a copy of your Excel input file and a PNG of the solution plots for each side (upstream and downstream). Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+Save a copy of your Excel input file and a PNG of the solution plots (both seepage and slope stability). Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 

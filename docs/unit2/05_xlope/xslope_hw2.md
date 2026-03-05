@@ -16,12 +16,12 @@ You will need to calculate the proper coordinates for your profile lines. Extend
 
 The material properties are as follows:
 
-|  Mat   | c' (psf) | $\phi$' (degrees) | γ (pcf) |
-|:------:|:--------:|:-----------------:|:-------:|
-| Shell  |    0     |        34         |   125   |
-|  Core  |   100    |        26         |   122   |
-|  Clay  |    0     |        24         |   123   |
-|  Sand  |    0     |        32         |   127   |
+|  Mat   | γ (pcf) | c' (psf) | $\phi$' (degrees) |
+|:------:|:-------:|:--------:|:-----------------:|
+| Shell  |   125   |    0     |        34         |
+|  Core  |   122   |   100    |        26         |
+|  Clay  |   123   |    0     |        24         |
+|  Sand  |   127   |    0     |        32         |
 
 The coordinates of the piezometric line are as follows:
 

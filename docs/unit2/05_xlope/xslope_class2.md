@@ -16,7 +16,7 @@ This is the same problem we solved earlier using an Excel spreadsheet. Solve usi
 
 ![part2a_fig.png](images/part2a_fig.png)
 
-Use the following spreadsheet to get the coordinates of the piezometric line:
+Use the following spreadsheet to get the coordinates of the profile lines and the piezometric line:
 
 [method-of-slices-input.xlsx](files/method-of-slices-input.xlsx)
 
