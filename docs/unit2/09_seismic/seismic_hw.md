@@ -14,7 +14,7 @@ Solve using the XSLOPE Google Colab notebook for stability analysis:
 
 Use the earth dam problem from your previous XSLOPE homework:
 
-![earthdamfig.gif](../05_xlope/images/earthdamfig.gif)
+![earthdamfig.gif](../05_xslope/images/earthdamfig.gif)
 
 Start with your existing Excel input file from the XSLOPE LEM Part 2 homework (with the piezometric line).
 

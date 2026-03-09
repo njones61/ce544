@@ -14,7 +14,7 @@ Use the XSLOPE Google Colab LEM notebook for the slope stability analysis:
 
 This is the same problem we solved earlier in the XSLOPE exercises.
 
-![part2a_fig.png](../05_xlope/images/part2a_fig.png)
+![part2a_fig.png](../05_xslope/images/part2a_fig.png)
 
 Use the following Excel input file to get started:
 
@@ -67,7 +67,7 @@ Solutions:
 
 This is the same problem we solved in the previous XSLOPE homework, but this time we will use a seepage analysis to define the pore pressures instead of a piezometric line.
 
-![earthdamfig.gif](../05_xlope/images/earthdamfig.gif)
+![earthdamfig.gif](../05_xslope/images/earthdamfig.gif)
 
 Start with this file: [xslope_earth_dam_down.xlsx](../07_seep_slope/files/xslope_earth_dam_down.xlsx)
 

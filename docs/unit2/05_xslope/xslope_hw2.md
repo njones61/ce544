@@ -1,18 +1,20 @@
 # Homework - XSLOPE LEM, Part 2
 
+In this homework, we will be using the XSLOPE LEM method to solve for the critical factor of safety against slope failure for two problems. In each case, start with the standard Excel input template:
+
+[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
+
+Then solve using the XSLOPE Google Colab notebook for stability analysis:
+
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+## Problem 1: Earth Dam Problem from Textbook
+
 Use XSLOPE to solve for the critical factor of safety against slope failure for the following problem based on a circular failure surface (compare to page 121 in your textbook):
 
 ![earthdamfig.gif](images/earthdamfig.gif)
 
-Start with the standard Excel input template:
-
-[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
-
-Solve using the XSLOPE Google Colab notebook for stability analysis:
-
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Do your coordinate calculations in the Excel input spreadsheet. 
+You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Do your coordinate calculations in the Excel input spreadsheet.
 
 The material properties are as follows:
 
@@ -37,6 +39,20 @@ The coordinates of the piezometric line are as follows:
 Be sure to include external loads to represent the water on the upstream side. Calculate your distributed loads in the same spreadsheet you used for the coordinate calculations.
 
 Use a circular failure surface. Perform two sets of calculations: one for the upstream side and one for the downstream side. The side that is analyzed depends on the locations of your starting circles. Save a copy of the solution for each side.
+
+## Problem 2: Slope Design Problem
+
+For this problem, we will use XSLOPE to design a slope. 
+
+![design_problem.gif](images/design_problem.gif)
+
+Use XSLOPE to find the slope angle ($\beta$) that has a critical factor of safety = 1.5 (within a tolerance of 0.01).
+Setup your problem the coordinate origin (0,0) at the toe of the slope. Extend the problem 70 ft to the left of the 
+toe and 180 ft to the right of the toe.
+
+
+
+
 
 ## Submission
 

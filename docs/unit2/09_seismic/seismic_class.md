@@ -66,7 +66,7 @@ After preparing each set of inputs, launch the XSLOPE Google Colab notebook for 
 
 Revisit the simple embankment from the XSLOPE Part 1 exercise:
 
-![part1a_fig.png](../05_xlope/images/part1a_fig.png)
+![part1a_fig.png](../05_xslope/images/part1a_fig.png)
 
 1. Set up the problem in XSLOPE and solve for the static factor of safety (no seismic load, $k_h = 0$).
 2. Now add a seismic coefficient of $k_h = 0.1$ on the **main** sheet and re-solve. Compare the factor of safety to the static case.
@@ -76,11 +76,11 @@ Revisit the simple embankment from the XSLOPE Part 1 exercise:
 
 Revisit the method of slices problem from the XSLOPE Part 2 exercise:
 
-![part2a_fig.png](../05_xlope/images/part2a_fig.png)
+![part2a_fig.png](../05_xslope/images/part2a_fig.png)
 
 Use the following spreadsheet to get the coordinates of the profile lines:
 
-[method-of-slices-input.xlsx](../05_xlope/files/method-of-slices-input.xlsx)
+[method-of-slices-input.xlsx](../05_xslope/files/method-of-slices-input.xlsx)
 
 1. Set up the problem in XSLOPE with the piezometric line and solve for the static factor of safety.
 2. Add a seismic coefficient of $k_h = 0.15$ and re-solve. Compare to the static factor of safety.

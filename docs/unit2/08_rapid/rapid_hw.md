@@ -2,7 +2,7 @@
 
 In this assignment, you will perform a rapid drawdown analysis on the earth dam from the previous homework using XSLOPE. This builds on your seepage/slope stability homework by adding a second set of boundary conditions to model the post-drawdown water level.
 
-![earthdamfig.gif](../05_xlope/images/earthdamfig.gif)
+![earthdamfig.gif](../05_xslope/images/earthdamfig.gif)
 
 For background on the three-stage rapid drawdown methodology, see:
 
