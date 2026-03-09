@@ -42,35 +42,55 @@ Use a circular failure surface. Perform two sets of calculations: one for the up
 
 ## Problem 2: Slope Design Problem
 
-For this problem, we will use XSLOPE to design a slope. 
+For this problem, we will use XSLOPE to design a slope using the Colab notebook and methodology described here:
 
-![design_problem.gif](images/design_problem.gif)
+[https://xslope.org/en/latest/lem/design/](https://xslope.org/en/latest/lem/design/)
 
-Use XSLOPE to find the slope angle ($\beta$) that has a critical factor of safety = 1.5 (within a tolerance of 0.01).
-Setup your problem the coordinate origin (0,0) at the toe of the slope. Extend the problem 70 ft to the left of the 
-toe and 180 ft to the right of the toe.
+We will be using the following design problem:
 
+![design_problem.png](images/design_problem.png)
 
+Use XSLOPE to find the slope angle ($\beta$) that has a critical factor of safety = 1.4 (within a tolerance of 0.01).
+Setup your problem the coordinate origin (0,0) at the toe of the slope. Extend the problem 120 ft to the left of the 
+toe and 240 ft to the right of the toe.
 
+Let your beta angle vary from 25 to 35 degrees.
 
+Save a copy of the final solution and the FS vs beta design chart.
 
 ## Submission
 
-Save a copy of your Excel input file (either side) and a PNG of the two solution plots. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+For part 1, save a copy of your Excel input file (both sides) and a PNG of the two solution plots. For part 2, save 
+a copy of your Excel input file and a copy of the final solution and your design chart. Zip up your files 
+into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
+### Problem 1: Earth Dam (20 pts)
+
 | Criteria                                                                              | Points |
 |---------------------------------------------------------------------------------------|:------:|
-| Profile line coordinates calculated correctly in spreadsheet                         |   5    |
-| Problem domain extends 150 ft left and right of upstream/downstream toes             |   2    |
-| Coordinate system set up correctly (x=0 at upstream toe, given elevations for y)     |   2    |
-| All four materials defined with correct properties (c', φ', γ)                       |   4    |
-| Piezometric line coordinates entered correctly                                        |   3    |
-| Distributed loads calculated correctly in spreadsheet for upstream water             |   4    |
+| Profile line coordinates calculated correctly in spreadsheet                         |   3    |
+| Problem domain extends 150 ft left and right of upstream/downstream toes             |   1    |
+| Coordinate system set up correctly (x=0 at upstream toe, given elevations for y)     |   1    |
+| All four materials defined with correct properties (c', φ', γ)                       |   3    |
+| Piezometric line coordinates entered correctly                                        |   2    |
+| Distributed loads calculated correctly in spreadsheet for upstream water             |   3    |
 | External loads applied correctly to represent water on upstream side                 |   2    |
-| Circular failure surface method used                                                  |   1    |
 | Upstream side analysis performed and minimum FOS identified                          |   2    |
 | Downstream side analysis performed and minimum FOS identified                        |   2    |
-| Excel input file and PNG solution plot properly submitted in zip archive             |   3    |
-| **Total**                                                                             | **30** |
+| Excel input files and PNG solution plots for both sides submitted                    |   1    |
+
+### Problem 2: Slope Design (10 pts)
+
+| Criteria                                                                              | Points |
+|---------------------------------------------------------------------------------------|:------:|
+| Profile line coordinates set up correctly with origin at toe of slope                |   2    |
+| Problem domain extends 120 ft left and 240 ft right of the toe                       |   1    |
+| Material properties defined correctly                                                 |   1    |
+| Beta range set correctly (25 to 35 degrees)                                           |   1    |
+| Target FOS of 1.4 achieved within tolerance of 0.01                                   |   2    |
+| FS vs beta design chart saved                                                         |   1    |
+| Excel input file, final solution, and design chart submitted                         |   2    |
+
+### Total: 30 pts
