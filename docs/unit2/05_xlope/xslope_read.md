@@ -1,10 +1,28 @@
-# Pre-Class - UTEXASED Slope Stability Software
+# Pre-Class - XSLOPE and the Limit Equilibrium Method
 
-In this section we will learn how to use the UTEXASED slope stability software. There are no book chapters for this section.
+There are no videos for this section. Rather, you will review portions of the XSLOPE documentation.
 
-## Videos
+1. Overview of the Limit Equilibrium Method (LEM) method and features supported in XSLOPE.
 
-Slides: [utexas.pptx](files/utexas.pptx)
+[https://xslope.org/en/latest/lem/overview/](https://xslope.org/en/latest/lem/overview/)
 
-<iframe width="900" height="700" src="https://www.youtube.com/embed/H9Resj8DqGk?si=w3i9QasuLGgtRKM9" title="YouTube 
-video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Note the list of LEM methods supported in XSLOPE in the section at the bottom of the page.
+
+2. Automated Search Algorithms
+
+[https://xslope.org/en/latest/lem/search/](https://xslope.org/en/latest/lem/search/)
+
+3. The XSLOPE Input Template.
+
+[https://xslope.org/en/latest/usage/input_template/](https://xslope.org/en/latest/usage/input_template/)
+
+Re-read the section on the XSLOPE Input Template and pay particular attention to the features associated with the LEM method. This includes:
+
+- Material properties
+- Profile lines
+- Piezometric lines
+- Circles
+- Non-circular surfaces
+- Distributed loads
+
+You can ignore the section on **soil reinforcement** for now. We will cover that later.
