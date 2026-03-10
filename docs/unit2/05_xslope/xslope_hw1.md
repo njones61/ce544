@@ -12,7 +12,7 @@ For each problem, perform an automated search using Spencer's method.
 
 (a) Submerged slope. 
 
-Be sure to use total unit wt and model the external water using a distributed load.
+Be sure to use total unit wt and model the external water using a distributed load. Assume the water is 10 ft above the top of the slope.
 
 ![hw_fig_1.gif](images/hw_fig_1.gif)
 
