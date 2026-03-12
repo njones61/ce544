@@ -26,34 +26,47 @@ Add $d$ and $\psi$ parameters to the **mat** sheet for each material with poor d
 
 | Material | c' (psf) | $\phi'$ (deg) | $\gamma$ (pcf) | d (psf) | $\psi$ (deg) |
 |:--------:|:--------:|:--------------:|:-------:|:-------:|:-------:|
-| Shell    |    0     |       34       |   125   |    0    |   25    |
-| Core     |   100    |       26       |   122   |   50    |   18    |
-| Clay     |    0     |       24       |   123   |         |         |
+| Shell    |    0     |       34       |   125   |        |       |
+| Core     |   100    |       26       |   122   |   300    |   20    |
+| Clay     |    0     |       24       |   123   |   100      |     18    |
 | Sand     |    0     |       32       |   127   |         |         |
 
-### 2. Set Up Two Sets of Seepage Boundary Conditions
+For the pore pressure option ($u$), set it to `seep` for all materials since we will be using seepage-derived pore pressures in the slope stability analysis.
+
+Verify that the seepage properties are set up for all 4 materials. They should match the following:
+
+| Material | k1  | k2  | alpha | kr0  | h0 |
+|:--------:|:---:|:---:|:-----:|:----:|:--:|
+| Shell    | 864   | 864   | 0     | 0.0001 | -1 |
+| Core     | 0.0864 | 0.0864 | 0  | 0.0001 | -1 |
+| Clay     | 0.864 | 0.864 | 0   | 0.0001 | -1 |
+| Sand     | 86.4   | 86.4   | 0     | 0.0001 | -1 |
+
+### 2. Set Up Two Sets of Distributed Loads
+
+On the **dloads** sheet, set up two sets of distributed loads corresponding to the two pool levels:
+
+**Solution 1 - Full Pool:** Distributed load for water at the full pool level (El. 302 ft) on the upstream face. This is already in the input file.
+
+**Solution 2 - Lowered Pool:** Distributed load for water at the lowered pool level (El. 250 ft) on the upstream face. You will need to calculate the (x,y) coordinates where the water intersects the upstream face for both pool levels to set up the distributed loads correctly.
+
+### 3. Set Up Two Sets of Seepage Boundary Conditions
 
 On the **seep bc** sheet, set up two sets of boundary conditions:
 
 **Solution 1 - Full Pool (Pre-Drawdown):**
 
 - Upstream specified head: H = 302 ft
-- Downstream specified head: H = 227 ft
-- Exit face on downstream slope
+- Exit face on downstream slope and tail
+
+This is already in the input file.
 
 **Solution 2 - Lowered Pool (Post-Drawdown):**
 
 - Upstream specified head: H = 250 ft (lowered pool level)
-- Downstream specified head: H = 227 ft
-- Exit face on downstream slope
+- Exit face on downstream slope and tail
 
-### 3. Set Up Two Sets of Distributed Loads
-
-On the **dloads** sheet, set up two sets of distributed loads corresponding to the two pool levels:
-
-**Solution 1 - Full Pool:** Distributed load for water at the full pool level (El. 302 ft) on the upstream face.
-
-**Solution 2 - Lowered Pool:** Distributed load for water at the lowered pool level (El. 250 ft) on the upstream face.
+Use the (x,y) coordinates where the water intersects the upstream face that you calculated for the distributed loads to set up the specified head boundary condition for Solution 2.
 
 ### 4. Run the Seepage Analysis
 
@@ -61,13 +74,13 @@ Upload your Excel file to the **seepage notebook** and run the analysis. The not
 
 ### 5. Run the Rapid Drawdown Analysis
 
-Upload the zip archive to the **LEM notebook**. Set up starting circles on the upstream side of the dam and run the rapid drawdown analysis using Spencer's method.
+Upload the zip archive to the **LEM notebook**. Run the rapid drawdown analysis using Spencer's method.
 
 Review the three-stage results and report the critical factor of safety.
 
 ## Submission
 
-Save a copy of your Excel input file and a PNG of the rapid drawdown solution plot. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+Save a copy of your Excel input file, the mesh file, the two seepage solution files, and a PNG of the rapid drawdown solution plot. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
@@ -84,4 +97,4 @@ Save a copy of your Excel input file and a PNG of the rapid drawdown solution pl
 | Seepage analysis runs successfully with two solutions | 3 |
 | Spencer's method used for rapid drawdown analysis on upstream side | 3 |
 | Three-stage results reviewed and critical FS reported | 3 |
-| Excel input file and PNG solution plot properly submitted in zip archive | 3 |
+| Input fies and PNG solution plot properly submitted in zip archive | 3 |
