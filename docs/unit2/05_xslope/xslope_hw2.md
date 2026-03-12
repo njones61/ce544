@@ -48,7 +48,7 @@ For this problem, we will use XSLOPE to design a slope using the Colab notebook 
 
 We will be using the following design problem:
 
-![design_problem.png](images/design_problem.png)
+![design_problem.png](images/design_problem.png){width=800px}
 
 Use XSLOPE to find the slope angle ($\beta$) that has a critical factor of safety = 1.4 (within a tolerance of 0.01).
 Setup your problem the coordinate origin (0,0) at the toe of the slope. Extend the problem 120 ft to the left of the 
