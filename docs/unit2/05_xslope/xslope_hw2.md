@@ -56,6 +56,8 @@ toe and 240 ft to the right of the toe.
 
 Let your beta angle vary from 25 to 35 degrees.
 
+Also, for your starting circle, use the intercept option and have the starting circle intercept the toe of the slope (0, 0).
+
 Save a copy of the final solution and the FS vs beta design chart.
 
 ## Submission
