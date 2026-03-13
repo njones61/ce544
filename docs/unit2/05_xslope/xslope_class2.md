@@ -16,9 +16,9 @@ This is the same problem we solved earlier using an Excel spreadsheet. Solve usi
 
 ![part2a_fig.png](images/part2a_fig.png)
 
-Use the following spreadsheet to get the coordinates of the profile lines and the piezometric line:
+Use the following spreadsheet to get the coordinates of the profile lines and the piezometric line: [method-of-slices-input.xlsx](files/method-of-slices-input.xlsx)
 
-[method-of-slices-input.xlsx](files/method-of-slices-input.xlsx)
+Solution: [xslope_method_slices_problem.xlsx](files/xslope_method_slices_problem.xlsx)
 
 ## Problem 2 - Multi-Layer Foundation Problem
 
@@ -27,6 +27,8 @@ Solve the following problem using XSLOPE.
 ![part2b_fig.png](images/part2b_fig.png)
 
 Use a variety of starting circles to ensure that you have found the critical factor of safety.
+
+Solution: [xslope_eight_layers.xlsx](files/xslope_eight_layers.xlsx)
 
 ## Problem 3 - Non-Circular Failure Surface Problem
 
@@ -39,3 +41,5 @@ Solve the following problem using XSLOPE.
 a) Circular failure surface<br>
 b) Individual non-circular surface<br>
 c) Automatic search non-circular surface
+
+Solution: [xslope_noncircular.xlsx](files/xslope_noncircular.xlsx)

@@ -15,18 +15,22 @@ For each problem, explore the results using the variations suggested below.
 Solve the following problem using XSLOPE:
 
 ![part1a_fig.png](images/part1a_fig.png)
-
+    
 **Variations:**
 
 a) Distributed load on top of slope. q = 750 psf<br>
 b) Tension crack. Depth = 3 ft<br>
 c) Submerged by 10 ft depth of water (use distributed load)
 
+Solution: [xslope_simple_embankment.xlsx](files/xslope_simple_embankment.xlsx)
+
 ## Problem 2 - Simple Slope with Foundation
 
 Solve the following problem using XSLOPE:
 
 ![part1b_fig.png](images/part1b_fig.png)
+
+Solution: [xslope_simple_foundation.xlsx](files/xslope_simple_foundation.xlsx)
 
 ## Problem 3 - Slope with Multiple Layers
 
@@ -37,3 +41,5 @@ Solve the following problem using XSLOPE. Be careful to find the location of the
 **Variations:**
 
 a) Change the cohesion of the lower material to see the effect on the location of the critical circle (slope circle vs. deep circle)
+
+Solution: [xslope_simple_mult_layers.xlsx](files/xslope_simple_mult_layers.xlsx)
