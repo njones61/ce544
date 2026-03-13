@@ -54,34 +54,68 @@ Excel solution file: [seismic_infslope_KEY.xlsx](files/seismic_infslope_KEY.xlsx
 
 In this problem, we will use XSLOPE to perform seismic slope stability analyses. The seismic coefficient ($k_h$) is entered on the **main** sheet of the Excel input template. This applies a horizontal pseudo-static force to each slice during the limit equilibrium analysis.
 
-Start with the standard Excel input template:
-
-[input_template.xlsx](https://xslope.org/en/latest/inputs/input_template.xlsx)
-
 After preparing each set of inputs, launch the XSLOPE Google Colab notebook for stability analysis and upload your Excel input file and solve:
 
 <a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-### Part a - Simple Embankment with Seismic Load
+### Part a - Simple Slope with Foundation and Seismic Load
 
-Revisit the simple embankment from the XSLOPE Part 1 exercise:
+Revisit the simple slope with foundation from the XSLOPE Part 1 exercise:
 
-![part1a_fig.png](../05_xslope/images/part1a_fig.png)
+![part1b_fig.png](../05_xslope/images/part1b_fig.png){width=600}
 
-1. Set up the problem in XSLOPE and solve for the static factor of safety (no seismic load, $k_h = 0$).
-2. Now add a seismic coefficient of $k_h = 0.1$ on the **main** sheet and re-solve. Compare the factor of safety to the static case.
-3. Increase the seismic coefficient to $k_h = 0.2$ and solve again. Note the change in factor of safety and the location of the critical circle.
+Download the following Excel template which has the problem already set up:
 
-### Part b - Method of Slices Problem with Seismic Load
+[seismic_foundation.xlsx](files/seismic_foundation.xlsx)
 
-Revisit the method of slices problem from the XSLOPE Part 2 exercise:
+Note that the top profile line has been extended to the right to allow for a seismic failure surface that extends beyond the original slope. The seismic coefficient is set to zero in this template, so you can solve for the static factor of safety first.
 
-![part2a_fig.png](../05_xslope/images/part2a_fig.png)
+Do the following:
 
-Use the following spreadsheet to get the coordinates of the profile lines:
+1. Change the undrained shear strength of the soil to 600 psf. Leave the other parameters unchanged.
+2. Upload the template to XSLOPE and solve for the static factor of safety (no seismic load, $k_h = 0$).
+3. Edit $k_h = 0.1$ on the **main** sheet and re-solve. Compare the factor of safety to the static case.
+4. Increase the seismic coefficient to $k_h = 0.2$ and solve again. Note the change in factor of safety and the location of the critical circle.
 
-[method-of-slices-input.xlsx](../05_xslope/files/method-of-slices-input.xlsx)
+**Note**: You could modify the seismic coefficient in the Excel file and re-upload to the Colab notebook each time, but this can be time consuming. Instead, you can modify the k_h value directly in the notebook code. Add a new cell just before the cell that computes the solution and add the following code:
 
-1. Set up the problem in XSLOPE with the piezometric line and solve for the static factor of safety.
+```python
+# Change the seismic k value
+slope_data['k_seismic'] = 0.1
+```
+
+Run the cell after modifying it, and then run the rest of the notebook to solve with the new seismic coefficient.
+
+Solution: [seismic_foundation_KEY.xlsx](files/seismic_foundation_KEY.xlsx)
+
+### Part b - Johnson Reservoir with Seismic Load
+
+Revisit the Johnson Reservoir dam:
+
+![johnson_res.png](../../unit1/10_finelem/images/johnson_res.png)
+
+Download the following Excel template which has the dam geometry, seepage boundary conditions, and distributed loads already set up:
+
+[seismic_johnson_res.xlsx](files/seismic_johnson_res.xlsx)
+
+The material properties are as follows:
+
+| Material   | $\gamma$ (pcf) | Option | c (psf) | $\phi$ (deg) |
+|:----------:|:-------:|:------:|:-------:|:-------:|
+| Shell      | 130     | mc     | 100     | 35      |
+| Core       | 125     | mc     | 400     | 18      |
+| Foundation | 127     | mc     | 100     | 27      |
+
+The pore pressure option ($u$) for each material is set to `seep`. First, run the seepage analysis by uploading the Excel file to the XSLOPE seepage notebook and downloading the resulting zip archive:
+
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Then upload the zip archive to the LEM notebook and do the following:
+
+1. Solve for the static factor of safety ($k_h = 0$).
 2. Add a seismic coefficient of $k_h = 0.15$ and re-solve. Compare to the static factor of safety.
 3. Try to find the value of $k_h$ that results in a factor of safety of approximately 1.0. You can do this by adjusting $k_h$ on the main sheet and re-running the analysis.
+
+See note above in part a for how to modify the seismic coefficient directly in the notebook code to save time.
+
+Solution: [seismic_johnson_res_KEY.zip](files/seismic_johnson_res_KEY.zip)
