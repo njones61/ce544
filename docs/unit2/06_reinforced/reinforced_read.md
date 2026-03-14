@@ -8,6 +8,10 @@ Read the following sections from the textbook:
 
 [Chapter 8 - Reinforced Slopes and Embankments](https://ebookcentral.proquest.com/lib/byu/reader.action?docID=7104230&ppg=175){:target="_blank"}
 
+Also, review the section in the XSLOPE input template page on how to input reinforcement properties:
+
+[https://xslope.org/en/latest/usage/input_template/](https://xslope.org/en/latest/usage/input_template/){:target="_blank"}
+
 ## Videos
 
 Slides: [reinforcement.pptx](files/reinforcement.pptx)
