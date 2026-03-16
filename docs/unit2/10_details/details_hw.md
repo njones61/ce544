@@ -10,27 +10,39 @@ Solve using the XSLOPE Google Colab notebook for stability analysis:
 
 Complete the following two problems:
 
-1) Consider the following slope:
+## Problem 1 - Global Minimum Factor of Safety
+
+Consider the following slope:
 
 ![hw_fig1.png](images/hw_fig1.png)
 
-Create the inputs for the problem using the XSLOPE input template. Find the global-minimum factor of safety by trying several different starting locations for the automated search. Save your solution.
+Do the following:
 
-2) Consider the following slope:
+1) Create the inputs for the problem using the XSLOPE input template. Extend the profiles lines to x = -60 ft on the left and x = 100 ft on the right.
+
+2) Find the global-minimum factor of safety by trying several different starting locations for the automated search. Save your input file and a PNG of the solution.
+
+## Problem 2 - Tension Cracks
+
+Consider the following slope:
 
 ![hw_fig2.png](images/hw_fig2.png)
 
-Create the inputs for the problem using the XSLOPE input template. Then compute a solution for the following three conditions (save each version to a different file name):
+Do the following:
 
-a) As-is with no tension crack. Save a copy of your solution.
+1) Create the inputs for the problem using the XSLOPE input template. Extend the profiles lines to x = -60 ft on the left and x = 100 ft on the right. 
 
-b) Note that you have tension in the active zone. Use a spreadsheet to estimate the appropriate depth for a tension crack using the equations we discussed in class using an estimated factor of safety. Enter this tension crack depth on the **main** sheet and recompute the factor of safety. Adjust the depth of the crack up and down until you find a depth that is just on the threshold of eliminating tension. Save a copy of your solution.
+2) Then compute a solution for the following three conditions (save each version to a different file name):
 
-c) Fill your tension crack with water (enter the water level on the **main** sheet) and iterate again. Save a copy of your solution.
+>>a) As-is with no tension crack. Save a copy of your solution.
+
+>>b) Note that you have tension in the active zone. Use a spreadsheet to estimate the appropriate depth for a tension crack using the equations we discussed in class using an estimated factor of safety. Enter this tension crack depth on the **main** sheet and recompute the factor of safety. Adjust the depth of the crack up and down until you find a depth that is just on the threshold of eliminating tension. Save a copy of your solution.
+
+>>c) Fill your tension crack with water (enter the water level on the **main** sheet) and iterate again. Save a copy of your solution.
 
 ## Submission
 
-Zip up all four Excel input files and the spreadsheet with your tension crack calculations into a single zip archive. Upload your zip archive via Learning Suite.
+Zip up all four Excel input files, the four PNG solutions, and the spreadsheet with your tension crack calculations into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
