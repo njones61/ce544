@@ -18,7 +18,7 @@ This is the same problem we solved earlier in the XSLOPE exercises.
 
 Use the following Excel input file to get started:
 
-[xslope_rface.xlsx](./files/files/xslope_rface.xlsx)
+[xslope_rface.xlsx](./files/xslope_rface.xlsx)
 
 ### Part a - Piezometric Line
 

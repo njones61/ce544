@@ -78,9 +78,9 @@ Do the following:
 
 Excel starter file: [tension_crack_calculations.xlsx](files/tension_crack_calculations.xlsx)<br>
 
-6) Enter the depth you calculated in the input template and solve again. How does the factor of safety compare to the previous case? What do you notice about the tension at the top of the slope and the line of thrust?
+1) Enter the depth you calculated in the input template and solve again. How does the factor of safety compare to the previous case? What do you notice about the tension at the top of the slope and the line of thrust?
 
-7) Now, iteration on the depth of the tension crack until you find a depth where the tension crack just disappears. 
+2) Now, iteration on the depth of the tension crack until you find a depth where the tension crack just disappears. 
 
 Note: As you iterate, rather than changing the depth in the Excel file and re-uploading to the Colab notebook, you can modify the depth value directly in the notebook code. Add a new cell just before the cell that computes the solution and add the following code:
 
