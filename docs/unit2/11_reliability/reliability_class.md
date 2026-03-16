@@ -41,7 +41,7 @@ CSV file with bay mud data values: [bay_mud_data.csv](files/bay_mud_data.csv)
 Solution: [reliability_calc_KEY.xlsx](files/reliability_calc_KEY.xlsx)
 Solution: [reliability_calc_KEY.ipynb](files/reliability_calc_KEY.ipynb)
 
-## Problem 2 - Reliability Analysis
+## Problem 2 - Submerged Slope Reliability Analysis
 
 Consider the following slope:
 
