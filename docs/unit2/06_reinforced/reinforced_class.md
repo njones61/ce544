@@ -30,4 +30,4 @@ and solve:
 
 <a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Solution: [xslope_reinforce.xlsx](https://xslope.readthedocs.io/en/latest/lem/samples/files/xslope_reinforce.xlsx)
+Solution: [xslope_reinforce.xlsx](https://github.com/njones61/xslope/blob/main/docs/lem/files/xslope_reinforce.xlsx)

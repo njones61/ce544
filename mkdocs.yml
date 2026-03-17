@@ -1,8 +1,8 @@
 site_name: BYU CE 544
-site_url: https://ce544.readthedocs.io/en/latest/
+site_url: https://byu-ce544.readthedocs.io/en/latest/
 site_description: Course materials for CE 544 at BYU
 site_author: Norm Jones (instructor) and TAs of CE 544 at BYU
-repo_url: https://github.com/cce544/
+repo_url: https://github.com/njones61/ce544/
 favicon: 'images/favicon.ico'
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
