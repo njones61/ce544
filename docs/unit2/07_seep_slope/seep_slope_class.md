@@ -35,7 +35,13 @@ First, solve the problem using a piezometric line to define the pore pressures. 
 | 204.3 | 40  |
 |  320  | 40  |
 
-Use a single starting circle to find the factor of safety.
+Use a single starting circle (not auto search) to find the factor of safety. Use this circle:
+
+>>$X_{0} = 175$ ft<br>
+>>$Y_{0} = 100$ ft<br>
+>>$Depth = 0$ ft
+
+Use the **LEM notebook** to run the slope stability analysis. Note the factor of safety.
 
 ### Part b - Seepage Analysis
 
@@ -71,7 +77,13 @@ This is the same problem we solved in the previous XSLOPE homework, but this tim
 
 Start with this file: [xslope_earth_dam_down.xlsx](../07_seep_slope/files/xslope_earth_dam_down.xlsx)
 
-1. Open your Excel input file from the previous homework for the analysis of the **downstream** side and change the pore pressure option for each material from `piezo` to `seep`. Delete the piezometric line coordinates from the **piezo** sheet. You will no longer need this sheet for the seepage analysis.
+## Part a - Piezometric Line
+
+First find a solution using a piezometric line. The input file already has the pore pressure option set to `piezo` and it contains the piezometric line coordinates on the **piezo** sheet. Use the **LEM notebook** to run the slope stability analysis. Note the factor of safety.
+
+## Part b - Seepage Analysis
+
+1. Open the Excel input file and change the pore pressure option for each material from `piezo` to `seep`. You can delete the piezometric line coordinates from the **piezo** sheet if you like (optional).
 
 2. Add the following seepage material properties to the **mat** sheet:
 
