@@ -60,19 +60,21 @@ After preparing each set of inputs, launch the XSLOPE Google Colab notebook for 
 
 ### Part a - Simple Slope with Foundation and Seismic Load
 
-Revisit the simple slope with foundation from the XSLOPE Part 1 exercise:
+For this problem, we will analyze a simple slope with a foundation layer under seismic loading conditions. The geometry of the problem is shown below:
 
-![part1b_fig.png](../05_xslope/images/part1b_fig.png){width=600}
+![simple_foundation.png](images/simple_foundation.png)
 
 Download the following Excel template which has the problem already set up:
 
 [seismic_foundation.xlsx](files/seismic_foundation.xlsx)
 
-Note that the top profile line has been extended to the right to allow for a seismic failure surface that extends beyond the original slope. The seismic coefficient is set to zero in this template, so you can solve for the static factor of safety first.
-
 Do the following:
 
-1. Change the undrained shear strength of the soil to 600 psf. Leave the other parameters unchanged.
+1. Following the guidelines in the text, apply a strength reduction factor of 0.8 to the undrained shear strength. 
+   Leave 
+   the other 
+   parameters 
+   unchanged.
 2. Upload the template to XSLOPE and solve for the static factor of safety (no seismic load, $k_h = 0$).
 3. Edit $k_h = 0.1$ on the **main** sheet and re-solve. Compare the factor of safety to the static case.
 4. Increase the seismic coefficient to $k_h = 0.2$ and solve again. Note the change in factor of safety and the location of the critical circle.
@@ -90,7 +92,8 @@ Solution: [seismic_foundation_KEY.xlsx](files/seismic_foundation_KEY.xlsx)
 
 ### Part b - Johnson Reservoir with Seismic Load
 
-Revisit the Johnson Reservoir dam:
+In this problem, we will analyze the Johnson Reservoir dam under seismic loading conditions. Since this is a 
+constructed embankment, we will use the R-envelopes for the core and foundation layers. This approach uses pre-earthquake loading conditions (pore pressures and effective stresses) to scale an undrained strength to use in the analysis. The geometry of the problem is shown below:
 
 ![johnson_res.png](../../unit1/10_finelem/images/johnson_res.png)
 
@@ -122,8 +125,6 @@ and do the following:
 2. Note the factor of safety and the location of the critical circle.
 
 #### Seismic Analysis
-
-For this analysis, we will use the R-envelopes for core and foundation as described in the textbook. This uses pre-earthquake loading conditions (pore pressures and effective stresses) to scale an undrained strength to use in the analysis. 
 
 1. Open the Excel template and change the material properties to:
 
