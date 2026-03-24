@@ -98,7 +98,7 @@ Download the following Excel template which has the dam geometry, seepage bounda
 
 [seismic_johnson_res.xlsx](files/seismic_johnson_res.xlsx)
 
-The material properties are as follows:
+The original material properties are as follows:
 
 | Material   | $\gamma$ (pcf) | Option | c (psf) | $\phi$ (deg) |
 |:----------:|:-------:|:------:|:-------:|:-------:|
@@ -110,11 +110,33 @@ The pore pressure option ($u$) for each material is set to `seep`. First, run th
 
 <a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Then upload the zip archive to the LEM notebook and do the following:
+Then upload the zip archive to the LEM notebook:
+
+<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+and do the following:
+
+#### Static Analysis
 
 1. Solve for the static factor of safety ($k_h = 0$).
-2. Add a seismic coefficient of $k_h = 0.15$ and re-solve. Compare to the static factor of safety.
-3. Try to find the value of $k_h$ that results in a factor of safety of approximately 1.0. You can do this by adjusting $k_h$ on the main sheet and re-running the analysis.
+2. Note the factor of safety and the location of the critical circle.
+
+#### Seismic Analysis
+
+For this analysis, we will use the R-envelopes for core and foundation as described in the textbook. This uses pre-earthquake loading conditions (pore pressures and effective stresses) to scale an undrained strength to use in the analysis. 
+
+1. Open the Excel template and change the material properties to:
+
+| Material   | $\gamma$ (pcf) | Option | $c_R$ (psf) | $\phi_R$ (deg) |
+|:----------:|:-------:|:------:|:-----------:|:--------------:|
+| Shell      | 130     | mc     |    1400     |      22.5      |
+| Core       | 125     | mc     |     700     |       12       |
+| Foundation | 127     | mc     |     400     |       18        |
+
+2. Add a seismic coefficient of $k_h = 0.15$ on the first page of the Excel file.
+3. Save and rezip the archive and upload to the LEM notebook. 
+4. Solve and compare to the static factor of safety.
+5. Try to find the value of $k_h$ that results in a factor of safety of approximately 1.0. You can do this by adjusting $k_h$ on the main sheet and re-running the analysis.
 
 See note above in part a for how to modify the seismic coefficient directly in the notebook code to save time.
 
