@@ -18,7 +18,7 @@ The template includes the geometry of the dam, the profile lines, and the materi
 
 ### Materials
 
-The material properties are as follows. Note the addition of the $d$ and $\psi$ parameters for the shell and core materials. These are the undrained strength parameters used for the rapid drawdown analysis. The shell material is assumed to be freely draining, so $d$ and $\psi$ are left blank.
+The material properties are as follows. Note the addition of the $d$ and $\psi$ parameters for the shell and core materials. These are the undrained strength parameters used for the rapid drawdown analysis. Enter the $d$ and $\psi$ parameters shown below for the Core and Foundation. The shell material is assumed to be freely draining, so $d$ and $\psi$ are left blank.
 
 | Material   | $\gamma$ (pcf) | Option | c' (psf) | $\phi'$ (deg) | d (psf) | $\psi$ (deg) |
 |:----------:|:-------:|:------:|:-------:|:-------:|:-------:|:-------:|
@@ -27,6 +27,28 @@ The material properties are as follows. Note the addition of the $d$ and $\psi$ 
 | Foundation | 127     | mc     | 100     | 27      |  250       |    20     |
 
 Make sure the pore pressure option ($u$) for each material is set to `seep` since we will be using seepage-derived pore pressures.
+
+Verify that the seepage properties are set up for all 3 materials. They should match the following:
+
+| Material   | k1  | k2  | alpha | kr0  | h0 |
+|:----------:|:---:|:---:|:-----:|:----:|:--:|
+| Shell      | 1   | 1   | 0     | 0.0001 | -1 |
+| Core       | 0.001 | 0.001 | 0  | 0.0001 | -1 |
+| Foundation | 0.1 | 0.1 | 0     | 0.0001 | -1 |
+
+
+### Circles
+
+Set up one or more starting circles for the upstream side of the dam (the side affected by rapid drawdown). The one in the starting template is a good option. 
+
+### Distributed Loads
+
+On the **dloads** sheet, set up **two** sets of distributed loads corresponding to the two pool levels. The distributed loads represent the hydrostatic pressure from the water on the upstream face of the dam.
+
+**Solution 1 - Full Pool:** Calculate the distributed load for water at the full pool level (El. 160 ft). (This should already be set up for you.
+)
+
+**Solution 2 - Lowered Pool:** Calculate the distributed load for water at the lowered pool level (El. 110 ft).
 
 ### Seepage Boundary Conditions
 
@@ -38,23 +60,13 @@ On the **seep bc** sheet, set up **two** sets of seepage boundary conditions -- 
 - Downstream specified head: H = 100 ft (free drainage at the downstream toe)
 - Exit face on downstream slope
 
+This should already be set up for you.
+
 **Solution 2 - Lowered Pool (Post-Drawdown):**
 
 - Upstream specified head: H = 110 ft (lowered pool level)
 - Downstream specified head: H = 100 ft (free drainage at the downstream toe)
 - Exit face on downstream slope
-
-### Distributed Loads
-
-On the **dloads** sheet, set up **two** sets of distributed loads corresponding to the two pool levels. The distributed loads represent the hydrostatic pressure from the water on the upstream face of the dam.
-
-**Solution 1 - Full Pool:** Calculate the distributed load for water at the full pool level (El. 160 ft).
-
-**Solution 2 - Lowered Pool:** Calculate the distributed load for water at the lowered pool level (El. 110 ft).
-
-### Circles
-
-Set up one or more starting circles for the upstream side of the dam (the side affected by rapid drawdown). The one in the starting template is a good option. 
 
 ## Step 2 - Run the Seepage Analysis
 
