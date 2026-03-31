@@ -28,13 +28,11 @@ Using the input template and XSLOPE, do the following:
 >>$Y_0$ = 40 ft<br>
 >>Depth = 0 ft (at base of the embankment)
 
-4) Save and ompute the factor of safety for this starting circle. What do you notice about the location of the critical slip circle?
+4) Save and compute the factor of safety for this starting circle. What do you notice about the location of the critical slip circle?
 
 5) Calculate the factor of safety for the embankment using the infinite slope solution. How does this compare to the factor of safety from XSLOPE?
 
 >>$F = \dfrac{\tan\phi}{\tan\beta}$
-
-How does this compare to the factor of safety from XSLOPE?
 
 6) Now, solve again using a single starting circle at this location:
 
@@ -60,7 +58,7 @@ Because the top layer has a cohesion > 0, if you solve this problem with XSLOPE,
 
 >>$c_d = \dfrac{c}{F} \quad tan\phi_d = \dfrac{tan\phi}{F}$
 
-Note that the depth of the crack is a function of the factor of safety, F. This required you to guess a value of F, compute the depth of the crack, and then recompute the factor of safety. You will need to iterate until the factor of safety converges.
+Note that the depth of the crack is a function of the factor of safety, F. This requires you to guess a value of F, compute the depth of the crack, and then recompute the factor of safety. You will need to iterate until the factor of safety converges.
 
 The tension crack depth is entered on the **main** sheet of the XSLOPE input template.
 
@@ -78,9 +76,9 @@ Do the following:
 
 Excel starter file: [tension_crack_calculations.xlsx](files/tension_crack_calculations.xlsx)<br>
 
-1) Enter the depth you calculated in the input template and solve again. How does the factor of safety compare to the previous case? What do you notice about the tension at the top of the slope and the line of thrust?
+6) Enter the depth you calculated in the input template and solve again. How does the factor of safety compare to the previous case? What do you notice about the tension at the top of the slope and the line of thrust?
 
-2) Now, iteration on the depth of the tension crack until you find a depth where the tension crack just disappears. 
+7) Now, iterate on the depth of the tension crack until you find a depth where the tension crack just disappears. 
 
 Note: As you iterate, rather than changing the depth in the Excel file and re-uploading to the Colab notebook, you can modify the depth value directly in the notebook code. Add a new cell just before the cell that computes the solution and add the following code:
 

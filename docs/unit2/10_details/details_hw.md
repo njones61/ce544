@@ -18,7 +18,7 @@ Consider the following slope:
 
 Do the following:
 
-1) Create the inputs for the problem using the XSLOPE input template. Extend the profiles lines to x = -60 ft on the left and x = 100 ft on the right.
+1) Create the inputs for the problem using the XSLOPE input template. Extend the profile lines to x = -60 ft on the left and x = 100 ft on the right.
 
 2) Find the global-minimum factor of safety by trying several different starting locations for the automated search. Save your input file and a PNG of the solution.
 
@@ -30,7 +30,7 @@ Consider the following slope:
 
 Do the following:
 
-1) Create the inputs for the problem using the XSLOPE input template. Extend the profiles lines to x = -60 ft on the left and x = 100 ft on the right. 
+1) Create the inputs for the problem using the XSLOPE input template. Extend the profile lines to x = -60 ft on the left and x = 100 ft on the right. 
 
 2) Then compute a solution for the following three conditions (save each version to a different file name):
 
