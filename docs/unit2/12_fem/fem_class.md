@@ -51,30 +51,7 @@ Add $E$ and $\nu$ to the starter template and upload the file to both notebooks.
 
 Solution: [xslope_simple_mult_layers_KEY.zip](files/xslope_simple_mult_layers_KEY.zip)
 
-## Problem 3 - Non-Circular Failure Surface
-
-This is the same problem from [XSLOPE Class Exercise 2, Problem 3](../05_xslope/xslope_class2.md). Note how the FEM method naturally finds the non-circular failure mechanism through the thin weak clay layer without any prior assumption about the failure surface shape.
-
-![part2c_fig.png](../05_xslope/images/part2c_fig.png)
-
-Start with the LEM solution file and add the following elastic properties:
-
-| Soil | $E$ (psf) | $\nu$ |
-|------|:---------:|:-----:|
-| Sand Fill ($c'$ = 0, $\phi'$ = 37°) | 1,000,000 | 0.30 |
-| Sand ($c'$ = 0, $\phi'$ = 33°) | 700,000 | 0.30 |
-| Soft Clay ($S_u$ = 200 psf, $\phi$ = 0) | 60,000 | 0.40 |
-| Dense Sand ($c'$ = 0, $\phi'$ = 37°) | 1,500,000 | 0.28 |
-
-The soft clay is modeled with $E/S_u \approx 300$ and $\nu = 0.40$ to avoid numerical issues with near-incompressibility. The sand layers use typical values from correlations for granular soils.
-
-Starter template: [xslope_noncircular.xlsx](../05_xslope/files/xslope_noncircular.xlsx)
-
-Add $E$ and $\nu$ to the starter template and upload the file to both notebooks. In the LEM notebook, try both circular and non-circular failure surfaces. Compare the factors of safety and note how the FEM shear strain plot reveals the non-circular failure mechanism automatically.
-
-Solution: [xslope_noncircular_KEY.zip](files/xslope_noncircular_KEY.zip)
-
-## Problem 4 - Reinforced Slope with Geogrid
+## Problem 3 - Reinforced Slope with Geogrid
 
 This is the FEM version of the problem from the [Reinforced Slopes Exercise](../06_reinforced/reinforced_class.md). For additional details on how reinforcement is modeled using truss elements in the FEM method, see the [XSLOPE Soil Reinforcement](https://xslope.org/en/latest/fem/reinforcement/){target="_blank"} documentation.
 
@@ -102,3 +79,26 @@ Starter template: [xslope_reinforce.xlsx](../06_reinforced/files/xslope_reinforc
 Add $E$, $\nu$, and the reinforcement properties above to the starter template and upload the file to both notebooks. Compare the factors of safety and examine the reinforcement summary table to see which elements have yielded or pulled out.
 
 Solution: [xslope_reinforce_KEY.zip](files/xslope_reinforce_KEY.zip)
+
+## Problem 4 - Earth Dam with Seepage
+
+This problem applies the FEM method to the earth dam from the [Seepage/Slope Integration Homework](../07_seep_slope/seep_slope_hw.md). Unlike the previous problems, this analysis includes seepage-derived pore pressures that affect the stability results.
+
+![earthdamfig.gif](../05_xslope/images/earthdamfig.gif)
+
+A starter zip archive is provided that includes the Excel input file with the dam geometry, strength properties, seepage material properties, and seepage boundary conditions already set up. The archive also includes the seepage solution (mesh and pore pressures) so you do not need to run the seepage analysis again.
+
+Start with the starter template and add the following elastic properties:
+
+| Material | $E$ (psf) | $\nu$ |
+|----------|:---------:|:-----:|
+| Shell    | 700,000   | 0.30  |
+| Core     | 300,000   | 0.35  |
+| Clay     | 200,000   | 0.35  |
+| Sand     | 1,000,000 | 0.30  |
+
+Starter template: [xslope_earth_dam_fem.zip](files/xslope_earth_dam_fem.zip)
+
+Add $E$ and $\nu$ to the input file, re-zip it with the mesh and seepage solution files, and upload to both the LEM and FEM notebooks. For the LEM analysis, run the downstream side using Spencer's method. For the FEM analysis, use $F_{min} = 1.0$ and $F_{max} = 1.4$ based on the LEM result with a piezometric line (FS $\approx$ 1.2). Compare the LEM and FEM results and note whether the FEM finds the same localized toe failure or reveals a different failure mechanism. Also note that the FEM does not require you to specify which side to analyze -- it naturally finds the critical failure mechanism.
+
+Solution: [xslope_earth_dam_fem_KEY.zip](files/xslope_earth_dam_fem_KEY.zip)
