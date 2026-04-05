@@ -35,6 +35,8 @@ a) Use the USGS Unified Hazard tool [USGS website](https://earthquake.usgs.gov/h
 
 b) Multiply both of PGA values by 0.5 to obtain the seismic coefficient ($k_h$) for both return periods.
 
+Use a spreadsheet to show the PGA values and your calculation of the seismic coefficients for both return periods. Save this spreadsheet as **seismic_coefficients.xlsx**.
+
 ## Part 3 - Seismic Analysis
 
 a) Since this is a constructed slope, we will use shear strengths from R-envelopes as we did for the Johnson Reservoir problem in the in-class exercise. Update the material properties in your Excel input file to use the following R-envelope values:
@@ -57,9 +59,10 @@ d) Change the seismic coefficient ($k_h$) to PGA_10 and re-run the analysis. Sav
 Combine the following files into a zip archive:
 
 1. PNG of the solution plot for the static analysis (Part 1)
-2. Excel input file with the R-envelope soil properties and seismic coefficient for PGA_2 (Part 3b)
-3. PNG of the solution plot for the seismic analysis with PGA_2 (Part 3c)
-4. PNG of the solution plot for the seismic analysis with PGA_10 (Part 3d)
+2. Excel file with the PGA values and seismic coefficients for both return periods (Part 2)
+3. Excel input file with the R-envelope soil properties and seismic coefficient for PGA_2 (Part 3b)
+4. PNG of the solution plot for the seismic analysis with PGA_2 (Part 3c)
+5. PNG of the solution plot for the seismic analysis with PGA_10 (Part 3d)
 
 Upload your zip archive via Learning Suite.
 
