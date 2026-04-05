@@ -19,13 +19,11 @@ Use the following XSLOPE Google Colab notebook to perform the analysis and desig
 
 **(a) Slope analysis**
 
-Solve the problem assuming the slope does not have any reinforcement. Compute the critical factor of safety using a circular failure surface.
+Solve the problem assuming the slope does not have any reinforcement. Compute the critical factor of safety using a circular failure surface. Save a copy of your solution plot.
 
 **(b) Reinforcement design**
 
-Design reinforcement for the slope using layers of geogrids. You can add as many layers as you need (up to the limit of 10) 
-and you can put them at any combination of elevations. Design a length for the layers, but keep each layer the same length 
-in order to simplify the problem. In summary, you will have three basic design parameters:
+Design reinforcement for the slope using layers of geogrids. You can add as many layers as you need (up to the limit of 10) and you can put them at any combination of elevations. Design a length for the layers, but keep each layer the same length in order to simplify the problem. In summary, you will have three basic design parameters:
 
 1. Number of layers
 2. Elevations for the layers
@@ -44,14 +42,13 @@ Your objective is to design a reinforcement that satisfies the following constra
 * Minimize the total cost
 * FS must be >= 1.5
 
-The total cost is calculated as the sum of the unit cost multiplied by the number of layers and the layer length.
+The total cost is calculated as the sum of the unit cost multiplied by the number of layers and the layer length. Do your calculations in the reinforcement sheet of the Excel file below the table.
 
-
+Save a copy of your solution plot corresponding to your final design. Make sure the table in the reinforcement sheet matches your final design.
 
 ## Submission
 
-Show all of your calculations inside the Excel input file on the "reinforce" sheet. Upload a copy of your Excel file 
-to Learning Suite.
+Show all of your calculations inside the Excel input file on the "reinforce" sheet. Add the two plots and the Excel files to a zip archive and upload the archive to Learning Suite. 
 
 ## Grading Rubric
 
@@ -59,8 +56,8 @@ to Learning Suite.
 
 | Criteria | Points |
 |----------|:------:|
-| Part A: Unreinforced slope FS calculation | 10 |
+| Part A: Unreinforced slope FS calculation | 6 |
 | Part B: Reinforcement design meets FS ≥ 1.5 | 8 |
-| Part B: Design is economical (minimized cost) | 6 |
-| Part B: Proper placement of geogrid layers | 3 |
-| Documentation and justification of design | 3 |
+| Part B: Design is economical (minimized cost) | 8 |
+| Part B: Calculations for costs were done correctly | 4 |
+| Proper files submitted | 4 |
