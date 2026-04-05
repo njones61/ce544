@@ -80,7 +80,7 @@ Review the three-stage results and report the critical factor of safety.
 
 ## Submission
 
-Save a copy of your Excel input file, the mesh file, the two seepage solution files, and a PNG of the rapid drawdown solution plot. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+Save a copy of your Excel input file (XLSX), the mesh file (JSON), the two seepage solution files (CSV), and a PNG of the rapid drawdown solution plot (PNG). Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
