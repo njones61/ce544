@@ -59,6 +59,8 @@ Open the Excel input file from the zip archive and add the following elastic pro
 | Core     |  125   |  400   |   18   |   300,000 | 0.35  |
 | Foundation | 127  |  100   |   27   |   700,000 | 0.30  |
 
+Also, be sure to change the pore pressure option to `seep` for all materials in the **mat** sheet so that the LEM and FEM analyses will use the pore pressures from the seepage solution.
+
 Save the updated Excel file and re-zip it with the mesh and seepage solution files.
 
 Starter template: [xslope_johnson_res_fem.zip](files/xslope_johnson_res_fem.zip)

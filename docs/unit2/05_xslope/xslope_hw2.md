@@ -14,7 +14,7 @@ Use XSLOPE to solve for the critical factor of safety against slope failure for 
 
 ![earthdamfig.gif](images/earthdamfig.gif)
 
-You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Do your coordinate calculations in the Excel input spreadsheet.
+You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Use the base of the sand layer (y=182 ft) as the max_depth in the profile lines sheet. Do your coordinate calculations in the Excel input spreadsheet.
 
 The material properties are as follows:
 
