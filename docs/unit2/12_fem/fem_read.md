@@ -8,7 +8,7 @@ The following articles are classic papers in the field of finite element slope s
 
 [Matsui, T., & San, K. C. (1992). Finite element slope stability analysis by shear strength reduction technique. Soils and foundations, 32(1), 59-70.](https://www.sciencedirect.com/science/article/pii/S0038080620319156){target="_blank"}
 
-[Griffiths, D. V., & Lane, P. A. (1999). Slope stability analysis by finite elements. Geotechnique, 49(3), 387-403.](https://inside.mines.edu/~vgriffit/slope64/Griffiths%20and%20Lane%201999%20Slope%20Stability%20Analysis%20by%20Finite%20Elements.pdf){target="_blank"}
+[Griffiths, D. V., & Lane, P. A. (1999). Slope stability analysis by finite elements. Geotechnique, 49(3), 387-403.](https://inside.mines.edu/~vgriffit/slope64/Griffiths%20and%20Lane%201999){target="_blank"}
 
 ### XSLOPE Documentation on FEM Method
 
