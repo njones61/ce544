@@ -29,7 +29,7 @@ Starter template: [xslope_noncircular.xlsx](../05_xslope/files/xslope_noncircula
 
 ### b. Run the LEM Analysis
 
-Upload the file to the LEM notebook. Run the analysis using both circular and non-circular failure surfaces. Note the critical factor of safety for each case.
+Upload the file to the LEM notebook. Run the analysis using a non-circular failure surface. Note the critical factor of safety for each case.
 
 ### c. Run the FEM Analysis
 
@@ -101,18 +101,16 @@ Save a copy of your input file (XLSX), the mesh file (JSON), the seepage solutio
 
 | Criteria | Points |
 |----------|:------:|
-| Elastic properties ($E$, $\nu$) entered correctly for all four materials | 3 |
-| LEM analysis run with both circular and non-circular failure surfaces | 4 |
-| FEM analysis run with appropriate $F_{min}$ and $F_{max}$ | 4 |
-| Comparison of LEM and FEM factors of safety and failure mechanisms | 3 |
-| Files and PNG solution plots properly submitted | 1 |
+| Elastic properties ($E$, $\nu$) entered correctly for all four materials | 4 |
+| LEM analysis run with non-circular failure surface | 4 |
+| FEM analysis produces correct factor of safety | 4 |
+| Files (XLSX, JSON) and PNG solution plots properly submitted | 3 |
 
 ### Part 2 - Johnson Reservoir (15 points)
 
 | Criteria | Points |
 |----------|:------:|
-| Elastic properties ($E$, $\nu$) entered correctly for all three materials | 3 |
+| Elastic properties ($E$, $\nu$) entered correctly and pore pressure set to `seep` | 4 |
 | LEM analysis run with seepage-derived pore pressures | 4 |
-| FEM analysis run with appropriate $F_{min}$ and $F_{max}$ | 4 |
-| Comparison of LEM and FEM factors of safety and failure mechanisms | 3 |
-| Files and PNG solution plots properly submitted | 1 |
+| FEM analysis produces correct factor of safety | 4 |
+| Files (XLSX, JSON, CSV) and PNG solution plots properly submitted | 3 |
