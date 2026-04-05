@@ -20,7 +20,7 @@ Do the following:
 
 1) Create the inputs for the problem using the XSLOPE input template. Extend the profile lines to x = -60 ft on the left and x = 100 ft on the right.
 
-2) Find the global-minimum factor of safety by trying several different starting locations for the automated search. Save your input file and a PNG of the solution.
+2) Find the global-minimum factor of safety by trying several different starting locations for the automated search. Save your Excel input file and a PNG of the solution.
 
 ## Problem 2 - Tension Cracks
 
@@ -34,11 +34,11 @@ Do the following:
 
 2) Then compute a solution for the following three conditions (save each version to a different file name):
 
->>a) As-is with no tension crack. Save a copy of your solution.
+>>a) As-is with no tension crack. Save your input file (XLSX) and a copy of your solution (PNG).
 
->>b) Note that you have tension in the active zone. Use a spreadsheet to estimate the appropriate depth for a tension crack using the equations we discussed in class using an estimated factor of safety. Enter this tension crack depth on the **main** sheet and recompute the factor of safety. Adjust the depth of the crack up and down until you find a depth that is just on the threshold of eliminating tension. Save a copy of your solution.
+>>b) Note that you have tension in the active zone. Use a spreadsheet to estimate the appropriate depth for a tension crack using the equations we discussed in class using an estimated factor of safety. Enter this tension crack depth on the **main** sheet and recompute the factor of safety. Adjust the depth of the crack up and down until you find a depth that is just on the threshold of eliminating tension. Save a copy of the Excel file with your tension crack calculations. Save your input file (XLSX) and a copy of your solution (PNG).
 
->>c) Fill your tension crack with water (enter the water level on the **main** sheet) and iterate again. Save a copy of your solution.
+>>c) Fill your tension crack with water (enter the water level on the **main** sheet) and iterate again. Save your input file (XLSX) and a copy of your solution (PNG).
 
 ## Submission
 

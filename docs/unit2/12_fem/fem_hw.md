@@ -37,11 +37,15 @@ Upload the same file to the FEM notebook. Use the LEM result to select appropria
 
 ### d. Compare Results
 
-Compare the LEM and FEM results. In your comparison, address the following:
+Compare the LEM and FEM results. In your comparison, consider the following:
 
 1. How do the circular and non-circular LEM factors of safety compare?
 2. How does the FEM factor of safety compare to the LEM results?
 3. Does the FEM shear strain plot confirm the non-circular failure mechanism through the weak clay layer?
+
+*Thought exercise only - you do not need to submit answers to these questions.*
+
+Save a copy of your input file (XLSX), the mesh file (JSON) and a PNG image of both the LEM and FEM solution plots (PNG). 
 
 ## Part 2 - Johnson Reservoir
 
@@ -81,11 +85,13 @@ Compare the LEM and FEM results.
 2. Examine the FEM shear strain plot. Does it reveal the same failure mechanism as the LEM analysis?
 3. Note that unlike the LEM analysis, you did not need to specify whether to analyze the upstream or downstream side. Which side does the FEM identify as critical?
 
-Thought exercise only - you do not need to submit answers to these questions.
+*Thought exercise only - you do not need to submit answers to these questions.*
+
+Save a copy of your input file (XLSX), the mesh file (JSON), the seepage solution file (CSV), and a PNG image of both the LEM and FEM solution plots (PNG). 
 
 ## Submission
 
-Save a copy of your Excel input file and PNG images of both the LEM and FEM solution plots. Zip up all files into a single zip archive. Upload your zip archive via Learning Suite.
+ Zip up all files described above for both problems into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
