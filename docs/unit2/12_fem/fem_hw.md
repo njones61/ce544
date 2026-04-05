@@ -73,15 +73,17 @@ Upload the same zip archive to the FEM notebook. Use the LEM result to select ap
 
 ### d. Compare Results
 
-Compare the LEM and FEM results. In your comparison, address the following:
+Compare the LEM and FEM results. 
 
 1. How does the FEM factor of safety compare to the LEM result?
 2. Examine the FEM shear strain plot. Does it reveal the same failure mechanism as the LEM analysis?
 3. Note that unlike the LEM analysis, you did not need to specify whether to analyze the upstream or downstream side. Which side does the FEM identify as critical?
 
+Thought exercise only - you do not need to submit answers to these questions.
+
 ## Submission
 
-For each part, save a copy of your Excel input file and PNG images of both the LEM and FEM solution plots. Zip up all files into a single zip archive. Upload your zip archive via Learning Suite.
+Save a copy of your Excel input file and PNG images of both the LEM and FEM solution plots. Zip up all files into a single zip archive. Upload your zip archive via Learning Suite.
 
 ## Grading Rubric
 
