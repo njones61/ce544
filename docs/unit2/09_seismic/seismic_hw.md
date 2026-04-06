@@ -72,8 +72,7 @@ Upload your zip archive via Learning Suite.
 
 | Criteria | Points |
 |----------|:------:|
-| Part 1: Static analysis FS and solution plot | 5 |
-| Part 2: PGA values and seismic coefficients for both return periods | 5 |
-| Part 3a-b: R-envelope properties applied, Excel file with PGA_2 | 8 |
-| Part 3c-d: Seismic analysis solution plots for PGA_2 and PGA_10 | 7 |
-| All files properly submitted in zip archive | 5 |
+| Part 1: Static analysis FS and solution plot | 6 |
+| Part 2: PGA values and seismic coefficients for both return periods | 6 |
+| Part 3a-b: R-envelope properties applied, Excel file with PGA_2 | 9 |
+| Part 3c-d: Seismic analysis solution plots for PGA_2 and PGA_10 | 9 |

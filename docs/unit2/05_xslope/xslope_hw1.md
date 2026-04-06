@@ -33,21 +33,19 @@ Save a copy of the Excel template for each of the three problems and save a PNG 
 | Criteria                                                                              | Points |
 |---------------------------------------------------------------------------------------|:------:|
 | **Problem (a): Submerged Slope**                                                     |        |
-| XSLOPE model set up correctly with proper geometry                                   |   2    |
-| Total unit weight used (not buoyant unit weight)                                     |   2    |
-| External water modeled using distributed load                                        |   2    |
+| XSLOPE model set up correctly with proper geometry                                   |   3    |
+| Total unit weight used (not buoyant unit weight)                                     |   3    |
+| External water modeled using distributed load                                        |   3    |
 | Automated search using Spencer's method executed correctly                           |   1    |
 | Minimum factor of safety identified and reported with PNG                            |   1    |
 | **Problem (b): Slope with Surcharge**                                                |        |
-| XSLOPE model set up correctly with proper geometry                                   |   2    |
-| Surcharge load correctly applied                                                     |   2    |
+| XSLOPE model set up correctly with proper geometry                                   |   3    |
+| Surcharge load correctly applied                                                     |   3    |
 | Automated search using Spencer's method executed correctly                           |   1    |
-| Minimum factor of safety identified and reported with PNG                            |   1    |
+| Minimum factor of safety identified and reported with PNG                            |   2    |
 | **Problem (c): Slope with Two Materials**                                            |        |
-| XSLOPE model set up correctly with proper geometry                                   |   2    |
-| Two materials defined with correct properties and interface                          |   2    |
-| Automated search using Spencer's method executed correctly                           |   1    |
-| Minimum factor of safety identified and reported with PNG                            |   1    |
-| **General**                                                                           |        |
-| All three Excel templates and three PNG files properly submitted in zip archive      |   10   |
+| XSLOPE model set up correctly with proper geometry                                   |   3    |
+| Two materials defined with correct properties and interface                          |   3    |
+| Automated search using Spencer's method executed correctly                           |   2    |
+| Minimum factor of safety identified and reported with PNG                            |   2    |
 | **Total**                                                                             | **30** |

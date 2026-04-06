@@ -44,8 +44,7 @@ Save a copy of your Excel input file and a PNG of the solution plots (both seepa
 |---------------------------------------------------------------------------|:------:|
 | Material properties (γ, c, φ) entered correctly for all three materials   |   8    |
 | Pore pressure option set to `seep` for all materials                      |   4    |
-| Seepage analysis runs successfully and solution is reasonable             |   6    |
-| Slope stability analysis runs successfully using seepage pore pressures   |   6    |
-| Seepage and slope stability solution plots saved as PNGs                  |   3    |
-| Excel input file and PNG solution plots properly submitted in zip archive |   3    |
+| Seepage analysis runs successfully and solution is reasonable             |   7    |
+| Slope stability analysis runs successfully using seepage pore pressures   |   7    |
+| Seepage and slope stability solution plots saved as PNGs                  |   4    |
 | **Total**                                                                 | **30** |

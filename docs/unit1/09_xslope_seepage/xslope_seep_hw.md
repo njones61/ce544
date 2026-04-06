@@ -52,16 +52,15 @@ Upload the zip archive via Learning Suite.
 | Criteria                                                                             | Points |
 |--------------------------------------------------------------------------------------|:------:|
 | **Part 1: Double Sheetpile Problem**                                                 |        |
-| XSLOPE seepage model set up correctly with proper geometry and mesh                  |   3    |
+| XSLOPE seepage model set up correctly with proper geometry and mesh                  |   4    |
 | Mesh extends 40 ft upstream and downstream from sheetpiles (entire problem solved)   |   2    |
-| Boundary conditions correctly applied                                                |   2    |
+| Boundary conditions correctly applied                                                |   3    |
 | **Part 2: Grout Curtain Problem**                                                    |        |
 | XSLOPE seepage model set up with domain extending 35 m beyond toe in both directions |   3    |
 | Grout curtain extends to bedrock with lower K than foundation                        |   2    |
 | Levee modeled as relatively impermeable                                              |   1    |
 | Table includes all 7 K values (2, 1, 0.5, 0.2, 0.1, 0.01, 0.001 m/d)                 |   4    |
 | Flow rates computed correctly for both unit width and total levee section (300 m)    |   5    |
-| Total flow rates extracted from XSLOPE output correctly                              |   2    |
+| Total flow rates extracted from XSLOPE output correctly                              |   3    |
 | Paragraph summarizing observations from the exercise                                 |   3    |
-| Proper file submission (zipped Excel files and Word document)                        |   3    |
 | **Total**                                                                            | **30** |

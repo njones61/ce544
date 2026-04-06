@@ -56,8 +56,7 @@ Show all of your calculations inside the Excel input file on the "reinforce" she
 
 | Criteria | Points |
 |----------|:------:|
-| Part A: Unreinforced slope FS calculation | 6 |
-| Part B: Reinforcement design meets FS ≥ 1.5 | 8 |
-| Part B: Design is economical (minimized cost) | 8 |
-| Part B: Calculations for costs were done correctly | 4 |
-| Proper files submitted | 4 |
+| Part A: Unreinforced slope FS calculation | 7 |
+| Part B: Reinforcement design meets FS ≥ 1.5 | 9 |
+| Part B: Design is economical (minimized cost) | 9 |
+| Part B: Calculations for costs were done correctly | 5 |

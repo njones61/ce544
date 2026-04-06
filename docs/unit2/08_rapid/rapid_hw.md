@@ -91,10 +91,9 @@ Save a copy of your Excel input file (XLSX), the mesh file (JSON), the two seepa
 | Undrained strength parameters (d, $\psi$) entered correctly for appropriate materials | 4 |
 | Solution 1 seepage BCs set up correctly (full pool H = 302 ft) | 3 |
 | Solution 2 seepage BCs set up correctly (lowered pool H = 250 ft) | 3 |
-| Exit face defined on downstream slope for both solutions | 2 |
+| Exit face defined on downstream slope for both solutions | 3 |
 | Solution 1 distributed loads calculated correctly (full pool) | 3 |
 | Solution 2 distributed loads calculated correctly (lowered pool) | 3 |
-| Seepage analysis runs successfully with two solutions | 3 |
+| Seepage analysis runs successfully with two solutions | 4 |
 | Spencer's method used for rapid drawdown analysis on upstream side | 3 |
-| Three-stage results reviewed and critical FS reported | 3 |
-| Input fies and PNG solution plot properly submitted in zip archive | 3 |
+| Three-stage results reviewed and critical FS reported | 4 |

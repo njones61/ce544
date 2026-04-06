@@ -72,16 +72,14 @@ Save a copy of your XSLOPE Excel input files and solution PNG files for both pro
 
 | Criteria | Points |
 |----------|:------:|
-| XSLOPE model setup with correct geometry and material properties | 3 |
-| Standard deviations entered correctly on materials sheet | 2 |
-| Reliability analysis results | 5 |
-| Excel input file and solution PNG submitted | 3 |
+| XSLOPE model setup with correct geometry and material properties | 4 |
+| Standard deviations entered correctly on materials sheet | 3 |
+| Reliability analysis results | 6 |
 
 ### Problem 2: Earth Dam (17 pts)
 
 | Criteria | Points |
 |----------|:------:|
-| Standard deviations entered correctly on materials sheet | 3 |
-| Reliability analysis run for downstream side | 5 |
-| Discussion of results and reliability assessment | 3 |
-| Excel input file and solution PNG submitted | 6 |
+| Standard deviations entered correctly on materials sheet | 5 |
+| Reliability analysis run for downstream side | 7 |
+| Discussion of results and reliability assessment | 5 |

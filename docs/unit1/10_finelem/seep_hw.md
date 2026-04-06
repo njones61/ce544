@@ -72,6 +72,5 @@ Create a PNG of the solution with 25 head contours and use base material = bedro
 | All 8 materials defined with correct hydraulic conductivity values (kx, ky) |   4    |
 | Material parameters (α, kr0, h0) set correctly for all materials     |   4    |
 | Boundary conditions appropriately selected (H=225 ft left, exit face right) |   6    |
-| PNG output shows head contours with base material = bedrock        |   3    |
-| Proper file submission (zipped Excel file and PNG solution)          |   3    |
+| PNG output shows head contours with base material = bedrock        |   4    |
 | **Total**                                                            | **30** |

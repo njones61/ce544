@@ -101,16 +101,14 @@ Save a copy of your input file (XLSX), the mesh file (JSON), the seepage solutio
 
 | Criteria | Points |
 |----------|:------:|
-| Elastic properties ($E$, $\nu$) entered correctly for all four materials | 4 |
-| LEM analysis run with non-circular failure surface | 4 |
-| FEM analysis produces correct factor of safety | 4 |
-| Files (XLSX, JSON) and PNG solution plots properly submitted | 3 |
+| Elastic properties ($E$, $\nu$) entered correctly for all four materials | 5 |
+| LEM analysis run with non-circular failure surface | 5 |
+| FEM analysis produces correct factor of safety | 5 |
 
 ### Part 2 - Johnson Reservoir (15 points)
 
 | Criteria | Points |
 |----------|:------:|
-| Elastic properties ($E$, $\nu$) entered correctly and pore pressure set to `seep` | 4 |
-| LEM analysis run with seepage-derived pore pressures | 4 |
-| FEM analysis produces correct factor of safety | 4 |
-| Files (XLSX, JSON, CSV) and PNG solution plots properly submitted | 3 |
+| Elastic properties ($E$, $\nu$) entered correctly and pore pressure set to `seep` | 5 |
+| LEM analysis run with seepage-derived pore pressures | 5 |
+| FEM analysis produces correct factor of safety | 5 |
