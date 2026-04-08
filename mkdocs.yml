@@ -68,6 +68,7 @@ nav:
         - In-Class 1: unit1/10_finelem/seep_class1.md
         - In-Class 2: unit1/10_finelem/seep_class2.md
         - Homework: unit1/10_finelem/seep_hw.md
+    - Study Guide - Seepage Analysis: unit1/study_guide.md
   - Unit 2 - Slope Stability:
     - Causes of Slope Failure:
         - Pre-Class: unit2/01_causes/causes_read.md
@@ -116,3 +117,4 @@ nav:
         - Pre-Class: unit2/12_fem/fem_read.md
         - In-Class: unit2/12_fem/fem_class.md
         - Homework: unit2/12_fem/fem_hw.md
+    - Study Guide - Slope Stability: unit2/study_guide.md
