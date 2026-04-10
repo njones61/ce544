@@ -39,9 +39,8 @@ Upload the same file to the FEM notebook. Use the LEM result to select appropria
 
 Compare the LEM and FEM results. In your comparison, consider the following:
 
-1. How do the circular and non-circular LEM factors of safety compare?
-2. How does the FEM factor of safety compare to the LEM results?
-3. Does the FEM shear strain plot confirm the non-circular failure mechanism through the weak clay layer?
+1. How does the FEM factor of safety compare to the LEM results?
+2. Does the FEM shear strain plot confirm the non-circular failure mechanism through the weak clay layer?
 
 *Thought exercise only - you do not need to submit answers to these questions.*
 
