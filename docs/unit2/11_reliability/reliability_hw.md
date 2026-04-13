@@ -54,11 +54,9 @@ Do the following:
 
 2) Upload the input file and run the built-in reliability analysis for the downstream side.
 
-3) Report the following results: $F_{MLV}$, $\sigma_F$, $COV_F$, $\beta_{LN}$, reliability (R), and probability of failure (Pf).
+3) Examine the results: $F_{MLV}$, $\sigma_F$, $COV_F$, $\beta_{LN}$, reliability (R), and probability of failure (Pf).
 
-4) Examine the results. Does the dam seem reliable?
-
-5) Save a copy of your Excel input template and a PNG of the reliability analysis results. 
+4) Save a copy of your Excel input template and a PNG of the reliability analysis results. 
 
 ## Submission
 
@@ -68,18 +66,20 @@ Save a copy of your XSLOPE Excel input files and solution PNG files for both pro
 
 **Total: 30 points**
 
-### Problem 1: Two-Layer Slope (13 pts)
+### Problem 1: Two-Layer Slope (15 pts)
 
 | Criteria | Points |
 |----------|:------:|
-| XSLOPE model setup with correct geometry and material properties | 4 |
+| Slope geometry and material properties entered correctly | 4 |
 | Standard deviations entered correctly on materials sheet | 3 |
-| Reliability analysis results | 6 |
+| Reliability analysis completed with correct results | 5 |
+| Excel input file and results PNG submitted | 3 |
 
-### Problem 2: Earth Dam (17 pts)
+### Problem 2: Earth Dam (15 pts)
 
 | Criteria | Points |
 |----------|:------:|
-| Standard deviations entered correctly on materials sheet | 5 |
-| Reliability analysis run for downstream side | 7 |
-| Discussion of results and reliability assessment | 5 |
+| Existing earth dam model with piezometric line used | 3 |
+| Standard deviations entered correctly on materials sheet | 4 |
+| Reliability analysis completed for downstream side with correct results | 5 |
+| Excel input file and results PNG submitted | 3 |
