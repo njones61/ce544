@@ -34,6 +34,12 @@ d) Pore pressure (kN/m2) at point A.
 
 Save your work in a file named **head_hw.xlsx** and upload it on Learning Suite.
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 **Total: 30 points**

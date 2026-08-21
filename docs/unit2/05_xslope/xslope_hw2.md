@@ -66,6 +66,12 @@ For part 1, save a copy of your Excel input file (both sides) and a PNG of the t
 a copy of your Excel input file and a copy of the final solution and your design chart. Zip up your files 
 into a single zip archive. Upload your zip archive via Learning Suite.
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 ### Problem 1: Earth Dam (20 pts)

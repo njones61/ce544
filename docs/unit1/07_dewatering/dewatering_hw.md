@@ -90,6 +90,12 @@ Finally, run the code in the last section of the notebook to generate a design c
 
 Make a zip archive of your spreadsheet for part 1 and your Word document for part 2. Submit the zip archive on Learning Suite.
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 **Total: 30 points**

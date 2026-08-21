@@ -33,6 +33,12 @@ If you completed the second part of the problem using Google Colab, use the "Fil
 
 Create a zip archive with your Word document (or scan) and the solution file (either the *.xlsx Excel file or the .ipynb notebook file) and upload the zip archive to Learning Suite.
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 **Total: 30 points**

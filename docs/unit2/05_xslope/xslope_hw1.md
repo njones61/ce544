@@ -28,6 +28,12 @@ Be sure to use total unit wt and model the external water using a distributed lo
 
 Save a copy of the Excel template for each of the three problems and save a PNG of the solution with the minimum factor of safety. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 | Criteria                                                                              | Points |

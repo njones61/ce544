@@ -38,6 +38,12 @@ Enter the material properties into the **mat** sheet of the Excel input file. Se
 
 Save a copy of your Excel input file and a PNG of the solution plots (both seepage and slope stability). Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 | Criteria                                                                  | Points |

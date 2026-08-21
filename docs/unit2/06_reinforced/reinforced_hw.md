@@ -50,6 +50,12 @@ Save a copy of your solution plot corresponding to your final design. Make sure 
 
 Show all of your calculations inside the Excel input file on the "reinforce" sheet. Add the two plots and the Excel files to a zip archive and upload the archive to Learning Suite. 
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 **Total: 30 points**

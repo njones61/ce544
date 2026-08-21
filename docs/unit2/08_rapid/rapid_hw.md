@@ -82,6 +82,12 @@ Review the three-stage results and report the critical factor of safety.
 
 Save a copy of your Excel input file (XLSX), the mesh file (JSON), the two seepage solution files (CSV), and a PNG of the rapid drawdown solution plot (PNG). Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 **Total: 30 points**

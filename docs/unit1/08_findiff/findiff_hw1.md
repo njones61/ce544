@@ -20,6 +20,12 @@ Lay out your spreadsheet so that you have a spreadsheet cell for each node of th
 
 Upload your completed spreadsheet via Learning Suite.
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 | Criteria                                                                              | Points |

@@ -13,6 +13,12 @@ graphics and instructions. Follow the instructions included on the slides.
 
 Show your flow net and your calculations on the powerpoint slides. You can add extra slides if you need to. Show as much of your work as you can. Upload your Powerpoint file via Learning Suite.
 
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 ## Grading Rubric
 
 **Total: 30 points**
