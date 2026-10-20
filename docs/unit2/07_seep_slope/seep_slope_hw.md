@@ -2,7 +2,7 @@
 
 This problem corresponds to the Johnson Reservoir example from the XSLOPE documentation:
 
-![johnson_res.png](../../unit1/10_finelem/images/johnson_res.png)
+![johnson_res.png](../../unit1/09_finelem/images/johnson_res.png)
 
 we will combine seepage and slope stability analyses using XSLOPE. We will first run a seepage analysis to compute pore pressures and then use those pore pressures in a slope stability analysis. 
 

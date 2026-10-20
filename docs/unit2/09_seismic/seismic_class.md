@@ -95,7 +95,7 @@ Solution: [seismic_foundation_KEY.xlsx](files/seismic_foundation_KEY.xlsx)
 In this problem, we will analyze the Johnson Reservoir dam under seismic loading conditions. Since this is a 
 constructed embankment, we will use the R-envelopes for the core and foundation layers. This approach uses pre-earthquake loading conditions (pore pressures and effective stresses) to scale an undrained strength to use in the analysis. The geometry of the problem is shown below:
 
-![johnson_res.png](../../unit1/10_finelem/images/johnson_res.png)
+![johnson_res.png](../../unit1/09_finelem/images/johnson_res.png)
 
 Download the following Excel template which has the dam geometry, seepage boundary conditions, and distributed loads already set up:
 

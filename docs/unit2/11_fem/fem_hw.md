@@ -8,9 +8,9 @@ In this assignment, you will perform finite element slope stability analyses on 
 
 ## Part 1 - Non-Circular Failure Surface
 
-This is the same problem from [XSLOPE Class Exercise 2, Problem 3](../05_xslope/xslope_class2.md). Note how the FEM method naturally finds the non-circular failure mechanism through the thin weak clay layer without any prior assumption about the failure surface shape.
+This is the same problem from [XSLOPE Class Exercise 2, Problem 3](../04_xslope/xslope_class2.md). Note how the FEM method naturally finds the non-circular failure mechanism through the thin weak clay layer without any prior assumption about the failure surface shape.
 
-![part2c_fig.png](../05_xslope/images/part2c_fig.png)
+![part2c_fig.png](../04_xslope/images/part2c_fig.png)
 
 ### a. Add Elastic Properties
 
@@ -25,7 +25,7 @@ Start with the LEM solution file and add the following elastic properties:
 
 The soft clay is modeled with $E/S_u \approx 300$ and $\nu = 0.40$ to avoid numerical issues with near-incompressibility. The sand layers use typical values from correlations for granular soils.
 
-Starter template: [xslope_noncircular.xlsx](../05_xslope/files/xslope_noncircular.xlsx)
+Starter template: [xslope_noncircular.xlsx](../04_xslope/files/xslope_noncircular.xlsx)
 
 ### b. Run the LEM Analysis
 
@@ -50,7 +50,7 @@ Save a copy of your input file (XLSX), the mesh file (JSON) and a PNG image of b
 
 This problem applies the FEM method to the Johnson Reservoir dam from the [Seepage/Slope Integration Homework](../07_seep_slope/seep_slope_hw.md). A starter zip archive is provided that includes the Excel input file with the dam geometry, strength properties, seepage material properties, and seepage boundary conditions already set up. The archive also includes the seepage solution (mesh and pore pressures) so you do not need to run the seepage analysis again.
 
-![johnson_res.png](../../unit1/10_finelem/images/johnson_res.png)
+![johnson_res.png](../../unit1/09_finelem/images/johnson_res.png)
 
 ### a. Add Elastic Properties
 

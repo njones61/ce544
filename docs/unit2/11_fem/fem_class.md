@@ -12,9 +12,9 @@ For each problem, run the LEM notebook first to get the LEM factor of safety. Th
 
 ## Problem 1 - Simple Slope with Foundation
 
-This is the same problem from [XSLOPE Class Exercise 1, Problem 2](../05_xslope/xslope_class1.md).
+This is the same problem from [XSLOPE Class Exercise 1, Problem 2](../04_xslope/xslope_class1.md).
 
-![part1b_fig.png](../05_xslope/images/part1b_fig.png)
+![part1b_fig.png](../04_xslope/images/part1b_fig.png)
 
 Start with the LEM solution file and add the following elastic properties:
 
@@ -24,7 +24,7 @@ Start with the LEM solution file and add the following elastic properties:
 
 Since this is an undrained ($\phi = 0$) material, a Poisson's ratio of 0.40 is used rather than the theoretical undrained value of 0.5 to avoid numerical issues with near-incompressibility. The modulus is estimated as $E/S_u \approx 375$.
 
-Starter template: [xslope_simple_foundation.xlsx](../05_xslope/files/xslope_simple_foundation.xlsx)
+Starter template: [xslope_simple_foundation.xlsx](../04_xslope/files/xslope_simple_foundation.xlsx)
 
 Add $E$ and $\nu$ to the starter template and upload the file to both notebooks. Compare the two factors of safety and note the shear strain plot showing the failure mechanism.
 
@@ -32,9 +32,9 @@ Solution: [xslope_simple_foundation_KEY.zip](files/xslope_simple_foundation_KEY.
 
 ## Problem 2 - Slope with Multiple Layers
 
-This is the same problem from [XSLOPE Class Exercise 1, Problem 3](../05_xslope/xslope_class1.md).
+This is the same problem from [XSLOPE Class Exercise 1, Problem 3](../04_xslope/xslope_class1.md).
 
-![part1c_fig.png](../05_xslope/images/part1c_fig.png)
+![part1c_fig.png](../04_xslope/images/part1c_fig.png)
 
 Start with the LEM solution file and add the following elastic properties:
 
@@ -45,7 +45,7 @@ Start with the LEM solution file and add the following elastic properties:
 
 Both layers are undrained ($\phi = 0$) with $E/S_u \approx 375$ and $\nu = 0.40$.
 
-Starter template: [xslope_simple_mult_layers.xlsx](../05_xslope/files/xslope_simple_mult_layers.xlsx)
+Starter template: [xslope_simple_mult_layers.xlsx](../04_xslope/files/xslope_simple_mult_layers.xlsx)
 
 Add $E$ and $\nu$ to the starter template and upload the file to both notebooks. Compare the factors of safety and the location of the critical failure surface.
 
@@ -53,9 +53,9 @@ Solution: [xslope_simple_mult_layers_KEY.zip](files/xslope_simple_mult_layers_KE
 
 ## Problem 3 - Reinforced Slope with Geogrid
 
-This is the FEM version of the problem from the [Reinforced Slopes Exercise](../06_reinforced/reinforced_class.md). For additional details on how reinforcement is modeled using truss elements in the FEM method, see the [XSLOPE Soil Reinforcement](https://xslope.org/en/latest/fem/reinforcement/){target="_blank"} documentation.
+This is the FEM version of the problem from the [Reinforced Slopes Exercise](../05_reinforced/reinforced_class.md). For additional details on how reinforcement is modeled using truss elements in the FEM method, see the [XSLOPE Soil Reinforcement](https://xslope.org/en/latest/fem/reinforcement/){target="_blank"} documentation.
 
-![geogrid_fig.png](../06_reinforced/images/geogrid_fig.png)
+![geogrid_fig.png](../05_reinforced/images/geogrid_fig.png)
 
 Start with the LEM solution file and add the following elastic properties for the soil materials:
 
@@ -74,7 +74,7 @@ In the LEM analysis, the reinforcement was defined using the tensile strength an
 
 The product $EA$ = 10,000 lb/ft is the axial stiffness of the geogrid. Any combination of $E$ and $Area$ producing the same $EA$ will give identical results. The residual strength $T_{res}$ controls the post-yield behavior -- after an element exceeds $T_{max}$, its capacity drops to $T_{res}$ rather than failing completely. This peak-residual model is appropriate for ductile materials like geosynthetics.
 
-Starter template: [xslope_reinforce.xlsx](../06_reinforced/files/xslope_reinforce.xlsx)
+Starter template: [xslope_reinforce.xlsx](../05_reinforced/files/xslope_reinforce.xlsx)
 
 Add $E$, $\nu$, and the reinforcement properties above to the starter template and upload the file to both notebooks. Compare the factors of safety and examine the reinforcement summary table to see which elements have yielded or pulled out.
 
@@ -84,7 +84,7 @@ Solution: [xslope_reinforce_KEY.zip](files/xslope_reinforce_KEY.zip)
 
 This problem applies the FEM method to the earth dam from the [Seepage/Slope Integration Homework](../07_seep_slope/seep_slope_hw.md). Unlike the previous problems, this analysis includes seepage-derived pore pressures that affect the stability results.
 
-![earthdamfig.gif](../05_xslope/images/earthdamfig.gif)
+![earthdamfig.gif](../04_xslope/images/earthdamfig.gif)
 
 A starter zip archive is provided that includes the Excel input file with the dam geometry, strength properties, seepage material properties, and seepage boundary conditions already set up. The archive also includes the seepage solution (mesh and pore pressures) so you do not need to run the seepage analysis again.
 

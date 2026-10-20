@@ -33,8 +33,8 @@ the CSV file with the bay mud data values.
 Excel starter file: [reliability_calc.xlsx](files/reliability_calc.xlsx)<br>
 Excel solution file: [reliability_calc_KEY.xlsx](files/reliability_calc_KEY.xlsx)
 
-Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/files/reliability_calc.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><br>
-Python solution file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/11_reliability/files/reliability_calc_KEY.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/10_reliability/files/reliability_calc.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><br>
+Python solution file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit2/10_reliability/files/reliability_calc_KEY.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 CSV file with bay mud data values: [bay_mud_data.csv](files/bay_mud_data.csv)
 
@@ -69,7 +69,7 @@ Solution: [xslope_prob_submerged_KEY.xlsx](files/xslope_prob_submerged_KEY.xlsx)
 
 Revisit the Johnson Reservoir dam:
 
-![johnson_res.png](../../unit1/10_finelem/images/johnson_res.png)
+![johnson_res.png](../../unit1/09_finelem/images/johnson_res.png)
 
 The material properties and associated standard deviations are as follows:
 

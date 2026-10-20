@@ -2,7 +2,7 @@
 
 In this assignment, you will use XSLOPE to perform seismic slope stability analyses a problem from an earlier exercise. 
 
-![earthdamfig.gif](../05_xslope/images/earthdamfig.gif)
+![earthdamfig.gif](../04_xslope/images/earthdamfig.gif)
 
 Solve using the XSLOPE Google Colab notebook for stability analysis:
 

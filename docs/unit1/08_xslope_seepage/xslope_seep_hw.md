@@ -11,7 +11,7 @@ Make a separate Excel file for each problem. After preparing the input file, upl
 
 (1) Redo the double sheetpile problem using XSLOPE:
 
-![sheetpile_dual.gif](../10_finelem/images/sheetpile_dual.gif)
+![sheetpile_dual.gif](../09_finelem/images/sheetpile_dual.gif)
 
 Extend your mesh 40 ft both upstream and downstream from the sheetpiles (solve the entire problem, not just one half).
 
@@ -21,7 +21,7 @@ mesh of just the foundation, including the grout curtain, and perform a seepage 
 it in your problem domain). Assume that the grout curtain extends all the way to bedrock and that the grout curtain 
 is permeable but has a different (lower) K than the foundation.
 
-![levee.png](../10_finelem/images/levee.png)
+![levee.png](../09_finelem/images/levee.png)
 
 Set up the problem using XSLOPE and analyze the flow rate (total) assuming various K values for the grout curtain. Make a table showing the total flow rate vs. k for the grout curtain where the k values varies as follows:
 

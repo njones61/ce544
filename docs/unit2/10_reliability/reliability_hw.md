@@ -37,7 +37,7 @@ Do the following:
 
 Revisit the earth dam problem from the XSLOPE Part 2 homework:
 
-![earthdamfig.gif](../05_xslope/images/earthdamfig.gif)
+![earthdamfig.gif](../04_xslope/images/earthdamfig.gif)
 
 Use your existing Excel input file from the XSLOPE LEM Part 2 homework (with the piezometric line). The material properties and associated standard deviations are as follows:
 

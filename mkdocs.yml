@@ -55,44 +55,39 @@ nav:
         - Pre-Class: unit1/07_dewatering/dewatering_read.md
         - In-Class: unit1/07_dewatering/dewatering_class.md
         - Homework: unit1/07_dewatering/dewatering_hw.md
-    - Finite Difference Method:
-        - Pre-Class: unit1/08_findiff/findiff_read1.md
-        - In-Class: unit1/08_findiff/findiff_class1.md
-        - Homework: unit1/08_findiff/findiff_hw1.md
     - XSLOPE - Seepage Analysis:
-        - Pre-Class: unit1/09_xslope_seepage/xslope_seep_read.md
-        - In-Class: unit1/09_xslope_seepage/xslope_seep_class.md
-        - Homework: unit1/09_xslope_seepage/xslope_seep_hw.md
+        - Pre-Class: unit1/08_xslope_seepage/xslope_seep_read.md
+        - In-Class: unit1/08_xslope_seepage/xslope_seep_class.md
+        - Homework: unit1/08_xslope_seepage/xslope_seep_hw.md
     - Finite Element Seepage Analysis:
-        - Pre-Class: unit1/10_finelem/seep_read.md
-        - In-Class 1: unit1/10_finelem/seep_class1.md
-        - In-Class 2: unit1/10_finelem/seep_class2.md
-        - Homework: unit1/10_finelem/seep_hw.md
+        - Pre-Class: unit1/09_finelem/seep_read.md
+        - In-Class 1: unit1/09_finelem/seep_class1.md
+        - In-Class 2: unit1/09_finelem/seep_class2.md
+        - Homework: unit1/09_finelem/seep_hw.md
     - Study Guide - Seepage Analysis: unit1/study_guide.md
   - Unit 2 - Slope Stability:
-    - Causes of Slope Failure:
-        - Pre-Class: unit2/01_causes/causes_read.md
-    - Shear Strength Concepts:
-        - Pre-Class: unit2/02_shear/shear_read.md
-        - Homework: unit2/02_shear/shear_hw.md
+    - Causes of Slope Failure and Shear Strength:
+        - Pre-Class (Causes): unit2/01_causes/causes_read.md
+        - Pre-Class (Shear Strength): unit2/01_causes/shear_read.md
+        - Homework: unit2/01_causes/shear_hw.md
     - Limit Equilibrium Method - Part 1 :
-        - Pre-Class: unit2/03_limiteq1/limiteq1_read.md
-        - In-Class: unit2/03_limiteq1/limiteq1_class.md
-        - Homework: unit2/03_limiteq1/limiteq1_hw.md
+        - Pre-Class: unit2/02_limiteq1/limiteq1_read.md
+        - In-Class: unit2/02_limiteq1/limiteq1_class.md
+        - Homework: unit2/02_limiteq1/limiteq1_hw.md
     - Limit Equilibrium Method - Part 2:
-        - Pre-Class: unit2/04_limiteq2/limiteq2_read.md
-        - In-Class: unit2/04_limiteq2/limiteq2_class.md
-        - Homework: unit2/04_limiteq2/limiteq2_hw.md
+        - Pre-Class: unit2/03_limiteq2/limiteq2_read.md
+        - In-Class: unit2/03_limiteq2/limiteq2_class.md
+        - Homework: unit2/03_limiteq2/limiteq2_hw.md
     - XSLOPE - Slope Stability Analysis:
-        - Pre-Class: unit2/05_xslope/xslope_read.md
-        - In-Class 1: unit2/05_xslope/xslope_class1.md
-        - In-Class 2: unit2/05_xslope/xslope_class2.md
-        - Homework 1: unit2/05_xslope/xslope_hw1.md
-        - Homework 2: unit2/05_xslope/xslope_hw2.md
+        - Pre-Class: unit2/04_xslope/xslope_read.md
+        - In-Class 1: unit2/04_xslope/xslope_class1.md
+        - In-Class 2: unit2/04_xslope/xslope_class2.md
+        - Homework 1: unit2/04_xslope/xslope_hw1.md
+        - Homework 2: unit2/04_xslope/xslope_hw2.md
     - Reinforced Slopes:
-        - Pre-Class: unit2/06_reinforced/reinforced_read.md
-        - In-Class: unit2/06_reinforced/reinforced_class.md
-        - Homework: unit2/06_reinforced/reinforced_hw.md
+        - Pre-Class: unit2/05_reinforced/reinforced_read.md
+        - In-Class: unit2/05_reinforced/reinforced_class.md
+        - Homework: unit2/05_reinforced/reinforced_hw.md
     - Seepage/Slope Stability Integration:
         - Pre-Class: unit2/07_seep_slope/seep_slope_read.md
         - In-Class: unit2/07_seep_slope/seep_slope_class.md
@@ -105,16 +100,12 @@ nav:
         - Pre-Class: unit2/09_seismic/seismic_read.md
         - In-Class: unit2/09_seismic/seismic_class.md
         - Homework: unit2/09_seismic/seismic_hw.md
-    - Important Details of Stability Analysis:
-        - Pre-Class: unit2/10_details/details_read.md
-        - In-Class: unit2/10_details/details_class.md
-        - Homework: unit2/10_details/details_hw.md
     - Reliability Analysis:
-        - Pre-Class: unit2/11_reliability/reliability_read.md
-        - In-Class: unit2/11_reliability/reliability_class.md
-        - Homework: unit2/11_reliability/reliability_hw.md
+        - Pre-Class: unit2/10_reliability/reliability_read.md
+        - In-Class: unit2/10_reliability/reliability_class.md
+        - Homework: unit2/10_reliability/reliability_hw.md
     - FE Slope Stability Analysis:
-        - Pre-Class: unit2/12_fem/fem_read.md
-        - In-Class: unit2/12_fem/fem_class.md
-        - Homework: unit2/12_fem/fem_hw.md
+        - Pre-Class: unit2/11_fem/fem_read.md
+        - In-Class: unit2/11_fem/fem_class.md
+        - Homework: unit2/11_fem/fem_hw.md
     - Study Guide - Slope Stability: unit2/study_guide.md
