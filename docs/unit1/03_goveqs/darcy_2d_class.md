@@ -15,7 +15,7 @@ k_{yy} = k_r sin_{\alpha}^2 + k_s cos_{\alpha}^2
 $$
 
 $$
-k_{xy} = k_{yx} = -\frac{1}{2}\left(k_r - k_s\right) sin(2\alpha)
+k_{xy} = k_{yx} = \frac{1}{2}\left(k_r - k_s\right) sin(2\alpha)
 $$
 
 Assume the following:
