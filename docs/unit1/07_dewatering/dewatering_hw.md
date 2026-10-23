@@ -1,7 +1,7 @@
 # Homework - Construction Dewatering
 
 In this exercise, we will design a dewatering trench using the Dupuit analytical solution and we will design a 
-dewatering system for the Provo City Center Temple excavation site using a Python script in a Google Colab notebook.
+dewatering system for the Provo City Center Temple excavation site using the Dewater web app.
 
 ## Exercise 1 - Dewatering Trench Design
 
@@ -34,12 +34,10 @@ The engineers in charge of the reconstruction faced a difficult task. As a templ
 
 The excavation went down to a depth of 30 feet below the original ground surface. This presented another challenge because the water table in this region is shallow. In order to accomplish the construction, the site had to be dewatered. This is typically accomplished using a set of shallow wells where each well lowers the water table and creates a "cone of depression" surrounding the well. Multiples wells provide a combined effect resulting in an aggregate zone of drawdown.
 
-Our objective in this exercise is to design a dewatering system using the Google Colab notebook we used for the 
-in-class exercise. The notebook is available at the following link:
+Our objective in this exercise is to design a dewatering system using the Dewater web app we used for the
+in-class exercise:
 
-Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/07_dewatering/files/dewatering.ipynb" target="_blank"><img src="https://colab.
-research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://jonesgeo.com/dewater/" target="_blank"><b>Dewater: https://jonesgeo.com/dewater/</b></a>
 
 **(a)  Setup Problem**
 
@@ -51,7 +49,7 @@ This represents the footprint of the excavation:
 
 ![temple_polygon.png](images/temple_polygon.png)
 
-Run the cells to upload the file and visualize the excavation site. You will then interactively create wells by using the point tool to create points corresponding to the well locations. Start by creating 2 wells.
+Click **Load GeoJSON** in step 1 of the app and select the file. The app zooms to the site and outlines the excavation. You will then create wells by clicking **Click to add wells** in step 3 and clicking the map at each well location. Start by creating 2 wells.
 
 **(b)  Drawdown Calculations and Manual Design**
 
@@ -62,29 +60,29 @@ Assume the following parameters for the problem:
 | $k$      | 0.007 | cm/sec |
 | $H$      | 30    | m      |
 | $R$      | 400   | m      |
-| Design H | 25    | m      |
+| Target head | 25    | m      |
 | $Q$      | 0.025 | m³/s   |
 
-Enter these values and run the cells to calculate the drawdown at each point in a grid covering the site and visualize the results with the contour plot options.
+Enter these values in steps 2 and 4. The app calculates the water level at each point in a grid covering the site and draws the contours on the map. Use the display options in step 5 to look at head, drawdown, or head below the target, and the cross sections in step 6 to see the water level through the excavation.
 
-Now design a dewatering system under three conditions: 2 wells, 4 wells, and 6 wells. In each case, 
-assume that the you can only place the wells outside of the temple footprint. You should change the location of the wells and the total pumping rate. To change the location of the wells, run the optional cell just under the map to delete your prior set of wells and create new wells and then run the following sequence of cells to generate the drawdown map.
+Now design a dewatering system under three conditions: 2 wells, 4 wells, and 6 wells. In each case,
+assume that you can only place the wells outside of the temple footprint. You should change the location of the wells and the total pumping rate. To move a well, drag it; to delete one, right-click it; **Clear wells** removes them all.
 
-Save a copy of each of your designs. Right-click on one of the contour plots showing the water level or head difference inside the excavation and click "Save Image As". Open a Word document and write a short section for each of your three designs (including the contour plots) and discuss the results. Indicate which of the three designs you would suggest using for the actual project.
+Save a copy of each of your designs: take a screenshot of the map showing the water level contours, and use **Save project** to keep the design itself. Open a Word document and write a short section for each of your three designs (including the contour plots) and discuss the results. Indicate which of the three designs you would suggest using for the actual project.
 
 **(c) Rectangular Well System Design**
 
-Next, use the algorithm that automatically places a line of wells around the perimeter of 
-the excavation based on an offset distance from the excavation boundary and a specified well spacing. Use an offset 
-of 20m and 8 points along the x-direction.  
+Next, use **Generate a ring of wells** in step 3 to place a line of wells around the perimeter of
+the excavation based on an offset distance from the excavation boundary and a number of wells. Use an offset
+of 20 m and 26 wells.
 
 **(d) Pumping Rate Optimization**
 
-For the rectangular well system, use the optimization algorithm to find the optimal pumping rate that will dewater the site with the well configuration described above. Save a copy of the contour plot showing the drawdown and include it in your report along with your pumping rate in gpm.
+For the ring of wells, click **Find the least Q that works** in step 4 to find the optimal pumping rate that will dewater the site with the well configuration described above. Save a copy of the contour plot showing the drawdown and include it in your report along with your pumping rate in gpm.
 
 **(e) Design Curve**
 
-Finally, run the code in the last section of the notebook to generate a design curve for the well system. Save a copy of the plot and include it in your report. Also indicate how many wells you would recommend using, based on the design curve.
+Finally, compute the design curve in step 7 for a range of numbers of wells. Save a copy of the plot and include it in your report. Also indicate how many wells you would recommend using, based on the design curve.
 
 ## Submission
 
