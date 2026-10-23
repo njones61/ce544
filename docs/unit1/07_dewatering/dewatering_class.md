@@ -98,3 +98,13 @@ Try a few different offset distances. How does the offset affect the required pu
 So far we have entered the radius of influence, $R$ = 500 m. In practice, $R$ is usually estimated with an empirical formula such as Sichardt's, $R = 3000\,s\sqrt{k}$ (with $s$, the drawdown, in m and $k$ in m/s). In step 2, change **Radius of influence, R** from **Entered** to **Sichardt**, and click **Find the least Q that works** again. Sichardt's formula needs the drawdown at the wells, $s_w$, which itself depends on the pumping rate, so the app solves the two together and reports $R$ and $s_w$. How does $R$ from Sichardt compare to 500 m, and how much does it change the pumping rate?
 
 Then, in step 7, select **Hydraulic conductivity, k** and compute the design curve for $k$ from 1e-4 to 1e-2 cm/s. The plot shows the least pumping rate with $R$ from Sichardt and with $R$ fixed. With a fixed $R$, the pumping rate is simply proportional to $k$. Why is the curve with $R$ from Sichardt different, and what does that tell you about how much the choice of $R$ matters?
+
+!!! Note "In practice"
+    When a pumping test is available, $R$ comes from it: the drawdowns at the observation wells are
+    plotted against the log of distance, and the line is extended to zero drawdown. Without a test, an
+    empirical formula such as Sichardt's gives an estimate, usually computed once from the drawdown the
+    design calls for. Because the pumping rate depends on $R$ only through $\ln(R/r)$, designers often
+    run the design for a range of $R$. $R$ also grows the longer the wells pump, so a steady-state $R$
+    stands for some period of pumping. Around a compact excavation, a ring of wells behaves much like
+    one large well with a radius of $\sqrt{A/\pi}$, which is why the least total rate for a small site
+    barely changes with the number of wells.
