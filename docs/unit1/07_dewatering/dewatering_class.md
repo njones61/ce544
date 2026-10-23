@@ -95,8 +95,8 @@ Try a few different offset distances. How does the offset affect the required pu
 
 ## Part 6 - The Radius of Influence
 
-So far we have entered the radius of influence, $R$ = 500 m. In practice, $R$ is usually estimated with an empirical formula such as Sichardt's, $R = 3000\,s\sqrt{k}$ (with $s$, the drawdown, in m and $k$ in m/s). In step 2, change **Radius of influence, R** from **Entered** to **Sichardt**. The app computes $R$ from the drawdown the design needs ($H$ minus the target head) and shows it.
+So far we have entered the radius of influence, $R$ = 500 m. In practice, $R$ is usually estimated with an empirical formula such as Sichardt's, $R = 3000\,s\sqrt{k}$ (with $s$, the drawdown, in m and $k$ in m/s). In step 2, change **Radius of influence, R** from **Entered** to **Sichardt**. The formula needs the drawdown at the wells, $s_w$; leave it blank to use 1.25 times the drawdown the excavation needs. The app computes $R$ and shows it.
 
-Click **Find the least Q that works** again. How does $R$ from Sichardt compare to 500 m, and what happens to the pumping rate and to the water level at the wells?
+Click **Find the least Q that works** again. How does $R$ from Sichardt compare to 500 m, and what happens to the pumping rate? The results list the drawdown at the wells you assumed beside the drawdown the design actually produces there. Enter the computed value as $s_w$ and find the least Q again. Repeat until the two agree. How much does that change $R$ and $Q$?
 
 Then, in step 7, select **Hydraulic conductivity, k** and compute the design curve for $k$ from 1e-4 to 1e-2 cm/s. The plot shows the least pumping rate with $R$ from Sichardt and with $R$ fixed. With a fixed $R$, the pumping rate is simply proportional to $k$. Why is the curve with $R$ from Sichardt different, and what does that tell you about how much the choice of $R$ matters?
