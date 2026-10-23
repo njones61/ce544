@@ -57,11 +57,15 @@ Assume the following parameters for the problem:
 
 | Parameter | Value | units  |
 |----------|-------|--------|
+| Depth to the water table | 4.1 | m |
+| Depth to the bottom of the aquifer | 34.1 | m |
+| Excavation depth | 9.1 (30 ft) | m |
+| Water required below the bottom | 0 | m |
 | $k$      | 0.007 | cm/sec |
-| $H$      | 30    | m      |
 | $R$      | 400   | m      |
-| Target head | 25    | m      |
 | $Q$      | 0.025 | m³/s   |
+
+These give an initial saturated thickness of 30 m and a target head of 25 m above the bottom of the aquifer.
 
 Enter these values in steps 2 and 4. The app calculates the water level at each point in a grid covering the site and draws the contours on the map. Use the display options in step 5 to look at head, drawdown, or head below the target, and the cross sections in step 6 to see the water level through the excavation.
 

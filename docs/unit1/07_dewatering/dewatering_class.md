@@ -46,12 +46,14 @@ Then enter the following parameters in step 2:
 
 | Parameter | Value | units |
 |----------|-------|-------|
+| Depth to the water table | 5  | m |
+| Depth to the bottom of the aquifer | 55 | m |
+| Excavation depth | 20 | m |
+| Water required below the bottom | 0 | m |
 | $k$      | 5e-4  | cm/s  |
-| $H$      | 50    | m     |
 | $R$      | 500   | m     |
-| Target head | 35    | m     |
 
-The target head is the water level that must be reached everywhere inside the excavation.
+The app converts the depths to the quantities in the equation and shows them under the inputs: the initial saturated thickness, $H$ = 55 − 5 = 50 m, and the target head inside the excavation, 55 − 20 = 35 m above the bottom of the aquifer. (You can also enter $H$ and the target head directly with **Heads above the low-k layer**.)
 
 ## Part 2 - Drawdown Calculations
 
@@ -61,7 +63,7 @@ In step 4, enter a total pumping rate of $Q$ = 0.015 m³/s. The total pumping ra
 
 ![dewater_app_manual.jpg](images/dewater_app_manual.jpg)
 
-The orange contour is the target head. The area where the water is below the target is shaded green, and the panel reports the highest water level inside the excavation and whether the excavation is dewatered. If it isn't, a red circle marks the point where the water is highest. In step 5 you can switch the contours to drawdown, $H - h$, or to the head below the target, which is negative where the excavation is still wet.
+The orange contour is the required water level (here, the excavation bottom). The area where the water is below the target is shaded green, and the panel reports the highest water level inside the excavation and whether the excavation is dewatered. If it isn't, a red circle marks the point where the water is highest. In step 5 you can switch the contours to the depth to water, drawdown, or the water below the required level, which is negative where the excavation is still wet. In step 6, **East–west** and **North–south** draw cross sections through the excavation showing the ground, the excavation, and the water table.
 
 Play with the pumping rate and the well locations to determine when the water level is below the target at all points in the excavation.
 
