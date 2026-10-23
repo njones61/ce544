@@ -88,6 +88,10 @@ For the ring of wells, click **Find the least Q that works** in step 4 to find t
 
 Finally, compute the design curve in step 7 for a range of numbers of wells. Save a copy of the plot and include it in your report. Also indicate how many wells you would recommend using, based on the design curve.
 
+**(f) Radius of Influence**
+
+Repeat part (d) with the radius of influence from Sichardt's formula instead of the entered value of 400 m: in step 2, change **Radius of influence, R** to **Sichardt**, and find the least Q again. Then enter the computed drawdown at the wells as $s_w$ and repeat until the assumed and computed drawdowns agree. Report $R$, $s_w$, and the pumping rate in gpm, and compare them to your answer to part (d). Which value of $R$ would you trust for this site, and why?
+
 ## Submission
 
 Make a zip archive of your spreadsheet for part 1 and your Word document for part 2. Submit the zip archive on Learning Suite.
@@ -105,7 +109,7 @@ Make a zip archive of your spreadsheet for part 1 and your Word document for par
 | Criteria | Points |
 |----------|:------:|
 | Exercise 1: Pump capacity calculation | 8 |
-| Exercise 2a: Problem setup and file upload | 2 |
+| Exercise 2a: Problem setup and file upload | 1 |
 | Exercise 2b: Manual design - 2 wells | 3 |
 | Exercise 2b: Manual design - 4 wells | 3 |
 | Exercise 2b: Manual design - 6 wells | 3 |
@@ -113,4 +117,4 @@ Make a zip archive of your spreadsheet for part 1 and your Word document for par
 | Exercise 2c: Rectangular well system results | 2 |
 | Exercise 2d: Optimized pumping rate | 3 |
 | Exercise 2e: Design curve and well recommendation | 2 |
-| Documentation and presentation quality | 1 |
+| Exercise 2f: Radius of influence from Sichardt | 2 |
