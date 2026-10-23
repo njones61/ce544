@@ -85,10 +85,18 @@ What is the total pumping rate in gpm?
 
 ## Part 5 - Q vs NumWells Design Curve
 
-In step 6, enter a range for the number of wells (for example, 4 to 40) and click **Compute the design curve**. For each number of wells, the app generates a ring of wells at the offset distance from step 3 and finds the minimum pumping rate. The results are presented in a curve of optimal pumping rate vs number of wells:
+In step 7, with **Number of wells** selected, enter a range for the number of wells (for example, 4 to 40) and click **Compute the design curve**. For each number of wells, the app generates a ring of wells at the offset distance from step 3 and finds the minimum pumping rate. The results are presented in a curve of optimal pumping rate vs number of wells:
 
 ![dewater_app_curve.jpg](images/dewater_app_curve.jpg)
 
 The design curve will help you determine the optimal number of wells and pumping rate required to dewater the excavation. In other words, at some point, adding more wells will not significantly reduce the pumping rate required to dewater the excavation. Use **Download CSV** to save the curve.
 
 Try a few different offset distances. How does the offset affect the required pumping rate?
+
+## Part 6 - The Radius of Influence
+
+So far we have entered the radius of influence, $R$ = 500 m. In practice, $R$ is usually estimated with an empirical formula such as Sichardt's, $R = 3000\,s\sqrt{k}$ (with $s$, the drawdown, in m and $k$ in m/s). In step 2, change **Radius of influence, R** from **Entered** to **Sichardt**. The app computes $R$ from the drawdown the design needs ($H$ minus the target head) and shows it.
+
+Click **Find the least Q that works** again. How does $R$ from Sichardt compare to 500 m, and what happens to the pumping rate and to the water level at the wells?
+
+Then, in step 7, select **Hydraulic conductivity, k** and compute the design curve for $k$ from 1e-4 to 1e-2 cm/s. The plot shows the least pumping rate with $R$ from Sichardt and with $R$ fixed. With a fixed $R$, the pumping rate is simply proportional to $k$. Why is the curve with $R$ from Sichardt different, and what does that tell you about how much the choice of $R$ matters?
