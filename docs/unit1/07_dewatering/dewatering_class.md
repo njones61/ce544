@@ -1,10 +1,10 @@
 # Exercise - Construction Dewatering
 
-In this exercise, we will use a Python script in a Google Colab notebook to design a well-based dewateirng system for a construction site. The script will calculate the well spacing and pumping rate required to lower the water table to a desired level. We will assume unconfined conditions and apply the superposition principle to calculate the drawdown at the well using the following equation:
+In this exercise, we will use the **Dewater** web app to design a well-based dewatering system for a construction site. The app calculates the drawdown from a set of wells and the pumping rate required to lower the water table to a desired level. We will assume unconfined conditions and apply the superposition principle to calculate the water level using the following equation:
 
 ![unconfined.png](../06_wells/images/unconfined.png)
 
->>$h = \sqrt{H^{2} - \dfrac{1}{\pi k} \sum_{i=1}^n q_{i}ln\left(R/r\right)}$
+>>$h = \sqrt{H^{2} - \dfrac{1}{\pi k} \sum_{i=1}^n q_{i}\ln\left(R/r_i\right)}$
 
 Where:
 
@@ -12,99 +12,81 @@ Where:
 $H$ = initial water table elevation (m)<br>
 $k$ = hydraulic conductivity of the aquifer (m/s)<br>
 $q_{i}$ = pumping rate of well $i$ (m³/s)<br>
-$R$ = distance from the well to the observation point (m)<br>
-$r_i$ = distance from the well $i$ to the point in question (m)<br>
+$R$ = radius of influence (m)<br>
+$r_i$ = distance from well $i$ to the point in question (m)<br>
 $n$ = number of wells
 
-This assumes we have a simple, uniform isotropic aquifer underlain by a low K unit. The heads are measured from the top of the low K unit. 
+This assumes we have a simple, uniform isotropic aquifer underlain by a low K unit. The heads are measured from the top of the low K unit.
 
-When dealign with an excavation, we can create a grid of points that covers the excavation and then calculate the drawdown at each point resulting from a set of dewatering wells that surround the excavation. At each point, we calculate the separation distance ($r_i$) from each well to the point and apply the equation above to get the water level. The well spacing and pumping rate can be adjusted to achieve a condition where the water level at all points inside the excavation are below the target depth of the excavation.
+When dealing with an excavation, we create a grid of points that covers the excavation and calculate the water level at each point resulting from a set of dewatering wells that surround the excavation. At each point, we calculate the distance ($r_i$) from each well to the point and apply the equation above. The well spacing and pumping rate can be adjusted until the water level at all points inside the excavation is below the target depth of the excavation.
 
-The following Colab notebook has been designed to help you calculate the well spacing and pumping rate required to dewater a construction site. The notebook is divided into sections that guide you through the process of calculating the drawdown at each point in the grid and visualizing the results. The notebook also includes interactive widgets that allow you to adjust the well spacing and pumping rate and see the results in real-time. 
+Open the app here:
 
-To get started, click the "Open in Colab" button below and follow the instructions in the notebook.
+<a href="https://jonesgeo.com/dewater/" target="_blank"><b>Dewater: https://jonesgeo.com/dewater/</b></a>
 
-Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/07_dewatering/files/dewatering.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+It runs in your browser; there is nothing to install. The **How it works** button at the top of the app summarizes the equations and the steps. The app keeps your work if you reload the page, and **Save project** writes it to a file you can open later.
 
-## Part 1 - Define the Excavation Site and Create Wells (Setup)
+## Part 1 - Define the Excavation Site
 
-In the first part of the notebook, you will interactively create points on a map corresponding to the locations of 
-the dewatering wells. The wells are placed around the perimeter of the excavation site. Therefore, we need to first 
-define the location of our excavation. The excavation size and location are specified using GeoJSON file. 
-
-In general, to create a geojson file of a region of interest, you can go here:
-
-[https://geojson.io/#map=2.85/32.25/-98.07](https://geojson.io/#map=2.85/32.25/-98.07){:target="_blank"}
-
-and zoom in on a region of interest. Then use the draw polygon tool to draw your region. When you are done, you 
-can select the Save option and save your polygon to a geojson file. However, for this problem, we will use the following GEOJSON file:
+The excavation size and location are defined by a polygon. You can draw it directly on the map (zoom to the site, click **Draw outline**, and click the corners), or load it from a GeoJSON file. For this problem, we will use the following GeoJSON file:
 
 GEOJSON File: [byu_brewster.geojson](files/byu_brewster.geojson) (right-click and select "Save Link As")
 
-This file contains the coordinates of a polygon that represents an excavation site. For this problem we will assume that BYU intends to build a new building to replace the Clyde Building and has decided to build the new building at the location of the current Brewster Building on the east side of campus. The GEOJSON file contains the coordinates 
-of a rectangular excavation site that represents the footprint of the new building. 
+This file contains the coordinates of a polygon that represents an excavation site. For this problem we will assume that BYU intends to build a new building to replace the Clyde Building and has decided to build the new building at the location of the current Brewster Building on the east side of campus. The GeoJSON file contains the coordinates of a rectangular excavation site that represents the footprint of the new building.
 
 !!! Note
-    An excavation at this location would not likely require dewatering as the water table is well below the 
+    An excavation at this location would not likely require dewatering as the water table is well below the
     elevation of the site. This is for illustrative purposes only.
 
-Follow the instructions in part 1 of the the notebook to upload the GEOJSON file and visualize the excavation site. You 
-will then interactively create wells by using the point tool shown below to create 
-points corresponding to the well locations shown by the blue symbols.
+Click **Load GeoJSON** in step 1 and select the file. (The same polygon also loads with the **Load the class example (BYU)** link.) The app zooms to the site and outlines the excavation in orange:
 
-![point_tool.png](images/point_tool.png)
+![dewater_app_excavation.jpg](images/dewater_app_excavation.jpg)
 
-If you need to change the locations of the wells, the easiest way is to delete the existing wells and create new ones using the two cells below the map.  
-
-## Part 2 - Drawdown Calculations
-
-The goal of this exercise is to design a dewatering system that will lower the water table below the bottom of the 
-excavation. In this step, we will use the wells defined above to calculate the drawdown at each point in a grid 
-coverting the site and visualize the results. 
-
-Run the code in this section to define the functions, and then enter the following parameters for the site:
+Then enter the following parameters in step 2:
 
 | Parameter | Value | units |
 |----------|-------|-------|
 | $k$      | 5e-4  | cm/s  |
 | $H$      | 50    | m     |
 | $R$      | 500   | m     |
-| Design H | 35    | m     |
-| $Q$      | 0.015 | m³/s  |
+| Target head | 35    | m     |
 
-The total pumping rate you enter is divided equally among the wells. Run the cells to create a grid of points that surround the excavation and calculate the head at each point in the grid. You can then generate a series of contour plots showing head/drawdown resulting from the well configuration and the pumping rate. Play with the pumping rate and the plotting tools in the notebook to visualize the results and determine when the drawdown is below the target depth of the excavation at all points.
+The target head is the water level that must be reached everywhere inside the excavation.
 
-## Part 2 - Rectangular Well System Design
+## Part 2 - Drawdown Calculations
 
-In the next part of the notebook labelled **Rectangular Well System Design**, you will use an algorithm to automatically 
-place a line of wells around the perimeter of the excavation based on an offset distance from the excavation 
-boundary and a specified well spacing. The results should look something like the image below:
+In step 3, click **Click to add wells** and click the map to place wells around the excavation. They should be outside of the footprint of the excavation. Drag a well to move it, and right-click a well to delete it. Click the button again when you are done.
 
-![rect_grid.png](images/rect_grid.png)
+In step 4, enter a total pumping rate of $Q$ = 0.015 m³/s. The total pumping rate is divided equally among the wells. The app computes the water level on a grid surrounding the excavation and draws contours on the map as soon as anything changes:
 
-Play with the number of wells, the offset distance, and the pumping rate. Compare your results to the previous section 
-where you manually placed the wells.
+![dewater_app_manual.jpg](images/dewater_app_manual.jpg)
+
+The orange contour is the target head. The area where the water is below the target is shaded green, and the panel reports the highest water level inside the excavation and whether the excavation is dewatered. If it isn't, a red circle marks the point where the water is highest. In step 5 you can switch the contours to drawdown, $H - h$, or to the head below the target, which is negative where the excavation is still wet.
+
+Play with the pumping rate and the well locations to determine when the water level is below the target at all points in the excavation.
+
+## Part 3 - Rectangular Well System Design
+
+Next, use **Generate a ring of wells** in step 3 to automatically place wells around the excavation, based on an offset distance from the excavation boundary and a number of wells. The wells are spaced evenly along a line offset from the edge of the excavation.
+
+Use an offset of 15 m and 16 wells. Play with the number of wells, the offset distance, and the pumping rate. Compare your results to the previous section where you manually placed the wells.
 
 ## Part 4 - Pumping Rate Optimization
 
-In the next part of the notebook labelled **Pumping Rate Optimization**, you will use an optimization algorithm to 
-find the optimal pumping rate using the rectangular well system you have designed. The algorithm will 
-adjust the total pumping rate to find a minimum value that puts the water level inside the excavation just below the depth of the excavation at all points.
+Click **Find the least Q that works** in step 4. The app finds the minimum total pumping rate that puts the water level inside the excavation just at the target at all points. With 16 wells at a 15 m offset, the result should look like this:
+
+![dewater_app_ring.jpg](images/dewater_app_ring.jpg)
+
+Because the wells share the pumping equally, this minimum rate can be computed directly rather than by trial and error: the highest water is always at the point in the excavation where the wells have the least combined effect, and the rate is the one that brings that point exactly to the target. The app also checks that the rate doesn't pump any of the wells dry. If it does, you need more wells, or wells farther from the excavation.
+
+What is the total pumping rate in gpm?
 
 ## Part 5 - Q vs NumWells Design Curve
 
-In the final part of the notebook, you will use the optimization algorithm to generate a design curve that shows the 
-relationship between the total pumping rate and the number of wells required to dewater the excavation. You will 
-give a min and max number of points along the major edge and the code will loop from the min to max number of points.
-In each iteration it will generate a rectangular grid of wells around the excavation and then find the optimal pumping 
-rate for the configuration. 
+In step 6, enter a range for the number of wells (for example, 4 to 40) and click **Compute the design curve**. For each number of wells, the app generates a ring of wells at the offset distance from step 3 and finds the minimum pumping rate. The results are presented in a curve of optimal pumping rate vs number of wells:
 
-Finally, the results are presented in a curve of optimal pumping rate vs number of wells.
-The design curve will help you determine the optimal number of wells and pumping rate required to dewater the 
-excavation. In other words, at some point, adding more wells will not significantly reduce the pumping rate required to dewater the excavation. Your design curve should look something like this:
+![dewater_app_curve.jpg](images/dewater_app_curve.jpg)
 
-![q_vs_wells.png](images/q_vs_wells.png)
+The design curve will help you determine the optimal number of wells and pumping rate required to dewater the excavation. In other words, at some point, adding more wells will not significantly reduce the pumping rate required to dewater the excavation. Use **Download CSV** to save the curve.
 
-
-
-
+Try a few different offset distances. How does the offset affect the required pumping rate?
