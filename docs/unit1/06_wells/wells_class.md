@@ -157,9 +157,9 @@ For an unconfined aquifer, the Theis equation works in the same $H^2 - h^2$ form
 
 At late time, it becomes the steady unconfined equation with $R = 1.5\sqrt{kHt/S_y}$.
 
-Use the unconfined aquifer of Part 3 with $S_y$ = 0.2.
+Use the unconfined aquifer of Part 3, but with a lower hydraulic conductivity, $k$ = 0.05 cm/s, and a specific yield of $S_y$ = 0.2.
 
-a) Calculate the head at the well and $R$ after 1 hour, 6 hours, 12 hours, and 5 days, and plot the head against $r$ for each time with the steady curve from Part 3.
+a) Calculate the head at the well and $R$ after 1 hour, 1 day, 10 days, and 100 days, and plot the head against $r$ for each time with the steady curve for $R$ = 500 m.
 
 b) How long does it take for $R$ to reach 500 m? Compare this time with the time you found for the confined aquifer in Part 4. Why is the difference so large?
 
