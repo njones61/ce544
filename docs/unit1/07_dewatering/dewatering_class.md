@@ -53,7 +53,7 @@ Then enter the following parameters in step 2:
 | $k$      | 5e-4  | cm/s  |
 | $R$      | 500   | m     |
 
-The app converts the depths to the quantities in the equation and shows them under the inputs: the initial saturated thickness, $H$ = 55 − 5 = 50 m, and the target head inside the excavation, 55 − 20 = 35 m above the bottom of the aquifer. (You can also enter $H$ and the target head directly with **Heads above the low-k layer**.)
+The app converts the depths to the quantities in the equation and shows them under the inputs: the initial saturated thickness, $H$ = 55 − 5 = 50 m, and the target head inside the excavation, 55 − 20 = 35 m above the bottom of the aquifer. (You can also enter the levels as elevations with **Elevations**; the app then reads the ground elevation from terrain data.)
 
 ## Part 2 - Drawdown Calculations
 
