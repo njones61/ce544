@@ -1,6 +1,6 @@
 # Pre-Class - Well Equations
 
-These videos introduce the equations used to calculate the flow rate to a well and to compute the drawdown at the well and the head (h) as a function of distance (r) from the well. The video also explains how to use these equations to calculate the hydraulic conductivity and/or transmissivity of an aquifer. They cover both confined and unconfined aquifers.
+These videos introduce the equations used to calculate the flow rate to a well and to compute the drawdown at the well and the head (h) as a function of distance (r) from the well. The video also explains how to use these equations to calculate the hydraulic conductivity and/or transmissivity of an aquifer. They cover both confined and unconfined aquifers, and transient flow: how the drawdown grows with time after pumping starts, and how a pumping test over time gives the transmissivity and storativity.
 
 Slides: [wellequations.pptx](files/wellequations.pptx)
 

@@ -6,54 +6,59 @@ a. Calculate the permeability of the sand [ft/day] assuming the aquifer is **con
 
 b. Calculate the permeability of the sand [ft/day] assuming the aquifer is **unconfined**.
 
-**2.** The Dupuit assumptions used to derive the unconfined aquifer well equation results in an inaccurate estimate of 
-   the drawdown at the well and out to a distance from the well as shown below:
+**2.** A well fully penetrating a confined aquifer **20** m thick is pumped at a constant rate of **10** L/s. The drawdown is recorded at an observation well **40** m from the pumping well:
 
-![correction.png](images/correction.png)
+| Time since pumping began (min) | Drawdown, s (m) |
+|------:|------:|
+| 1 | 0.09 |
+| 2 | 0.22 |
+| 3 | 0.33 |
+| 4 | 0.42 |
+| 5 | 0.49 |
+| 7 | 0.60 |
+| 10 | 0.73 |
+| 15 | 0.87 |
+| 20 | 0.98 |
+| 30 | 1.14 |
+| 40 | 1.25 |
+| 60 | 1.41 |
+| 90 | 1.57 |
+| 120 | 1.68 |
+| 180 | 1.84 |
+| 240 | 1.95 |
+| 360 | 2.11 |
+| 480 | 2.23 |
+| 720 | 2.39 |
+| 1,000 | 2.52 |
+| 1,440 | 2.66 |
 
-The correction factor is given by:
+For small $u$, the Theis equation reduces to the Cooper–Jacob approximation, a straight line on a plot of drawdown against log time:
 
->>$h' = h + a$
+>>$s = \dfrac{q}{4\pi T}\ln\left(\dfrac{2.25\,Tt}{r^2 S}\right), \qquad u = \dfrac{r^2 S}{4Tt} < 0.05$
 
->>$h =  \sqrt{H^2 - \dfrac{q \ln\left(\frac{R}{r}\right)}{\pi k} }$
+The slope of the line gives the transmissivity and its intercept gives the storativity:
 
->>$a = \dfrac{\left(H'-H_w\right)\left[1-\left(\dfrac{H_w}{H'}\right)^{2.4}\right]}{7.2 \left(1+\dfrac{5 r_w}{H}
-> \right)}$
+>>$T = \dfrac{2.3\,q}{4\pi\,\Delta s}, \qquad S = \dfrac{2.25\,T t_0}{r^2}$
 
 Where:
 
->>h' = corrected head [L]<br>
-h = head [L]<br>
-H = initial head prior to pumping [L]<br>
-q = flow rate [L³/T]<br>
-R = radius of influence of the well [L]<br>
-r = distance from the well [L]<br>
-k = hydraulic conductivity [L/T]<br>
-$r_w$ = radius of the well [L]<br>
-H' = height of drawdown surface at r = 500$r_w$ [L]<br>
+>>$\Delta s$ = change in drawdown over one log cycle of time [L]<br>
+$t_0$ = time where the straight line crosses s = 0 [T]<br>
+$r$ = distance from the pumping well to the observation well [L]
 
-Assume the following values for the unconfined aquifer:
+a. Plot the drawdown against time with a log scale for time. Which points don't fall on a straight line, and why?
 
-| Parameter | Value | Units |
-|-----------|-------|-------|
-| Q         | 0.2   | m³/s  |
-| k         | 0.05  | cm/s  |
-| H         | 50    | m     |
-| R         | 500   | m     |
-| \(r_w\)   | 0.1   | m     |
+b. Fit a straight line through the later points. Find $\Delta s$ and $t_0$, and calculate $T$, $S$, and $k$ [cm/s].
 
-a. Calculate the head at the center of the well (r = \(r_w\)) using the corrected head equation.
+c. Calculate $u$ for the earliest point you used in the fit. Is the Cooper–Jacob approximation valid there?
 
-b. Let r vary from rw to R. Calculate and plot the head as a function of distance (r) from the well using the 
-corrected head equation. Start with the full correction from part (a) and assume a linear decrease in the correction 
-term out to a value of zero at r = 1.5*H. Plot the head with and without the correction term out to a limit of r = 150 m.
+d. Using the Theis equation, $s = \dfrac{q}{4\pi T}W(u)$, with your $T$ and $S$, predict the drawdown at the observation well after 30 days of pumping. What is $R = 1.5\sqrt{Tt/S}$ at 30 days?
 
-Excel starter file: [correction.xlsx](files/correction.xlsx)
+$W(u)$ is the exponential integral. In Python it is `scipy.special.exp1(u)`; the Excel starter file gives a formula for it.
 
-Python starter file: <a href="https://colab.research.google.
-com/github/njones61/ce544/blob/main/docs/unit1/06_wells/files/correction.ipynb" target="_blank"><img src="https://colab.
-research.
-google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Excel starter file: [pumping_test.xlsx](files/pumping_test.xlsx)
+
+Python starter file: <a href="https://colab.research.google.com/github/njones61/ce544/blob/main/docs/unit1/06_wells/files/pumping_test.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 **3.** Two wells are installed a distance of **60** feet apart in an unconfined aquifer **40** feet thick. The water table is **5** 
 feet below the ground surface. The hydraulic conductivity of the aquifer is **0.02** ft/min. The following information is also known for the wells:
@@ -65,7 +70,7 @@ feet below the ground surface. The hydraulic conductivity of the aquifer is **0.
 | Pumping rate per well | 35 | gallons per minute per well |
 
 Compute and plot the drawdown surface produced by pumping the two wells under steady state conditions. Use a 
-cross-section which passes through both wells. Do not use the "a" term to correct the drawdown. Let x range from 
+cross-section which passes through both wells. Let x range from 
 -250 to +250 ft with increments of 10 ft assuming x=0 exactly halfway between the wells. At each x location, 
 calculate the distance from x to each well (r1 and r2). Then calculate  and head for each well independently (h1 
 and h2) using the unconfined aquifer well equation:
@@ -108,7 +113,9 @@ Combine your PDFs, spreadsheets, and *.ipynb notebook files into a single zip ar
 |----------|:------:|
 | Problem 1a: Permeability for confined aquifer | 5 |
 | Problem 1b: Permeability for unconfined aquifer | 5 |
-| Problem 2a: Corrected head at well center | 5 |
-| Problem 2b: Plot with and without correction | 7 |
+| Problem 2a: Drawdown vs. log time plot | 3 |
+| Problem 2b: T, S, and k from the straight line | 5 |
+| Problem 2c: u check for the fit | 2 |
+| Problem 2d: Drawdown and R after 30 days | 2 |
 | Problem 3: Two-well drawdown calculation and plot | 6 |
 | Documentation and work shown clearly | 2 |
