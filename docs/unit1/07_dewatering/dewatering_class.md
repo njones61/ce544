@@ -49,7 +49,7 @@ Then enter the following parameters in step 2:
 | Depth to the water table | 5  | m |
 | Depth to the bottom of the aquifer | 55 | m |
 | Excavation depth | 20 | m |
-| Water required below the bottom | 0 | m |
+| Extra depth below the bottom | 0 | m |
 | $k$      | 5e-4  | cm/s  |
 | $R$      | 500   | m     |
 

@@ -60,14 +60,14 @@ Assume the following parameters for the problem:
 | Depth to the water table | 4.1 | m |
 | Depth to the bottom of the aquifer | 34.1 | m |
 | Excavation depth | 9.1 (30 ft) | m |
-| Water required below the bottom | 0 | m |
+| Extra depth below the bottom | 0 | m |
 | $k$      | 0.007 | cm/sec |
 | $R$      | 400   | m      |
 | $Q$      | 0.025 | m³/s   |
 
 These give an initial saturated thickness of 30 m and a target head of 25 m above the bottom of the aquifer.
 
-Enter these values in steps 2 and 4. The app calculates the water level at each point in a grid covering the site and draws the contours on the map. Use the display options in step 5 to look at head, drawdown, or head below the target, and the cross sections in step 6 to see the water level through the excavation.
+Enter these values in steps 2 and 4. The app calculates the water level at each point in a grid covering the site and draws the contours on the map. Use the display options in step 5 to look at the depth to water, the drawdown, or the water below the required level, and the cross sections in step 6 to see the water level through the excavation.
 
 Now design a dewatering system under three conditions: 2 wells, 4 wells, and 6 wells. In each case,
 assume that you can only place the wells outside of the temple footprint. You should change the location of the wells and the total pumping rate. To move a well, drag it; to delete one, right-click it; **Clear wells** removes them all.
