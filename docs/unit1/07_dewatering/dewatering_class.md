@@ -73,19 +73,19 @@ Next, use **Generate a ring of wells** in step 3 to automatically place wells ar
 
 Use an offset of 15 m and 16 wells. Play with the number of wells, the offset distance, and the pumping rate. Compare your results to the previous section where you manually placed the wells.
 
-## Part 4 - Pumping Rate Optimization
+## Part 4 - Minimum Design Pumping Rate
 
-Click **Find the least Q that works** in step 4. The app finds the minimum total pumping rate that puts the water level inside the excavation just at the target at all points. With 16 wells at a 15 m offset, the result should look like this:
+Click **Find Q<sub>min</sub>** in step 4. The app finds the minimum design pumping rate, $Q_{min}$: the smallest total pumping rate that brings the water down to the required level everywhere inside the excavation. At that rate the water is just at the target at the highest point and below it everywhere else. With 16 wells at a 15 m offset, the result should look like this:
 
 ![dewater_app_ring.jpg](images/dewater_app_ring.jpg)
 
-Because the wells share the pumping equally, this minimum rate can be computed directly rather than by trial and error: the highest water is always at the point in the excavation where the wells have the least combined effect, and the rate is the one that brings that point exactly to the target. The app also checks that the rate doesn't pump any of the wells dry. If it does, you need more wells, or wells farther from the excavation.
+Because the wells share the pumping equally, $Q_{min}$ can be computed directly rather than by trial and error: the highest water is always at the point in the excavation where the wells have the least combined effect, and the rate is the one that brings that point exactly to the target. The app also checks that $Q_{min}$ doesn't pump any of the wells dry. If it does, you need more wells, or wells farther from the excavation.
 
-What is the total pumping rate in gpm?
+What is $Q_{min}$ in gpm? The rate actually specified for a project is usually $Q_{min}$ plus a margin.
 
-## Part 5 - Q vs NumWells Design Curve
+## Part 5 - Q<sub>min</sub> vs. Number of Wells
 
-In step 7, with **Number of wells** selected, enter a range for the number of wells (for example, 4 to 40) and click **Compute the design curve**. For each number of wells, the app generates a ring of wells at the offset distance from step 3 and finds the minimum pumping rate. The results are presented in a curve of optimal pumping rate vs number of wells:
+In step 7, with **Number of wells** selected, enter a range for the number of wells (for example, 4 to 40) and click **Compute the design curve**. For each number of wells, the app generates a ring of wells at the offset distance from step 3 and finds $Q_{min}$. The results are presented in a design curve of $Q_{min}$ vs. the number of wells:
 
 ![dewater_app_curve.jpg](images/dewater_app_curve.jpg)
 
@@ -95,9 +95,9 @@ Try a few different offset distances. How does the offset affect the required pu
 
 ## Part 6 - The Radius of Influence
 
-So far we have entered the radius of influence, $R$ = 500 m. In practice, $R$ is usually estimated with an empirical formula such as Sichardt's, $R = 3000\,s\sqrt{k}$ (with $s$, the drawdown, in m and $k$ in m/s). For a ring of wells, the ring is treated as one large well with the excavation's equivalent radius, $r_e = \sqrt{A/\pi}$, where $A$ is the area of the excavation. The drawdown $s$ is the drawdown the excavation needs (here 15 m, from the water table down to the excavation bottom), and $R$ is measured from the center of the large well: $R = r_e + 3000\,s\sqrt{k}$. In step 2, change **Radius of influence, R** from **Entered** to **Sichardt**, and click **Find the least Q that works** again. The app reports $r_e$ and $R$. How does $R$ from Sichardt compare to 500 m, and how much does it change the pumping rate?
+So far we have entered the radius of influence, $R$ = 500 m. In practice, $R$ is usually estimated with an empirical formula such as Sichardt's, $R = 3000\,s\sqrt{k}$ (with $s$, the drawdown, in m and $k$ in m/s). For a ring of wells, the ring is treated as one large well with the excavation's equivalent radius, $r_e = \sqrt{A/\pi}$, where $A$ is the area of the excavation. The drawdown $s$ is the drawdown the excavation needs (here 15 m, from the water table down to the excavation bottom), and $R$ is measured from the center of the large well: $R = r_e + 3000\,s\sqrt{k}$. In step 2, change **Radius of influence, R** from **Entered** to **Sichardt**, and click **Find Q<sub>min</sub>** again. The app reports $r_e$ and $R$. How does $R$ from Sichardt compare to 500 m, and how much does it change the pumping rate?
 
-Then, in step 7, select **Hydraulic conductivity, k** and compute the design curve for $k$ from 1e-4 to 1e-2 cm/s. The plot shows the least pumping rate with $R$ from Sichardt and with $R$ fixed. With a fixed $R$, the pumping rate is simply proportional to $k$. Why is the curve with $R$ from Sichardt different, and what does that tell you about how much the choice of $R$ matters?
+Then, in step 7, select **Hydraulic conductivity, k** and compute the design curve for $k$ from 1e-4 to 1e-2 cm/s. The plot shows $Q_{min}$ with $R$ from Sichardt and with $R$ fixed. With a fixed $R$, the pumping rate is simply proportional to $k$. Why is the curve with $R$ from Sichardt different, and what does that tell you about how much the choice of $R$ matters?
 
 !!! Note "In practice"
     When a pumping test is available, $R$ comes from it: the drawdowns at the observation wells are
@@ -106,5 +106,5 @@ Then, in step 7, select **Hydraulic conductivity, k** and compute the design cur
     design calls for. Because the pumping rate depends on $R$ only through $\ln(R/r)$, designers often
     run the design for a range of $R$. $R$ also grows the longer the wells pump, so a steady-state $R$
     stands for some period of pumping. Around a compact excavation, a ring of wells behaves much like
-    one large well with a radius of $\sqrt{A/\pi}$, which is why the least total rate for a small site
+    one large well with a radius of $\sqrt{A/\pi}$, which is why $Q_{min}$ for a small site
     barely changes with the number of wells.

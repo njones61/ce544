@@ -82,7 +82,7 @@ of 20 m and 26 wells.
 
 **(d) Pumping Rate Optimization**
 
-For the ring of wells, click **Find the least Q that works** in step 4 to find the optimal pumping rate that will dewater the site with the well configuration described above. Save a copy of the contour plot showing the drawdown and include it in your report along with your pumping rate in gpm.
+For the ring of wells, click **Find Q<sub>min</sub>** in step 4 to find the minimum design pumping rate, $Q_{min}$, that will dewater the site with the well configuration described above. Save a copy of the contour plot showing the drawdown and include it in your report along with your pumping rate in gpm.
 
 **(e) Design Curve**
 
@@ -90,7 +90,7 @@ Finally, compute the design curve in step 7 for a range of numbers of wells. Sav
 
 **(f) Radius of Influence**
 
-Repeat part (d) with the radius of influence from Sichardt's formula instead of the entered value of 400 m: in step 2, change **Radius of influence, R** to **Sichardt**, and find the least Q again. Report the equivalent radius $r_e$, $R$, and the pumping rate in gpm, and compare them to your answer to part (d). Which value of $R$ would you trust for this site, and why?
+Repeat part (d) with the radius of influence from Sichardt's formula instead of the entered value of 400 m: in step 2, change **Radius of influence, R** to **Sichardt**, and find $Q_{min}$ again. Report the equivalent radius $r_e$, $R$, and the pumping rate in gpm, and compare them to your answer to part (d). Which value of $R$ would you trust for this site, and why?
 
 ## Submission
 
