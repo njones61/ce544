@@ -51,9 +51,10 @@ Then enter the following parameters in step 2:
 | Excavation depth | 20 | m |
 | Extra depth below the bottom | 0 | m |
 | $k$      | 5e-4  | cm/s  |
+| Flow     | Steady | |
 | $R$      | 500   | m     |
 
-The app converts the depths to the quantities in the equation and shows them under the inputs: the initial saturated thickness, $H$ = 55 − 5 = 50 m, and the target head inside the excavation, 55 − 20 = 35 m above the bottom of the aquifer. (You can also enter the levels as elevations with **Elevations**; the app then reads the ground elevation from terrain data.)
+Parts 1 to 6 use steady flow, with the radius of influence entered; Part 7 turns to time. The app converts the depths to the quantities in the equation and shows them under the inputs: the initial saturated thickness, $H$ = 55 − 5 = 50 m, and the target head inside the excavation, 55 − 20 = 35 m above the bottom of the aquifer. (You can also enter the levels as elevations with **Elevations**; the app then reads the ground elevation from terrain data.)
 
 ## Part 2 - Drawdown Calculations
 
@@ -108,3 +109,28 @@ Then, in step 7, select **Hydraulic conductivity, k** and compute the design cur
     stands for some period of pumping. Around a compact excavation, a ring of wells behaves much like
     one large well with a radius of $\sqrt{A/\pi}$, which is why $Q_{min}$ for a small site
     barely changes with the number of wells.
+
+## Part 7 - Dewatering on a Schedule
+
+$Q_{min}$ from Part 4 is a steady rate: it holds the water down once the cone of depression has spread out to $R$. It says nothing about how long that takes, and the contractor wants to start digging soon after the pumps start. With transient flow, each well follows the Theis solution in the same $H^2 - h^2$ form,
+
+>>$H^{2} - h^{2} = \dfrac{q}{2\pi k}W(u), \qquad u = \dfrac{r^{2}S_{y}}{4kHt}$
+
+where $W(u)$ is the Theis well function, $S_y$ the specific yield, and $t$ the time since pumping started. At late time it becomes the steady equation with $R = 1.5\sqrt{kHt/S_y}$, so a steady $R$ stands for a pumping time. Wells still add in $H^2 - h^2$, and $Q_{min}$ is still exact: now it is the smallest rate that dewaters the excavation by day $t$.
+
+In step 2, set **Radius of influence, R** back to **Entered** and switch to **Transient**, with $S_y$ = 0.2 and 30 days of pumping. Generate a ring of 16 wells at a 15 m offset, enter the steady $Q_{min}$ from Part 4 as the pumping rate, and draw the east–west cross section.
+
+1. The results give the time to dewater at this rate. How long does the steady $Q_{min}$ take? What $R$ does it correspond to, from $R = 1.5\sqrt{kHt/S_y}$?
+2. Press play on the bar under the map to watch the cone of depression grow, in the contours and in the cross section. Drag the bar to scrub through time; **Design day** returns to day 30.
+3. Click **Find Q<sub>min</sub>** to find the rate that dewaters the excavation by day 30. What happens to the wells? Increase the number of wells until the design works. How much does $Q_{min}$ change, and why does adding wells fix the problem?
+4. In step 7, compute $Q_{min}$ against the days of pumping, from 1 to 365 days. How much more pumping does a 30-day schedule take than a 180-day schedule?
+5. Go back to 16 wells and enclose the site with a cutoff wall (step 3, **Cutoff wall**: a 20 m offset, 0.9 m thick, $k_w$ = 1e-7 cm/s). Find $Q_{min}$ for 30 days. Compare it with the wells alone, and with the leakage that holds the water down after day 30.
+
+![dewater_app_transient.jpg](images/dewater_app_transient.jpg)
+
+!!! Note "In practice"
+    Start the design from the schedule: the days until digging starts set the pumping rate. Then
+    check that no well runs dry, and consider a cutoff wall when the rate is too high. The wells
+    keep pumping through construction, and with no boundary the cone keeps spreading, so the water
+    keeps falling after the design day. A river or other recharge boundary stops that growth; there
+    the steady solution with $R$ set by the boundary is the better model.
