@@ -90,7 +90,7 @@ Finally, compute the design curve in step 7 for a range of numbers of wells. Sav
 
 **(f) Radius of Influence**
 
-Repeat part (d) with the radius of influence from Sichardt's formula instead of the entered value of 400 m: in step 2, change **Radius of influence, R** to **Sichardt**, and find the least Q again. Report $R$, the drawdown at the wells $s_w$, and the pumping rate in gpm, and compare them to your answer to part (d). Which value of $R$ would you trust for this site, and why?
+Repeat part (d) with the radius of influence from Sichardt's formula instead of the entered value of 400 m: in step 2, change **Radius of influence, R** to **Sichardt**, and find the least Q again. Report the equivalent radius $r_e$, $R$, and the pumping rate in gpm, and compare them to your answer to part (d). Which value of $R$ would you trust for this site, and why?
 
 ## Submission
 
