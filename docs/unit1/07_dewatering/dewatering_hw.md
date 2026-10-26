@@ -57,20 +57,21 @@ Assume the following parameters for the problem:
 
 | Parameter | Value | units  |
 |----------|-------|--------|
-| Depth to the water table | 4.1 | m |
-| Depth to the bottom of the aquifer | 34.1 | m |
-| Excavation depth | 9.1 (30 ft) | m |
-| Extra depth below the bottom | 0 | m |
-| $k$      | 0.007 | cm/sec |
-| $R$      | 400   | m      |
-| $Q$      | 0.025 | m³/s   |
+| Depth to the water table | 13.5 | ft |
+| Depth to the bottom of the aquifer | 46 | ft |
+| Excavation depth | 30 | ft |
+| Extra depth below the bottom | 0 | ft |
+| $k$      | 20 | ft/day |
+| $R$      | 1300 | ft |
+| Well radius, $r_w$ | 0.5 | ft |
+| $Q$      | 100 | gpm |
 
-These give an initial saturated thickness of 30 m and a target head of 25 m above the bottom of the aquifer.
+These give an initial saturated thickness of 32.5 ft and a target head of 16 ft above the bottom of the aquifer.
 
-Enter these values in steps 2 and 5. Set the flow to **Steady**; part (g) turns to time. The app calculates the water level at each point in a grid covering the site and draws the contours on the map. Use the display options in step 6 to look at the depth to water, the drawdown, or the water below the required level, and the cross sections in step 7 to see the water level through the excavation.
+Choose **Feet** for the length units at the top of the panel, ft/day for $k$, and gpm for the pumping rate. Then enter these values in steps 2 and 5. Set the flow to **Steady**; part (g) turns to time. The app calculates the water level at each point in a grid covering the site and draws the contours on the map. Use the display options in step 6 to look at the depth to water, the drawdown, or the water below the required level, and the cross sections in step 7 to see the water level through the excavation.
 
 Now design a dewatering system under three conditions: 2 wells, 4 wells, and 6 wells. In each case,
-assume that you can only place the wells outside of the temple footprint. You should change the location of the wells and the total pumping rate. To move a well, drag it; to delete one, right-click it; **Clear wells** removes them all.
+assume that you can only place the wells outside of the temple footprint. You should change the location of the wells and the total pumping rate. With too few wells, you may find that no rate works: the app reports that the minimum design pumping rate would pump a well dry. If that happens, explain what it means and what it tells you about the number of wells. To move a well, drag it; to delete one, right-click it; **Clear wells** removes them all.
 
 Save a copy of each of your designs: take a screenshot of the map showing the water level contours, and use **Save project** to keep the design itself. Open a Word document and write a short section for each of your three designs (including the contour plots) and discuss the results. Indicate which of the three designs you would suggest using for the actual project.
 
@@ -78,7 +79,7 @@ Save a copy of each of your designs: take a screenshot of the map showing the wa
 
 Next, use **Generate a ring of wells** in step 3 to place a line of wells around the perimeter of
 the excavation based on an offset distance from the excavation boundary and a number of wells. The wells are spaced evenly, the same on opposite sides. Use an offset
-of 20 m and 26 wells.
+of 65 ft and 26 wells.
 
 **(d) Pumping Rate Optimization**
 
@@ -90,7 +91,17 @@ Finally, compute the design curve in step 8 for a range of numbers of wells. Sav
 
 **(f) Radius of Influence**
 
-Repeat part (d) with the radius of influence from Sichardt's formula instead of the entered value of 400 m: in step 2, change **Radius of influence, R** to **Sichardt**, and find $Q_{min}$ again. Report the equivalent radius $r_e$, $R$, and the pumping rate in gpm, and compare them to your answer to part (d). Which value of $R$ would you trust for this site, and why?
+Repeat part (d) with the radius of influence from Sichardt's formula instead of the entered value of 1300 ft: in step 2, change **Radius of influence, R** to **Sichardt**, and find $Q_{min}$ again. Report the equivalent radius $r_e$, $R$, and the pumping rate in gpm, and compare them to your answer to part (d). Which value of $R$ would you trust for this site, and why?
+
+**(g) Dewatering on a Deadline**
+
+The contractor needs the site dry in 10 days. In step 2, set the flow to **Transient**, with a specific yield $S_y$ of 0.2 and 10 days to dewater.
+
+1. With the ring of 26 wells from part (c), click **Find Q<sub>min</sub>**. Report the starting rate in gpm and compare it to the steady rate from part (d). Open the **Pumping schedule** and report the rate needed to hold the water down after day 10.
+2. Change the deadline to 5 days and click **Find Q<sub>min</sub>** again. What does the app report? Explain why pumping harder can't get the site dry any sooner with these wells.
+3. Go back to 10 days and compute the design curve against the number of wells in step 8. What is the fewest wells that can meet the deadline?
+4. Add a cutoff wall in step 4 with a setback of 15 ft, a thickness of 3 ft, and $k_w$ = 3 × 10⁻⁴ ft/day. Find Q<sub>min</sub> for the 26 wells, and compute the design curve against the number of wells again. Report the starting rate and the fewest wells, and compare them with your answers to steps 1 and 3.
+5. Recommend a design for the 10-day deadline: the number of wells, the pump capacity, and whether to build the wall. Explain your reasoning.
 
 ## Submission
 
@@ -104,7 +115,7 @@ Make a zip archive of your spreadsheet for part 1 and your Word document for par
 
 ## Grading Rubric
 
-**Total: 30 points**
+**Total: 38 points**
 
 | Criteria | Points |
 |----------|:------:|
@@ -118,3 +129,7 @@ Make a zip archive of your spreadsheet for part 1 and your Word document for par
 | Exercise 2d: Optimized pumping rate | 3 |
 | Exercise 2e: Design curve and well recommendation | 2 |
 | Exercise 2f: Radius of influence from Sichardt | 2 |
+| Exercise 2g: Deadline rate and pumping schedule | 2 |
+| Exercise 2g: Fastest dewatering and fewest wells | 2 |
+| Exercise 2g: Cutoff wall comparison | 2 |
+| Exercise 2g: Recommendation | 2 |
