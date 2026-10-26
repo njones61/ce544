@@ -1,48 +1,49 @@
 # Exercise - Construction Dewatering
 
-In this exercise, we will use the **Dewater** web app to design a well-based dewatering system for a construction site. The app calculates the drawdown from a set of wells and the pumping rate required to lower the water table to a desired level. We will assume unconfined conditions and apply the superposition principle to calculate the water level using the following equation:
+A contractor has 30 days from the day the pumps start until excavation must begin. In this exercise you design the well system for that deadline with the **Dewater** web app: how many wells, where they go, how hard to pump and for how long, how big the pumps must be, how much water must be discharged, and whether a cutoff wall pays for itself.
 
-![unconfined.png](../06_wells/images/unconfined.png)
+## How the App Computes
 
->>$h = \sqrt{H^{2} - \dfrac{1}{\pi k} \sum_{i=1}^n q_{i}\ln\left(R/r_i\right)}$
+The site is a uniform, unconfined aquifer on a low-permeability layer, with the heads measured up from that layer. Each well follows the Theis solution in the $H^2 - h^2$ form, and the drawdowns of the wells add:
+
+>>$H^{2} - h^{2} = \displaystyle\sum_{i=1}^{n} \dfrac{q_i}{2\pi k}W(u_i), \qquad u_i = \dfrac{r_i^{2}S_{y}}{4kHt}$
 
 Where:
 
->>$h$ = water level at a given location (m)<br>
-$H$ = initial water table elevation (m)<br>
-$k$ = hydraulic conductivity of the aquifer (m/s)<br>
-$q_{i}$ = pumping rate of well $i$ (m³/s)<br>
-$R$ = radius of influence (m)<br>
-$r_i$ = distance from well $i$ to the point in question (m)<br>
-$n$ = number of wells
+>>$h$ = water level above the low-permeability layer at a point, at time $t$<br>
+$H$ = initial saturated thickness<br>
+$k$ = hydraulic conductivity<br>
+$S_y$ = specific yield<br>
+$q_i$ = pumping rate of well $i$<br>
+$r_i$ = distance from well $i$ to the point<br>
+$W(u)$ = the Theis well function<br>
+$t$ = time since pumping started
 
-This assumes we have a simple, uniform isotropic aquifer underlain by a low K unit. The heads are measured from the top of the low K unit.
+A change in the rate at time $t_j$ starts a Theis term of its own, and the terms add in time as well:
 
-When dealing with an excavation, we create a grid of points that covers the excavation and calculate the water level at each point resulting from a set of dewatering wells that surround the excavation. At each point, we calculate the distance ($r_i$) from each well to the point and apply the equation above. The well spacing and pumping rate can be adjusted until the water level at all points inside the excavation is below the target depth of the excavation.
+>>$H^{2} - h^{2} = \displaystyle\sum_j \dfrac{\Delta q_j}{2\pi k}W(u_j), \qquad u_j = \dfrac{r^{2}S_{y}}{4kH(t - t_j)}$
+
+The app checks the water level on a grid of points over the excavation and along its edge. A design works when the water is at or below the required level at every point by the deadline, and no well has gone dry along the way. With a cutoff wall, the app solves the flow on a finite-difference grid instead.
+
+The cone of depression keeps growing as long as the wells pump. A steady solution, with a radius of influence $R$, describes the cone after it has stopped growing, which never happens on a construction schedule. Everything in this exercise is transient.
 
 Open the app here:
 
 <a href="https://jonesgeo.com/dewater/" target="_blank"><b>Dewater: https://jonesgeo.com/dewater/</b></a>
 
-It runs in your browser; there is nothing to install. The **How it works** button at the top of the app summarizes the equations and the steps. The app keeps your work if you reload the page, and **Save project** writes it to a file you can open later.
+It runs in your browser; there is nothing to install. **How it works** at the top of the app summarizes the equations and the steps. The app keeps your work if you reload the page, and **Save project** writes it to a file you can open later.
 
-## Part 1 - Define the Excavation Site
+## Part 1 - The Site
 
-The excavation size and location are defined by a polygon. You can draw it directly on the map (zoom to the site, click **Draw outline**, and click the corners), or load it from a GeoJSON file. For this problem, we will use the following GeoJSON file:
+The excavation is a rectangle at the site of the Brewster Building on the east side of BYU campus:
 
 GEOJSON File: [byu_brewster.geojson](files/byu_brewster.geojson) (right-click and select "Save Link As")
 
-This file contains the coordinates of a polygon that represents an excavation site. For this problem we will assume that BYU intends to build a new building to replace the Clyde Building and has decided to build the new building at the location of the current Brewster Building on the east side of campus. The GeoJSON file contains the coordinates of a rectangular excavation site that represents the footprint of the new building.
-
 !!! Note
-    An excavation at this location would not likely require dewatering as the water table is well below the
-    elevation of the site. This is for illustrative purposes only.
+    An excavation at this location would not likely require dewatering, as the water table is well
+    below the site. The site is for illustration only.
 
-Click **Load GeoJSON** in step 1 and select the file. (The same polygon also loads with the **Load the class example (BYU)** link.) The app zooms to the site and outlines the excavation in orange:
-
-![dewater_app_excavation.jpg](images/dewater_app_excavation.jpg)
-
-Then enter the following parameters in step 2:
+Click **Load GeoJSON** in step 1 and select the file. (The same polygon also loads with the **Load the class example (BYU)** link.) Then enter the site in step 2:
 
 | Parameter | Value | units |
 |----------|-------|-------|
@@ -50,95 +51,86 @@ Then enter the following parameters in step 2:
 | Depth to the bottom of the aquifer | 55 | m |
 | Excavation depth | 20 | m |
 | Extra depth below the bottom | 0 | m |
-| $k$      | 5e-4  | cm/s  |
-| Flow     | Steady | |
-| $R$      | 500   | m     |
+| $k_h$      | 5e-4  | cm/s  |
+| Flow     | Transient | |
+| Days to dewater, $t$ | 30 | days |
+| Specific yield, $S_y$ | 0.2 | |
+| Anisotropy, $k_h/k_v$ | 1 | |
 
-Parts 1 to 6 use steady flow, with the radius of influence entered; Part 7 turns to time. The app converts the depths to the quantities in the equation and shows them under the inputs: the initial saturated thickness, $H$ = 55 − 5 = 50 m, and the target head inside the excavation, 55 − 20 = 35 m above the bottom of the aquifer. (You can also enter the levels as elevations with **Elevations**; the app then reads the ground elevation from terrain data.)
+In step 5, set the pumping rate unit to **gpm**. The app shows the initial saturated thickness, $H$ = 55 − 5 = 50 m, and the target head inside the excavation, 55 − 20 = 35 m above the bottom of the aquifer:
 
-## Part 2 - Drawdown Calculations
+![dewater_app_excavation.jpg](images/dewater_app_excavation.jpg)
 
-In step 3, click **Click to add wells** and click the map to place wells around the excavation. They should be outside of the footprint of the excavation. Drag a well to move it, and right-click a well to delete it. Click the button again when you are done.
+## Part 2 - A Design for the Deadline
 
-In step 5, enter a total pumping rate of $Q$ = 0.015 m³/s. The total pumping rate is divided equally among the wells. The app computes the water level on a grid surrounding the excavation and draws contours on the map as soon as anything changes:
-
-![dewater_app_manual.jpg](images/dewater_app_manual.jpg)
-
-The dashed orange contour is the required water level (here, the excavation bottom). The area where the water is below the target is hatched green, and the panel reports the highest water level inside the excavation and whether the excavation is dewatered. If it isn't, a red circle marks the point where the water is highest. In step 6 you can switch the contours to the depth to water, drawdown, or the water below the required level, which is negative where the excavation is still wet. In step 7, **East–west** and **North–south** draw cross sections through the excavation showing the ground, the excavation, and the water table.
-
-Play with the pumping rate and the well locations to determine when the water level is below the target at all points in the excavation.
-
-## Part 3 - Rectangular Well System Design
-
-Next, use **Generate a ring of wells** in step 3 to automatically place wells around the excavation, based on an offset distance from the excavation boundary and a number of wells. The wells are spaced evenly along a line offset from the edge of the excavation, the same on opposite sides.
-
-Use an offset of 15 m and 16 wells. Play with the number of wells, the offset distance, and the pumping rate. Compare your results to the previous section where you manually placed the wells.
-
-## Part 4 - Minimum Design Pumping Rate
-
-Click **Find Q<sub>min</sub>** in step 5. The app finds the minimum design pumping rate, $Q_{min}$: the smallest total pumping rate that brings the water down to the required level everywhere inside the excavation. At that rate the water is just at the target at the highest point and below it everywhere else. With 16 wells at a 15 m offset, the result should look like this:
+In step 3, open **Generate a ring of wells**, enter an offset of 15 m and 16 wells, and click **Generate wells**. Then click **Find Q<sub>min</sub>** in step 5, and in step 7 click **East–west** for a cross section through the excavation:
 
 ![dewater_app_ring.jpg](images/dewater_app_ring.jpg)
 
-Because the wells share the pumping equally, $Q_{min}$ can be computed directly rather than by trial and error: the highest water is always at the point in the excavation where the wells have the least combined effect, and the rate is the one that brings that point exactly to the target. The app also checks that $Q_{min}$ doesn't pump any of the wells dry. If it does, you need more wells, or wells farther from the excavation.
+$Q_{min}$, the minimum design pumping rate, is the smallest starting rate that gets the water down to the required level everywhere in the excavation by day 30. The map and the section show the water on day 30. The hatching is where the water is below the required level, and the dashed orange contour is where it is right at it. The bar under the map plays the design through time: press play and watch the cone of depression grow, in the contours and in the section.
 
-What is $Q_{min}$ in gpm? The rate actually specified for a project is usually $Q_{min}$ plus a margin.
+1. What is the starting rate, in gpm? On day 30, where in the excavation is the water highest, and why there?
+2. Read the status. Why does the app cut the rate back weekly, and what does that tell you about how hard the wells can pump early on compared with later?
 
-## Part 5 - Q<sub>min</sub> vs. Number of Wells
+## Part 3 - The Pumping Schedule
 
-In step 8, with **Number of wells** selected, enter a range for the number of wells (for example, 4 to 40) and click **Compute the design curve**. For each number of wells, the app generates a ring of wells at the offset distance from step 3 and finds $Q_{min}$. The results are presented in a design curve of $Q_{min}$ vs. the number of wells:
+Click **Pumping schedule**:
+
+![dewater_app_schedule.jpg](images/dewater_app_schedule.jpg)
+
+Up to the deadline, the rate starts high, while the cones are shallow and the wells can take it, and is cut back each week where a well would otherwise go dry. After the excavation is dry, the rate steps down each week to the lowest rate that holds the water at the required level for the next four weeks.
+
+1. Report the rates week by week, the holding rate on day 60, and the water pumped by day 60.
+2. The pumps must be sized for one rate and the discharge permit written for another. Which rate sets each, and why?
+
+## Part 4 - What the Deadline Costs
+
+In step 8, plot the design against **Days to dewater**, from 1 to 365 days:
 
 ![dewater_app_curve.jpg](images/dewater_app_curve.jpg)
 
-The design curve will help you determine the optimal number of wells and pumping rate required to dewater the excavation. In other words, at some point, adding more wells will not significantly reduce the pumping rate required to dewater the excavation. Use **Download CSV** to save the curve.
+Each point is a full design, with everything else as on the map.
 
-Try a few different offset distances. How does the offset affect the required pumping rate?
+1. What is the fastest these 16 wells can dewater the excavation? Why can't any rate, however large, do better?
+2. How do the starting rate and the water pumped before the excavation is dry change with the deadline? Why does a longer deadline pump more water?
 
-## Part 6 - The Radius of Influence
+## Part 5 - Number of Wells and Layout
 
-So far we have entered the radius of influence, $R$ = 500 m. In practice, $R$ is usually estimated with an empirical formula such as Sichardt's, $R = 3000\,s\sqrt{k}$ (with $s$, the drawdown, in m and $k$ in m/s). For a ring of wells, the ring is treated as one large well with the excavation's equivalent radius, $r_e = \sqrt{A/\pi}$, where $A$ is the area of the excavation. The drawdown $s$ is the drawdown the excavation needs (here 15 m, from the water table down to the excavation bottom), and $R$ is measured from the center of the large well: $R = r_e + 3000\,s\sqrt{k}$. In step 2, change **Radius of influence, R** from **Entered** to **Sichardt**, and click **Find Q<sub>min</sub>** again. The app reports $r_e$ and $R$. How does $R$ from Sichardt compare to 500 m, and how much does it change the pumping rate?
+Plot the design against **Number of wells**, from 4 to 40, for the 30-day deadline.
 
-Then, in step 8, select **Hydraulic conductivity, k** and compute the design curve for $k$ from 1e-4 to 1e-2 cm/s. The plot shows $Q_{min}$ with $R$ from Sichardt and with $R$ fixed. With a fixed $R$, the pumping rate is simply proportional to $k$. Why is the curve with $R$ from Sichardt different, and what does that tell you about how much the choice of $R$ matters?
+1. What is the fewest wells that can meet 30 days? Past what number do more wells barely help?
+2. The curve zigzags. Generate rings of a few neighboring well counts and look at where the wells land on the long and short sides. What causes the zigzags?
 
-!!! Note "In practice"
-    When a pumping test is available, $R$ comes from it: the drawdowns at the observation wells are
-    plotted against the log of distance, and the line is extended to zero drawdown. Without a test, an
-    empirical formula such as Sichardt's gives an estimate, usually computed once from the drawdown the
-    design calls for. Because the pumping rate depends on $R$ only through $\ln(R/r)$, designers often
-    run the design for a range of $R$. $R$ also grows the longer the wells pump, so a steady-state $R$
-    stands for some period of pumping. Around a compact excavation, a ring of wells behaves much like
-    one large well with a radius of $\sqrt{A/\pi}$, which is why $Q_{min}$ for a small site
-    barely changes with the number of wells.
+Now go back to 16 wells and click **Optimize the layout** in step 3, then **Find Q<sub>min</sub>**. The app tries the ways of splitting the wells between the long and short sides, and the spacing along each, and keeps the layout that needs the least pumping.
 
-## Part 7 - Dewatering on a Deadline
+3. How much less pumping does the optimized layout take than the even ring? Where did the wells go, and why there?
 
-$Q_{min}$ from Part 4 is a steady rate: it holds the water down once the cone of depression has spread out to $R$. It says nothing about how long that takes, and the contractor wants to start digging on a set day. With transient flow, each well follows the Theis solution in the same $H^2 - h^2$ form,
+## Part 6 - Uncertainty in the Soil
 
->>$H^{2} - h^{2} = \dfrac{q}{2\pi k}W(u), \qquad u = \dfrac{r^{2}S_{y}}{4kHt}$
+The design rests on an estimate of $k$. Click **Generate wells** to go back to the even ring of 16, and plot the design against **Hydraulic conductivity, k**, from 1e-4 to 1e-2 cm/s.
 
-where $W(u)$ is the Theis well function, $S_y$ the specific yield, and $t$ the time since pumping started. At late time it becomes the steady equation with $R = 1.5\sqrt{kHt/S_y}$, so a steady $R$ stands for a pumping time. A change in rate at time $t_j$ starts a new Theis term of its own, and the terms add:
+1. If the real $k$ is twice the estimate, what happens to the starting rate? If it is half?
+2. Which mistake in $k$ is the dangerous one? Consider what can be fixed after the job starts: adding pump capacity, or adding wells.
 
->>$H^{2} - h^{2} = \displaystyle\sum_j \dfrac{\Delta q_j}{2\pi k}W(u_j), \qquad u_j = \dfrac{r^{2}S_{y}}{4kH(t - t_j)}$
+Soil is often layered, with the horizontal $k$ several times the vertical. The water in the pores then drains slowly down to the well screens, and the water table lags behind the heads at depth. Set the anisotropy, $k_h/k_v$, to 10 and click **Find Q<sub>min</sub>**.
 
-That is how the app follows a pumping schedule. For a deadline, it finds the smallest starting rate that dewaters the excavation by the deadline. A well draws down fastest at its own screen, so a rate that is safe in the first week can pump a well dry later; where that would happen, the app cuts the rate back once a week, just enough to keep every well wet. Once the excavation is dry, the rate steps down each week to the lowest rate that holds the water at the required level.
+3. What does the app warn, and what pump capacity does it suggest? Compare the drainage time, $4S_yH/k_v$, with the deadline. Set the anisotropy back to 1.
 
-In step 2, set **Radius of influence, R** back to **Entered** and switch to **Transient**, with $S_y$ = 0.2 and 30 days to dewater. Use the ring of 16 wells at a 15 m offset from Part 4, and draw the east–west cross section in step 7.
+## Part 7 - Cutoff Wall
 
-1. Enter the steady $Q_{min}$ from Part 4 as the pumping rate. The results give the day the excavation is dry at this rate. How long does the steady rate take? Press play on the bar under the map to watch the cone of depression grow, in the contours and in the cross section.
-2. Click **Find Q<sub>min</sub>**. What is the starting rate, and is it cut back? Click **Pumping schedule** and report the rates week by week, the day the excavation is dry, the holding rate on day 60, and the water pumped by day 60. Play the bar and watch the excavation turn green. **Design day** returns to day 30.
-3. In step 8, plot the design against **Days to dewater**, from 1 to 365 days. What is the fastest these wells can dewater the excavation, and why can't any rate do better? How do the starting rate and the water pumped before the excavation is dry change with the deadline?
-4. Plot the design against **Number of wells**, from 4 to 40. What is the fewest wells that meets 30 days? Past what number do more wells barely help?
-5. Click **Optimize the layout** in step 3, then **Find Q<sub>min</sub>**. How much less pumping does it take than the even ring, and where did the wells go? Why there? (Click **Generate wells** to go back to the even ring.)
-6. Plot the design against **Hydraulic conductivity, k**, from 1e-4 to 1e-2 cm/s. If the real $k$ is twice your estimate, how much more pumping does the deadline take? If it is lower? Which mistake in $k$ is the dangerous one? Then set the anisotropy, $k_h/k_v$, to 10 and click **Find Q<sub>min</sub>**. What does the app warn, and why does layered soil slow the water table? Set it back to 1.
-7. In step 4, turn on **Enclose the site with a cutoff wall** (a 5 m setback, 0.9 m thick, $k_w$ = 1e-7 cm/s) and click **Find Q<sub>min</sub>**. Compare the starting rate, the fastest day, and the water pumped with the wells alone. Look at the cross section on day 30 and on day 60: why is the water inside the wall a mound on day 30, and why does it keep falling after the pumps cut back?
+In step 4, turn on **Enclose the site with a cutoff wall**, a slurry wall keyed into the low-permeability layer, with a 5 m setback, 0.9 m thick, and $k_w$ = 1e-7 cm/s. Click **Find Q<sub>min</sub>**:
 
-![dewater_app_transient.jpg](images/dewater_app_transient.jpg)
+![dewater_app_wall.jpg](images/dewater_app_wall.jpg)
+
+1. Compare the starting rate, the holding rate, and the water pumped by day 60 with the wells alone.
+2. Plot the design against **Days to dewater** and against **Number of wells** again. How do the fastest day and the fewest wells change?
+3. Look at the cross section on day 30 and on day 60. Why is the water inside the wall a mound on day 30, and why does it keep falling after the pumps cut back?
+4. Outside the wall, how far does the drawdown reach compared with the wells alone? Why might that matter to the neighbors?
 
 !!! Note "In practice"
-    Start the design from the deadline: the days until digging starts set the pumping rate. Check
-    what the wells can do first, since no rate can beat their fastest, and size the pumps for the
-    starting rate. Then weigh the options: more wells, a better layout, or a cutoff wall, which
-    cuts both the rate and the water to discharge. Once the excavation is dry, the pumps are
-    throttled back to hold it there through construction; with no boundary the cone keeps
-    spreading, so the holding rate keeps falling slowly. A river or other recharge boundary stops
-    that growth; there the steady solution with $R$ set by the boundary is the better model.
+    Start from the deadline: the days until digging starts set the pumping rate. Check first what
+    the wells can do, since no rate beats their fastest day, and add wells, move them, or enclose
+    the site if the deadline is shorter. Size the pumps for the starting rate plus the margin for
+    slow drainage, and plan the discharge for the holding rate, which runs through construction.
+    Get $k$ from a pumping test, and when in doubt design for the lower value: more pump capacity
+    can be added on site, but more wells are much harder to add once the job has started.

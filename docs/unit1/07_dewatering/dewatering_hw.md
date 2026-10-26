@@ -7,9 +7,9 @@ dewatering system for the Provo City Center Temple excavation site using the Dew
 
 The Los Pollos Hermanos Corporation is planning to build a new manufacturing facility near the Rio Grande River in the outskirts of Albuquerque, New Mexico. The facility will include a hermetically-sealed underground unit with state-of-the-art ventillation and chemical-processing equipment. In order to dewater the site during construction and to ensure that it stays dry while in operation, the company decides to build a french drain between the river and excavation as follows:
 
-![trench.png](images/trench.png)
+![trench.svg](images/trench.svg)
 
-A pump will be attached to the drain and the water will be returned to the river. Calculate what capacity will be required (gpm) for the pump. To simplify your calculations, assume that there is a lower permeability layer at the elevation corresponding to the bottom of the excavation. Use a spreadsheet for your calculations.
+A pump will be attached to the drain and the water will be returned to the river. Calculate what capacity will be required (gpm) for the pump. To simplify your calculations, assume that there is a lower permeability layer at the elevation of the bottom of the drain. Use a spreadsheet for your calculations.
 
 !!! Note
     Be careful with the values for Ho and HD in the equation. They should be measured from the datum, which is the bottom of the trench. Don't use the elevations.
@@ -32,28 +32,19 @@ The engineers in charge of the reconstruction faced a difficult task. As a templ
 
 ![excavation.jpg](images/excavation.jpg)
 
-The excavation went down to a depth of 30 feet below the original ground surface. This presented another challenge because the water table in this region is shallow. In order to accomplish the construction, the site had to be dewatered. This is typically accomplished using a set of shallow wells where each well lowers the water table and creates a "cone of depression" surrounding the well. Multiples wells provide a combined effect resulting in an aggregate zone of drawdown.
-
-Our objective in this exercise is to design a dewatering system using the Dewater web app we used for the
-in-class exercise:
+The excavation went down to a depth of 30 feet below the original ground surface, and the water table in this part of Provo is shallow, so the site had to be dewatered before the excavation could start. You are the dewatering engineer. The general contractor needs the excavation dry 10 days after the pumps start, and wants your recommendation on the number of wells, the pumps, and whether a cutoff wall around the site is worth building. Use the Dewater web app from the in-class exercise:
 
 <a href="https://jonesgeo.com/dewater/" target="_blank"><b>Dewater: https://jonesgeo.com/dewater/</b></a>
 
-**(a)  Setup Problem**
+**(a) The Site**
 
-Before starting, download the following GEOJSON file:
+Download the footprint of the excavation:
 
 GEOJSON File: [temple.geojson](files/temple.geojson) (right-click and select "Save Link As")
 
-This represents the footprint of the excavation:
-
 ![temple_polygon.png](images/temple_polygon.png)
 
-Click **Load GeoJSON** in step 1 of the app and select the file. The app zooms to the site and outlines the excavation. You will then create wells by clicking **Click to add wells** in step 3 and clicking the map at each well location. Start by creating 2 wells.
-
-**(b)  Drawdown Calculations and Manual Design**
-
-Assume the following parameters for the problem:
+Click **Load GeoJSON** in step 1 and select the file. Choose **Feet** for the length units at the top of the panel, then enter the site in step 2, with $k_h$ in ft/day, and set the pumping rate unit in step 5 to **gpm**:
 
 | Parameter | Value | units  |
 |----------|-------|--------|
@@ -61,47 +52,63 @@ Assume the following parameters for the problem:
 | Depth to the bottom of the aquifer | 46 | ft |
 | Excavation depth | 30 | ft |
 | Extra depth below the bottom | 0 | ft |
-| $k$      | 20 | ft/day |
-| $R$      | 1300 | ft |
+| $k_h$      | 20 | ft/day |
+| Flow | Transient | |
+| Days to dewater, $t$ | 10 | days |
+| Specific yield, $S_y$ | 0.2 | |
+| Anisotropy, $k_h/k_v$ | 1 | |
 | Well radius, $r_w$ | 0.5 | ft |
-| $Q$      | 100 | gpm |
 
-These give an initial saturated thickness of 32.5 ft and a target head of 16 ft above the bottom of the aquifer.
+Report the initial saturated thickness, $H$, and the target head above the bottom of the aquifer, as the app shows them under the inputs. The water must come down 16.5 ft, about half the saturated thickness, so the wells have little water to work with.
 
-Choose **Feet** for the length units at the top of the panel, ft/day for $k$, and gpm for the pumping rate. Then enter these values in steps 2 and 5. Set the flow to **Steady**; part (g) turns to time. The app calculates the water level at each point in a grid covering the site and draws the contours on the map. Use the display options in step 6 to look at the depth to water, the drawdown, or the water below the required level, and the cross sections in step 7 to see the water level through the excavation.
+**(b) A First Design**
 
-Now design a dewatering system under three conditions: 2 wells, 4 wells, and 6 wells. In each case,
-assume that you can only place the wells outside of the temple footprint. You should change the location of the wells and the total pumping rate. With too few wells, you may find that no rate works: the app reports that the minimum design pumping rate would pump a well dry. If that happens, explain what it means and what it tells you about the number of wells. To move a well, drag it; to delete one, right-click it; **Clear wells** removes them all.
+In step 3, generate a ring of 26 wells 65 ft from the edge of the excavation, and click **Find Q<sub>min</sub>**. Draw an east–west cross section in step 7 and play the design with the bar under the map.
 
-Save a copy of each of your designs: take a screenshot of the map showing the water level contours, and use **Save project** to keep the design itself. Open a Word document and write a short section for each of your three designs (including the contour plots) and discuss the results. Indicate which of the three designs you would suggest using for the actual project.
+1. What is the starting rate? Is it cut back, and why?
+2. Open the **Pumping schedule**. Report the rate needed to hold the water down for the first week after day 10, and the water pumped by day 20.
+3. Include a screenshot of the map and the section on day 10.
 
-**(c) Rectangular Well System Design**
+**(c) How Fast Can It Be Done?**
 
-Next, use **Generate a ring of wells** in step 3 to place a line of wells around the perimeter of
-the excavation based on an offset distance from the excavation boundary and a number of wells. The wells are spaced evenly, the same on opposite sides. Use an offset
-of 65 ft and 26 wells.
+The contractor asks whether 5 days is possible. In step 8, plot the design against **Days to dewater**, from 5 to 90 days, for the 26 wells.
 
-**(d) Pumping Rate Optimization**
+1. What is the fastest these wells can dewater the excavation? Why can't a bigger pump make it faster?
+2. How does the starting rate change between the fastest day and 90 days? What does a tight deadline cost?
 
-For the ring of wells, click **Find Q<sub>min</sub>** in step 5 to find the minimum design pumping rate, $Q_{min}$, that will dewater the site with the well configuration described above. Save a copy of the contour plot showing the drawdown and include it in your report along with your pumping rate in gpm.
+**(d) How Many Wells?**
 
-**(e) Design Curve**
+Plot the design against **Number of wells**, from 4 to 40, for the 10-day deadline.
 
-Finally, compute the design curve in step 8 for a range of numbers of wells. Save a copy of the plot and include it in your report. Also indicate how many wells you would recommend using, based on the design curve.
+1. What is the fewest wells that can meet 10 days? Include the plot.
+2. Some well counts above the fewest can't meet the deadline either, though their neighbors can. Generate rings for two of them and their neighbors and compare where the wells land. Why does that happen?
 
-**(f) Radius of Influence**
+**(e) Optimize the Layout**
 
-Repeat part (d) with the radius of influence from Sichardt's formula instead of the entered value of 1300 ft: in step 2, change **Radius of influence, R** to **Sichardt**, and find $Q_{min}$ again. Report the equivalent radius $r_e$, $R$, and the pumping rate in gpm, and compare them to your answer to part (d). Which value of $R$ would you trust for this site, and why?
+Go back to 26 wells and click **Optimize the layout** in step 3. The app tries the ways of splitting the wells between the long and short sides, and the spacing along each, and keeps the layout that needs the least pumping.
 
-**(g) Dewatering on a Deadline**
+1. How much less does the optimized layout start at than the even ring? Where did the wells go, and why does that help?
+2. Optimize the layout for the fewest wells from part (d). Does it help there? Why might it help more for one well count than another?
 
-The contractor needs the site dry in 10 days. In step 2, set the flow to **Transient**, with a specific yield $S_y$ of 0.2 and 10 days to dewater.
+**(f) What If the Soil Is Different?**
 
-1. With the ring of 26 wells from part (c), click **Find Q<sub>min</sub>**. Report the starting rate in gpm and compare it to the steady rate from part (d). Open the **Pumping schedule** and report the rate needed to hold the water down after day 10.
-2. Change the deadline to 5 days and click **Find Q<sub>min</sub>** again. What does the app report? Explain why pumping harder can't get the site dry any sooner with these wells.
-3. Go back to 10 days and compute the design curve against the number of wells in step 8. What is the fewest wells that can meet the deadline?
-4. Add a cutoff wall in step 4 with a setback of 15 ft, a thickness of 3 ft, and $k_w$ = 3 × 10⁻⁴ ft/day. Find Q<sub>min</sub> for the 26 wells, and compute the design curve against the number of wells again. Report the starting rate and the fewest wells, and compare them with your answers to steps 1 and 3.
-5. Recommend a design for the 10-day deadline: the number of wells, the pump capacity, and whether to build the wall. Explain your reasoning.
+$k$ came from a single boring. A pumping test could find it anywhere from half to twice the estimate. With the optimized 26 wells from part (e), plot the design against **Hydraulic conductivity, k**, from 5 to 80 ft/day.
+
+1. What starting rate does the design need if $k$ is twice the estimate? What happens if it is half?
+2. Which mistake would hurt the project more once the job has started, and what would you do about it now?
+3. Set $k_h/k_v$ to 10, as for layered soil, and click **Find Q<sub>min</sub>**. Compare the water-table drainage time, $4S_yH/k_v$, in the results with the deadline. What drainage margin and pump capacity does the app give? Why is the margin so much smaller here than for the class example? Set the anisotropy back to 1.
+
+**(g) A Cutoff Wall**
+
+In step 4, enclose the site with a cutoff wall with a 15 ft setback, 3 ft thick, and $k_w$ = 3 × 10⁻⁴ ft/day.
+
+1. For the optimized 26 wells, find the starting rate, the holding rate, and the water pumped by day 20, and compare them with part (e).
+2. Plot the design against **Number of wells** again. What is the fewest wells that can meet 10 days inside the wall?
+3. The temple stands among older buildings, and the historic brick facade had to be preserved. How far does the drawdown reach outside the site with and without the wall, and why does that matter here?
+
+**(h) Recommendation**
+
+Write a one-page recommendation to the contractor: the number of wells and their layout, the pump capacity, the holding rate and the water to be discharged, and whether to build the cutoff wall. Support it with your results from parts (b) through (g), and say what you would want measured on site before the pumps are ordered.
 
 ## Submission
 
@@ -120,16 +127,11 @@ Make a zip archive of your spreadsheet for part 1 and your Word document for par
 | Criteria | Points |
 |----------|:------:|
 | Exercise 1: Pump capacity calculation | 8 |
-| Exercise 2a: Problem setup and file upload | 1 |
-| Exercise 2b: Manual design - 2 wells | 3 |
-| Exercise 2b: Manual design - 4 wells | 3 |
-| Exercise 2b: Manual design - 6 wells | 3 |
-| Exercise 2b: Design comparison and recommendation | 3 |
-| Exercise 2c: Rectangular well system results | 2 |
-| Exercise 2d: Optimized pumping rate | 3 |
-| Exercise 2e: Design curve and well recommendation | 2 |
-| Exercise 2f: Radius of influence from Sichardt | 2 |
-| Exercise 2g: Deadline rate and pumping schedule | 2 |
-| Exercise 2g: Fastest dewatering and fewest wells | 2 |
-| Exercise 2g: Cutoff wall comparison | 2 |
-| Exercise 2g: Recommendation | 2 |
+| Exercise 2a: Site setup, H and target head | 2 |
+| Exercise 2b: First design and pumping schedule | 4 |
+| Exercise 2c: Fastest dewatering and the cost of the deadline | 4 |
+| Exercise 2d: Fewest wells and the layout effect | 4 |
+| Exercise 2e: Layout optimization | 4 |
+| Exercise 2f: Uncertainty in k and layered soil | 4 |
+| Exercise 2g: Cutoff wall comparison | 4 |
+| Exercise 2h: Recommendation | 4 |
