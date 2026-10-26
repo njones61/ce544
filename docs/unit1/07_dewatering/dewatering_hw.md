@@ -67,7 +67,7 @@ Assume the following parameters for the problem:
 
 These give an initial saturated thickness of 30 m and a target head of 25 m above the bottom of the aquifer.
 
-Enter these values in steps 2 and 4. The app calculates the water level at each point in a grid covering the site and draws the contours on the map. Use the display options in step 5 to look at the depth to water, the drawdown, or the water below the required level, and the cross sections in step 6 to see the water level through the excavation.
+Enter these values in steps 2 and 5. Set the flow to **Steady**; part (g) turns to time. The app calculates the water level at each point in a grid covering the site and draws the contours on the map. Use the display options in step 6 to look at the depth to water, the drawdown, or the water below the required level, and the cross sections in step 7 to see the water level through the excavation.
 
 Now design a dewatering system under three conditions: 2 wells, 4 wells, and 6 wells. In each case,
 assume that you can only place the wells outside of the temple footprint. You should change the location of the wells and the total pumping rate. To move a well, drag it; to delete one, right-click it; **Clear wells** removes them all.
@@ -77,16 +77,16 @@ Save a copy of each of your designs: take a screenshot of the map showing the wa
 **(c) Rectangular Well System Design**
 
 Next, use **Generate a ring of wells** in step 3 to place a line of wells around the perimeter of
-the excavation based on an offset distance from the excavation boundary and a number of wells. Use an offset
+the excavation based on an offset distance from the excavation boundary and a number of wells. The wells are spaced evenly, the same on opposite sides. Use an offset
 of 20 m and 26 wells.
 
 **(d) Pumping Rate Optimization**
 
-For the ring of wells, click **Find Q<sub>min</sub>** in step 4 to find the minimum design pumping rate, $Q_{min}$, that will dewater the site with the well configuration described above. Save a copy of the contour plot showing the drawdown and include it in your report along with your pumping rate in gpm.
+For the ring of wells, click **Find Q<sub>min</sub>** in step 5 to find the minimum design pumping rate, $Q_{min}$, that will dewater the site with the well configuration described above. Save a copy of the contour plot showing the drawdown and include it in your report along with your pumping rate in gpm.
 
 **(e) Design Curve**
 
-Finally, compute the design curve in step 7 for a range of numbers of wells. Save a copy of the plot and include it in your report. Also indicate how many wells you would recommend using, based on the design curve.
+Finally, compute the design curve in step 8 for a range of numbers of wells. Save a copy of the plot and include it in your report. Also indicate how many wells you would recommend using, based on the design curve.
 
 **(f) Radius of Influence**
 
