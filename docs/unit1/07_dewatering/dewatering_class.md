@@ -67,9 +67,9 @@ In step 3, open **Generate a ring of wells**, enter an offset of 15 m and 16 wel
 
 ![dewater_app_ring.jpg](images/dewater_app_ring.jpg)
 
-$Q_{min}$, the minimum design pumping rate, is the smallest starting rate that gets the water down to the required level everywhere in the excavation by day 30. The map and the section show the water on day 30. The hatching is where the water is below the required level, and the dashed orange contour is where it is right at it. The bar under the map plays the design through time: press play and watch the cone of depression grow, in the contours and in the section.
+$Q_{min}$, the minimum design pumping rate, is the smallest pumping rate at the start that gets the water down to the required level everywhere in the excavation by day 30. The map and the section show the water on day 30. The hatching is where the water is below the required level, and the dashed orange contour is where it is right at it. The bar under the map plays the design through time: press play and watch the cone of depression grow, in the contours and in the section.
 
-1. What is the starting rate, in gpm? On day 30, where in the excavation is the water highest, and why there?
+1. What is $Q_{min}$, in gpm? On day 30, where in the excavation is the water highest, and why there?
 2. Read the status. Why does the app cut the rate back weekly, and what does that tell you about how hard the wells can pump early on compared with later?
 
 ## Part 3 - The Pumping Schedule
@@ -92,7 +92,7 @@ In step 8, plot the design against **Days to dewater**, from 1 to 365 days:
 Each point is a full design, with everything else as on the map.
 
 1. What is the fastest these 16 wells can dewater the excavation? Why can't any rate, however large, do better?
-2. How do the starting rate and the water pumped before the excavation is dry change with the deadline? Why does a longer deadline pump more water?
+2. How do $Q_{min}$ and the water pumped before the excavation is dry change with the deadline? Why does a longer deadline pump more water?
 
 ## Part 5 - Number of Wells and Layout
 
@@ -109,7 +109,7 @@ Now go back to 16 wells and click **Optimize the layout** in step 3, then **Find
 
 The design rests on an estimate of $k$. Click **Generate wells** to go back to the even ring of 16, and plot the design against **Hydraulic conductivity, k**, from 1e-4 to 1e-2 cm/s.
 
-1. If the real $k$ is twice the estimate, what happens to the starting rate? If it is half?
+1. If the real $k$ is twice the estimate, what happens to $Q_{min}$? If it is half?
 2. Which mistake in $k$ is the dangerous one? Consider what can be fixed after the job starts: adding pump capacity, or adding wells.
 
 Soil is often layered, with the horizontal $k$ several times the vertical. The water in the pores then drains slowly down to the well screens, and the water table lags behind the heads at depth. Set the anisotropy, $k_h/k_v$, to 10 and click **Find Q<sub>min</sub>**.
@@ -122,7 +122,7 @@ In step 4, turn on **Enclose the site with a cutoff wall**, a slurry wall keyed 
 
 ![dewater_app_wall.jpg](images/dewater_app_wall.jpg)
 
-1. Compare the starting rate, the holding rate, and the water pumped by day 60 with the wells alone.
+1. Compare $Q_{min}$, the holding rate, and the water pumped by day 60 with the wells alone.
 2. Plot the design against **Days to dewater** and against **Number of wells** again. How do the fastest day and the fewest wells change?
 3. Look at the cross section on day 30 and on day 60. Why is the water inside the wall a mound on day 30, and why does it keep falling after the pumps cut back?
 4. Outside the wall, how far does the drawdown reach compared with the wells alone? Why might that matter to the neighbors?
@@ -130,7 +130,7 @@ In step 4, turn on **Enclose the site with a cutoff wall**, a slurry wall keyed 
 !!! Note "In practice"
     Start from the deadline: the days until digging starts set the pumping rate. Check first what
     the wells can do, since no rate beats their fastest day, and add wells, move them, or enclose
-    the site if the deadline is shorter. Size the pumps for the starting rate plus the margin for
+    the site if the deadline is shorter. Size the pumps for $Q_{min}$ plus the margin for
     slow drainage, and plan the discharge for the holding rate, which runs through construction.
     Get $k$ from a pumping test, and when in doubt design for the lower value: more pump capacity
     can be added on site, but more wells are much harder to add once the job has started.

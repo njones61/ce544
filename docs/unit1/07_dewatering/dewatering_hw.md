@@ -65,7 +65,7 @@ Report the initial saturated thickness, $H$, and the target head above the botto
 
 In step 3, generate a ring of 26 wells 65 ft from the edge of the excavation, and click **Find Q<sub>min</sub>**. Draw an east–west cross section in step 7 and play the design with the bar under the map.
 
-1. What is the starting rate? Is it cut back, and why?
+1. What is $Q_{min}$? Is the rate cut back, and why?
 2. Open the **Pumping schedule**. Report the rate needed to hold the water down for the first week after day 10, and the water pumped by day 20.
 3. Include a screenshot of the map and the section on day 10.
 
@@ -74,7 +74,7 @@ In step 3, generate a ring of 26 wells 65 ft from the edge of the excavation, an
 The contractor asks whether 5 days is possible. In step 8, plot the design against **Days to dewater**, from 5 to 90 days, for the 26 wells.
 
 1. What is the fastest these wells can dewater the excavation? Why can't a bigger pump make it faster?
-2. How does the starting rate change between the fastest day and 90 days? What does a tight deadline cost?
+2. How does $Q_{min}$ change between the fastest day and 90 days? What does a tight deadline cost?
 
 **(d) How Many Wells?**
 
@@ -94,7 +94,7 @@ Go back to 26 wells and click **Optimize the layout** in step 3. The app tries t
 
 $k$ came from a single boring. A pumping test could find it anywhere from half to twice the estimate. With the optimized 26 wells from part (e), plot the design against **Hydraulic conductivity, k**, from 5 to 80 ft/day.
 
-1. What starting rate does the design need if $k$ is twice the estimate? What happens if it is half?
+1. What $Q_{min}$ does the design need if $k$ is twice the estimate? What happens if it is half?
 2. Which mistake would hurt the project more once the job has started, and what would you do about it now?
 3. Set $k_h/k_v$ to 10, as for layered soil, and click **Find Q<sub>min</sub>**. Compare the water-table drainage time, $4S_yH/k_v$, in the results with the deadline. What drainage margin and pump capacity does the app give? Why is the margin so much smaller here than for the class example? Set the anisotropy back to 1.
 
@@ -102,7 +102,7 @@ $k$ came from a single boring. A pumping test could find it anywhere from half t
 
 In step 4, enclose the site with a cutoff wall with a 15 ft setback, 3 ft thick, and $k_w$ = 3 × 10⁻⁴ ft/day.
 
-1. For the optimized 26 wells, find the starting rate, the holding rate, and the water pumped by day 20, and compare them with part (e).
+1. For the optimized 26 wells, find $Q_{min}$, the holding rate, and the water pumped by day 20, and compare them with part (e).
 2. Plot the design against **Number of wells** again. What is the fewest wells that can meet 10 days inside the wall?
 3. The temple stands among older buildings, and the historic brick facade had to be preserved. How far does the drawdown reach outside the site with and without the wall, and why does that matter here?
 
