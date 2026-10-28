@@ -1,13 +1,6 @@
 # Homework - Finite Element Seepage Analysis, Confined Conditions
 
-For this exercise, you will build two finite element seepage models of sites with confined (fully saturated) 
-conditions. For each problem, start with the base XSLOPE template.
-
-[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
-
-Make a separate Excel file for each problem. After preparing the input file, upload the file and solve the problem using XSLOPE using the seepage colab notebook:
-
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+For this assignment, you will build two finite element seepage models of sites with confined (fully saturated) conditions in XSLOPE Studio. Start each with **File → New** in **Seepage** mode, and save each as a separate file with **File → Save As**. Build the mesh with linear triangles (tri3).
 
 (1) Redo the double sheetpile problem using XSLOPE:
 
@@ -23,7 +16,7 @@ is permeable but has a different (lower) K than the foundation.
 
 ![levee.png](images/levee.png)
 
-Set up the problem using XSLOPE and analyze the flow rate (total) assuming various K values for the grout curtain. Make a table showing the total flow rate vs. k for the grout curtain where the k values varies as follows:
+Set up the problem in XSLOPE Studio and find the total flow rate for each of these values of K for the grout curtain. Make a table showing the total flow rate vs. k for the grout curtain where the k values varies as follows:
 
 >>k = 2 m/d (same as no grout curtain)<br>
 k = 1 m/d<br>
@@ -34,15 +27,14 @@ k = .01 m/d<br>
 k = .001 m/d<br>
 
 For each k value, show two flowrates: one for a unit width and one for the total levee section (assume that the 
-levee is **300** m long in the transverse direction). The total flowrate is displayed above the XSLOPE solution plot 
-in the title. Write a paragraph summarizing your observations from the exercise. Put your solution in a word document.
+levee is **300** m long in the transverse direction). The total flow rate is shown in the title of the solution plot. Write a paragraph summarizing your observations from the exercise. Put your solution in a word document.
 
 ## Submission
 
 Put the following files in a zip archive:
 
-- XSLOPE input template and a PNG of the solution for part 1
-- XSLOPE input template and a PNG of the solution for part 2 (for the K=0.2 m/d solution only)
+- XSLOPE input file and a PNG of the solution for part 1
+- XSLOPE input file and a PNG of the solution for part 2 (for the K = 0.2 m/d solution only)
 - Word document with analyis of flow vs K for part 2
 
 Upload the zip archive via Learning Suite.

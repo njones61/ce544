@@ -1,14 +1,6 @@
 # Exercise - XSLOPE Seepage Analysis
 
-For this exercise, we will perform a pair of seepage analyses using XSLOPE for problem with confined (fully-saturated) 
-conditions. For both cases, we will first prepare the problem inputs in an XSLOPE Excel input file starting with the standard template:
-
-[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
-
-After preparing each input file, launch the following Google Colab notebook to upload the Excel input file and 
-perform the seepage analysis:
-
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+For this exercise, we will perform a pair of seepage analyses in XSLOPE Studio for problems with confined (fully saturated) conditions. For each problem, start a new model with **File → New**, switch to **Seepage** mode, and enter the inputs: the global parameters, the materials, the profile lines, and the seepage boundary conditions. Then build the mesh with **Build Mesh** (linear triangles, tri3), run the analysis with **Run Seep**, and look at the solution. Save each model with **File → Save As**; the file is an XSLOPE input template.
 
 ### 1. Clay Blanket Sheetpile Problem
 
@@ -16,12 +8,11 @@ This problem corresponds to the clay-blanket sheetpile case that we analyzed in 
 
 ![sheetpilefigure.png](images/sheetpilefigure.png)
 
-Use the Excel file to specify the material properties, define the geometry using a profile line, and assign 
-boundary conditions. As you set up the problem, you will need to define a local coordinate system. Set up your coordinate system as follows:
+Specify the material properties, define the geometry using a profile line, and assign boundary conditions. As you set up the problem, you will need to define a local coordinate system. Set up your coordinate system as follows:
 
 ![sheetpilepoints.png](images/sheetpilepoints.png)
 
-Solution: [xslope_clay_blanket.xlsx](https://xslope.readthedocs.io/en/latest/seep/files/xslope_clay_blanket.xlsx)
+Solution: [xslope_clay_blanket.xlsx](https://xslope.org/en/latest/seep/files/xslope_clay_blanket.xlsx)
 
 ### 2. Sea Trench Problem
 
@@ -47,4 +38,4 @@ As you build the problem input, you may wish to use the following coordinates:
 
 ![sea_trench_coords.png](images/sea_trench_coords.png)
 
-Solution: [xslope_sea_trench.xlsx](https://xslope.readthedocs.io/en/latest/seep/files/xslope_sea_trench.xlsx)
+Solution: [xslope_sea_trench.xlsx](https://xslope.org/en/latest/seep/files/xslope_sea_trench.xlsx)

@@ -1,12 +1,6 @@
 # Homework - Finite Element Seepage Analysis, Unconfined Conditions
 
-For this exercise, you will build a finite element seepage model of the **Lost Lake** dam. Start with the base XSLOPE template and modify it to fit the cross section shown below.
-
-[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
-
-Once the input file is complete, upload the file and solve the problem using XSLOPE using the seepage colab notebook:
-
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+For this assignment, you will build a finite element seepage model of the **Lost Lake** dam in XSLOPE Studio. Start with **File → New** in **Seepage** mode, enter the cross section shown below, and save the model with **File → Save As**.
 
 The Lost Lake Dam includes a grout curtain, core, 
 shell, riprap, filter, and a drain as shown below.
@@ -58,7 +52,7 @@ Here are some tips for setting up the problem:
 
 ## Submission
 
-Create a PNG of the solution with 25 head contours and use base material = bedrock. Zip up your Excel file and a PNG of the solution plot and upload your zip archive via Learning Suite.
+Create a PNG of the solution with 25 head contours and use base material = bedrock. Zip up your XSLOPE input file and a PNG of the solution plot and upload your zip archive via Learning Suite.
 
 !!! Note
     You are allowed to work in pairs on this assignment if you wish. Just copy and upload the assignment when you are done and be sure to make a note who you worked with.

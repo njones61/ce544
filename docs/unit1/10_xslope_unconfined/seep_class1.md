@@ -1,33 +1,18 @@
 # Exercise - Unconfined Seepage Problems, Part 1
 
-For this exercise, we will perform a pair of seepage analyses using XSLOPE for sites with unconfined (partially-saturated) conditions. For both cases, we will first prepare the problem inputs in an XSLOPE Excel input file starting with the standard template:
+For this exercise, we will perform a pair of seepage analyses for sites with unconfined (partially saturated) conditions. Build each model in XSLOPE Studio: start with **File → New**, switch to **Seepage** mode, enter the materials, profile lines, and seepage boundary conditions, build the mesh with **Build Mesh** (linear triangles, tri3), and run the analysis with **Run Seep**. Save each model with **File → Save As**.
 
-[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
-
-After preparing each input file, launch the following Google Colab notebook to upload the Excel input file and 
-perform the seepage analysis:
-
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-###1. Earth Dam with Core
+### 1. Earth Dam with Core
 
 The problem corresponds to the following cross section:
 
 ![earthdamfigure.png](images/earthdamfigure.png)
 
-We will first prepare the problem inputs in an XSLOPE Excel input file. Start with the standard template:
-
-[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
-
-Use the Excel file to specify the 
-material properties, define the 
-geometry using a profile line, and assign 
-boundary 
-conditions. We will define a local coordinate system with the origin (x=0, y=0) at the toe of the dam on the left side of the figure. This results in the following set of points:
+Specify the material properties, define the geometry using a profile line, and assign boundary conditions. We will define a local coordinate system with the origin (x=0, y=0) at the toe of the dam on the left side of the figure. This results in the following set of points:
 
 ![earthdampts.png](images/earthdampts.png)
 
-Solution: [xslope_earth_dam1.xlsx](https://xslope.readthedocs.io/en/latest/seep/files/xslope_earth_dam1.xlsx)
+Solution: [xslope_earth_dam1.xlsx](https://xslope.org/en/latest/seep/files/xslope_earth_dam1.xlsx)
 
 ### 2. Levee with Grouted Foundation
 
@@ -47,6 +32,6 @@ Use the following coordinates to define the profile lines and boundary condition
 
 ![levee_coords.png](images/levee_coords.png)
 
-Solution: [xslope_levee_full.xlsx](https://xslope.readthedocs.io/en/latest/seep/files/xslope_levee_full.xlsx)
+Solution: [xslope_levee_full.xlsx](https://xslope.org/en/latest/seep/files/xslope_levee_full.xlsx)
 
 
