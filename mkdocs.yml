@@ -57,6 +57,7 @@ nav:
         - Homework: unit1/07_dewatering/dewatering_hw.md
     - The Finite Element Method:
         - Pre-Class: unit1/08_finelem/finelem_read.md
+        - In-Class: unit1/08_finelem/finelem_class.md
     - XSLOPE Seepage Analysis - Confined Problems:
         - Pre-Class: unit1/09_xslope_confined/xslope_seep_read.md
         - In-Class: unit1/09_xslope_confined/xslope_seep_class.md
