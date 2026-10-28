@@ -30,21 +30,28 @@ Build the mesh with linear triangles (tri3), auto-size, 100 divisions.
 
 ## Analysis
 
-1. **Steady flood.** Before the transient run, solve a steady model with the river held at the flood stage, 14 m: set the reservoir value to 14 for this run, then set it back to `river`. Record the total flow and the elevation of the water table inside the levee at x = 29 m.
-2. **Transient flood.** Run the transient analysis. Step through the daily frames, and for each day from 0 to 20 record the river stage and the elevation of the water table at x = 29 m. Use the zoom tool to read it to the nearest 0.05 m.
-3. **Plot.** In Excel, plot the water table at x = 29 m and the river stage against time on one chart, with the steady flood-stage value as a horizontal line.
-4. **Discussion.** Answer these in a short write-up:
-    - When does the water table in the levee peak, and how high does it get compared with the steady flood-stage value? Did the flood last long enough for the levee to reach steady state?
-    - Compare the levee with the foundation. Look at the head in the foundation under the landside toe through the flood. Which responds faster, and why? Use $S_s$, $S_y$, and $k$ in your answer.
-    - When the river has fallen back to 10 m on day 12, where is the water table in the levee? What does that mean for the riverside slope of the levee as the river falls?
+Every number in this analysis is one Studio prints: the total flow in the title of a steady solution, and the inflow and outflow in the title of each transient frame. The outflow is the seepage that reaches the land side of the levee.
+
+1. **Steady flood.** Before the transient run, solve a steady model with the river held at the flood stage, 14 m: set the reservoir value to 14 for this run, then set it back to `river`. Record the total flow and save a PNG of the solution.
+2. **Transient flood.** Run the transient analysis. Step through the daily frames and, for each day from 0 to 20, record the river stage and the outflow from the frame title.
+3. **Plot.** In Excel, plot the outflow and the river stage against time, with the steady flood-stage flow as a horizontal line.
+4. **Pictures.** Save PNGs of the transient frames at day 8 (the end of the flood peak) and day 12 (the river back at normal stage).
+
+## Discussion
+
+Answer these in a short write-up:
+
+- When does the outflow peak, and how close does it come to the steady flood-stage flow? Most of the seepage goes under the levee, through the foundation. Did the flood last long enough for that seepage to reach steady state? Does your day 8 picture say the same about the levee itself?
+- Compare the phreatic surface in your day 8 picture with the one in the steady flood-stage picture. Where is it lower, and why? The head in the foundation, by contrast, is nearly the same in both pictures. Explain the difference between the levee and the foundation using $S_s$, $S_y$, and $k$.
+- After day 12 the inflow is zero, but water is still flowing out on the land side. Where is that water coming from? Use your day 12 picture to say where the water table in the levee stands compared with the river, and what that means for the riverside slope of the levee as the river falls.
 
 ## Submission
 
 Put the following files in a zip archive:
 
 - Your XSLOPE input file
-- PNGs of the solution at day 8 (the end of the flood peak) and day 12 (the end of the recession)
-- An Excel or Word file with your table of readings, the plot, and your write-up
+- PNGs of the steady flood-stage solution and of the transient frames at days 8 and 12
+- An Excel or Word file with your table of outflows, the plot, and your write-up
 
 Upload the zip archive via Learning Suite.
 
@@ -63,12 +70,12 @@ Upload the zip archive via Learning Suite.
 | `river` series and run settings entered correctly | 4 |
 | River boundary changed to a reservoir B.C. driven by `river` | 3 |
 | **Analysis** | |
-| Steady flood-stage flow and water table at x = 29 m | 3 |
-| Water table readings at x = 29 m, days 0 to 20 | 4 |
-| Plot of the water table and river stage against time, with the steady value | 3 |
-| PNGs of the solution at days 8 and 12 | 2 |
+| Steady flood-stage flow and PNG | 3 |
+| Outflow from the frame titles, days 0 to 20 | 4 |
+| Plot of the outflow and river stage against time, with the steady flow | 3 |
+| PNGs of the transient frames at days 8 and 12 | 2 |
 | **Discussion** | |
-| Peak timing and height compared with steady state | 3 |
-| Levee vs. foundation response explained with storage and conductivity | 2 |
-| Water table at the end of the recession and what it means for the riverside slope | 2 |
+| Outflow compared with the steady flow; the seepage vs. the levee reaching steady state | 3 |
+| Levee vs. foundation explained with storage and conductivity | 2 |
+| Source of the outflow after day 12, and what it means for the riverside slope | 2 |
 | **Total** | **30** |
