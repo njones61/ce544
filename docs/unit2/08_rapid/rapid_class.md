@@ -6,7 +6,7 @@ In this exercise, we will perform a rapid drawdown analysis on the Johnson Reser
 
 We will use the Johnson Reservoir dam for this exercise:
 
-![johnson_res.png](../../unit1/09_finelem/images/johnson_res.png)
+![johnson_res.png](../../unit1/10_xslope_unconfined/images/johnson_res.png)
 
 ## Step 1 - Prepare the Input File
 

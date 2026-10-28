@@ -33,7 +33,7 @@ Solution: [xslope_earth_dam1.xlsx](https://xslope.readthedocs.io/en/latest/seep/
 
 For this problem we will revisit the levee problem but this time we will assume that the levee is permeable and will simulate flow both in the levee and in the grouted foundation. 
 
-![levee.png](images/levee.png)
+![levee.png](../09_xslope_confined/images/levee.png)
 
 Assume that the following values for hydraulic conductivity:
 

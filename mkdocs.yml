@@ -55,19 +55,19 @@ nav:
         - Pre-Class: unit1/07_dewatering/dewatering_read.md
         - In-Class: unit1/07_dewatering/dewatering_class.md
         - Homework: unit1/07_dewatering/dewatering_hw.md
-    - XSLOPE - Seepage Analysis:
-        - Pre-Class: unit1/08_xslope_seepage/xslope_seep_read.md
-        - In-Class: unit1/08_xslope_seepage/xslope_seep_class.md
-        - Homework: unit1/08_xslope_seepage/xslope_seep_hw.md
-    - Finite Element Seepage Analysis:
-        - Pre-Class: unit1/09_finelem/seep_read.md
-        - In-Class 1: unit1/09_finelem/seep_class1.md
-        - In-Class 2: unit1/09_finelem/seep_class2.md
-        - Homework: unit1/09_finelem/seep_hw.md
+    - The Finite Element Method:
+        - Pre-Class: unit1/08_finelem/finelem_read.md
+    - XSLOPE Seepage Analysis - Confined Problems:
+        - Pre-Class: unit1/09_xslope_confined/xslope_seep_read.md
+        - In-Class: unit1/09_xslope_confined/xslope_seep_class.md
+        - Homework: unit1/09_xslope_confined/xslope_seep_hw.md
+    - XSLOPE Seepage Analysis - Unconfined Problems:
+        - In-Class 1: unit1/10_xslope_unconfined/seep_class1.md
+        - In-Class 2: unit1/10_xslope_unconfined/seep_class2.md
+        - Homework: unit1/10_xslope_unconfined/seep_hw.md
     - Transient Seepage Analysis:
-        - Pre-Class: unit1/10_transient/tseep_read.md
-        - In-Class: unit1/10_transient/tseep_class.md
-        - Homework: unit1/10_transient/tseep_hw.md
+        - In-Class: unit1/11_transient/tseep_class.md
+        - Homework: unit1/11_transient/tseep_hw.md
     - Study Guide - Seepage Analysis: unit1/study_guide.md
   - Unit 2 - Slope Stability:
     - Causes of Slope Failure and Shear Strength:
