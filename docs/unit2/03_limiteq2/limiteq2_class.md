@@ -1,39 +1,54 @@
-# Exercise - The Ordinary Method of Slices
+# Exercise - Simplified Janbu and Bishop's Simplified Method
 
-In this exercise, you will apply the Ordinary Method of Slices (OMS) to analyze the stability of a slope. The Ordinary Method of Slices is a common approach to analyze the stability of slopes using the Limit Equilibrium Method and can be used for effective stress (drained) cases where $\phi \ne 0$. In this case, we will apply it to the following slope that is partially saturated with a piezometric line.
+Both parts of this exercise use the slope from the last class exercise, with its effective stress strengths and piezometric line, and the same eleven slices:
 
 ![oms1.png](images/oms1.png)
 
-Once again, we will we analyze each individual slice using the following paramaters:
-
 ![oms2.png](images/oms2.png)
 
-The factor of safety for the OMS method is calculated as follows:
-
->>$FS = \dfrac{\sum {\left[c'\Delta l + \left(W cos\alpha - u \Delta l cos^2\alpha\right)\tan\phi'\right]}}{\sum {W\sin\alpha}}$
-
-Where:
+where:
 
 >>$c'$ = the effective cohesion at the base of the slice<br>
 $\phi'$ = the friction angle at the base of the slice<br>
 $\Delta l$ = the length of the base of the slice<br>
 $W$ = the weight of the slice<br>
-$\alpha$ = the angle of the slope at the base of the slice<br>
-$u$ = the pore water pressure at the base of the slice
+$\alpha$ = the angle of the base of the slice<br>
+$u$ = the pore water pressure at the base of the slice = $\gamma_w \cdot h_w$<br>
+$\gamma_w$ = the unit weight of water<br>
+$h_w$ = the height of the water above the base of the slice
 
-To get the pore pressure (u) at the base of the slice, we can use the following equation:
+## Part 1: Simplified Janbu
 
->>$u = \gamma_w \cdot h_w$
+Simplified Janbu finds the normal force on each base from vertical equilibrium of the slice, then the factor of safety from horizontal equilibrium of the whole sliding mass. The normal force is:
 
-Where:
+>>$N = \dfrac{W - \dfrac{1}{F}\left(c'\Delta l - u\Delta l\tan\phi'\right)\sin\alpha}{m_\alpha}, \qquad m_\alpha = \cos\alpha + \dfrac{\sin\alpha\tan\phi'}{F}$
 
->>$\gamma_w$ = the unit weight of water<br>
-> $h_w$ = the height of the water above the base of the slice
+and the uncorrected factor of safety is:
 
-Download the Excel file below and use it to calculate the factor of safety for the slope.
+>>$F = \dfrac{\sum{\left[c'\Delta l + \left(N - u\Delta l\right)\tan\phi'\right]\cos\alpha}}{\sum{N\sin\alpha}}$
 
-Excel starter file: [oms.xlsx](files/oms.xlsx)
+$F$ appears on both sides, so the calculation is iterative: enter a guess for $F$, compute the right side, and repeat until the two agree.
 
-Excel solution file: [oms_KEY.xlsx](files/oms_KEY.xlsx)
+Then apply Janbu's correction factor:
 
+>>$f_o = 1 + b_1\left[\dfrac{d}{L} - 1.4\left(\dfrac{d}{L}\right)^2\right], \qquad F_{corr} = f_o F$
 
+where $L$ is the length of the line joining the two ends of the slip surface, $d$ is the greatest depth of the slip surface below that line, and $b_1$ is 0.67 for $c$ only ($\phi = 0$), 0.50 for $c$ and $\phi$, and 0.31 for $\phi$ only ($c = 0$). $d$ and $L$ are given in the spreadsheet.
+
+Excel starter file: [janbu.xlsx](files/janbu.xlsx)
+
+Excel solution file: [janbu_KEY.xlsx](files/janbu_KEY.xlsx)
+
+## Part 2: Bishop's Simplified Method
+
+Bishop's simplified method also finds the normal force from vertical equilibrium, but takes the factor of safety from moment equilibrium about the center of the circle:
+
+>>$F = \dfrac{\sum {\left[\dfrac{c'\Delta l\cos\alpha + \left(W - u \Delta l\cos\alpha\right)\tan\phi'}{\cos\alpha + \left(\sin\alpha\tan\phi'\right)/F}\right]}}{\sum {W\sin\alpha}}$
+
+The factor of safety ($F$) is on both sides, so the calculation must be done iteratively. Start with a guess for $F$ and update it until the difference between the calculated $F$ and the guess is less than a small tolerance (e.g., 0.0001).
+
+Compare your results with the OMS result from the last class exercise.
+
+Excel starter file: [bsp.xlsx](files/bsp.xlsx)
+
+Excel solution file: [bsp_KEY.xlsx](files/bsp_KEY.xlsx)
