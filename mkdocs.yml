@@ -67,6 +67,7 @@ nav:
         - In-Class 2: unit1/10_xslope_unconfined/seep_class2.md
         - Homework: unit1/10_xslope_unconfined/seep_hw.md
     - Transient Seepage Analysis:
+        - Pre-Class: unit1/11_transient/tseep_read.md
         - In-Class: unit1/11_transient/tseep_class.md
         - Homework: unit1/11_transient/tseep_hw.md
     - Study Guide - Seepage Analysis: unit1/study_guide.md
