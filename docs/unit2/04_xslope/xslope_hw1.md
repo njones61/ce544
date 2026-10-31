@@ -1,32 +1,24 @@
 # Homework - XSLOPE LEM, Part 1
 
-Solve the following problems using XSLOPE. For each problem, start with the standard Excel input template:
+Solve the following problems in XSLOPE Studio. For each problem, start a new model with **File → New** in **LEM** mode, and perform an automated search using Spencer's method.
 
-[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
+(a) Submerged slope.
 
-After preparing each set of inputs, launch the XSLOPE Google Colab notebook for stability analysis and upload your Excel input file and solve.
+Use a total unit weight, and let XSLOPE derive the water load: enter the pool as a piezometric line across the section at elevation 40, 10 ft above the top of the slope, and leave **Water loads** on `auto`.
 
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-For each problem, perform an automated search using Spencer's method. 
-
-(a) Submerged slope. 
-
-Be sure to use total unit wt and model the external water using a distributed load. Assume the water is 10 ft above the top of the slope.
-
-![hw_fig_1.gif](images/hw_fig_1.gif)
+![submerged.png](images/submerged.png)
 
 (b) Slope with surcharge.
 
-![hw_fig_2.gif](images/hw_fig_2.gif)
+![surcharge.png](images/surcharge.png)
 
 (c) Slope with two materials.
 
-![hw_fig_3.gif](images/hw_fig_3.gif)
+![two_materials.png](images/two_materials.png)
 
 ## Submission
 
-Save a copy of the Excel template for each of the three problems and save a PNG of the solution with the minimum factor of safety. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+For each of the three problems, save the model with **File → Save As**, and use the **Save…** button above the plot to save a PNG of the solution with the minimum factor of safety. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed
@@ -41,7 +33,7 @@ Save a copy of the Excel template for each of the three problems and save a PNG 
 | **Problem (a): Submerged Slope**                                                     |        |
 | XSLOPE model set up correctly with proper geometry                                   |   3    |
 | Total unit weight used (not buoyant unit weight)                                     |   3    |
-| External water modeled using distributed load                                        |   3    |
+| External water modeled with a piezometric line and automatic water loads             |   3    |
 | Automated search using Spencer's method executed correctly                           |   1    |
 | Minimum factor of safety identified and reported with PNG                            |   1    |
 | **Problem (b): Slope with Surcharge**                                                |        |

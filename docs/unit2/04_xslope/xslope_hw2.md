@@ -1,20 +1,14 @@
 # Homework - XSLOPE LEM, Part 2
 
-In this homework, we will be using the XSLOPE LEM method to solve for the critical factor of safety against slope failure for two problems. In each case, start with the standard Excel input template:
-
-[input_template.xlsx](https://xslope.readthedocs.io/en/latest/inputs/input_template.xlsx)
-
-Then solve using the XSLOPE Google Colab notebook for stability analysis:
-
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+In this homework, we will use XSLOPE Studio to find the critical factor of safety against slope failure for two problems. Use Spencer's method for both.
 
 ## Problem 1: Earth Dam Problem from Textbook
 
 Use XSLOPE to solve for the critical factor of safety against slope failure for the following problem based on a circular failure surface (compare to page 121 in your textbook):
 
-![earthdamfig.gif](images/earthdamfig.gif)
+![earth_dam.png](images/earth_dam.png)
 
-You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Use the base of the sand layer (y=182 ft) as the max_depth in the profile lines sheet. Do your coordinate calculations in the Excel input spreadsheet.
+You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Use the base of the sand layer (y=182 ft) as **Max depth**.
 
 The material properties are as follows:
 
@@ -36,35 +30,31 @@ The coordinates of the piezometric line are as follows:
 |  590   |  227   |
 |  740   |  227   |
 
-Be sure to include external loads to represent the water on the upstream side. Calculate your distributed loads in the same spreadsheet you used for the coordinate calculations.
+The reservoir is a load on the upstream face. With **Water loads** on `auto`, XSLOPE derives it from the piezometric line.
 
-Use a circular failure surface. Perform two sets of calculations: one for the upstream side and one for the downstream side. The side that is analyzed depends on the locations of your starting circles. Save a copy of the solution for each side.
+Use a circular failure surface. Perform two searches: one for the upstream side and one for the downstream side. The side that is analyzed depends on the location of your starting circle. Save a copy of the solution for each side.
 
 ## Problem 2: Slope Design Problem
 
-For this problem, we will use XSLOPE to design a slope using the Colab notebook and methodology described here:
+For this problem, we will find the slope angle ($\beta$) that gives a critical factor of safety of 1.4, within a tolerance of 0.01.
 
-[https://xslope.org/en/latest/lem/design/](https://xslope.org/en/latest/lem/design/)
+![design.png](images/design.png)
 
-We will be using the following design problem:
+Set up the problem with the origin (0, 0) at the toe of the slope, and extend it 120 ft to the left of the toe and 240 ft to the right. For the starting circle, use the **Intercept** option, with the circle passing through the toe.
 
-![design_problem.png](images/design_problem.png){width=800px}
+The **Parametric** tool sweeps material properties and the seismic coefficient, and the slope angle is geometry, so you will do this sweep by hand:
 
-Use XSLOPE to find the slope angle ($\beta$) that has a critical factor of safety = 1.4 (within a tolerance of 0.01).
-Setup your problem the coordinate origin (0,0) at the toe of the slope. Extend the problem 120 ft to the left of the 
-toe and 240 ft to the right of the toe.
+1) Run a search at $\beta$ = 25, 27.5, 30, 32.5, and 35 degrees. For each angle, edit the crest point in the **Profile lines** editor, at x = 54 / tan $\beta$.
 
-Let your beta angle vary from 25 to 35 degrees.
+2) Plot the factor of safety against $\beta$, and interpolate to find the angle that gives 1.4.
 
-Also, for your starting circle, use the intercept option and have the starting circle intercept the toe of the slope (0, 0).
+3) Run that angle, and adjust it until the factor of safety is within 0.01 of 1.4.
 
-Save a copy of the final solution and the FS vs beta design chart.
+Save a copy of the final solution and your chart.
 
 ## Submission
 
-For part 1, save a copy of your Excel input file (both sides) and a PNG of the two solution plots. For part 2, save 
-a copy of your Excel input file and a copy of the final solution and your design chart. Zip up your files 
-into a single zip archive. Upload your zip archive via Learning Suite.
+For Problem 1, save both models with **File → Save As**, and use the **Save…** button above the plot to save a PNG of each solution. For Problem 2, save the final model, a PNG of its solution, and your chart. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed
@@ -83,11 +73,10 @@ into a single zip archive. Upload your zip archive via Learning Suite.
 | Coordinate system set up correctly (x=0 at upstream toe, given elevations for y)     |   1    |
 | All four materials defined with correct properties (c', φ', γ)                       |   3    |
 | Piezometric line coordinates entered correctly                                        |   2    |
-| Distributed loads calculated correctly in spreadsheet for upstream water             |   3    |
-| External loads applied correctly to represent water on upstream side                 |   2    |
+| Reservoir load on the upstream face, from the piezometric line (automatic water loads) |   5    |
 | Upstream side analysis performed and minimum FOS identified                          |   2    |
 | Downstream side analysis performed and minimum FOS identified                        |   2    |
-| Excel input files and PNG solution plots for both sides submitted                    |   1    |
+| Input files and PNG solution plots for both sides submitted                          |   1    |
 
 ### Problem 2: Slope Design (10 pts)
 
@@ -96,9 +85,9 @@ into a single zip archive. Upload your zip archive via Learning Suite.
 | Profile line coordinates set up correctly with origin at toe of slope                |   2    |
 | Problem domain extends 120 ft left and 240 ft right of the toe                       |   1    |
 | Material properties defined correctly                                                 |   1    |
-| Beta range set correctly (25 to 35 degrees)                                           |   1    |
+| Search run at each of the five angles                                                 |   2    |
 | Target FOS of 1.4 achieved within tolerance of 0.01                                   |   2    |
-| FS vs beta design chart saved                                                         |   1    |
-| Excel input file, final solution, and design chart submitted                         |   2    |
+| FS vs beta chart                                                                      |   1    |
+| Input file, final solution, and chart submitted                                       |   1    |
 
 ### Total: 30 pts
