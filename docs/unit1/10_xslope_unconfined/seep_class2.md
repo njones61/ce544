@@ -8,7 +8,9 @@ The Johnson Reservoir problem corresponds to the following cross section:
 
 ![johnson_res.png](images/johnson_res.png)
 
-Specify the material properties, define the geometry using a profile line, and assign boundary conditions.
+Specify the material properties, define the geometry using a profile line, and assign boundary conditions. Use the following coordinates:
+
+![johnson_res_coords.png](images/johnson_res_coords.png)
 
 Solution: [xslope_johnson_res.xlsx](https://xslope.org/en/latest/seep/files/xslope_johnson_res.xlsx)
 
