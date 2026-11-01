@@ -31,7 +31,7 @@ Fill is compacted in lifts, so it is usually more conductive horizontally than v
 K1 = 0.08 m/day (K1/K2 = 4)<br>
 K1 = 0.18 m/day (K1/K2 = 9)
 
-Make a table showing the flow rate and the height of the exit point for each value of K1. Write a short paragraph describing how each one changes as K1 increases, and why the height of the exit point matters for the downstream face of a dam.
+Make a table showing the flow rate and the height of the exit point for each value of K1. Write a short paragraph describing how each one changes as K1 increases.
 
 ## Submission
 
@@ -57,5 +57,5 @@ Upload the zip archive via Learning Suite.
 | Problem 1 table compares flow rate and exit point height with the analytical solution |   6    |
 | Problem 1 paragraph explains the difference                              |   4    |
 | Problem 2 table shows flow rate and exit point height for all three values of K1 |   6    |
-| Problem 2 paragraph describes the trends and why the exit point matters  |   4    |
+| Problem 2 paragraph describes how the flow rate and exit point change with K1 |   4    |
 | **Total**                                                                | **30** |
