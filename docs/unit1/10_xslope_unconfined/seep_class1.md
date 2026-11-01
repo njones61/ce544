@@ -16,7 +16,7 @@ Solution: [xslope_earth_dam1.xlsx](https://xslope.org/en/latest/seep/files/xslop
 
 ### 2. Levee with Grouted Foundation
 
-For this problem we will revisit the levee problem but this time we will assume that the levee is permeable and will simulate flow both in the levee and in the grouted foundation. 
+For this problem we will revisit the levee from the flow net exercise, this time with a grout curtain in the foundation. We will assume that the levee is permeable and will simulate flow both in the levee and in the grouted foundation.
 
 ![levee.png](../09_xslope_confined/images/levee.png)
 

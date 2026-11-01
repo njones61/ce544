@@ -8,34 +8,39 @@ For this assignment, you will build two finite element seepage models of sites w
 
 Extend your mesh 40 ft both upstream and downstream from the sheetpiles (solve the entire problem, not just one half).
 
-(2) Consider the following problem involving a permeable foundation below a relatively impermeable levee. Build a 
-mesh of just the foundation, including the grout curtain, and perform a seepage anlysis. Extend your problem domain 
-35 m beyond the toe of the levee in both directions. Assume that the levee is relatively impermeable (do not include 
-it in your problem domain). Assume that the grout curtain extends all the way to bedrock and that the grout curtain 
-is permeable but has a different (lower) K than the foundation.
+(2) The cross section below shows a concrete cofferdam built on 15 m of sand over impermeable rock. It holds back 6 m of river water so that a work area, excavated 3 m below the river bed, can be pumped dry. The concrete is impermeable, so all of the flow passes through the sand under the cofferdam, and a key at the upstream heel lengthens that flow path.
 
-![levee.png](images/levee.png)
+![cofferdam.png](images/cofferdam.png)
 
-Set up the problem in XSLOPE Studio and find the total flow rate for each of these values of K for the grout curtain. Make a table showing the total flow rate vs. k for the grout curtain where the k values varies as follows:
+Build a mesh of just the sand. The concrete is not part of the model: the top of the sand follows the underside of the cofferdam, and no flow crosses an edge of the mesh unless you give it a boundary condition. Use k = 5 m/d in both directions. With y = 0 at the top of the rock and x = 0 at the upstream face of the cofferdam, the top of the sand is defined by these points, where d is the depth of the heel key below the river bed:
 
->>k = 2 m/d (same as no grout curtain)<br>
-k = 1 m/d<br>
-k = .5 m/d<br>
-k = .2 m/d<br>
-k = .1 m/d<br>
-k = .01 m/d<br>
-k = .001 m/d<br>
+| Point                         |  x [m]  |  y [m]  |
+|:-----------------------------:|:-------:|:-------:|
+| River bed, left end           |   -60   |   15    |
+| River bed at the cofferdam    |    0    |   15    |
+| Bottom of the key, upstream   |    0    |  15 - d |
+| Bottom of the key, downstream |    3    |  15 - d |
+| Top of the key                |    3    |   11    |
+| Toe of the cofferdam          |   10    |   11    |
+| Work area floor at the toe    |   10    |   12    |
+| Work area floor, right end    |   70    |   12    |
 
-For each k value, show two flowrates: one for a unit width and one for the total levee section (assume that the 
-levee is **300** m long in the transverse direction). The total flow rate is shown in the title of the solution plot. Write a paragraph summarizing your observations from the exercise. Put your solution in a word document.
+Water pumped out of the work area keeps the water level at the floor. Set up the problem in XSLOPE Studio and find the total flow rate for each of these heel key depths:
+
+>>d = 6 m<br>
+d = 8 m<br>
+d = 10 m<br>
+d = 12 m
+
+For each depth, show two flow rates: one for a unit width and one for the total pumping rate (assume that the cofferdam is **150** m long in the transverse direction). The total flow rate is shown in the title of the solution plot. Write a paragraph summarizing your observations from the exercise. Put your solution in a Word document.
 
 ## Submission
 
 Put the following files in a zip archive:
 
 - XSLOPE input file and a PNG of the solution for part 1
-- XSLOPE input file and a PNG of the solution for part 2 (for the K = 0.2 m/d solution only)
-- Word document with analyis of flow vs K for part 2
+- XSLOPE input file and a PNG of the solution for part 2 (for d = 8 m only)
+- Word document with the table and paragraph for part 2
 
 Upload the zip archive via Learning Suite.
 
@@ -53,12 +58,11 @@ Upload the zip archive via Learning Suite.
 | XSLOPE seepage model set up correctly with proper geometry and mesh                  |   4    |
 | Mesh extends 40 ft upstream and downstream from sheetpiles (entire problem solved)   |   2    |
 | Boundary conditions correctly applied                                                |   3    |
-| **Part 2: Grout Curtain Problem**                                                    |        |
-| XSLOPE seepage model set up with domain extending 35 m beyond toe in both directions |   3    |
-| Grout curtain extends to bedrock with lower K than foundation                        |   2    |
-| Levee modeled as relatively impermeable                                              |   1    |
-| Table includes all 7 K values (2, 1, 0.5, 0.2, 0.1, 0.01, 0.001 m/d)                 |   4    |
-| Flow rates computed correctly for both unit width and total levee section (300 m)    |   5    |
-| Total flow rates extracted from XSLOPE output correctly                              |   3    |
+| **Part 2: Concrete Cofferdam Problem**                                               |        |
+| XSLOPE seepage model of the sand set up with the geometry given                      |   4    |
+| Boundary conditions correctly applied (river bed and work area floor)                |   3    |
+| Table includes all 4 key depths (6, 8, 10, 12 m)                                     |   4    |
+| Flow rates computed correctly for both unit width and the total pumping rate (150 m) |   5    |
+| Total flow rates extracted from XSLOPE output correctly                              |   2    |
 | Paragraph summarizing observations from the exercise                                 |   3    |
 | **Total**                                                                            | **30** |
