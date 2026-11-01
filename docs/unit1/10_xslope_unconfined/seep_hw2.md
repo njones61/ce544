@@ -1,6 +1,6 @@
 # Homework - Finite Element Seepage Analysis, Unconfined Conditions, Part 2
 
-For this assignment, you will build a finite element seepage model of the **Lost Lake** dam in XSLOPE Studio. Start with **File → New** in **Seepage** mode, enter the cross section shown below, and save the model with **File → Save As**.
+For this assignment, you will build a finite element seepage model of the **Lost Lake** dam in XSLOPE Studio. The geometry comes from a CAD drawing: download [lost_lake.dxf](files/lost_lake.dxf), import it with **File → Import DXF…**, switch to **Seepage** mode, and save the model with **File → Save As**.
 
 The Lost Lake Dam includes a grout curtain, core, 
 shell, riprap, filter, and a drain as shown below.
@@ -28,11 +28,9 @@ For each material, use:
 
 Use elements that are sufficiently small to capture the details in the thin zones. Select appropriate boundary conditions for the model.
 
-You will need to create your profile lines carefully to ensure that the model is well-posed. 
-
 ## Problem Geometry
 
-The coordinates of the points making up the center part of the cross section are shown below.
+The DXF holds the geometry, so you only need these coordinates for the boundary conditions. The coordinates of the points making up the center part of the cross section are shown below.
 
 ![lost_lake_coords_main.png](images/lost_lake_coords_main.png)
 
@@ -44,11 +42,10 @@ The coordinates of the left and right sides of the cross section are shown below
 
 Here are some tips for setting up the problem:
 
-1. You only need 8 materials. Use the 8 materials from the list above.
-2. You will need 12 profile lines. Sometimes multiple profile lines link to the same material. Just enter the material ID at the top of the profile. The name will then appear.
-3. Make sure you enter the coordinates in the correct order (left to right).
-4. Profile lines should always be listed from top to bottom. Each line projects down to lower lines to define the regions to be filled in as it creates the polygons. Each line is strictly above all of the subsequent (or at least - not below).
-5. When you define the profile lines, you only include the line segments on top of the zone. You should not include vertical edges on the left and right ends of the lines. For example, the profile line for the grouted bedrock (blue zone) is only two points. However, you can have vertical lines in the middle of a profile line if necessary - bedrock (orange zone at the bottom) for example.
+1. The DXF has one closed polygon for each of the 12 zones, on a layer named for its material. The default mapping in the import wizard is correct: every layer is a material zone.
+2. There are 12 zones but only 8 materials, because some zones share a material. The import sets up the 8 materials for you.
+3. The import brings in the geometry and the material names only. Enter the hydraulic conductivities and the other properties in the Materials editor.
+4. Check the zones against the cross section above before you go on.
 
 ## Submission
 
@@ -67,10 +64,10 @@ Create a PNG of the solution with 25 head contours and use base material = bedro
 
 | Criteria                                                             | Points |
 |----------------------------------------------------------------------|:------:|
-| 12 profile lines created in correct order (top to bottom)            |   10   |
-| Points on each profile line listed in correct order (left to right)  |   2    |
-| All 8 materials defined with correct hydraulic conductivity values (kx, ky) |   4    |
+| DXF imported, with all 12 zones on the correct materials             |   8    |
+| All 8 materials defined with correct hydraulic conductivity values (kx, ky) |   6    |
 | Material parameters (α, kr0, h0) set correctly for all materials     |   4    |
 | Boundary conditions appropriately selected (H=225 ft left, exit face right) |   6    |
-| PNG output shows head contours with base material = bedrock        |   4    |
+| Mesh fine enough to capture the thin zones                           |   2    |
+| PNG output shows head contours with base material = bedrock          |   4    |
 | **Total**                                                            | **30** |
