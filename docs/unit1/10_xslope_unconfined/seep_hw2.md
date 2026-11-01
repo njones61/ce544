@@ -1,4 +1,4 @@
-# Homework - Finite Element Seepage Analysis, Unconfined Conditions
+# Homework - Finite Element Seepage Analysis, Unconfined Conditions, Part 2
 
 For this assignment, you will build a finite element seepage model of the **Lost Lake** dam in XSLOPE Studio. Start with **File → New** in **Seepage** mode, enter the cross section shown below, and save the model with **File → Save As**.
 
