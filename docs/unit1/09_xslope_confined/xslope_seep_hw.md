@@ -2,13 +2,17 @@
 
 For this assignment, you will build two finite element seepage models of sites with confined (fully saturated) conditions in XSLOPE Studio. Start each with **File → New** in **Seepage** mode, and save each as a separate file with **File → Save As**. Build the mesh with linear triangles (tri3).
 
-(1) Redo the double sheetpile problem using XSLOPE:
+## Problem 1 - Double Sheetpile
+
+Redo the double sheetpile problem using XSLOPE:
 
 ![sheetpile_dual.gif](images/sheetpile_dual.gif)
 
 Extend your mesh 40 ft both upstream and downstream from the sheetpiles (solve the entire problem, not just one half).
 
-(2) The cross section below shows a concrete cofferdam built on 15 m of sand over impermeable rock. It holds back 6 m of river water so that a work area, excavated 3 m below the river bed, can be pumped dry. The concrete is impermeable, so all of the flow passes through the sand under the cofferdam, and a key at the upstream heel lengthens that flow path.
+## Problem 2 - Concrete Cofferdam
+
+The cross section below shows a concrete cofferdam built on 15 m of sand over impermeable rock. It holds back 6 m of river water so that a work area, excavated 3 m below the river bed, can be pumped dry. The concrete is impermeable, so all of the flow passes through the sand under the cofferdam, and a key at the upstream heel lengthens that flow path.
 
 ![cofferdam.png](images/cofferdam.png)
 
@@ -38,9 +42,9 @@ For each depth, show two flow rates: one for a unit width and one for the total 
 
 Put the following files in a zip archive:
 
-- XSLOPE input file and a PNG of the solution for part 1
-- XSLOPE input file and a PNG of the solution for part 2 (for d = 8 m only)
-- Word document with the table and paragraph for part 2
+- XSLOPE input file and a PNG of the solution for Problem 1
+- XSLOPE input file and a PNG of the solution for Problem 2 (for d = 8 m only)
+- Word document with the table and paragraph for Problem 2
 
 Upload the zip archive via Learning Suite.
 
@@ -54,11 +58,11 @@ Upload the zip archive via Learning Suite.
 
 | Criteria                                                                             | Points |
 |--------------------------------------------------------------------------------------|:------:|
-| **Part 1: Double Sheetpile Problem**                                                 |        |
+| **Problem 1: Double Sheetpile**                                                      |        |
 | XSLOPE seepage model set up correctly with proper geometry and mesh                  |   4    |
 | Mesh extends 40 ft upstream and downstream from sheetpiles (entire problem solved)   |   2    |
 | Boundary conditions correctly applied                                                |   3    |
-| **Part 2: Concrete Cofferdam Problem**                                               |        |
+| **Problem 2: Concrete Cofferdam**                                                    |        |
 | XSLOPE seepage model of the sand set up with the geometry given                      |   4    |
 | Boundary conditions correctly applied (river bed and work area floor)                |   3    |
 | Table includes all 4 key depths (6, 8, 10, 12 m)                                     |   4    |
