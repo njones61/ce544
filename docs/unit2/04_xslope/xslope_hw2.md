@@ -6,7 +6,7 @@ In this homework, we will use XSLOPE Studio to find the critical factor of safet
 
 Use XSLOPE to solve for the critical factor of safety against slope failure for the following problem based on a circular failure surface (compare to page 121 in your textbook):
 
-![earth_dam.png](images/earth_dam.png){width="800"}
+![earth_dam.png](images/earth_dam.png){width="950"}
 
 You will need to calculate the proper coordinates for your profile lines. Extend the problem 150 ft to the left and the right of the upstream and downstream toes of the dam. Use the given elevations for the y coordinates and let x=0 at the upstream toe of the dam. Use the base of the sand layer (y=182 ft) as **Max depth**.
 
@@ -38,7 +38,7 @@ Use a circular failure surface. Perform two searches: one for the upstream side 
 
 For this problem, we will find the slope angle ($\beta$) that gives a critical factor of safety of 1.4, within a tolerance of 0.01.
 
-![design.png](images/design.png){width="800"}
+![design.png](images/design.png){width="960"}
 
 Set up the problem with the origin (0, 0) at the toe of the slope, and extend it 120 ft to the left of the toe and 240 ft to the right. For the starting circle, use the **Intercept** option, with the circle passing through the toe.
 

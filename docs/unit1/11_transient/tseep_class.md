@@ -2,7 +2,7 @@
 
 In this exercise we build the reservoir drawdown from Tutorial SEEP-3 in XSLOPE Studio, run it, and then run it again with the reservoir drawn down four and a half times faster. The dam has a granular shell and a clay core, and the two zones drain at very different rates. The question is how much water the core is still holding when the pool reaches the bottom, and how that depends on the drawdown rate.
 
-![earth_dam_drawdown.png](images/earth_dam_drawdown.png){width="800"}
+![earth_dam_drawdown.png](images/earth_dam_drawdown.png){width="950"}
 
 Start from the SEEP-3 starter file, which has the geometry, the two materials, and their storage properties, but no boundary conditions and no schedule:
 

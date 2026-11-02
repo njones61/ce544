@@ -10,7 +10,7 @@ The Johnson Reservoir problem corresponds to the following cross section:
 
 Specify the material properties, define the geometry using a profile line, and assign boundary conditions. Use the following coordinates:
 
-![johnson_res_coords.png](images/johnson_res_coords.png){width="900"}
+![johnson_res_coords.png](images/johnson_res_coords.png){width="1100"}
 
 Solution: [xslope_johnson_res.xlsx](https://xslope.org/en/latest/seep/files/xslope_johnson_res.xlsx)
 
@@ -18,7 +18,7 @@ Solution: [xslope_johnson_res.xlsx](https://xslope.org/en/latest/seep/files/xslo
 
 The Earth Dam with Core, Filter, and Drain problem corresponds to the following cross section:
 
-![damwithfilterdrain.png](images/damwithfilterdrain.png){width="800"}
+![damwithfilterdrain.png](images/damwithfilterdrain.png){width="950"}
 
 In this case, we will go through the process of deriving the geometry (point coordinates) of the cross section from 
 the image. Enter the resulting profile lines, material properties, and boundary conditions in Studio.

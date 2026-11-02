@@ -8,7 +8,7 @@ For each problem, explore the results using the variations suggested.
 
 Put the toe at (0, 0). The model's base is at the level of the toe, so **Max depth** is 0.
 
-![embankment.png](images/embankment.png){width="800"}
+![embankment.png](images/embankment.png){width="730"}
 
 Run the search, and look at the warnings. Then try these variations:
 
@@ -21,7 +21,7 @@ Solution: [xslope_simple_embankment.xlsx](files/xslope_simple_embankment.xlsx). 
 
 Put the toe at (0, 0). This time the base is below the toe, so **Max depth** is −10.
 
-![foundation.png](images/foundation.png){width="800"}
+![foundation.png](images/foundation.png){width="960"}
 
 Solution: [xslope_simple_foundation.xlsx](files/xslope_simple_foundation.xlsx). F = 0.964.
 
@@ -29,7 +29,7 @@ Solution: [xslope_simple_foundation.xlsx](files/xslope_simple_foundation.xlsx). 
 
 Be careful to find the location of the critical circle.
 
-![two_layers.png](images/two_layers.png){width="800"}
+![two_layers.png](images/two_layers.png){width="960"}
 
 **Variation:** change the cohesion of the foundation from 800 psf to 500 psf, and then to 400 psf. How does the location of the critical circle change?
 
@@ -39,7 +39,7 @@ Solution: [xslope_simple_mult_layers.xlsx](files/xslope_simple_mult_layers.xlsx)
 
 Consider the following slope:
 
-![tension_slope.png](images/tension_slope.png){width="800"}
+![tension_slope.png](images/tension_slope.png){width="960"}
 
 The embankment has cohesion, so a solution with no crack puts tension at the top of the slope. That is unconservative, because the tension raises the factor of safety. To avoid it, we add a tension crack at the top of the slope. The depth of the crack is:
 

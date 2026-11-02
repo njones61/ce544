@@ -6,7 +6,7 @@ This class is practice. There are six problems here, and each one adds something
 
 This is the slope you solved in the spreadsheet exercises, with the same soils.
 
-![class_slope.png](images/class_slope.png){width="800"}
+![class_slope.png](images/class_slope.png){width="950"}
 
 You can copy the coordinates of the profile lines and the piezometric line from this spreadsheet: [method-of-slices-input.xlsx](files/method-of-slices-input.xlsx)
 
@@ -22,7 +22,7 @@ Solution: [xslope_method_slices_problem.xlsx](files/xslope_method_slices_problem
 
 ## Problem 2 - Multi-Layer Foundation
 
-![eight_layers.png](images/eight_layers.png){width="800"}
+![eight_layers.png](images/eight_layers.png){width="960"}
 
 Put the toe at (0, 0), and extend the section 60 ft to the left of the toe and 75 ft to the right of the crest. The piezometric line is at elevation −2. The layers with $S_u$ take **u** = `none`, and the others take `piezo`.
 
@@ -34,7 +34,7 @@ Solution: [xslope_eight_layers.xlsx](files/xslope_eight_layers.xlsx). F = 1.217 
 
 ## Problem 3 - Two Minima
 
-![two_minima.png](images/two_minima.png){width="800"}
+![two_minima.png](images/two_minima.png){width="870"}
 
 Put the toe at (0, 0). Extend the foundation 50 ft to the left of the toe, and both lines 50 ft to the right of the crest.
 
@@ -52,7 +52,7 @@ Solution: [xslope_mult_min.xlsx](files/xslope_mult_min.xlsx). F = 1.299 from Dep
 
 ## Problem 4 - A Weak Seam
 
-![weak_seam.png](images/weak_seam.png){width="800"}
+![weak_seam.png](images/weak_seam.png){width="960"}
 
 Put the toe at (0, 0). The piezometric line is at elevation −2. The soft clay takes **u** = `none`, and the sands take `piezo`.
 
@@ -66,7 +66,7 @@ Solution: [xslope_noncircular.xlsx](files/xslope_noncircular.xlsx). F = 1.769 fo
 
 The strength of this clay grows with depth, so use option `cp`. Set **c** = 300, **c/p** = 15, and **r-elev** = 0, the elevation of the top of the clay. Both materials take **u** = `none`.
 
-![soft_clay.png](images/soft_clay.png){width="800"}
+![soft_clay.png](images/soft_clay.png){width="960"}
 
 Put the toe at (0, 0).
 
@@ -79,7 +79,7 @@ Solution: [xslope_soft_clay.xlsx](files/xslope_soft_clay.xlsx). F = 1.242 with t
 
 The base of this model isn't level, so **Max depth** can't describe it. Build the geometry from polygons in the **Polygons** editor. Leave **Profile lines** empty.
 
-![dipping_base.png](images/dipping_base.png){width="800"}
+![dipping_base.png](images/dipping_base.png){width="930"}
 
 Put the toe at (0, 0). The two polygons are:
 

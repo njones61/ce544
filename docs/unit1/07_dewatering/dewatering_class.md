@@ -59,13 +59,13 @@ Click **Load GeoJSON** in step 1 and select the file. (The same polygon also loa
 
 In step 5, set the pumping rate unit to **gpm**. The app shows the initial saturated thickness, $H$ = 55 − 5 = 50 m, and the target head inside the excavation, 55 − 20 = 35 m above the bottom of the aquifer:
 
-![dewater_app_excavation.jpg](images/dewater_app_excavation.jpg){width="900"}
+![dewater_app_excavation.jpg](images/dewater_app_excavation.jpg){width="1500"}
 
 ## Part 2 - A Design for the Deadline
 
 In step 3, open **Generate a ring of wells**, enter an offset of 15 m and 16 wells, and click **Generate wells**. Then click **Find Q<sub>min</sub>** in step 5, and in step 7 click **East–west** for a cross section through the excavation:
 
-![dewater_app_ring.jpg](images/dewater_app_ring.jpg){width="900"}
+![dewater_app_ring.jpg](images/dewater_app_ring.jpg){width="1500"}
 
 $Q_{min}$, the minimum design pumping rate, is the smallest pumping rate at the start that gets the water down to the required level everywhere in the excavation by day 30. The map and the section show the water on day 30. The hatching is where the water is below the required level, and the dashed orange contour is where it is right at it. The bar under the map plays the design through time: press play and watch the cone of depression grow, in the contours and in the section.
 
@@ -76,7 +76,7 @@ $Q_{min}$, the minimum design pumping rate, is the smallest pumping rate at the 
 
 Click **Pumping schedule**:
 
-![dewater_app_schedule.jpg](images/dewater_app_schedule.jpg){width="900"}
+![dewater_app_schedule.jpg](images/dewater_app_schedule.jpg){width="1000"}
 
 Up to the deadline, the rate starts high, while the cones are shallow and the wells can take it, and is cut back each week where a well would otherwise go dry. After the excavation is dry, the rate steps down each week to the lowest rate that holds the water at the required level for the next four weeks.
 
@@ -87,7 +87,7 @@ Up to the deadline, the rate starts high, while the cones are shallow and the we
 
 In step 8, plot the design against **Days to dewater**, from 1 to 365 days:
 
-![dewater_app_curve.jpg](images/dewater_app_curve.jpg){width="900"}
+![dewater_app_curve.jpg](images/dewater_app_curve.jpg){width="1000"}
 
 Each point is a full design, with everything else as on the map.
 
@@ -120,7 +120,7 @@ Soil is often layered, with the horizontal $k$ several times the vertical. The w
 
 In step 4, turn on **Enclose the site with a cutoff wall**, a slurry wall keyed into the low-permeability layer, with a 5 m setback, 0.9 m thick, and $k_w$ = 1e-7 cm/s. Click **Find Q<sub>min</sub>**:
 
-![dewater_app_wall.jpg](images/dewater_app_wall.jpg){width="900"}
+![dewater_app_wall.jpg](images/dewater_app_wall.jpg){width="1500"}
 
 1. Compare $Q_{min}$, the holding rate, and the water pumped by day 60 with the wells alone.
 2. Plot the design against **Days to dewater** and against **Number of wells** again. How do the fastest day and the fewest wells change?

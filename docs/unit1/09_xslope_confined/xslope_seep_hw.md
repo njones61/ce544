@@ -14,7 +14,7 @@ Extend your mesh 40 ft both upstream and downstream from the sheetpiles (solve t
 
 The cross section below shows a concrete cofferdam built on 15 m of sand over impermeable rock. It holds back 6 m of river water so that a work area, excavated 3 m below the river bed, can be pumped dry. The concrete is impermeable, so all of the flow passes through the sand under the cofferdam, and a key at the upstream heel lengthens that flow path.
 
-![cofferdam.png](images/cofferdam.png){width="800"}
+![cofferdam.png](images/cofferdam.png){width="900"}
 
 Build a mesh of just the sand. The concrete is not part of the model: the top of the sand follows the underside of the cofferdam, and no flow crosses an edge of the mesh unless you give it a boundary condition. Use k = 5 m/d in both directions. With y = 0 at the top of the rock and x = 0 at the upstream face of the cofferdam, the top of the sand is defined by these points, where d is the depth of the heel key below the river bed:
 

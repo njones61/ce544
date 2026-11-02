@@ -18,7 +18,7 @@ Solution: [xslope_clay_blanket.xlsx](https://xslope.org/en/latest/seep/files/xsl
 
 The following problem is for a construction project in a harbor that requires that a section of the harbor bottom be exposed by pumping the water out of a trench formed by a pair of parallel sheetpile walls. The sheetpiles pass through an upper silt layer until they penetrate a lower silty clay layer with a lower permeability to a depth of 4 ft. 
 
-![sea_trench.png](images/sea_trench.png){width="800"}
+![sea_trench.png](images/sea_trench.png){width="620"}
 
 The properties of the soil layers are as follows:
 
