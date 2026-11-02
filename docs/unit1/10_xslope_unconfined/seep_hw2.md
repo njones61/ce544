@@ -5,7 +5,7 @@ For this assignment, you will build a finite element seepage model of the **Lost
 The Lost Lake Dam includes a grout curtain, core, 
 shell, riprap, filter, and a drain as shown below.
 
-![lost_lake.png](images/lost_lake.png){width="1400"}
+![lost_lake.png](images/lost_lake.png){width="1350"}
 
 The water is impounded on the left side of the cross section at **H = 225 ft**. Water seeping out of the right side drains freely.
 
@@ -32,11 +32,11 @@ Use elements that are sufficiently small to capture the details in the thin zone
 
 The DXF holds the geometry, so you only need these coordinates for the boundary conditions. The coordinates of the points making up the center part of the cross section are shown below.
 
-![lost_lake_coords_main.png](images/lost_lake_coords_main.png)
+![lost_lake_coords_main.png](images/lost_lake_coords_main.png){width="1200"}
 
 The coordinates of the left and right sides of the cross section are shown below:
 
-![lost_lake_coords_sides.png](images/lost_lake_coords_sides.png){width="800"}
+![lost_lake_coords_sides.png](images/lost_lake_coords_sides.png){width="1000"}
 
 ## Tips
 
