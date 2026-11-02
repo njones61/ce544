@@ -69,7 +69,7 @@ Solution: [xslope_prob_submerged_KEY.xlsx](files/xslope_prob_submerged_KEY.xlsx)
 
 Revisit the Johnson Reservoir dam:
 
-![johnson_res.png](../../unit1/10_xslope_unconfined/images/johnson_res.png)
+![johnson_res.png](../../unit1/10_xslope_unconfined/images/johnson_res.png){width="900"}
 
 The material properties and associated standard deviations are as follows:
 

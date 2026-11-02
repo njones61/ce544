@@ -4,11 +4,11 @@ In this assignment you will follow a river flood through a levee. Start from the
 
 Starting file: [xslope_levee_full.xlsx](https://xslope.org/en/latest/seep/files/xslope_levee_full.xlsx)
 
-![levee.png](../09_xslope_confined/images/levee.png)
+![levee.png](../09_xslope_confined/images/levee.png){width="800"}
 
 The river is normally at the ground surface, elevation 10 m. In a flood it rises to 14 m in two days, stays there for four days, and falls back to 10 m over the next four days:
 
-![levee_flood_hydrograph.png](images/levee_flood_hydrograph.png)
+![levee_flood_hydrograph.png](images/levee_flood_hydrograph.png){width="800"}
 
 ## Model Changes
 

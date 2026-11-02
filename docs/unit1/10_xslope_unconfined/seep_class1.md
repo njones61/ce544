@@ -6,7 +6,7 @@ For this exercise, we will perform a pair of seepage analyses for sites with unc
 
 The problem corresponds to the following cross section:
 
-![earthdamfigure.png](images/earthdamfigure.png)
+![earthdamfigure.png](images/earthdamfigure.png){width="800"}
 
 Specify the material properties, define the geometry using a profile line, and assign boundary conditions. We will define a local coordinate system with the origin (x=0, y=0) at the toe of the dam on the left side of the figure. This results in the following set of points:
 
@@ -18,7 +18,7 @@ Solution: [xslope_earth_dam1.xlsx](https://xslope.org/en/latest/seep/files/xslop
 
 For this problem we will revisit the levee from the flow net exercise, this time with a grout curtain in the foundation. We will assume that the levee is permeable and will simulate flow both in the levee and in the grouted foundation.
 
-![levee.png](../09_xslope_confined/images/levee.png)
+![levee.png](../09_xslope_confined/images/levee.png){width="800"}
 
 Assume that the following values for hydraulic conductivity:
 
@@ -30,7 +30,7 @@ Assume that the following values for hydraulic conductivity:
 
 Use the following coordinates to define the profile lines and boundary conditions:
 
-![levee_coords.png](images/levee_coords.png)
+![levee_coords.png](images/levee_coords.png){width="800"}
 
 Solution: [xslope_levee_full.xlsx](https://xslope.org/en/latest/seep/files/xslope_levee_full.xlsx)
 

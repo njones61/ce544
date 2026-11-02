@@ -6,15 +6,15 @@ Solve the following problems in XSLOPE Studio. For each problem, start a new mod
 
 Use a total unit weight, and let XSLOPE derive the water load: enter the pool as a piezometric line across the section at elevation 40, 10 ft above the top of the slope, and leave **Water loads** on `auto`.
 
-![submerged.png](images/submerged.png)
+![submerged.png](images/submerged.png){width="800"}
 
 (b) Slope with surcharge.
 
-![surcharge.png](images/surcharge.png)
+![surcharge.png](images/surcharge.png){width="800"}
 
 (c) Slope with two materials.
 
-![two_materials.png](images/two_materials.png)
+![two_materials.png](images/two_materials.png){width="800"}
 
 ## Submission
 

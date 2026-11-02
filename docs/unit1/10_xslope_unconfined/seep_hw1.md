@@ -6,7 +6,7 @@ For this assignment, you will model the earth dam from the [analytical solutions
 
 The dam sits on an impermeable base, with 8 m of water against the upstream face. Water seeping out of the downstream face drains freely.
 
-![earth_dam_hw.png](images/earth_dam_hw.png)
+![earth_dam_hw.png](images/earth_dam_hw.png){width="800"}
 
 Use the following properties for the fill:
 

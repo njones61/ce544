@@ -50,7 +50,7 @@ Save a copy of your input file (XLSX), the mesh file (JSON) and a PNG image of b
 
 This problem applies the FEM method to the Johnson Reservoir dam from the [Seepage/Slope Integration Homework](../07_seep_slope/seep_slope_hw.md). A starter zip archive is provided that includes the Excel input file with the dam geometry, strength properties, seepage material properties, and seepage boundary conditions already set up. The archive also includes the seepage solution (mesh and pore pressures) so you do not need to run the seepage analysis again.
 
-![johnson_res.png](../../unit1/10_xslope_unconfined/images/johnson_res.png)
+![johnson_res.png](../../unit1/10_xslope_unconfined/images/johnson_res.png){width="900"}
 
 ### a. Add Elastic Properties
 
