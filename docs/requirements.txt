@@ -1,3 +1,4 @@
+mkdocs==1.6.1
 python-markdown-math
 mkdocs-cinder
 pymdown-extensions
