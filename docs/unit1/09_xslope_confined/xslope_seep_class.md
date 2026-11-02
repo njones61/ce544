@@ -36,6 +36,6 @@ will reference material 2 (Silty Clay).
 
 As you build the problem input, you may wish to use the following coordinates:
 
-![sea_trench_coords.png](images/sea_trench_coords.png)
+![sea_trench_coords.png](images/sea_trench_coords.png){width="620"}
 
 Solution: [xslope_sea_trench.xlsx](https://xslope.org/en/latest/seep/files/xslope_sea_trench.xlsx)

@@ -14,7 +14,7 @@ For each problem, run the LEM notebook first to get the LEM factor of safety. Th
 
 This is the same problem from [XSLOPE Class Exercise 1, Problem 2](../04_xslope/xslope_class1.md).
 
-![part1b_fig.png](../04_xslope/images/part1b_fig.png)
+![part1b_fig.png](../04_xslope/images/part1b_fig.png){width="620"}
 
 Start with the LEM solution file and add the following elastic properties:
 
@@ -34,7 +34,7 @@ Solution: [xslope_simple_foundation_KEY.zip](files/xslope_simple_foundation_KEY.
 
 This is the same problem from [XSLOPE Class Exercise 1, Problem 3](../04_xslope/xslope_class1.md).
 
-![part1c_fig.png](../04_xslope/images/part1c_fig.png)
+![part1c_fig.png](../04_xslope/images/part1c_fig.png){width="620"}
 
 Start with the LEM solution file and add the following elastic properties:
 

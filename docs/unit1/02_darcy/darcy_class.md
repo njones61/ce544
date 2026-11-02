@@ -4,7 +4,7 @@
 
 A 3-ft thick compacted clay liner is to be constructed at the bottom of a municipal waste landfill as shown below. The objective of the liner is to prevent leachate from escaping the landfill and contaminating the nearby groundwater. Even though the landfill has a leachate collection and drainage system, we will assume that leachate may pond to a max height of 1 ft.
 
-![clay_liner.png](images/clay_liner.png)
+![clay_liner.png](images/clay_liner.png){width="520"}
 
 You have been asked to perform an analysis of the potential seepage of the leachate. The landfill covers an area that is roughly 10 acres in size.  Assuming that the vertical hydraulic conductivity of the landfill = 1e-7 cm/s, answer the following:
 

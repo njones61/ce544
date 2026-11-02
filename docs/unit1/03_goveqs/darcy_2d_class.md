@@ -2,7 +2,7 @@
 
 Assume you have a 2D domain with bedding planes declining at a sharp angle as shown below. 
 
-![darcy_2d.png](images/darcy_2d.png)
+![darcy_2d.png](images/darcy_2d.png){width="450"}
 
 Recall the following equations:
 

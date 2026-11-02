@@ -11,7 +11,7 @@ the vicinity of the site indicates that the soil profile is relatively uniform o
 economic reasons only one soil boring was taken for the current investigation. The location of this boring (Boring A)
 is shown in the map above and the boring log details are as follows:
 
-![infslope_fig2.gif](images/infslope_fig2.gif)
+![infslope_fig2.gif](images/infslope_fig2.gif){width="800"}
 
 The shear strength values shown on the boring log were 
 measured in unconsolidated undrained triaxial compression tests.
