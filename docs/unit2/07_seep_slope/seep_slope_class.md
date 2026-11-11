@@ -75,8 +75,6 @@ Run an **Auto search** by Spencer's method. Note the factor of safety and how de
 
 7. Turn **Grid search** off, turn on **Ignore surficial (skin) failures**, and run the search with a **Min slip depth** of 10, 20, and 30 ft. Compare these factors of safety with part a.
 
-8. Try it: give the left edge, from (−150, 182) to (−150, 227), a specified head of 302 ft, and the right edge, from (740, 182) to (740, 227), a specified head of 227 ft. Run the seepage and the search again. What happened to the water under the toe?
-
 Solution: [xslope_earth_dam_down_SEEP_solution.xlsx](files/xslope_earth_dam_down_SEEP_solution.xlsx).
 
 With the piezometric line, the search finds F = 1.558 on a circle tangent to el. 197, the bottom of the clay. The book gets 1.57.
@@ -84,5 +82,3 @@ With the piezometric line, the search finds F = 1.558 on a circle tangent to el.
 In the seepage solution, the head in the sand under the downstream toe is about 240.6 ft, 13.6 ft above the ground, and it falls to 235.7 ft at el. 208, in the clay, so water is flowing up through the clay to the toe. At el. 208 the pore pressure is 27 ft of water, against 19 ft below a piezometric line at the ground.
 
 With those pore pressures, the search from the starting circles shrinks to a sliver less than a foot long at the toe, with F = 0.121: the water coming up leaves almost no effective stress right at the surface. Grid search finds 1.099 on a slough about 18 ft long at the toe, close to the book's 1.11 for shallow circles there. With a minimum slip depth of 10, 20, and 30 ft, F = 1.230, 1.296, and 1.320. The deepest of these is 15% below the 1.558 from the piezometric line. The book finds 1.37 for circles tangent to el. 197 with seepage, against 1.57 with the line.
-
-With fixed heads on the side edges, water in the sand can leave through the right edge instead of coming up through the clay, and the search finds 1.416 on a deep circle, with no sliver at the toe. The boundary conditions on the edges of a foundation layer decide how much of the underseepage reaches the toe.
