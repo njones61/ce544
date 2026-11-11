@@ -2,6 +2,10 @@
 
 Solve the following problems in XSLOPE Studio. For each problem, start a new model with **File → New** in **LEM** mode, and perform an automated search using Spencer's method.
 
+Record your answers on this answer sheet, which has a section for each problem:
+
+[xslope_hw1_answers.docx](files/xslope_hw1_answers.docx)
+
 (a) Submerged slope.
 
 Use a total unit weight, and let XSLOPE derive the water load: enter the pool as a piezometric line across the section at elevation 40, 10 ft above the top of the slope, and leave **Water loads** on `auto`.
@@ -18,7 +22,7 @@ Use a total unit weight, and let XSLOPE derive the water load: enter the pool as
 
 ## Submission
 
-For each of the three problems, save the model with **File → Save As**, and use the **Save…** button above the plot to save a PNG of the solution with the minimum factor of safety. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+For each of the three problems, save the model with **File → Save As**, and enter the minimum factor of safety on the answer sheet. Use the **Save…** button above the plot to save a PNG of the solution with the minimum factor of safety, and paste it into the answer sheet. Put the three models and the answer sheet, saved as a PDF, in a single zip archive. Upload your zip archive via Learning Suite.
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed

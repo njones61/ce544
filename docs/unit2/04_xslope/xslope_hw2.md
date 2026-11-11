@@ -2,6 +2,10 @@
 
 In this homework, we will use XSLOPE Studio to find the critical factor of safety against slope failure for two problems. Use Spencer's method for both.
 
+Record your answers on this answer sheet, which has a section for each problem:
+
+[xslope_hw2_answers.docx](files/xslope_hw2_answers.docx)
+
 ## Problem 1: Earth Dam Problem from Textbook
 
 Use XSLOPE to solve for the critical factor of safety against slope failure for the following problem based on a circular failure surface (compare to page 121 in your textbook):
@@ -32,7 +36,7 @@ The coordinates of the piezometric line are as follows:
 
 The reservoir is a load on the upstream face. With **Water loads** on `auto`, XSLOPE derives it from the piezometric line.
 
-Use a circular failure surface. Perform two searches: one for the upstream side and one for the downstream side. The side that is analyzed depends on the location of your starting circle. Save a copy of the solution for each side.
+Use a circular failure surface. Perform two searches: one for the upstream side and one for the downstream side. The side that is analyzed depends on the location of your starting circle. Save a model for each side, and enter the minimum factor of safety for each side in Problem 1 of the answer sheet, with a PNG of each solution.
 
 ## Problem 2: Slope Design Problem
 
@@ -50,11 +54,11 @@ The **Parametric** tool sweeps material properties and the seismic coefficient, 
 
 3) Run that angle, and adjust it until the factor of safety is within 0.01 of 1.4.
 
-Save a copy of the final solution and your chart.
+Save the final model, and enter your results in Problem 2 of the answer sheet, with your chart and a PNG of the final solution.
 
 ## Submission
 
-For Problem 1, save both models with **File → Save As**, and use the **Save…** button above the plot to save a PNG of each solution. For Problem 2, save the final model, a PNG of its solution, and your chart. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+Save both models from Problem 1 and the final model from Problem 2 with **File → Save As**, and use the **Save…** button above the plot to save each PNG for the answer sheet. Put the three models and the answer sheet, saved as a PDF, in a single zip archive. Upload your zip archive via Learning Suite.
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed

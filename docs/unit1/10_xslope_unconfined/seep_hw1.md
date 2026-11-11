@@ -2,6 +2,10 @@
 
 For this assignment, you will model the earth dam from the [analytical solutions exercise](../05_analytical/analytical_class.md) in XSLOPE Studio, compare the two solutions, and then see what a higher horizontal conductivity does to the flow. Start with **File → New** in **Seepage** mode, enter the cross section shown below, and save the model with **File → Save As**.
 
+Record your answers on this answer sheet, which has a section for each problem:
+
+[seep_hw1_answers.docx](files/seep_hw1_answers.docx)
+
 ## Problem 1 - Earth Dam on an Impermeable Base
 
 The dam sits on an impermeable base, with 8 m of water against the upstream face. Water seeping out of the downstream face drains freely.
@@ -21,7 +25,7 @@ Make a table comparing the following results from XSLOPE with the analytical sol
 - The flow rate per unit width of the dam.
 - The height of the exit point above the downstream toe. In XSLOPE, this is where the phreatic surface meets the downstream face. For the analytical solution, it is L sin 30°.
 
-Write a short paragraph explaining why the two solutions differ.
+Write a short paragraph explaining why the two solutions differ. Enter your table and paragraph in Problem 1 of the answer sheet. Use the **Save…** button above the plot to save a PNG of the solution, and paste it there too.
 
 ## Problem 2 - Compacted Fill
 
@@ -31,14 +35,14 @@ Fill is compacted in lifts, so it is usually more conductive horizontally than v
 K1 = 0.08 m/day (K1/K2 = 4)<br>
 K1 = 0.18 m/day (K1/K2 = 9)
 
-Make a table showing the flow rate and the height of the exit point for each value of K1. Write a short paragraph describing how each one changes as K1 increases.
+Make a table showing the flow rate and the height of the exit point for each value of K1. Write a short paragraph describing how each one changes as K1 increases. Enter your table and paragraph in Problem 2 of the answer sheet.
 
 ## Submission
 
 Put the following files in a zip archive:
 
-- XSLOPE input file and a PNG of the solution for Problem 1
-- Word document with the tables and paragraphs for both problems
+- XSLOPE input file for Problem 1
+- The answer sheet, saved as a PDF
 
 Upload the zip archive via Learning Suite.
 

@@ -2,13 +2,17 @@
 
 For this assignment, you will build two finite element seepage models of sites with confined (fully saturated) conditions in XSLOPE Studio. Start each with **File → New** in **Seepage** mode, and save each as a separate file with **File → Save As**. Build the mesh with linear triangles (tri3).
 
+Record your answers on this answer sheet, which has a section for each problem:
+
+[xslope_seep_hw_answers.docx](files/xslope_seep_hw_answers.docx)
+
 ## Problem 1 - Double Sheetpile
 
 Redo the double sheetpile problem using XSLOPE:
 
 ![sheetpile_dual.gif](images/sheetpile_dual.gif)
 
-Extend your mesh 40 ft both upstream and downstream from the sheetpiles (solve the entire problem, not just one half).
+Extend your mesh 40 ft both upstream and downstream from the sheetpiles (solve the entire problem, not just one half). Use the **Save…** button above the plot to save a PNG of the solution, and paste it into Problem 1 of the answer sheet.
 
 ## Problem 2 - Concrete Cofferdam
 
@@ -36,15 +40,15 @@ d = 8 m<br>
 d = 10 m<br>
 d = 12 m
 
-For each depth, show two flow rates: one for a unit width and one for the total pumping rate (assume that the cofferdam is **150** m long in the transverse direction). The total flow rate is shown in the title of the solution plot. Write a paragraph summarizing your observations from the exercise. Put your solution in a Word document.
+For each depth, show two flow rates: one for a unit width and one for the total pumping rate (assume that the cofferdam is **150** m long in the transverse direction). The total flow rate is shown in the title of the solution plot. Write a paragraph summarizing your observations from the exercise. Enter your table and paragraph in Problem 2 of the answer sheet, with a PNG of the solution for d = 8 m.
 
 ## Submission
 
 Put the following files in a zip archive:
 
-- XSLOPE input file and a PNG of the solution for Problem 1
-- XSLOPE input file and a PNG of the solution for Problem 2 (for d = 8 m only)
-- Word document with the table and paragraph for Problem 2
+- XSLOPE input file for Problem 1
+- XSLOPE input file for Problem 2 (for d = 8 m only)
+- The answer sheet, saved as a PDF
 
 Upload the zip archive via Learning Suite.
 

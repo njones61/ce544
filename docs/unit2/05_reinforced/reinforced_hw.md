@@ -8,11 +8,15 @@ The slope is an 8 m fill at 1.25H:1V with a 25 kPa surcharge on the crest. A 0.6
 
 [xslope_geogrid_hw.xlsx](files/xslope_geogrid_hw.xlsx)
 
-Open it in XSLOPE Studio with **File → Open**.
+Record your answers on this answer sheet, which has a section for each part:
+
+[reinforced_hw_answers.docx](files/reinforced_hw_answers.docx)
+
+Open the Excel file in XSLOPE Studio with **File → Open**.
 
 **(a) Slope analysis**
 
-Find the critical factor of safety for the slope without reinforcement, using a circular surface. Run a search from the starting circle in the file, and another with **Grid search** on. Save a PNG of the critical solution.
+Find the critical factor of safety for the slope without reinforcement, using a circular surface. Run a search from the starting circle in the file, and another with **Grid search** on. Enter both factors of safety in part (a) of the answer sheet. Use the **Save…** button above the plot to save a PNG of the critical solution, and paste it there too.
 
 **(b) Reinforcement design**
 
@@ -37,13 +41,13 @@ Your design must satisfy these constraints:
 * The critical factor of safety must be at least 1.5, with **Grid search** on as well as from the starting circle, so a surface that passes behind or under the layers is checked too.
 * The total cost should be as low as you can make it.
 
-The total cost is the cost per meter times the number of layers times the layer length. Record your calculation of the cost and the factor of safety for each design you try in a short table, so the grader can follow how you got to your final design.
+The total cost is the cost per meter times the number of layers times the layer length. Record the cost and the factors of safety for each design you try in the table in part (b) of the answer sheet, so the grader can follow how you got to your final design.
 
-Save the model of your final design and a PNG of its critical solution.
+Save the model of your final design. Enter it in part (b) of the answer sheet, with your cost calculation and a PNG of its critical solution.
 
 ## Submission
 
-Save your final model with **File → Save As**, and use the **Save…** button above the plot to save a PNG of the solution for parts (a) and (b). Put the two PNGs, the model, and your table of designs (a spreadsheet or a PDF) in a single zip archive, and upload it to Learning Suite.
+Save your final model with **File → Save As**, and save the filled-in answer sheet as a PDF. Put the model and the PDF in a single zip archive, and upload it to Learning Suite.
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed

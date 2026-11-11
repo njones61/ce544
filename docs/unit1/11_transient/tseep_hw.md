@@ -4,6 +4,8 @@ In this assignment you will follow a river flood through a levee. Start from the
 
 Starting file: [xslope_levee_full.xlsx](https://xslope.org/en/latest/seep/files/xslope_levee_full.xlsx)
 
+Answer sheet: [tseep_hw_answers.docx](files/tseep_hw_answers.docx)
+
 ![levee.png](../09_xslope_confined/images/levee.png){width="950"}
 
 The river is normally at the ground surface, elevation 10 m. In a flood it rises to 14 m in two days, stays there for four days, and falls back to 10 m over the next four days:
@@ -30,7 +32,7 @@ Build the mesh with linear triangles (tri3), auto-size, 100 divisions.
 
 ## Analysis
 
-Every number in this analysis is one Studio prints: the total flow in the title of a steady solution, and the inflow and outflow in the title of each transient frame. The outflow is the seepage that reaches the land side of the levee.
+Every number in this analysis is one Studio prints: the total flow in the title of a steady solution, and the inflow and outflow in the title of each transient frame. The outflow is the seepage that reaches the land side of the levee. Enter each result, the plot, and each picture in the matching section of the answer sheet; save the pictures with the **Save…** button above the plot.
 
 1. **Steady flood.** Before the transient run, solve a steady model with the river held at the flood stage, 14 m: set the reservoir value to 14 for this run, then set it back to `river`. Record the total flow and save a PNG of the solution.
 2. **Transient flood.** Run the transient analysis. Step through the daily frames and, for each day from 0 to 20, record the river stage and the outflow from the frame title.
@@ -39,7 +41,7 @@ Every number in this analysis is one Studio prints: the total flow in the title 
 
 ## Discussion
 
-Answer these in a short write-up:
+Answer these in the Discussion section of the answer sheet:
 
 - When does the outflow peak, and how close does it come to the steady flood-stage flow? Most of the seepage goes under the levee, through the foundation. Did the flood last long enough for that seepage to reach steady state? Does your day 8 picture say the same about the levee itself?
 - Compare the phreatic surface in your day 8 picture with the one in the steady flood-stage picture. Where is it lower, and why? The head in the foundation, by contrast, is nearly the same in both pictures. Explain the difference between the levee and the foundation using $S_s$, $S_y$, and $k$.
@@ -50,8 +52,7 @@ Answer these in a short write-up:
 Put the following files in a zip archive:
 
 - Your XSLOPE input file
-- PNGs of the steady flood-stage solution and of the transient frames at days 8 and 12
-- An Excel or Word file with your table of outflows, the plot, and your write-up
+- The answer sheet, with your table, plot, pictures, and write-up, saved as a PDF
 
 Upload the zip archive via Learning Suite.
 
