@@ -51,7 +51,7 @@ Delete the tieback rows, keep the soldier piles, and find the factor of safety o
 
 **(e) Searches**
 
-Put both supports back. Run a non-circular search (**Auto search**) from the manual's surface by Spencer's method, and then a circular search with **Grid search** on. Do either of them find a surface more critical than the manual's? Save a PNG of the critical solution from the non-circular search.
+Put both supports back, and in **Run LEM…** set **Method** to **Spencer** and **Analysis** to **Auto search**. Run a non-circular search first, which starts from the manual's surface. Then set **Surface** to **Circular** and turn on **Grid search** for a circular search; the circles table holds a starting circle for it. Does either search find a surface more critical than the manual's? Save a PNG of the critical solution from the non-circular search.
 
 ## Submission
 
