@@ -18,7 +18,7 @@ You can copy the coordinates of the profile lines and the piezometric line from 
 
 4) Turn on **Ignore surficial (skin) failures**, and try a **Min slip depth** of 10, 20, and 30 ft. What does this tell you about the circle you checked by hand?
 
-Solution: [xslope_method_slices_problem.xlsx](files/xslope_method_slices_problem.xlsx). On the spreadsheet circle, F = 1.303 for OMS, 1.576 for Bishop, 1.533 for Janbu, and 1.579 for Spencer. The search finds F = 0.764 on the lower face. With a minimum slip depth, F = 0.768 at 10 ft, 0.828 at 20 ft, and 1.047 at 30 ft.
+Solution: [xslope_method_slices_problem.xlsx](files/xslope_method_slices_problem.xlsx). On the spreadsheet circle, F = 1.303 for OMS, 1.577 for Bishop, 1.534 for Janbu, and 1.580 for Spencer. The search finds F = 0.765 on the lower face. With a minimum slip depth, F = 0.768 at 10 ft, 0.834 at 20 ft, and 1.047 at 30 ft.
 
 ## Problem 2 - Multi-Layer Foundation
 
@@ -30,7 +30,7 @@ Put the toe at (0, 0), and extend the section 60 ft to the left of the toe and 7
 
 2) Turn on **Grid search**, and run it once more. Grid search needs no starting circle.
 
-Solution: [xslope_eight_layers.xlsx](files/xslope_eight_layers.xlsx). F = 1.217 from Depth = 0, and 1.189 from Depth = −17 and from the grid search.
+Solution: [xslope_eight_layers.xlsx](files/xslope_eight_layers.xlsx). F = 1.218 from Depth = 0, and 1.190 from Depth = −17 and from the grid search.
 
 ## Problem 3 - Two Minima
 
@@ -60,7 +60,7 @@ a) Search for the critical circle, starting from Xo = 15, Yo = 30, Depth = −5.
 b) In the **Non-circular pts** editor, press **Generate from the weak zone…**. Run this surface with **Analysis** set to **Single surface** and **Surface** set to non-circular. Look at the points and their **Movement** values first.<br>
 c) Run the same surface with **Auto search**. Where did the points go?
 
-Solution: [xslope_noncircular.xlsx](files/xslope_noncircular.xlsx). F = 1.769 for the critical circle, 2.022 for the surface as generated, and 1.656 after the search.
+Solution: [xslope_noncircular.xlsx](files/xslope_noncircular.xlsx). F = 1.770 for the critical circle, 2.022 for the surface as generated, and 1.656 after the search.
 
 ## Problem 5 - Embankment on Soft Clay
 
@@ -73,7 +73,7 @@ Put the toe at (0, 0).
 a) Search for the critical circle, and note how deep it goes.<br>
 b) Now replace the clay with a constant strength equal to its strength at mid-depth: option `mc`, c = 525 psf, φ = 0. Search again. How much does the factor of safety change, and why? Which way does the error go?
 
-Solution: [xslope_soft_clay.xlsx](files/xslope_soft_clay.xlsx). F = 1.242 with the strength growing with depth, and 1.514 with the constant strength.
+Solution: [xslope_soft_clay.xlsx](files/xslope_soft_clay.xlsx). F = 1.242 with the strength growing with depth, and 1.516 with the constant strength.
 
 ## Problem 6 - A Dipping Base
 
@@ -91,4 +91,4 @@ Put the toe at (0, 0). The two polygons are:
 a) Search for the critical circle, starting from Xo = 25, Yo = 44, Depth = −10.<br>
 b) Turn on **Composite surfaces**, which lets a circle follow the base, and search again. What changed in the shape of the surface?
 
-Solution: [xslope_dipping_base.xlsx](files/xslope_dipping_base.xlsx). F = 1.197 without composite surfaces, and 1.169 with them.
+Solution: [xslope_dipping_base.xlsx](files/xslope_dipping_base.xlsx). F = 1.198 without composite surfaces, and 1.169 with them.

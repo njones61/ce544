@@ -15,7 +15,7 @@ Run the search, and look at the warnings. Then try these variations:
 a) Add a distributed load of 750 psf on the crest, from x = 25 ft to x = 35 ft. Where does the critical circle go?<br>
 b) Remove the load and submerge the slope under 10 ft of water. Add a piezometric line across the section at elevation 30, and leave **Water loads** on `auto`, so XSLOPE derives the water load. The soil's strength is undrained, so its pore pressure stays `none`. Why does the factor of safety rise so much?
 
-Solution: [xslope_simple_embankment.xlsx](files/xslope_simple_embankment.xlsx). F = 1.276 for the base case, 0.918 with the load, and 2.425 submerged.
+Solution: [xslope_simple_embankment.xlsx](files/xslope_simple_embankment.xlsx). F = 1.282 for the base case, 0.919 with the load, and 2.427 submerged.
 
 ## Problem 2 - Simple Slope with Foundation
 
@@ -23,7 +23,7 @@ Put the toe at (0, 0). This time the base is below the toe, so **Max depth** is 
 
 ![foundation.png](images/foundation.png){width="960"}
 
-Solution: [xslope_simple_foundation.xlsx](files/xslope_simple_foundation.xlsx). F = 0.964.
+Solution: [xslope_simple_foundation.xlsx](files/xslope_simple_foundation.xlsx). F = 0.965.
 
 ## Problem 3 - Slope with Multiple Layers
 
@@ -33,7 +33,7 @@ Be careful to find the location of the critical circle.
 
 **Variation:** change the cohesion of the foundation from 800 psf to 500 psf, and then to 400 psf. How does the location of the critical circle change?
 
-Solution: [xslope_simple_mult_layers.xlsx](files/xslope_simple_mult_layers.xlsx). F = 1.244 at 800 psf, 1.135 at 500 psf, and 0.964 at 400 psf.
+Solution: [xslope_simple_mult_layers.xlsx](files/xslope_simple_mult_layers.xlsx). F = 1.245 at 800 psf, 1.137 at 500 psf, and 0.965 at 400 psf.
 
 ## Problem 4 - Tension Cracks
 
@@ -63,4 +63,4 @@ The depth depends on the factor of safety, so guess F, compute the depth, run th
 
 7) Go back to the depth from step 5, and fill the crack by setting **Water in crack** to the same depth. How does the factor of safety compare to the dry crack?
 
-Solutions: [tension_crack_calculations_KEY.xlsx](files/tension_crack_calculations_KEY.xlsx) and [xslope_tension.xlsx](files/xslope_tension.xlsx). F = 1.536 with no crack, 1.398 with a dry crack 7.9 ft deep, 1.484 with a 2 ft crack, and 1.330 with the 7.9 ft crack full of water.
+Solutions: [tension_crack_calculations_KEY.xlsx](files/tension_crack_calculations_KEY.xlsx) and [xslope_tension.xlsx](files/xslope_tension.xlsx). F = 1.538 with no crack, 1.399 with a dry crack 7.9 ft deep, 1.486 with a 2 ft crack, and 1.330 with the 7.9 ft crack full of water.
