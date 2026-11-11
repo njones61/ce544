@@ -8,11 +8,15 @@ There is no water table. The model has been prepared for you, with everything bu
 
 [xslope_soldier_wall.xlsx](files/xslope_soldier_wall.xlsx)
 
+Record your answers on this answer sheet, which has a section for each part:
+
+[soldier_wall_answers.docx](files/soldier_wall_answers.docx)
+
 Open it in XSLOPE Studio with **File → Open**. The non-circular surface table holds the manual's slip surface, a wedge from the toe of the wall at (0, 0) through (37, 33.6) to the ground near (60, 66). To find the factor of safety on that surface, choose **Run LEM…** with **Analysis** set to **Single surface** and **Surface** to **Non-circular**, and keep the model's 60 slices. The dialog runs one **Method** at a time, so each part that asks for Janbu (Corrected) and Spencer takes two runs. SNAILZ analyzes wedges by force equilibrium, so Janbu's method is the closer comparison.
 
 **(a) The cut without support**
 
-What is the factor of safety on the manual's surface by Janbu (Corrected), and by Spencer's method?
+What is the factor of safety on the manual's surface by Janbu (Corrected), and by Spencer's method? Enter your answers in part (a) of the answer sheet.
 
 **(b) The tiebacks**
 
@@ -37,25 +41,25 @@ Add the two rows in the **Reinforcement lines** editor:
 | Lp1 | 0, since the wall holds the head of each tieback: its bearing plate is as strong as the steel, so the full force is available right at the face |
 | Lp2 | the bond length you computed |
 
-Find the factor of safety on the manual's surface again, by Janbu (Corrected) and by Spencer's method. Read the **Log**: what limits the force each row gives the surface?
+Find the factor of safety on the manual's surface again, by Janbu (Corrected) and by Spencer's method. Read the **Log**: what limits the force each row gives the surface? Enter your answers in part (b) of the answer sheet.
 
 **(c) The soldier piles**
 
 Slide2 models the soldier piles as a pile line on the face of the wall that resists 5,900 lb of shear per foot of wall wherever a slip surface crosses it. Add them in the **Piles** editor as one line from (0, 30) to (0, −7), with **H** = 5900, **S** = 1, and **Appl** Active.
 
-Find the factor of safety on the manual's surface by Janbu (Corrected) and by Spencer's method. Slide2 reports F = 1.479 by Janbu (Corrected), and SNAILZ reports 1.52. How do your results compare?
+Find the factor of safety on the manual's surface by Janbu (Corrected) and by Spencer's method. Slide2 reports F = 1.479 by Janbu (Corrected), and SNAILZ reports 1.52. How do your results compare? Enter your answers in part (c) of the answer sheet.
 
 **(d) Which support does more?**
 
-Delete the tieback rows, keep the soldier piles, and find the factor of safety on the manual's surface by Janbu (Corrected). Put a table of F by Janbu (Corrected) for four cases: no support, tiebacks only, soldier piles only, and both. Which support does more for this surface, and why? Try Spencer's method on the soldier piles alone too: what does XSLOPE report?
+Delete the tieback rows, keep the soldier piles, and find the factor of safety on the manual's surface by Janbu (Corrected). With your earlier results, that gives F by Janbu (Corrected) for four cases: no support, tiebacks only, soldier piles only, and both. Which support does more for this surface, and why? Try Spencer's method on the soldier piles alone too: what does XSLOPE report? Enter your answers in part (d) of the answer sheet.
 
 **(e) Searches**
 
-Put both supports back, and in **Run LEM…** set **Method** to **Spencer** and **Analysis** to **Auto search**. Run a non-circular search first, which starts from the manual's surface. Then set **Surface** to **Circular** and turn on **Grid search** for a circular search; the circles table holds a starting circle for it. Does either search find a surface more critical than the manual's? Save a PNG of the critical solution from the non-circular search.
+Put both supports back, and in **Run LEM…** set **Method** to **Spencer** and **Analysis** to **Auto search**. Run a non-circular search first, which starts from the manual's surface. Then set **Surface** to **Circular** and turn on **Grid search** for a circular search; the circles table holds a starting circle for it. Does either search find a surface more critical than the manual's? Use the **Save…** button above the plot to save a PNG of the critical solution from the non-circular search, and paste it into part (e) of the answer sheet with your answers.
 
 ## Submission
 
-Save your model with both supports with **File → Save As**, and use the **Save…** button above the plot to save a PNG of the solution for part (e). Put the PNG, the model, and your answers to the questions (a PDF) in a single zip archive, and upload it to Learning Suite.
+Save your model with both supports with **File → Save As**, and save the filled-in answer sheet as a PDF. Put the model and the PDF in a single zip archive, and upload it to Learning Suite.
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed
