@@ -34,7 +34,7 @@ Add the two rows in the **Reinforcement lines** editor:
 | Type | Tieback |
 | Tmax | the tensile capacity, in lb |
 | Spacing | 8 |
-| Lp1 | 0, since the head plate is as strong as the bar |
+| Lp1 | 0, since the wall holds the head of each tieback: its bearing plate is as strong as the steel, so the full force is available right at the face |
 | Lp2 | the bond length you computed |
 
 Run the manual's surface by both methods. What is the factor of safety? Read the **Log**: what limits the force each row gives the surface?
