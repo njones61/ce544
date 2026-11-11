@@ -1,54 +1,49 @@
 # Homework - Reinforced Slope Design
 
-The following slope is similar to the geogrid problem we solved in class:
+The objective of this assignment is to design geogrid reinforcement for a slope that is both safe and economical. You will choose the number of geogrid layers, their elevations, and their length. Use XSLOPE Studio and Spencer's method.
 
-![hw_slope_fig.gif](images/hw_slope_fig.gif)
+![geogrid_slope.png](images/geogrid_slope.png){width="800"}
 
-The objective of this assignment is to design a reinforced slope using geogrids that is both safe and economical. You 
-will determine the number of geogrid layers, their elevations, and their lengths. Use XSLOPE to perform the slope stability analysis and to design the reinforcement.
+The slope is an 8 m fill at 1.25H:1V with a 25 kPa surcharge on the crest. A 0.6 m zone along the face has some cohesion; the fill behind it has none. The model has been prepared for you, with everything but the reinforcement:
 
-The Excel input for this assignment has been prepared for you:
+[xslope_geogrid_hw.xlsx](files/xslope_geogrid_hw.xlsx)
 
-[xslope_reinforce_hw.xlsx](files/xslope_reinforce_hw.xlsx)
-
-This file contains everything but the reinforcement table.
-
-Use the following XSLOPE Google Colab notebook to perform the analysis and design:
-
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Open it in XSLOPE Studio with **File → Open**.
 
 **(a) Slope analysis**
 
-Solve the problem assuming the slope does not have any reinforcement. Compute the critical factor of safety using a circular failure surface. Save a copy of your solution plot.
+Find the critical factor of safety for the slope without reinforcement, using a circular surface. Run a search from the starting circle in the file, and another with **Grid search** on. Save a PNG of the critical solution.
 
 **(b) Reinforcement design**
 
-Design reinforcement for the slope using layers of geogrids. You can add as many layers as you need (up to the limit of 10) and you can put them at any combination of elevations. Design a length for the layers, but keep each layer the same length in order to simplify the problem. In summary, you will have three basic design parameters:
+Design the reinforcement in the **Reinforcement lines** editor. Each layer is a horizontal line from the slope face into the fill. You can use up to 10 layers at any elevations, but keep every layer the same length, so you have three design variables:
 
-1. Number of layers
-2. Elevations for the layers
-3. Lateral length of the layers.
+1. The number of layers
+2. The elevation of each layer
+3. The length of the layers
 
-Assume the following parameters:
+Use these values for each layer:
 
-| Parameter        | Value      |
-|------------------|------------|
-| Tensile strength | 800 lbs/ft |
-| Pullout length   | 4 ft       |
-| Cost/ft          | $300       |
+| Parameter | Value |
+|-----------|-------|
+| Type | Geosynthetic |
+| Tmax | 12 kN/m |
+| Lp1 and Lp2 | 1.2 m |
+| Spacing | 1 (values per meter of slope) |
+| Cost | $1,000 per meter of layer |
 
-Your objective is to design a reinforcement that satisfies the following constraints:
+Your design must satisfy these constraints:
 
-* Minimize the total cost
-* FS must be >= 1.5
+* The critical factor of safety must be at least 1.5, with **Grid search** on as well as from the starting circle, so a surface that passes behind or under the layers is checked too.
+* The total cost should be as low as you can make it.
 
-The total cost is calculated as the sum of the unit cost multiplied by the number of layers and the layer length. Do your calculations in the reinforcement sheet of the Excel file below the table.
+The total cost is the cost per meter times the number of layers times the layer length. Record your calculation of the cost and the factor of safety for each design you try in a short table, so the grader can follow how you got to your final design.
 
-Save a copy of your solution plot corresponding to your final design. Make sure the table in the reinforcement sheet matches your final design.
+Save the model of your final design and a PNG of its critical solution.
 
 ## Submission
 
-Show all of your calculations inside the Excel input file on the "reinforce" sheet. Add the two plots and the Excel files to a zip archive and upload the archive to Learning Suite. 
+Save your final model with **File → Save As**, and use the **Save…** button above the plot to save a PNG of the solution for parts (a) and (b). Put the two PNGs, the model, and your table of designs (a spreadsheet or a PDF) in a single zip archive, and upload it to Learning Suite.
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed
@@ -62,7 +57,7 @@ Show all of your calculations inside the Excel input file on the "reinforce" she
 
 | Criteria | Points |
 |----------|:------:|
-| Part A: Unreinforced slope FS calculation | 7 |
-| Part B: Reinforcement design meets FS ≥ 1.5 | 9 |
-| Part B: Design is economical (minimized cost) | 9 |
-| Part B: Calculations for costs were done correctly | 5 |
+| Part A: Unreinforced factor of safety, from the starting circle and with Grid search | 7 |
+| Part B: The final design gives F ≥ 1.5, with and without Grid search | 9 |
+| Part B: The design is economical | 9 |
+| Part B: The table of designs and the cost calculation are correct | 5 |

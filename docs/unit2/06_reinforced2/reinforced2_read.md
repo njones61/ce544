@@ -1,4 +1,4 @@
-# Pre-Class: Tieback Walls and Piles
+# Pre-Class: Piles and Walls
 
 !!! note "Under construction"
     This page is coming soon.
