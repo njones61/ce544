@@ -12,7 +12,7 @@ Record your answers on this answer sheet, which has a section for each part:
 
 [soldier_wall_answers.docx](files/soldier_wall_answers.docx)
 
-Open it in XSLOPE Studio with **File → Open**. The non-circular surface table holds the manual's slip surface, a wedge from the toe of the wall at (0, 0) through (37, 33.6) to the ground near (60, 66). To find the factor of safety on that surface, choose **Run LEM…** with **Analysis** set to **Single surface** and **Surface** to **Non-circular**, and keep the model's 60 slices. The dialog runs one **Method** at a time, so each part that asks for Janbu (Corrected) and Spencer takes two runs. SNAILZ analyzes wedges by force equilibrium, so Janbu's method is the closer comparison.
+Open the Excel file in XSLOPE Studio with **File → Open**. The non-circular surface table holds the manual's slip surface, a wedge from the toe of the wall at (0, 0) through (37, 33.6) to the ground near (60, 66). To find the factor of safety on that surface, choose **Run LEM…** with **Analysis** set to **Single surface** and **Surface** to **Non-circular**, and keep the model's 60 slices. The dialog runs one **Method** at a time, so each part that asks for Janbu (Corrected) and Spencer takes two runs. SNAILZ analyzes wedges by force equilibrium, so Janbu's method is the closer comparison.
 
 **(a) The cut without support**
 
