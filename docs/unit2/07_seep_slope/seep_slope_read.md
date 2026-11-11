@@ -1,7 +1,9 @@
 # Pre-Class - Seepage/Slope Stability Integration
 
-Review this section of the XSLOPE documentation:
+So far our stability models have taken their pore pressures from a piezometric line. In this period we take them from a finite element seepage analysis of the same model, and compare the two.
 
-[https://xslope.org/en/latest/seep/seep_slope/index.html](https://xslope.org/en/latest/seep/seep_slope/index.html)
+## Video
 
-Pay close attention to how the files are saved between a seepage analysis and a slope stability analysis. You will need to know how to save the files correctly in order to complete the in-class activity and homework.
+This XSLOPE video solves the seepage through a zoned dam, then runs a stability search that reads those pore pressures through each material's **u** column. It also sets **u** to `none`, to show the factor of safety a search gets when it ignores the seepage.
+
+<iframe width="900" height="700" src="https://www.youtube.com/embed/An-PtHu2cfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
