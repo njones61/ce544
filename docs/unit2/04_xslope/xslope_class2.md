@@ -48,7 +48,7 @@ Put the toe at (0, 0). Extend the foundation 50 ft to the left of the toe, and b
 
 5) Turn on **Grid search**. Then also turn on **Ignore surficial (skin) failures** with a **Min slip depth** of 5 ft. Which of these answers is the one you would design for?
 
-Solution: [xslope_mult_min.xlsx](files/xslope_mult_min.xlsx). F = 1.299 from Depth = 0, the same as the infinite slope, and 1.376 from Depth = −20. One search from both circles reports 1.299. Grid search gives 1.324, and 1.376 with the 5 ft minimum.
+Solution: [xslope_mult_min.xlsx](files/xslope_mult_min.xlsx). F = 1.299 from Depth = 0, the same as the infinite slope, and 1.377 from Depth = −20. One search from both circles reports 1.299. Grid search gives 1.324, and 1.377 with the 5 ft minimum.
 
 ## Problem 4 - A Weak Seam
 
