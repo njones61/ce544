@@ -1,71 +1,61 @@
-# Homework - Tieback Wall
+# Homework - Soldier Pile and Tieback Wall
 
-Pockoski and Duncan (2000) compared eight slope stability programs on a set of reinforced slopes. Their Slope No. 4 is a 44 ft excavation held by a wall with three rows of tiebacks, in layered fill and marine clay. In this homework you will analyze it in XSLOPE Studio and compare your results with theirs. The data are in feet and pounds, as published. Use Spencer's method unless a step says otherwise.
+This wall is the example in the manual for SNAILZ, Caltrans's program for soil nail and tieback walls, and Rocscience reproduces it as problem 49 of the Slide2 verification manual. A 30 ft cut at the toe of a two-layer slope is held by a soldier pile wall with two rows of grouted tiebacks. In this homework you will model both kinds of support in XSLOPE Studio, the tiebacks as reinforcement lines and the soldier piles as a pile line, and compare your results with the two programs. The data are in feet and pounds, as published.
 
-![tieback_wall.png](images/tieback_wall.png){width="850"}
+![soldier_wall.png](images/soldier_wall.png){width="800"}
 
-| Layer | Top (el., ft) | γ (lb/ft³) | c (lb/ft²) | φ (°) |
-|-------|:-------------:|:----------:|:----------:|:-----:|
-| Granular Fill | 113 | 120.4 | 0 | 30 |
-| Cohesive Fill | 109 | 114.7 | 0 | 30 |
-| Organic Silt | 92.5 | 110.2 | 900 | 0 |
-| OC Crust | 86 | 117.8 | 2,485 | 0 |
-| Upper Marine Clay | 82.5 | 117.8 | 1,670 | 0 |
-| Middle Marine Clay | 69 | 117.8 | 960 | 0 |
-| Lower Marine Clay | 39.5 | 117.8 | 1,085 | 0 |
-| Glaciomarine Deposits | 24 | 147.1 | 1,500 | 0 |
+There is no water table. The model has been prepared for you, with everything but the tiebacks and the soldier piles:
 
-The wall is at x = 200 ft. The water table is at the ground in front of the wall (el. 69) and at el. 102.5 behind it. The model has been prepared for you, with everything but the tiebacks, and with a starting circle tangent to the top of the glaciomarine deposits:
+[xslope_soldier_wall.xlsx](files/xslope_soldier_wall.xlsx)
 
-[xslope_tieback_wall.xlsx](files/xslope_tieback_wall.xlsx)
+Open it in XSLOPE Studio with **File → Open**, and run it with **Run LEM…**. The non-circular surface table holds the manual's slip surface, a wedge from the toe of the wall at (0, 0) through (37, 33.6) to the ground near (60, 66). Run it as a **Single surface**, **Non-circular**, by Janbu (Corrected) and by Spencer's method. SNAILZ analyzes wedges by force equilibrium, so Janbu's method is the closer comparison. The model is set to 60 slices.
 
-Open it in XSLOPE Studio with **File → Open**, and run it with **Run LEM…**.
+**(a) The cut without support**
 
-**(a) The excavation without tiebacks**
+What is the factor of safety on the manual's surface by each method?
 
-Run a search from the starting circle. What is the critical factor of safety? Save a PNG of the solution.
+**(b) The tiebacks**
 
-**(b) The capacity of a tieback**
+Each tieback starts at its head on the wall at x = 0 and runs 25° below horizontal. The tiebacks in each row are 8 ft apart along the wall.
 
-Each tieback is a 1.08 in. diameter strand of 270 ksi steel, 48 ft unbonded and 40 ft bonded, and the grout bond allows a pullout of 4 kips per foot of bond. What tensile force can the strand carry, and what pullout force can the bond carry? The smaller is the tieback's capacity, Tmax.
+| Row | Head elevation (ft) | Length (ft) | Tensile capacity (lb) |
+|:---:|:-------------------:|:-----------:|:---------------------:|
+| Upper | 20 | 35 | 120,345 |
+| Lower | 8 | 33 | 164,217 |
 
-**(c) The tiebacks**
+The grout bond develops 13,572 lb per foot of tieback. How long a bond does each tieback need to develop its full tensile capacity? What force per foot of wall can each row give?
 
-Add the three rows in the **Reinforcement lines** editor. Each runs from its head on the wall at x = 200, 20° below horizontal, for 88 ft:
+Add the two rows in the **Reinforcement lines** editor:
 
 | Parameter | Value |
 |-----------|-------|
-| End 1 (the head) | (200, 104), (200, 89), and (200, 74) |
-| End 2 | 88 ft from the head: x = 200 + 88 cos 20°, y = head − 88 sin 20° |
+| End 1 (the head) | (0, 20) and (0, 8) |
+| End 2 | x = L cos 25°, y = head − L sin 25°, where L is the length |
 | Type | Tieback |
-| Tmax | your answer to (b), in lb |
-| Spacing | 4 |
-| Lp1 | 0, so the head holds the full force at the wall |
-| Lp2 | 40, the bond length, along which the grout develops the force |
+| Tmax | the tensile capacity, in lb |
+| Spacing | 8 |
+| Lp1 | 0, since the head plate is as strong as the bar |
+| Lp2 | the bond length you computed |
 
-Search again from the starting circle. What is the factor of safety? Pockoski and Duncan report F = 1.14 by Spencer's method in UTEXAS4 and SLOPE/W and 1.15 in Slide, and give 1.12 to 1.16 as their best estimate. Save a PNG of the solution.
+Run the manual's surface by both methods. What is the factor of safety? Read the **Log**: what limits the force each row gives the surface?
 
-**(d) What the tiebacks do**
+**(c) The soldier piles**
 
-Read the **Log**. Which rows cross the critical circle, and what force does each give it per foot of wall? Compare that with the 40,000 lb per foot of wall a row can hold (Tmax divided by the spacing). Why did the tiebacks raise the factor of safety so little between (a) and (c)?
+Slide2 models the soldier piles as a pile line on the face of the wall that resists 5,900 lb of shear per foot of wall wherever a slip surface crosses it. Add them in the **Piles** editor as one line from (0, 30) to (0, −7), with **H** = 5900, **S** = 1, and **Appl** Active.
 
-**(e) Other methods**
+Run the manual's surface by both methods. Slide2 reports F = 1.479 by Janbu (Corrected), and SNAILZ reports 1.52. How do your results compare?
 
-Put the critical circle from (c) in the **Circles** editor and run it as a **Single surface** by Bishop's method, Morgenstern-Price, and the Ordinary Method of Slices. Pockoski and Duncan report 1.14 to 1.15 by Bishop's method, 1.14 by Morgenstern-Price (SLOPE/W), and 1.12 to 1.13 by the Ordinary Method. How do your results compare?
+**(d) Which support does more?**
 
-**(f) Grid search**
+Delete the tieback rows, keep the soldier piles, and run the manual's surface by Janbu (Corrected). Put a table of F by Janbu (Corrected) for four cases: no support, tiebacks only, soldier piles only, and both. Which support does more for this surface, and why? Try Spencer's method on the soldier piles alone too: what does XSLOPE report?
 
-Turn on **Grid search** and run once more. Does it find anything more critical than your search from the starting circle?
+**(e) Searches**
 
-**(g) Longer tiebacks**
-
-Lengthen the unbonded part of every row to 68 ft and then to 88 ft, keeping the 40 ft bond at the far end, and search again each time. What is the factor of safety for each length, and what does the Log say now about the force each row gives the critical circle? What would you tell the designer?
-
-Save your model from (g) with the 88 ft unbonded length.
+Put both supports back. Run a non-circular search (**Auto search**) from the manual's surface by Spencer's method, and then a circular search with **Grid search** on. Do either of them find a surface more critical than the manual's? Save a PNG of the critical solution from the non-circular search.
 
 ## Submission
 
-Save your model with **File → Save As**, and use the **Save…** button above the plot to save a PNG of the solutions for parts (a) and (c). Put the two PNGs, the model, and your answers to the questions (a PDF) in a single zip archive, and upload it to Learning Suite.
+Save your model with both supports with **File → Save As**, and use the **Save…** button above the plot to save a PNG of the solution for part (e). Put the PNG, the model, and your answers to the questions (a PDF) in a single zip archive, and upload it to Learning Suite.
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed
@@ -79,12 +69,10 @@ Save your model with **File → Save As**, and use the **Save…** button above 
 
 | Criteria | Points |
 |----------|:------:|
-| Part A: Factor of safety without tiebacks | 3 |
-| Part B: Strand and bond capacities, and Tmax | 4 |
-| Part C: Factor of safety with the tiebacks, compared with the published values | 6 |
-| Part D: The force each row gives the critical circle, and why the tiebacks help so little | 6 |
-| Part E: The other methods, compared with the published values | 4 |
-| Part F: Grid search | 2 |
-| Part G: Longer tiebacks, and the recommendation | 5 |
+| Part A: Factor of safety without support, by both methods | 3 |
+| Part B: Bond lengths, force per foot of wall, F with the tiebacks, and what limits each row | 8 |
+| Part C: F with both supports, compared with Slide2 and SNAILZ | 6 |
+| Part D: The table of four cases, which support does more, and Spencer on the piles alone | 7 |
+| Part E: Both searches, and whether either finds a more critical surface | 6 |
 
-Source: Pockoski, M., and Duncan, J. M. (2000). *Comparison of Computer Programs for Analysis of Reinforced Slopes.* Center for Geotechnical Practice and Research, Virginia Tech, Blacksburg, VA. Slope No. 4.
+Sources: California Department of Transportation (Caltrans). *SNAIL / SNAILZ Program for Soil-Nailed Wall Analysis, Reference Manual*. Caltrans, Sacramento. Rocscience Inc. [*Slide2 Slope Stability Verification Manual*](https://www.rocscience.com/help/slide2/verification-theory/verification-manuals), problem 49.
