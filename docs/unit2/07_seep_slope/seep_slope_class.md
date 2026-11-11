@@ -38,7 +38,7 @@ Solution: [xslope_spreadsheet_slope_SEEP_solution.xlsx](files/xslope_spreadsheet
 
 ## Problem 2 - The Earth Dam
 
-This is the dam you analyzed with a piezometric line in Problem 1 of the [XSLOPE LEM, Part 2](../04_xslope/xslope_hw2.md) homework, Example 2 in Section 6.13.6 of the textbook (pp. 121–123, Figs. 6.41 to 6.43). Under this dam, the foundation sand carries water from the reservoir to the downstream side, where it has to come up through the clay to get out. A single piezometric line can't represent that.
+This dam is Example 2 in Section 6.13.6 of the textbook (pp. 121–123, Figs. 6.41 to 6.43), the one you analyzed with a piezometric line in Problem 1 of the [XSLOPE LEM, Part 2](../04_xslope/xslope_hw2.md) homework. The book uses it because a piezometric line and a seepage analysis give very different answers for it.
 
 ![earth_dam.png](../04_xslope/images/earth_dam.png){width="950"}
 
@@ -48,7 +48,7 @@ Open this file, the model of the downstream side from that homework, with the pi
 
 ### Part a - Piezometric line
 
-Run an **Auto search** by Spencer's method. Note the factor of safety and how deep the critical circle goes.
+Run an **Auto search** by Spencer's method, and note the factor of safety and where the critical circle is.
 
 ### Part b - Seepage analysis
 
@@ -63,22 +63,16 @@ Run an **Auto search** by Spencer's method. Note the factor of safety and how de
     | Clay | 1 × 10⁻⁵ | 0 | 0.001 | −5 |
     | Sand | 1 × 10⁻³ | 0 | 0.001 | −5 |
 
-    h0 is −5 ft here instead of the −1 you have used before. The change from saturated to unsaturated conductivity has to spread over about one element, and on a dam this size, at the default mesh, −1 is too sharp for the seepage solution to converge.
+    h0 is −5 ft here instead of the −1 you have used before, because on a dam this size −1 is too sharp for the seepage solution to converge at the default mesh.
 
 3. Switch to **Seepage** mode. In **Seep BC**, give the reservoir a specified head of 302 ft, on the upstream ground and face from (−150, 227) through (0, 227) to (225, 302). Give the ground beyond the downstream toe, from (590, 227) to (740, 227), a specified head of 227 ft, for tailwater at the ground surface. Make the downstream face, from (320, 317) to (590, 227), an exit face. Leave the two side edges and the base with no boundary condition, so no water crosses them.
 
 4. Build the mesh with the default settings, and run the seepage analysis. Look at the head contours under the downstream toe. Is the head in the sand higher or lower than the ground surface there? Which way is the water flowing through the clay?
 
-5. Switch to **LEM** mode, and run the **Auto search** by Spencer's method again. What does it find?
-
-6. Turn on **Grid search** and run it again.
-
-7. Turn **Grid search** off, turn on **Ignore surficial (skin) failures**, and run the search with a **Min slip depth** of 10, 20, and 30 ft. Compare these factors of safety with part a.
+5. Switch to **LEM** mode, and run the **Auto search** by Spencer's method again. Where is the critical surface now, and why?
 
 Solution: [xslope_earth_dam_down_SEEP_solution.xlsx](files/xslope_earth_dam_down_SEEP_solution.xlsx).
 
-With the piezometric line, the search finds F = 1.558 on a circle tangent to el. 197, the bottom of the clay. The book gets 1.57.
+With the piezometric line, the search finds F = 1.558 on a deep circle that reaches the bottom of the clay. With the seepage solution, it goes straight to the downstream toe and finds F = 0.12: a blowout at the toe.
 
-In the seepage solution, the head in the sand under the downstream toe is about 240.6 ft, 13.6 ft above the ground, and it falls to 235.7 ft at el. 208, in the clay, so water is flowing up through the clay to the toe. At el. 208 the pore pressure is 27 ft of water, against 19 ft below a piezometric line at the ground.
-
-With those pore pressures, the search from the starting circles shrinks to a sliver less than a foot long at the toe, with F = 0.121: the water coming up leaves almost no effective stress right at the surface. Grid search finds 1.099 on a slough about 18 ft long at the toe, close to the book's 1.11 for shallow circles there. With a minimum slip depth of 10, 20, and 30 ft, F = 1.230, 1.296, and 1.320. The deepest of these is 15% below the 1.558 from the piezometric line. The book finds 1.37 for circles tangent to el. 197 with seepage, against 1.57 with the line.
+The seepage solution shows why. Water from the reservoir flows through the sand under the dam and has to come up through the clay at the toe. Under the toe, the head in the sand is about 240.6 ft, 13.6 ft above the ground, and at el. 208, in the clay, the pore pressure is 27 ft of water, against 19 ft below a piezometric line at the ground. At the surface, that upward flow leaves the soil with almost no effective stress. A piezometric line can't represent water flowing upward, so it misses the blowout. The book shows that the line overstates the factor of safety on deeper circles too: for circles that reach the bottom of the clay, it gets 1.57 with the line and 1.37 with the seepage.
