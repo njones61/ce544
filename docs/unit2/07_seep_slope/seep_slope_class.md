@@ -4,11 +4,11 @@ In this exercise you will go back to two slopes you have already solved with a p
 
 ## Problem 1 - The Spreadsheet Slope
 
-This is the slope from the spreadsheet exercises and period 17, with the same soils and the same piezometric line.
+This is the slope you solved by hand in the method of slices spreadsheets ([Ordinary Method of Slices](../02_limiteq1/limiteq1_class.md), [Janbu and Bishop](../03_limiteq2/limiteq2_class.md), and [Spencer](../03_limiteq2/limiteq2_hw.md)) and in XSLOPE in Problem 1 of [Stability Analysis with XSLOPE, Part 2](../04_xslope/xslope_class2.md), with the same soils and the same piezometric line.
 
 ![class_slope.png](../04_xslope/images/class_slope.png){width="950"}
 
-Open this file in XSLOPE Studio with **File → Open**. It is the period 17 model, with the piezometric line and the spreadsheet circle:
+Open this file in XSLOPE Studio with **File → Open**. It is the solution model from that XSLOPE exercise, with the piezometric line and the spreadsheet circle:
 
 [xslope_spreadsheet_slope.xlsx](files/xslope_spreadsheet_slope.xlsx)
 
@@ -34,15 +34,15 @@ Run Spencer's method twice: once with **Analysis** set to **Single surface**, on
 
 5. Switch to **LEM** mode, and run the spreadsheet circle and the search again. How do the factors of safety compare with part a, and why?
 
-Solution: [xslope_spreadsheet_slope_SEEP_solution.xlsx](files/xslope_spreadsheet_slope_SEEP_solution.xlsx). On the spreadsheet circle, F = 1.580 with the piezometric line and 1.726 with the seepage solution. The search finds 0.765 with the line, on the lower face, and 0.972 with the seepage, on a longer surface from just behind the crest (x = 146) to the toe. The seepage solution's phreatic surface meets the face at el. 46, 6 ft below the piezometric line, so the line was conservative here. With either one, the lower face is unstable, because it is steeper than the friction angle of soil 2 and water comes out of it.
+Solution: [xslope_spreadsheet_slope_SEEP_solution.xlsx](files/xslope_spreadsheet_slope_SEEP_solution.xlsx). On the spreadsheet circle, F = 1.580 with the piezometric line and 1.726 with the seepage solution. The search finds 0.765 with the line, on the lower face, and 0.972 with the seepage, on a longer surface from just behind the crest (x = 146) to the toe. The seepage solution's phreatic surface meets the face at el. 46, 6 ft below the piezometric line, so the line was conservative here. Dry, the same search finds 1.133, so the water is what takes this slope below 1, and the higher water of the piezometric line takes it further.
 
 ## Problem 2 - The Earth Dam
 
-This is the dam from the period 17 homework, Example 2 in Section 6.13.6 of the textbook (pp. 121–123, Figs. 6.41 to 6.43). In period 17 you found its factor of safety with a piezometric line. Under this dam, the foundation sand carries water from the reservoir to the downstream side, where it has to come up through the clay to get out. A single piezometric line can't represent that.
+This is the dam you analyzed with a piezometric line in Problem 1 of the [XSLOPE LEM, Part 2](../04_xslope/xslope_hw2.md) homework, Example 2 in Section 6.13.6 of the textbook (pp. 121–123, Figs. 6.41 to 6.43). Under this dam, the foundation sand carries water from the reservoir to the downstream side, where it has to come up through the clay to get out. A single piezometric line can't represent that.
 
 ![earth_dam.png](../04_xslope/images/earth_dam.png){width="950"}
 
-Open this file, the period 17 model of the downstream side, with the piezometric line and two starting circles:
+Open this file, the model of the downstream side from that homework, with the piezometric line and two starting circles:
 
 [xslope_earth_dam_down.xlsx](files/xslope_earth_dam_down.xlsx)
 

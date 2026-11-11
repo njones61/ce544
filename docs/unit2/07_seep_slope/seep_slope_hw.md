@@ -55,7 +55,7 @@ Enter your answers in part (c) of the answer sheet.
 
 **(d) Why they agree**
 
-In class, the piezometric line and the seepage analysis gave very different factors of safety for the earth dam. Why do they agree for this slope? Think about which way the water flows beneath the toe in each case.
+In Problem 2 of the [in-class exercise](seep_slope_class.md), the piezometric line and the seepage analysis gave very different factors of safety for the earth dam. Why do they agree for this slope? Think about which way the water flows beneath the toe in each case.
 
 Enter your answer in part (d) of the answer sheet.
 
