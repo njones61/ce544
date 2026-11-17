@@ -61,7 +61,7 @@ It is the solution model from Problem 2 of the seepage/slope stability exercise,
 
 ## Part b - A transient seepage run
 
-Set 2 describes the dam long after the drawdown, once the pore pressures inside have come into equilibrium with the lowered pool. In this part the pool falls at 1 ft/day, and stage 2 reads the pore pressures on the day it reaches El. 250.
+Set 2 describes the dam long after the drawdown, once it has finished draining and the water inside has settled to the lowered pool. In this part the pool falls at 1 ft/day, and stage 2 reads the pore pressures on the day it reaches El. 250.
 
 1. Save the model under a new name. Open **Seep BC**, and on the **Set 2 (rapid drawdown)** tab remove both heads and the exit face's points. The schedule below gives the lowered pool, so Set 2 isn't needed.
 
@@ -77,7 +77,7 @@ Set 2 describes the dam long after the drawdown, once the pore pressures inside 
 
 3. Open **Seep BC**, select Head 1 on Set 1, set its **Type** to `reservoir`, and type `pool` in place of its head value. The reservoir boundary now follows the schedule.
 
-4. Click **Run → Run Seep…**, set **Run type** to **Transient (time-dependent)**, and click **Run**. On the **Seep · Transient** tab, step to t = 57 and compare the frame with the steady **Seep · Solution 2** from part a. Where is the water still higher than it would be at equilibrium?
+4. Click **Run → Run Seep…**, set **Run type** to **Transient (time-dependent)**, and click **Run**. On the **Seep · Transient** tab, step to t = 57 and compare the frame with the steady **Seep · Solution 2** from part a. Where is the water still higher than in Solution 2?
 
 5. Switch to **LEM** mode and run **Run → Run LEM…** again, with the same settings as part a. The dialog now shows the two stage times. Which stage governs? How does the factor of safety compare with part a's two results, the full pool and the two steady solutions, and why is it lower than the two steady solutions give?
 
@@ -97,7 +97,7 @@ The critical circle starts on the upstream face just above the toe (x = 3), runs
 
 With **Rapid drawdown** unticked, the dam at full pool has F = 1.904, on a shallower circle from x = −8 to x = 284. Stage 1's 2.281 is higher because it is computed on the drawdown's critical circle, not this one. The drawdown takes the factor of safety from 1.90 to 1.23. It removes the water that pressed on the upstream face, while the core and the clay keep the strength the full pool gave them.
 
-**Part b.** At t = 57 the upstream shell has nearly followed the pool: its head at (150, 240) is 255.5 ft, against 249.9 ft in Solution 2. The clay and the sand under the upstream slope have lost about two-thirds of their excess head: 260 to 262 ft, against 245 to 248 ft at equilibrium. The sand is pervious, but the clay seals it from the reservoir, so its head can come down only as fast as the clay lets its water out. The core hasn't moved, at 279 ft in the middle, the same as at full pool, against 240 ft in Solution 2.
+**Part b.** The water in the upstream shell has nearly followed the pool down: its head at (150, 240) is 255.5 ft, about 6 ft above the 249.9 ft it settles at once the dam has finished draining (Solution 2). The clay and the sand under the upstream slope have come about two-thirds of the way down, from 286 to 294 ft at full pool to 260 to 262 ft, against the 245 to 248 ft they settle at. The sand is pervious, but the clay seals it from the reservoir, so its head can come down only as fast as the clay lets its water out. The core hasn't moved: 279 ft in the middle, as at full pool, against 240 ft in Solution 2.
 
 The search finds F = 1.165:
 
@@ -109,4 +109,4 @@ The search finds F = 1.165:
 
 The circle is nearly the same, from x = −17 on the ground in front of the toe to x = 330, along the bottom of the clay. Stage 2 is about the same as in part a, because it sets the strengths of the core and the clay from the stage 1 stresses, and their pore pressures at t = 57 don't enter it. Stage 3 checks the drained strength at those pore pressures. With the clay and the core still holding much of the full pool's head, the drained strength came out lower than the undrained strength on 13 of the 26 clay slices, along the upstream half of the circle, and on 6 of the 9 core slices.
 
-Across the three runs, the factor of safety goes from 1.904 at full pool to 1.228 with the two steady solutions and 1.165 with the transient run. The two steady solutions assume the pore pressures inside the dam have come into equilibrium with the lowered pool. At 1 ft/day the clay, the sand, and the core haven't, and the transient run gives the pore pressures they actually have on the day the pool reaches El. 250.
+Across the three runs, the factor of safety goes from 1.904 at full pool to 1.228 with the two steady solutions and 1.165 with the transient run. The second steady solution assumes the dam has finished draining by the time the pool reaches El. 250. At 1 ft/day the clay, the sand, and the core haven't, and the transient run gives the pore pressures they actually have on the day the pool reaches El. 250.
