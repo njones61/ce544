@@ -1,6 +1,6 @@
 # Homework - Rapid Drawdown Analysis
 
-Pilarcitos Dam is a homogeneous earthfill dam that slid on its upstream face when its reservoir was drawn down. Duncan, Wright, and Wong (1990) used it, with Walter Bouldin Dam, to test the three-stage method from the lecture, and computed F = 1.05 for the drawdown. Rocscience reproduces their analysis as problem 97 of the Slide2 verification manual. In this homework you will repeat it in XSLOPE Studio. The section is the upstream half of the dam, on a rigid base, with elevations measured from the base. The reservoir is drawn down from El. 72 to El. 37.
+Pilarcitos Dam is a homogeneous earthfill dam that slid on its upstream face when its reservoir was drawn down. Duncan, Wright, and Wong (1990) used it, with Walter Bouldin Dam, to test the three-stage method from the lecture, and computed F = 1.05 for the drawdown. Rocscience reproduces their analysis as problem 97 of the Slide2 verification manual. In this homework you will repeat it in XSLOPE Studio. The paper gives only the dam's upstream slope and crest, so the section ends partway across the crest, at x = 240. The slide was on the upstream face, well clear of that cut. The section sits on a rigid base, with elevations measured from the base, and the reservoir is drawn down from El. 72 to El. 37.
 
 ![pilarcitos.png](images/pilarcitos.png){width="880"}
 
