@@ -18,7 +18,18 @@ Enter $d$ and $\psi$, to one decimal place, and your calculation in part (a) of 
 
 **(b) The drawdown analysis**
 
-Start with **File → New** in **LEM** mode, and build the section shown above. The ground runs from the upstream toe at (0, 0) up a 2.5:1 face to (145, 58), up a 3:1 face to the edge of the crest at (205, 78), and along the crest to (240, 78), over a rigid base at El. 0 (**Max depth** = 0). The dam is one material:
+Start with **File → New** in **LEM** mode, and build the section shown above. Each table of points below is laid out like Studio's editors, x then y, so you can copy its values and paste them in.
+
+The dam is one material, so its section is one profile line, from the upstream toe up the 2.5:1 and 3:1 faces and along the crest, over a rigid base at El. 0 (**Max depth** = 0):
+
+| x | y |
+|:---:|:---:|
+| 0 | 0 |
+| 145 | 58 |
+| 205 | 78 |
+| 240 | 78 |
+
+The material:
 
 | Parameter | Value |
 |-----------|-------|
@@ -28,12 +39,19 @@ Start with **File → New** in **LEM** mode, and build the section shown above. 
 | d and ψ | from part (a) |
 | u | `piezo` |
 
-Enter the two piezometric lines, each across the whole section:
+Enter the two piezometric lines, each across the whole section. *Line 1*, the full pool:
 
-| Line | Points (x, y) |
-|------|---------------|
-| Line 1, full pool | (0, 72), (240, 72) |
-| Line 2 (rapid drawdown), after the drawdown | (0, 37), (240, 37) |
+| x | y |
+|:---:|:---:|
+| 0 | 72 |
+| 240 | 72 |
+
+*Line 2 (rapid drawdown)*, after the drawdown:
+
+| x | y |
+|:---:|:---:|
+| 0 | 37 |
+| 240 | 37 |
 
 Leave **Water loads** on `auto` in **Global parameters**, so that XSLOPE makes the reservoir's load on the face from each line. Add a starting circle with Xo = 90, Yo = 95, and Depth = 20.
 
@@ -49,7 +67,7 @@ Enter your answer in part (c) of the answer sheet.
 
 **(d) A drained analysis at the low pool**
 
-Save the model under a new name. In **Piezometric lines**, move Line 1 down to El. 37, at (0, 37) and (240, 37), and remove Line 2's points. Untick **Rapid drawdown** and run the same search. This is a drained analysis at the low pool: it assumes that the water in the dam came down with the pool. What is the factor of safety? Compare it with part (b). The dam slid. Which analysis agrees with that, and why does the other one miss it?
+Save the model under a new name. In **Piezometric lines**, give Line 1 the points of Line 2 (paste Line 2's table from part (b)), and remove Line 2's points. Untick **Rapid drawdown** and run the same search. This is a drained analysis at the low pool: it assumes that the water in the dam came down with the pool. What is the factor of safety? Compare it with part (b). The dam slid. Which analysis agrees with that, and why does the other one miss it?
 
 Enter your answers in part (d) of the answer sheet.
 
