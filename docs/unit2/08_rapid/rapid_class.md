@@ -1,93 +1,114 @@
 # Exercise - Rapid Drawdown Analysis with XSLOPE
 
-In this exercise, we will perform a rapid drawdown analysis on the Johnson Reservoir dam using XSLOPE. Rapid drawdown analysis requires a three-stage process that accounts for the change in pore pressures and strengths when the water level in a reservoir is lowered rapidly. For details on the methodology, see:
+In this exercise you will run a rapid drawdown analysis on the upstream side of the earth dam from Problem 1 of the [XSLOPE LEM, Part 2](../04_xslope/xslope_hw2.md) homework, where you analyzed both sides with a piezometric line, and from Problem 2 of the [seepage/slope stability exercise](../07_seep_slope/seep_slope_class.md), where you gave its downstream side a seepage analysis. The reservoir is drawn down from El. 302 to El. 250. You will describe the water before and after the drawdown two ways, first with two steady seepage solutions and then with a transient seepage run, and compare the factors of safety. For the details of the method, see the [XSLOPE rapid drawdown documentation](https://xslope.org/en/latest/lem/rapid/){:target="_blank"}.
 
-[XSLOPE Rapid Drawdown Documentation](https://xslope.org/en/latest/lem/rapid/){:target="_blank"}
+![earth_dam_pools.png](images/earth_dam_pools.png){width="950"}
 
-We will use the Johnson Reservoir dam for this exercise:
+Open this file in XSLOPE Studio with **File → Open**:
 
-![johnson_res.png](../../unit1/10_xslope_unconfined/images/johnson_res.png){width="900"}
+[xslope_earth_dam_up.xlsx](files/xslope_earth_dam_up.xlsx)
 
-## Step 1 - Prepare the Input File
+It is the solution model from Problem 2 of the seepage/slope stability exercise, set up for the upstream side:
 
-Start with the following Excel input template that has been set up for a normal LEM analysis of the Johnson Reservoir dam. You can download the template here:
+- The two starting circles are on the upstream side.
+- The piezometric line is gone, since the seepage solutions replace it.
+- The conductivities are in ft/day instead of ft/min, so the drawdown schedule in part b can be in days.
+- The materials have the storage properties that the transient run in part b needs.
+- **Seep BC** Set 1 is the full pool from that exercise, with the reservoir at El. 302 and tailwater at the ground beyond the downstream toe.
 
-[xslope_johnson_rapid_start.xlsx](files/xslope_johnson_rapid_start.xlsx)
+## Part a - Two steady seepage solutions
 
-The template includes the geometry of the dam, the profile lines, and the materials. It also includes a set of seepage boundary conditions for a normal LEM analysis (not rapid drawdown). We will modify the template to set up the rapid drawdown analysis.
+1. In the **Materials** editor, enter the $K_c = 1$ envelopes of the two materials that don't drain during the drawdown:
 
-### Materials
+    | Material | d (psf) | ψ (deg) |
+    |:--------:|:-------:|:-------:|
+    | Core | 300 | 20 |
+    | Clay | 100 | 18 |
 
-The material properties are as follows. Note the addition of the $d$ and $\psi$ parameters for the shell and core materials. These are the undrained strength parameters used for the rapid drawdown analysis. Enter the $d$ and $\psi$ parameters shown below for the Core and Foundation. The shell material is assumed to be freely draining, so $d$ and $\psi$ are left blank.
+    Leave **d** and **psi** at 0 for the shell and the sand, which declares them free-draining. Compare their conductivities with those of the core and the clay. Why can they be treated that way?
 
-| Material   | $\gamma$ (pcf) | Option | c' (psf) | $\phi'$ (deg) | d (psf) | $\psi$ (deg) |
-|:----------:|:-------:|:------:|:-------:|:-------:|:-------:|:-------:|
-| Shell      | 130     | mc     | 100     | 35      |         |         |
-| Core       | 125     | mc     | 400     | 18      | 500     | 12      |
-| Foundation | 127     | mc     | 100     | 27      |  250       |    20     |
+2. Switch to **Seepage** mode and open **Seep BC**. On the **Set 2 (rapid drawdown)** tab, press **Add head** twice, and describe the dam after the drawdown with the same three boundaries Set 1 has, with the reservoir at El. 250:
 
-Make sure the pore pressure option ($u$) for each material is set to `seep` since we will be using seepage-derived pore pressures.
+    | Boundary | Value | Points (x, y) |
+    |----------|:-----:|---------------|
+    | Head 1, the lowered pool | 250 ft | (−150, 227), (0, 227), (69, 250) |
+    | Head 2, the tailwater | 227 ft | (590, 227), (740, 227) |
+    | Exit face | | (320, 317), (590, 227) |
 
-Verify that the seepage properties are set up for all 3 materials. They should match the following:
+3. Build the mesh with the default settings, and click **Run → Run Seep…**. Because the file has two boundary sets, one steady run solves both: **Seep · Solution** is the full pool, and **Seep · Solution 2** is the lowered pool. Compare the two phreatic surfaces.
 
-| Material   | k1  | k2  | alpha | kr0  | h0 |
-|:----------:|:---:|:---:|:-----:|:----:|:--:|
-| Shell      | 1   | 1   | 0     | 0.0001 | -1 |
-| Core       | 0.001 | 0.001 | 0  | 0.0001 | -1 |
-| Foundation | 0.1 | 0.1 | 0     | 0.0001 | -1 |
+4. Switch to **LEM** mode, and click **Run → Run LEM…**. Leave **Method** on Spencer, **Analysis** on **Auto search**, and **Number of slices** at 40, and tick **Rapid drawdown**. When the search converges, the Log gives the factor of safety of each stage on the critical circle. Which stage governs, and where is the critical circle?
 
+5. Run it again with **Rapid drawdown** unticked. This run reads only Set 1's solution, with drained strengths throughout: it is the dam at full pool, before the drawdown. How much of the factor of safety does the drawdown take away?
 
-### Circles
+6. Save the model with **File → Save As**.
 
-Set up one or more starting circles for the upstream side of the dam (the side affected by rapid drawdown). The one in the starting template is a good option. 
+## Part b - A transient seepage run
 
-### Distributed Loads
+Set 2 describes the dam long after the drawdown, once the pore pressures inside have come into equilibrium with the lowered pool. In this part the pool falls at 1 ft/day, and stage 2 reads the pore pressures on the day it reaches El. 250.
 
-On the **dloads** sheet, set up **two** sets of distributed loads corresponding to the two pool levels. The distributed loads represent the hydrostatic pressure from the water on the upstream face of the dam.
+1. Save the model under a new name. Open **Seep BC**, and on the **Set 2 (rapid drawdown)** tab remove both heads and the exit face's points. The schedule below gives the lowered pool, so Set 2 isn't needed.
 
-**Solution 1 - Full Pool:** Calculate the distributed load for water at the full pool level (El. 160 ft). (This should already be set up for you.
-)
+2. In **Seepage** mode, click **Transient** in the Inputs dock. Rename the first series `pool`, and enter the schedule: full pool for 5 days, then 52 ft of drawdown over 52 days.
 
-**Solution 2 - Lowered Pool:** Calculate the distributed load for water at the lowered pool level (El. 110 ft).
+    | time (day) | pool |
+    |:----:|:----:|
+    | 0 | 302 |
+    | 5 | 302 |
+    | 57 | 250 |
 
-### Seepage Boundary Conditions
+    Set **Duration** to 400 days and **Save interval** to 100 days. Set **Stage 1 time** to 0, the full pool, and **Stage 2 time** to 57, the day the pool reaches El. 250.
 
-On the **seep bc** sheet, set up **two** sets of seepage boundary conditions -- one for pre-drawdown (full pool) conditions and one for post-drawdown (lowered pool) conditions. XSLOPE supports two solutions on the seep bc sheet for this purpose.
+3. Open **Seep BC**, select Head 1 on Set 1, set its **Type** to `reservoir`, and type `pool` in place of its head value. The reservoir boundary now follows the schedule.
 
-**Solution 1 - Full Pool (Pre-Drawdown):**
+4. Click **Run → Run Seep…**, set **Run type** to **Transient (time-dependent)**, and click **Run**. On the **Seep · Transient** tab, step to t = 57 and compare the frame with the steady **Seep · Solution 2** from part a. Where is the water still higher than it would be at equilibrium?
 
-- Upstream specified head: H = 160 ft (full pool level)
-- Downstream specified head: H = 100 ft (free drainage at the downstream toe)
-- Exit face on downstream slope
+5. Switch to **LEM** mode and run **Run → Run LEM…** again, with the same settings as part a. The dialog now shows the two stage times. Which stage governs, and how does the factor of safety compare with part a?
 
-This should already be set up for you.
+## Part c - Compare
 
-**Solution 2 - Lowered Pool (Post-Drawdown):**
+Fill in this table, and explain the differences.
 
-- Upstream specified head: H = 110 ft (lowered pool level)
-- Downstream specified head: H = 100 ft (free drainage at the downstream toe)
-- Exit face on downstream slope
+| Analysis | Factor of safety | Governing stage |
+|----------|:----------------:|:---------------:|
+| Full pool, drained (part a, step 5) | | |
+| Rapid drawdown, two steady solutions (part a) | | |
+| Rapid drawdown, transient (part b) | | |
 
-## Step 2 - Run the Seepage Analysis
+Solutions: [xslope_earth_dam_up_STEADY_solution.xlsx](files/xslope_earth_dam_up_STEADY_solution.xlsx) and [xslope_earth_dam_up_TRANSIENT_solution.xlsx](files/xslope_earth_dam_up_TRANSIENT_solution.xlsx).
 
-Upload your Excel input file to the XSLOPE seepage notebook and run the analysis. The notebook will generate two seepage solutions -- one for each set of boundary conditions. Use base_mat=3 when plotting the seepage solutions to focus the flow net cells on the foundation material. 
+**Part a.** The shell (14.4 ft/day) and the sand (1.44 ft/day) are 100 to 10,000 times more pervious than the clay (0.0144 ft/day) and the core (0.00144 ft/day). Any pore pressure that shearing generates in them drains away as fast as it is generated, so they keep their drained strengths, computed with the pore pressures the seepage solution gives them in each stage. The full-pool solution carries 3.22 ft³/day per ft and the lowered pool 0.943.
 
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+With **Rapid drawdown** ticked, the search finds F = 1.228:
 
-After the seepage analysis completes, download the resulting zip archive. The archive contains the Excel input file, the mesh file, and both seepage solutions.
+| Stage | F |
+|:-----:|:-:|
+| 1, full pool, drained | 2.281 |
+| 2, drawn down, undrained | 1.234 |
+| 3, drawn down, drained | **1.228** |
 
-## Step 3 - Run the Rapid Drawdown Analysis
+The critical circle starts on the upstream face just above the toe (x = 3), runs along the bottom of the clay (el. 197), and comes out on the downstream face just past the crest (x = 331). Stage 3 governs, but only just. On two core slices near the crest the drained strength came out lower than the undrained strength and replaced it. Of the circle's 39 slices, 26 have their bases in the clay, 9 in the core, and 4 in the shell.
 
-Upload the zip archive from Step 2 to the XSLOPE LEM notebook. The notebook will automatically detect the two seepage solutions and use them for the three-stage rapid drawdown analysis.
+With **Rapid drawdown** unticked, the dam at full pool has F = 1.904, on a shallower circle from x = −8 to x = 284. Stage 1's 2.281 is higher because it is computed on the drawdown's critical circle, not this one. The drawdown takes the factor of safety from 1.90 to 1.23. It removes the water that pressed on the upstream face, while the core and the clay keep the strength the full pool gave them.
 
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+**Part b.** At t = 57 the upstream shell has nearly followed the pool: its head at (150, 240) is 255.5 ft, against 249.9 ft in Solution 2. The clay and the sand under the upstream slope have lost about two-thirds of their excess head: 260 to 262 ft, against 245 to 248 ft at equilibrium. The sand is pervious, but the clay seals it from the reservoir, so its head can come down only as fast as the clay lets its water out. The core hasn't moved, at 279 ft in the middle, the same as at full pool, against 240 ft in Solution 2.
 
-Review the results. The notebook will report factors of safety for each stage of the rapid drawdown analysis:
+The search finds F = 1.165:
 
-- **Stage 1:** Pre-drawdown stability using drained strengths and full pool pore pressures
-- **Stage 2:** Post-drawdown stability using interpolated undrained strengths
-- **Stage 3:** Post-drawdown stability check using drained strengths
+| Stage | F |
+|:-----:|:-:|
+| 1, full pool, drained | 2.199 |
+| 2, drawn down, undrained | 1.248 |
+| 3, drawn down, drained | **1.165** |
 
-The critical factor of safety for rapid drawdown is the minimum of Stages 2 and 3.
+The circle is nearly the same, from x = −17 on the ground in front of the toe to x = 330, along the bottom of the clay. Stage 2 is about the same as in part a, because it sets the strengths of the core and the clay from the stage 1 stresses, and their pore pressures at t = 57 don't enter it. Stage 3 checks the drained strength at those pore pressures. With the clay and the core still holding much of the full pool's head, the drained strength came out lower than the undrained strength on 13 of the 26 clay slices, along the upstream half of the circle, and on 6 of the 9 core slices.
 
-Solution: [xslope_johnson_rapid_KEY.zip](files/xslope_johnson_rapid_KEY.zip)
+**Part c.**
+
+| Analysis | Factor of safety | Governing stage |
+|----------|:----------------:|:---------------:|
+| Full pool, drained (part a, step 5) | 1.904 | |
+| Rapid drawdown, two steady solutions (part a) | 1.228 | 3 |
+| Rapid drawdown, transient (part b) | 1.165 | 3 |
+
+The two steady solutions assume the pore pressures inside the dam have come into equilibrium with the lowered pool. At 1 ft/day the clay, the sand, and the core haven't, and the transient run gives the pore pressures they actually have on the day the pool reaches El. 250. It lowers the factor of safety from 1.23 to 1.17.

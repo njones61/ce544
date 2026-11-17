@@ -1,86 +1,67 @@
 # Homework - Rapid Drawdown Analysis
 
-In this assignment, you will perform a rapid drawdown analysis on the earth dam from the previous homework using XSLOPE. This builds on your seepage/slope stability homework by adding a second set of boundary conditions to model the post-drawdown water level.
+Pilarcitos Dam is a homogeneous earthfill dam that slid on its upstream face when its reservoir was drawn down. Duncan, Wright, and Wong (1990) used it, with Walter Bouldin Dam, to test the three-stage method from the lecture, and computed F = 1.05 for the drawdown. Rocscience reproduces their analysis as problem 97 of the Slide2 verification manual. In this homework you will repeat it in XSLOPE Studio. The section is the upstream half of the dam, on a rigid base, with elevations measured from the base. The reservoir is drawn down from El. 72 to El. 37.
 
-![earthdamfig.gif](../04_xslope/images/earthdamfig.gif)
+![pilarcitos.png](images/pilarcitos.png){width="880"}
 
-For background on the three-stage rapid drawdown methodology, see:
+Record your answers on this answer sheet, which has a section for each part:
 
-[XSLOPE Rapid Drawdown Documentation](https://xslope.org/en/latest/lem/rapid/){:target="_blank"}
+[rapid_hw_answers.docx](files/rapid_hw_answers.docx)
 
-Use the XSLOPE Google Colab seepage notebook for the seepage analysis:
+**(a) The undrained envelope**
 
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+The fill's undrained strength is given as an R envelope, the total stress envelope of consolidated-undrained tests: $c_R$ = 60 psf and $\phi_R$ = 23°. XSLOPE needs the $K_c = 1$ envelope, $d$ and $\psi$, instead. Convert the R envelope with Duncan, Wright, and Brandon's (2014) Eqs. 9.6 and 9.7:
 
-Use the XSLOPE Google Colab LEM notebook for the slope stability analysis:
+$$d = c_R\,\frac{\cos\phi_R\cos\phi'}{1 - \sin\phi_R} \qquad \psi = \arctan\frac{\sin\phi_R\cos\phi'}{1 - \sin\phi_R}$$
 
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Enter $d$ and $\psi$, to one decimal place, and your calculation in part (a) of the answer sheet.
 
-## Instructions
+**(b) The drawdown analysis**
 
-Start with your Excel input file from the seepage/slope stability homework. You will modify it to support the two-stage seepage analysis required for rapid drawdown.
+Start with **File → New** in **LEM** mode, and build the section shown above. The ground runs from the upstream toe at (0, 0) up a 2.5:1 face to (145, 58), up a 3:1 face to the edge of the crest at (205, 78), and along the crest to (240, 78), over a rigid base at El. 0 (**Max depth** = 0). The dam is one material:
 
-### 1. Add Undrained Strength Parameters
+| Parameter | Value |
+|-----------|-------|
+| γ | 135 lb/ft³ |
+| c′ | 0 |
+| φ′ | 45° |
+| d and ψ | from part (a) |
+| u | `piezo` |
 
-Add $d$ and $\psi$ parameters to the **mat** sheet for each material with poor drainage. Leave these blank for freely draining materials (Sand).
+Enter the two piezometric lines, each across the whole section:
 
-| Material | c' (psf) | $\phi'$ (deg) | $\gamma$ (pcf) | d (psf) | $\psi$ (deg) |
-|:--------:|:--------:|:--------------:|:-------:|:-------:|:-------:|
-| Shell    |    0     |       34       |   125   |        |       |
-| Core     |   100    |       26       |   122   |   300    |   20    |
-| Clay     |    0     |       24       |   123   |   100      |     18    |
-| Sand     |    0     |       32       |   127   |         |         |
+| Line | Points (x, y) |
+|------|---------------|
+| Line 1, full pool | (0, 72), (240, 72) |
+| Line 2 (rapid drawdown), after the drawdown | (0, 37), (240, 37) |
 
-For the pore pressure option ($u$), set it to `seep` for all materials since we will be using seepage-derived pore pressures in the slope stability analysis.
+Leave **Water loads** on `auto` in **Global parameters**, so that XSLOPE makes the reservoir's load on the face from each line. Add a starting circle with Xo = 90, Yo = 95, and Depth = 20.
 
-Verify that the seepage properties are set up for all 4 materials. They should match the following:
+Click **Run → Run LEM…**. Leave **Method** on Spencer, **Analysis** on **Auto search**, and **Number of slices** at 40, and tick **Rapid drawdown**. What is the factor of safety of each stage on the critical circle, and what is the rapid drawdown factor of safety? Compare it with Duncan, Wright, and Wong's 1.05 and Slide2's 1.043. Save a PNG of the critical solution, and save the model with **File → Save As**.
 
-| Material | k1  | k2  | alpha | kr0  | h0 |
-|:--------:|:---:|:---:|:-----:|:----:|:--:|
-| Shell    | 864   | 864   | 0     | 0.0001 | -1 |
-| Core     | 0.0864 | 0.0864 | 0  | 0.0001 | -1 |
-| Clay     | 0.864 | 0.864 | 0   | 0.0001 | -1 |
-| Sand     | 86.4   | 86.4   | 0     | 0.0001 | -1 |
+Enter your answers in part (b) of the answer sheet.
 
-### 2. Set Up Two Sets of Distributed Loads
+**(c) Which stage governs**
 
-On the **dloads** sheet, set up two sets of distributed loads corresponding to the two pool levels:
+Which stage governs? Stage 2 gives the fill the undrained strength that the full pool's consolidation stresses gave it, and stage 3 replaces that strength with the drained strength wherever the drained strength is lower. Where on the critical circle would you expect the drained strength to be the lower one, and why? Think about where the effective stresses are low, and compare the two envelopes there.
 
-**Solution 1 - Full Pool:** Distributed load for water at the full pool level (El. 302 ft) on the upstream face. This is already in the input file.
+Enter your answer in part (c) of the answer sheet.
 
-**Solution 2 - Lowered Pool:** Distributed load for water at the lowered pool level (El. 250 ft) on the upstream face. You will need to calculate the (x,y) coordinates where the water intersects the upstream face for both pool levels to set up the distributed loads correctly.
+**(d) A drained analysis at the low pool**
 
-### 3. Set Up Two Sets of Seepage Boundary Conditions
+Save the model under a new name. In **Piezometric lines**, move Line 1 down to El. 37, at (0, 37) and (240, 37), and remove Line 2's points. Untick **Rapid drawdown** and run the same search. This is a drained analysis at the low pool: it assumes that the water in the dam came down with the pool. What is the factor of safety? Compare it with part (b). The dam slid. Which analysis agrees with that, and why does the other one miss it?
 
-On the **seep bc** sheet, set up two sets of boundary conditions:
-
-**Solution 1 - Full Pool (Pre-Drawdown):**
-
-- Upstream specified head: H = 302 ft
-- Exit face on downstream slope and tail
-
-This is already in the input file.
-
-**Solution 2 - Lowered Pool (Post-Drawdown):**
-
-- Upstream specified head: H = 250 ft (lowered pool level)
-- Exit face on downstream slope and tail
-
-Use the (x,y) coordinates where the water intersects the upstream face that you calculated for the distributed loads to set up the specified head boundary condition for Solution 2.
-
-### 4. Run the Seepage Analysis
-
-Upload your Excel file to the **seepage notebook** and run the analysis. The notebook will generate two seepage solutions. Download the resulting zip archive.
-
-### 5. Run the Rapid Drawdown Analysis
-
-Upload the zip archive to the **LEM notebook**. Run the rapid drawdown analysis using Spencer's method.
-
-Review the three-stage results and report the critical factor of safety.
+Enter your answers in part (d) of the answer sheet.
 
 ## Submission
 
-Save a copy of your Excel input file (XLSX), the mesh file (JSON), the two seepage solution files (CSV), and a PNG of the rapid drawdown solution plot (PNG). Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+Put the following files in a zip archive:
+
+- The model from part (b), with the two piezometric lines
+- The model from part (d), with the line at El. 37
+- The answer sheet, with your picture, saved as a PDF
+
+Upload the zip archive via Learning Suite.
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed
@@ -94,12 +75,10 @@ Save a copy of your Excel input file (XLSX), the mesh file (JSON), the two seepa
 
 | Criteria | Points |
 |----------|:------:|
-| Undrained strength parameters (d, $\psi$) entered correctly for appropriate materials | 4 |
-| Solution 1 seepage BCs set up correctly (full pool H = 302 ft) | 3 |
-| Solution 2 seepage BCs set up correctly (lowered pool H = 250 ft) | 3 |
-| Exit face defined on downstream slope for both solutions | 3 |
-| Solution 1 distributed loads calculated correctly (full pool) | 3 |
-| Solution 2 distributed loads calculated correctly (lowered pool) | 3 |
-| Seepage analysis runs successfully with two solutions | 4 |
-| Spencer's method used for rapid drawdown analysis on upstream side | 3 |
-| Three-stage results reviewed and critical FS reported | 4 |
+| Part A: d and ψ from the R envelope, with the calculation | 4 |
+| Part B: Model as given (section, material, both piezometric lines, starting circle) | 5 |
+| Part B: Factor of safety of each stage and the rapid drawdown factor of safety, compared with the paper and Slide2 | 7 |
+| Part C: Which stage governs, and where and why the drained strength is lower | 6 |
+| Part D: Drained factor of safety at the low pool, compared with part (b), and why it misses the failure | 8 |
+
+Sources: Duncan, J. M., Wright, S. G., and Wong, K. S. (1990). "Slope stability during rapid drawdown." *Proceedings of the H. Bolton Seed Memorial Symposium*, Vol. 2, BiTech, Vancouver, 253–272. Duncan, J. M., Wright, S. G., and Brandon, T. L. (2014). *Soil Strength and Slope Stability*, 2nd ed., Wiley, Chapter 9. Rocscience Inc. [*Slide2 Slope Stability Verification Manual*](https://www.rocscience.com/help/slide2/verification-theory/verification-manuals), problem 97.
