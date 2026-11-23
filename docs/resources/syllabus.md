@@ -41,7 +41,7 @@ be on Canvas and will be due 15 minutes prior to class. I will drop your 3 lowes
 
 ## Exams
 
-Exams will be given on-line. You will have a 2-3 days to take the exam. The exam will be timed and you will have 3 hours to complete it. The exam will be closed book, closed notes, and closed internet. You may not discuss the exam with anyone else until the exam period is over. You may not use any other person to help you with the exam. You may not use any other person's work as your own.
+Exams will be given on-line. Exam 1 is open for a week after the seepage unit ends, and Exam 2 is open during the final exam period. Each exam is timed: you will have 4 hours to complete it once you start. The exam will be closed book, closed notes, and closed internet. You may not discuss the exam with anyone else until the exam period is over. You may not use any other person to help you with the exam. You may not use any other person's work as your own.
 
 Since we are covering two distinct topics, there will be two exams. The first exam will cover the seepage portion of the class and the second exam will cover the slope stability portion.
 
