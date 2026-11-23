@@ -89,10 +89,10 @@ Python starter file: <a href="https://colab.research.google.com/github/njones61/
 
 If you completed any of the problems using Google Colab, use the "File|Download|Download .ipynb" command to download your notebook as an .ipynb file.
 
-Combine your PDFs, spreadsheets, and *.ipynb notebook files into a single zip archive and upload it on Learning Suite.
+Combine your PDFs, spreadsheets, and *.ipynb notebook files into a single zip archive and upload it to Canvas.
 
 !!! note "Do not put your name or NetID in the file"
-    Learning Suite records who submitted each file, so your name is not needed
+    Canvas records who submitted each file, so your name is not needed
     inside the file itself. Leaving it out means your work can be graded
     anonymously, which keeps grading fair. This applies to scans and photos
     too — please don't write your name on the page.

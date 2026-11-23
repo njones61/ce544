@@ -22,10 +22,10 @@ Use a total unit weight, and let XSLOPE derive the water load: enter the pool as
 
 ## Submission
 
-For each of the three problems, save the model with **File → Save As**, and enter the minimum factor of safety on the answer sheet. Use the **Save…** button above the plot to save a PNG of the solution with the minimum factor of safety, and paste it into the answer sheet. Put the three models and the answer sheet, saved as a PDF, in a single zip archive. Upload your zip archive via Learning Suite.
+For each of the three problems, save the model with **File → Save As**, and enter the minimum factor of safety on the answer sheet. Use the **Save…** button above the plot to save a PNG of the solution with the minimum factor of safety, and paste it into the answer sheet. Put the three models and the answer sheet, saved as a PDF, in a single zip archive. Upload your zip archive to Canvas.
 
 !!! note "Do not put your name or NetID in the file"
-    Learning Suite records who submitted each file, so your name is not needed
+    Canvas records who submitted each file, so your name is not needed
     inside the file itself. Leaving it out means your work can be graded
     anonymously, which keeps grading fair. This applies to scans and photos
     too — please don't write your name on the page.

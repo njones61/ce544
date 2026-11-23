@@ -29,7 +29,7 @@ After successfully completing this course, you should:
 
 ## Lecture Format
 
-The course will be taught in a "flipped" format. For each class period, you are expected to carefully study the "pre-class" content which will consist of videos and/or reading. A link to the pre-class content for each lecture will be provided on the Learning Suite schedule. You should complete the pre-class content before the associated calss period. The class period will be used for discussing the pre-class content and working through exercises together. 
+The course will be taught in a "flipped" format. For each class period, you are expected to carefully study the "pre-class" content which will consist of videos and/or reading. Each class period has a module on Canvas with links to its pre-class content, quiz, in-class exercise, and homework. You should complete the pre-class content before the associated calss period. The class period will be used for discussing the pre-class content and working through exercises together. 
 
 ## Quizzes
 
@@ -37,7 +37,7 @@ There will be pre-class quiz associated with each lecture based on the pre-class
 points. The first question which is worth 2 pts, is "Did you complete the pre-class content?". Then there will be 4 
 questions based on that content, and finally there will be an open response question where you are asked if there 
 was anything from the pre-class content that was not clear that you would like to review in class. The quizzes will 
-be on Learning Suite and will be due 15 minutes prior to class. I will drop your 3 lowest quiz scores.
+be on Canvas and will be due 15 minutes prior to class. I will drop your 3 lowest quiz scores.
 
 ## Exams
 
@@ -47,7 +47,7 @@ Since we are covering two distinct topics, there will be two exams. The first ex
 
 ## Homework
 
-The homework is essential to reinforce the topics covered in class. The homework will also prepare you for the exams. You will upload your homework to Learning Suite and our TA will grade it. Homework will be due on Learning Suite on the due date indicated - typically 1 week after the class period. Late homework will be reduced by 10% per day up to a maximum penalty of 50%.
+The homework is essential to reinforce the topics covered in class. The homework will also prepare you for the exams. You will upload your homework to Canvas and our TA will grade it. Homework is due at 11:59 pm on the date shown in Canvas, typically 1 week after the class period. Late homework will be reduced by 10% per day up to a maximum penalty of 50%.
 
 ## Academic Honesty
 
@@ -56,14 +56,14 @@ I encourage you to work together on the homework as long as everyone is contribu
 
 ## Grades
 
-Grades will be assigned based on the following formula. See Learning Suite for a complete list of scores and grades.
+Grades will be assigned based on the following formula. Your scores and grades are on Canvas.
 
 | Item | Percentage |
 |------|------------|
 | Homework | 25% |
-| Case Study | 7% |
-| Exam #1 | 30% |
-| Exam #2 | 30% |
+| Term Project | 10% |
+| Exam #1 | 28.5% |
+| Exam #2 | 28.5% |
 | Quizzes | 8% |
 | Total | 100% |
 

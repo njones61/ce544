@@ -31,10 +31,10 @@ Do **not** put your derivation in the Excel or Python file. It should be in a Wo
 
 If you completed the second part of the problem using Google Colab, use the "File|Download|Download .ipynb" command to download your notebook as an .ipynb file.
 
-Create a zip archive with your Word document (or scan) and the solution file (either the *.xlsx Excel file or the .ipynb notebook file) and upload the zip archive to Learning Suite.
+Create a zip archive with your Word document (or scan) and the solution file (either the *.xlsx Excel file or the .ipynb notebook file) and upload the zip archive to Canvas.
 
 !!! note "Do not put your name or NetID in the file"
-    Learning Suite records who submitted each file, so your name is not needed
+    Canvas records who submitted each file, so your name is not needed
     inside the file itself. Leaving it out means your work can be graded
     anonymously, which keeps grading fair. This applies to scans and photos
     too — please don't write your name on the page.

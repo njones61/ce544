@@ -64,10 +64,10 @@ Combine the following files into a zip archive:
 4. PNG of the solution plot for the seismic analysis with PGA_2 (Part 3c)
 5. PNG of the solution plot for the seismic analysis with PGA_10 (Part 3d)
 
-Upload your zip archive via Learning Suite.
+Upload your zip archive to Canvas.
 
 !!! note "Do not put your name or NetID in the file"
-    Learning Suite records who submitted each file, so your name is not needed
+    Canvas records who submitted each file, so your name is not needed
     inside the file itself. Leaving it out means your work can be graded
     anonymously, which keeps grading fair. This applies to scans and photos
     too — please don't write your name on the page.

@@ -60,10 +60,10 @@ Do the following:
 
 ## Submission
 
-Save a copy of your XSLOPE Excel input files and solution PNG files for both problems. Zip up your files into a single zip archive. Upload your zip archive via Learning Suite.
+Save a copy of your XSLOPE Excel input files and solution PNG files for both problems. Zip up your files into a single zip archive. Upload your zip archive to Canvas.
 
 !!! note "Do not put your name or NetID in the file"
-    Learning Suite records who submitted each file, so your name is not needed
+    Canvas records who submitted each file, so your name is not needed
     inside the file itself. Leaving it out means your work can be graded
     anonymously, which keeps grading fair. This applies to scans and photos
     too — please don't write your name on the page.

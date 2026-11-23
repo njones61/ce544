@@ -28,4 +28,4 @@ For this semester, we will have 5 groups of 2. You will sign up for a group usin
 
 ## Due Dates
 
-Presentations will be on Thursday, April 9th. The presentation file and the executive summary will be due that night at midnight. Both should be uploaded to Learning Suite. The executive summary should be uploaded as a PDF file and the presentation should be uploaded as a PowerPoint file. Please make sure to name your files appropriately (e.g., "Group1_CaseStudy_Presentation.pptx" and "Group1_CaseStudy_ExecutiveSummary.pdf").
+Presentations will be on Thursday, April 9th. The presentation file and the executive summary will be due that night at midnight. Both should be uploaded to Canvas. The executive summary should be uploaded as a PDF file and the presentation should be uploaded as a PowerPoint file. Please make sure to name your files appropriately (e.g., "Group1_CaseStudy_Presentation.pptx" and "Group1_CaseStudy_ExecutiveSummary.pdf").

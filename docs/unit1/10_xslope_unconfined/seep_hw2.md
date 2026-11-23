@@ -49,13 +49,13 @@ Here are some tips for setting up the problem:
 
 ## Submission
 
-Create a PNG of the solution with 25 head contours and use base material = bedrock. Zip up your XSLOPE input file and a PNG of the solution plot and upload your zip archive via Learning Suite.
+Create a PNG of the solution with 25 head contours and use base material = bedrock. Zip up your XSLOPE input file and a PNG of the solution plot and upload your zip archive to Canvas.
 
 !!! Note
     You are allowed to work in pairs on this assignment if you wish. Just copy and upload the assignment when you are done and be sure to make a note who you worked with.
 
 !!! note "Do not put your name or NetID in the file"
-    Learning Suite records who submitted each file, so your name is not needed
+    Canvas records who submitted each file, so your name is not needed
     inside the file itself. Leaving it out means your work can be graded
     anonymously, which keeps grading fair. This applies to scans and photos
     too — please don't write your name on the page.

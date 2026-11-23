@@ -45,10 +45,10 @@ Choose a slope failure that we did not cover in class and write a one-page summa
 
 ## Submission
 
-Upload your document to the Learning Suite.
+Upload your document to Canvas.
 
 !!! note "Do not put your name or NetID in the file"
-    Learning Suite records who submitted each file, so your name is not needed
+    Canvas records who submitted each file, so your name is not needed
     inside the file itself. Leaving it out means your work can be graded
     anonymously, which keeps grading fair. This applies to scans and photos
     too — please don't write your name on the page.
