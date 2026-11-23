@@ -34,9 +34,9 @@ The course will be taught in a "flipped" format. For each class period, you are 
 ## Quizzes
 
 There will be pre-class quiz associated with each lecture based on the pre-class content. Each quiz is worth 7 
-points. The first question which is worth 2 pts, is "Did you complete the pre-class content?". Then there will be 4 
-questions based on that content, and finally there will be an open response question where you are asked if there 
-was anything from the pre-class content that was not clear that you would like to review in class. The quizzes will 
+points. The first question, worth 3 points, is "Did you watch the pre-class video?". Then there will be 4 
+questions based on that content, 1 point each, and finally an open response question, worth no points, where you are 
+asked if there was anything from the pre-class content that was not clear that you would like to review in class. The quizzes will 
 be on Canvas and will be due 15 minutes prior to class. I will drop your 3 lowest quiz scores.
 
 ## Exams
