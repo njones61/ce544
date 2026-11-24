@@ -29,7 +29,7 @@ After successfully completing this course, you should:
 
 ## Lecture Format
 
-The course will be taught in a "flipped" format. For each class period, you are expected to carefully study the "pre-class" content which will consist of videos and/or reading. Each class period has a module on Canvas with links to its pre-class content, quiz, in-class exercise, and homework. You should complete the pre-class content before the associated calss period. The class period will be used for discussing the pre-class content and working through exercises together. 
+The course will be taught in a "flipped" format. For each class period, you are expected to carefully study the "pre-class" content which will consist of videos and/or reading. In Canvas, each class period is listed under its unit's module, with links to its pre-class content, quiz, in-class exercise, and homework. You should complete the pre-class content before the associated calss period. The class period will be used for discussing the pre-class content and working through exercises together. 
 
 ## Quizzes
 

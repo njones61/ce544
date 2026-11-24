@@ -15,7 +15,7 @@
 	</div>
 </div>
 
-Welcome to the content repository for **CE 544 - Seepage and Slope Stability Analysis**. This repository contains the homework assignments and exercises associated with the class. The content is organized by unit and category and can be browsed using the navigation bar on the left. The Canvas course for the class has a module for each class period, with links to that period's content. This content is maintained by the Prof. Jones and TAs and is subject to change. If you have any questions, comments, or suggestions, please contact Prof. Jones.
+Welcome to the content repository for **CE 544 - Seepage and Slope Stability Analysis**. This repository contains the homework assignments and exercises associated with the class. The content is organized by unit and category and can be browsed using the navigation bar on the left. The Canvas course for the class lists each class period under its unit, with links to that period's content. This content is maintained by the Prof. Jones and TAs and is subject to change. If you have any questions, comments, or suggestions, please contact Prof. Jones.
 
 ![slope_image.png](images%2Fslope_image.png){width=900px}
 
