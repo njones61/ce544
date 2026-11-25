@@ -1,6 +1,6 @@
 # Homework - Reliability Analysis
 
-In this homework you will repeat Duncan's (2000) reliability analysis of the LASH trench, the slope from the lecture, and then compute the probability of failure of the earth dam from the rapid drawdown exercise. Both are run in XSLOPE Studio. [Tutorial LEM-11](https://xslope.org/en/latest/tutorials/lem11_reliability/){:target="_blank"} shows each step.
+In this homework you will repeat Duncan's (2000) reliability analysis of the LASH trench, the slope from the lecture, weigh flatter slopes against their cost, and then compute the probability of failure of the earth dam from the rapid drawdown exercise. Both are run in XSLOPE Studio. [Tutorial LEM-11](https://xslope.org/en/latest/tutorials/lem11_reliability/){:target="_blank"} shows each step.
 
 Record your answers on this answer sheet, which has a section for each part:
 
@@ -81,6 +81,24 @@ Open **Run → Reliability…** again, change **Method** to `Monte Carlo`, untic
 
 Enter your answers in part (c) of the answer sheet.
 
+**(d) Flatter slopes, and the cost of a failure**
+
+Duncan and Wright (2005) also analyzed two flatter slopes for the trench:
+
+| Case | Slope (H:V) | $F_{MLV}$ | $COV_F$ | Trench volume (yd³) |
+|------|:-----------:|:---------:|:-------:|:-------------------:|
+| As constructed | 0.875:1 | 1.17 | 16% | 860,000 |
+| Less steep A | 1.25:1 | 1.3 | 16% | 1,000,000 |
+| Less steep B | 1.6:1 | 1.5 | 16% | 1,130,000 |
+
+1. Compute $\beta_{LN}$ and $P_f$ for each case, as in the in-class exercise.
+
+2. Cutting the slopes at 0.875:1 instead of 1:1 saved about \$200,000. The trench volume grows almost in proportion to the slope's horizontal ratio, so 1:1 would have taken about 46,700 yd³ more than 0.875:1: about \$4.30 a cubic yard. At that price, what does each flatter slope add to the cost?
+
+3. A flatter slope is worth its added cost when the reduction in $P_f$ times the cost of a failure is larger (Duncan 2000). For each flatter slope, what cost of failure would make it break even? The failure that happened cost about as much as the \$200,000 saved, to dredge out the slide and add sand. Which slope would you have chosen, and why?
+
+Enter your answers in part (d) of the answer sheet.
+
 ## Problem 2 - The Earth Dam Drawn Down
 
 Go back to the earth dam whose upstream side you drew down from El. 302 to El. 250 in the [rapid drawdown exercise](../08_rapid/rapid_class.md). Start from your model from part a of that exercise, with the core's and the clay's d and ψ and the two boundary sets, or from its posted solution:
@@ -142,12 +160,13 @@ Upload the zip archive to Canvas.
 
 | Criteria | Points |
 |----------|:------:|
-| Problem 1a: LASH model as given and the factor of safety on Duncan's surface, compared with his | 4 |
-| Problem 1b: Taylor series table and results, compared with Duncan's; which input contributes more and why; the strength lines | 7 |
-| Problem 1c: Monte Carlo results compared with the Taylor series | 4 |
-| Problem 2a-b: Standard deviations entered, why only the core and clay get σ(d) and σ(ψ), and the factor of safety | 4 |
+| Problem 1a: LASH model as given and the factor of safety on Duncan's surface, compared with his | 3 |
+| Problem 1b: Taylor series table and results, compared with Duncan's; which input contributes more and why; the strength lines | 6 |
+| Problem 1c: Monte Carlo results compared with the Taylor series | 3 |
+| Problem 1d: β and $P_f$ of the flatter slopes, their added costs and break-even failure costs, and the choice | 5 |
+| Problem 2a-b: Standard deviations entered, why only the core and clay get σ(d) and σ(ψ), and the factor of safety | 3 |
 | Problem 2c: Taylor series results and the three largest contributors | 4 |
-| Problem 2d: Monte Carlo results, compared with the Taylor series, and why the mean is below $F_{MLV}$ | 4 |
+| Problem 2d: Monte Carlo results, compared with the Taylor series, and why the mean is below $F_{MLV}$ | 3 |
 | Problem 2e: Whether the slope is acceptable, and what to do next | 3 |
 
-Sources: Duncan, J. M. (2000). "Factors of safety and reliability in geotechnical engineering." *Journal of Geotechnical and Geoenvironmental Engineering*, 126(4), 307–316. Duncan, J. M., and Buchignani, A. L. (1973). "Failure of underwater slope in San Francisco Bay." *Journal of the Soil Mechanics and Foundations Division*, ASCE, 99(SM9), 687–703. Duncan, J. M., Wright, S. G., and Brandon, T. L. (2014). *Soil Strength and Slope Stability*, 2nd ed., Wiley, Chapter 13. Rocscience Inc. [*Slide2 Slope Stability Verification Manual*](https://www.rocscience.com/help/slide2/verification-theory/verification-manuals), problem 29.
+Sources: Duncan, J. M. (2000). "Factors of safety and reliability in geotechnical engineering." *Journal of Geotechnical and Geoenvironmental Engineering*, 126(4), 307–316. Duncan, J. M., and Wright, S. G. (2005). *Soil Strength and Slope Stability*, Wiley, Chapter 13. Duncan, J. M., and Buchignani, A. L. (1973). "Failure of underwater slope in San Francisco Bay." *Journal of the Soil Mechanics and Foundations Division*, ASCE, 99(SM9), 687–703. Duncan, J. M., Wright, S. G., and Brandon, T. L. (2014). *Soil Strength and Slope Stability*, 2nd ed., Wiley, Chapter 13. Rocscience Inc. [*Slide2 Slope Stability Verification Manual*](https://www.rocscience.com/help/slide2/verification-theory/verification-manuals), problem 29.
