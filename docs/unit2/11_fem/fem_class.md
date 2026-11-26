@@ -1,104 +1,71 @@
-# Exercise: Finite Element Slope Stability Analysis
+# Exercise - Strength Reduction
 
-In this exercise, we will re-analyze four problems from earlier in the course using the Shear Strength Reduction Method (SSRM) with finite elements. For each problem, start with the XSLOPE input file from the corresponding LEM analysis and add Young's modulus ($E$) and Poisson's ratio ($\nu$) for each material. Use the values in the tables below, which are based on the typical elastic parameters discussed in the [FEM Overview](https://xslope.org/en/latest/fem/overview/){target="_blank"}.
+In this exercise you will run strength reduction in XSLOPE Studio on two of Griffiths and Lane's (1999) problems and compare it with limit equilibrium. [Tutorial FEM-1](https://xslope.org/en/latest/tutorials/fem01_strength_reduction/){:target="_blank"} shows **Build Mesh** and **Run FEM** step by step. Every file below gives the soil no tensile strength (t_cut = 0), as the lecture recommends.
 
-For each problem, run the analysis using both the LEM and FEM notebooks so you can compare the results side by side. The LEM notebook ignores the elastic properties, so you can prepare the complete input file with $E$ and $\nu$ first and then upload the same file to both notebooks.
+## Problem 1 - A Foundation That Moves the Mechanism
 
-**LEM Notebook:** <a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Griffiths and Lane's Example 4: an undrained clay slope 50 ft high at 2:1, on a clay foundation 50 ft thick over a firm base. In r1 the foundation is as strong as the slope; in r2 it is twice as strong.
 
-**FEM Notebook:** <a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_fem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+![gl_example4.png](images/gl_example4.png){width="971"}
 
-For each problem, run the LEM notebook first to get the LEM factor of safety. Then use that result to select appropriate values of $F_{min}$ and $F_{max}$ for the SSRM bisection in the FEM notebook. The FEM factor of safety is typically close to but slightly higher than the LEM result, so a good approach is to set $F_{min}$ about 0.2 below the LEM result and $F_{max}$ about 0.4 above. Note how the FEM method naturally reveals the failure mechanism through shear strain concentrations without requiring a prescribed failure surface.
+Open these files in XSLOPE Studio: [xslope_gl_example4_r1.xlsx](files/xslope_gl_example4_r1.xlsx) and [xslope_gl_example4_r2.xlsx](files/xslope_gl_example4_r2.xlsx)
 
-## Problem 1 - Simple Slope with Foundation
+1. Open r1 and switch the mode strip to **FEM**. Click **Run → Build Mesh…**, set **Target element size** to 6, and click **Build**. Click **Run → Run FEM…** and **Run**. What is F? Where does the shear band go?
 
-This is the same problem from [XSLOPE Class Exercise 1, Problem 2](../04_xslope/xslope_class1.md).
+2. Repeat step 1 with r2. What is F, and where does the band go now?
 
-![part1b_fig.png](../04_xslope/images/part1b_fig.png){width="620"}
+3. Switch to **LEM** and click **Run → Run LEM…** with Spencer and **Auto search**, on each file. How do the factors of safety and circles compare with step 1 and 2?
 
-Start with the LEM solution file and add the following elastic properties:
+4. In r2, open **Circles** and replace the starting circle with one at the toe, tangent to the top of the foundation. Enter the row below, or paste it straight into the worksheet:
 
-| Material | $E$ (psf) | $\nu$ |
-|----------|:---------:|:-----:|
-| Embankment/Foundation ($c$ = 400 psf, $\phi$ = 0) | 150,000 | 0.40 |
+    | Xo | Yo | Option | Depth | Xi | Yi | R |
+    |:--:|:--:|:------:|:-----:|:--:|:--:|:-:|
+    | 200 | 150 | Depth | 50 | | | |
 
-Since this is an undrained ($\phi = 0$) material, a Poisson's ratio of 0.40 is used rather than the theoretical undrained value of 0.5 to avoid numerical issues with near-incompressibility. The modulus is estimated as $E/S_u \approx 375$.
+    Run LEM again. What is F now, and why did the first search miss it?
 
-Starter template: [xslope_simple_foundation.xlsx](../04_xslope/files/xslope_simple_foundation.xlsx)
+Solution:
 
-Add $E$ and $\nu$ to the starter template and upload the file to both notebooks. Compare the two factors of safety and note the shear strain plot showing the failure mechanism.
+**1.** F = 1.426 (Griffiths and Lane 1.45). The band runs from the crest down to the firm base and along it: with the foundation no stronger than the slope, the deepest mechanism is the weakest.
 
-Solution: [xslope_simple_foundation_KEY.zip](files/xslope_simple_foundation_KEY.zip)
+**2.** F = 1.996 (Griffiths and Lane 2.03). The band runs from the crest to the toe and never enters the foundation: the stronger foundation pushes the mechanism up into the slope.
 
-## Problem 2 - Slope with Multiple Layers
+**3.** r1: Spencer 1.471, on a circle tangent to the firm base, 3% above strength reduction. r2: 2.665, on a circle through the foundation, a third above strength reduction.
 
-This is the same problem from [XSLOPE Class Exercise 1, Problem 3](../04_xslope/xslope_class1.md).
+**4.** F = 2.022, on a toe circle in the slope, within 1.3% of strength reduction. The file's starting circle was deep, and the search found the best circle near it, a local minimum. The band showed where to look.
 
-![part1c_fig.png](../04_xslope/images/part1c_fig.png){width="620"}
+## Problem 2 - A Weak Layer a Circle Can't Follow
 
-Start with the LEM solution file and add the following elastic properties:
+Griffiths and Lane's Example 3: the same slope, all in one clay, cut by a thin weak layer whose strength is a fifth of the clay's.
 
-| Material | $E$ (psf) | $\nu$ |
-|----------|:---------:|:-----:|
-| Upper ($c$ = 400 psf, $\phi$ = 0) | 150,000 | 0.40 |
-| Lower ($c$ = 800 psf, $\phi$ = 0) | 300,000 | 0.40 |
+![gl_example3.png](images/gl_example3.png){width="971"}
 
-Both layers are undrained ($\phi = 0$) with $E/S_u \approx 375$ and $\nu = 0.40$.
+Open this file in XSLOPE Studio: [xslope_gl_example3.xlsx](files/xslope_gl_example3.xlsx)
 
-Starter template: [xslope_simple_mult_layers.xlsx](../04_xslope/files/xslope_simple_mult_layers.xlsx)
+1. In **LEM**, click **Run → Run LEM…** with Spencer, **Auto search**, and **Surface** set to **Circular**. What is F?
 
-Add $E$ and $\nu$ to the starter template and upload the file to both notebooks. Compare the factors of safety and the location of the critical failure surface.
+2. Switch to **FEM**, build a mesh at a target size of 6, and run it. What is F, and where is the band?
 
-Solution: [xslope_simple_mult_layers_KEY.zip](files/xslope_simple_mult_layers_KEY.zip)
+3. Back in **LEM**, run Spencer again with **Surface** set to **Non-circular** (the file carries a starting surface). What is F?
 
-## Problem 3 - Reinforced Slope with Geogrid
+4. Which number would you design on? How would you have known, without the strength reduction run?
 
-This is the FEM version of the problem from the [Reinforced Slopes Exercise](../05_reinforced/reinforced_class.md). For additional details on how reinforcement is modeled using truss elements in the FEM method, see the [XSLOPE Soil Reinforcement](https://xslope.org/en/latest/fem/reinforcement/){target="_blank"} documentation.
+Solution:
 
-![geogrid_fig.png](../05_reinforced/images/geogrid_fig.png)
+**1.** F = 1.244. The search can only try circles, and no circle follows the layer.
 
-Start with the LEM solution file and add the following elastic properties for the soil materials:
+**2.** F = 0.479, less than half the circle's. The band runs down the weak layer and out along its flat bottom.
 
-| Material | $E$ (psf) | $\nu$ |
-|----------|:---------:|:-----:|
-| Shell ($c$ = 300 psf, $\phi$ = 37°) | 1,000,000 | 0.3 |
-| Base ($c$ = 0, $\phi$ = 37°) | 1,000,000 | 0.3 |
+**3.** F = 0.462, within 4% of strength reduction, on a surface along the layer. Griffiths and Lane's own wedge analyses gave 0.45 to 0.50.
 
-In the LEM analysis, the reinforcement was defined using the tensile strength and pullout length. The FEM analysis requires additional properties for each reinforcement line to model the stiffness and post-yield behavior of the geogrid elements. The following table summarizes the additional FEM reinforcement properties:
+**4.** About 0.46 to 0.48: the slope fails. A circle search alone overestimates F by more than two and a half times here. Without strength reduction you would have to suspect the layer and search noncircular surfaces through it; strength reduction found the mechanism without being told where the layer was.
 
-| Property | Description | Value |
-|----------|-------------|:-----:|
-| $T_{res}$ | Residual tensile force after yielding | 600 lb/ft |
-| $E$ | Modulus of elasticity of reinforcement | 800,000 psf |
-| $Area$ | Cross-sectional area of reinforcement | 0.1 ft$^2$/ft |
+## Problem 3 - Linear Elements
 
-The product $EA$ = 10,000 lb/ft is the axial stiffness of the geogrid. Any combination of $E$ and $Area$ producing the same $EA$ will give identical results. The residual strength $T_{res}$ controls the post-yield behavior -- after an element exceeds $T_{max}$, its capacity drops to $T_{res}$ rather than failing completely. This peak-residual model is appropriate for ductile materials like geosynthetics.
+1. Open r1 from Problem 1 again in **FEM**. Click **Run → Build Mesh…**, set **Element type** to **Linear triangles (tri3)** and **Target element size** to 6, and build. Run FEM. What is F? Compare it with step 1 of Problem 1.
 
-Starter template: [xslope_reinforce.xlsx](../05_reinforced/files/xslope_reinforce.xlsx)
+Solution:
 
-Add $E$, $\nu$, and the reinforcement properties above to the starter template and upload the file to both notebooks. Compare the factors of safety and examine the reinforcement summary table to see which elements have yielded or pulled out.
+**1.** F = 1.645, 15% above the quadratic triangles' 1.426, on the same 1,542 elements. Linear triangles lock: an undrained clay deforms at constant volume, and a mesh of constant-strain triangles can't, so it is too stiff to form the band. Use a quadratic element.
 
-Solution: [xslope_reinforce_KEY.zip](files/xslope_reinforce_KEY.zip)
-
-## Problem 4 - Earth Dam with Seepage
-
-This problem applies the FEM method to the earth dam from the [Seepage/Slope Integration Homework](../07_seep_slope/seep_slope_hw.md). Unlike the previous problems, this analysis includes seepage-derived pore pressures that affect the stability results.
-
-![earthdamfig.gif](../04_xslope/images/earthdamfig.gif)
-
-A starter zip archive is provided that includes the Excel input file with the dam geometry, strength properties, seepage material properties, and seepage boundary conditions already set up. The archive also includes the seepage solution (mesh and pore pressures) so you do not need to run the seepage analysis again.
-
-Start with the starter template and add the following elastic properties:
-
-| Material | $E$ (psf) | $\nu$ |
-|----------|:---------:|:-----:|
-| Shell    | 700,000   | 0.30  |
-| Core     | 300,000   | 0.35  |
-| Clay     | 200,000   | 0.35  |
-| Sand     | 1,000,000 | 0.30  |
-
-Starter template: [xslope_earth_dam_fem.zip](files/xslope_earth_dam_fem.zip)
-
-Add $E$ and $\nu$ to the input file, re-zip it with the mesh and seepage solution files, and upload to both the LEM and FEM notebooks. For the LEM analysis, run the downstream side using Spencer's method. For the FEM analysis, use $F_{min} = 1.0$ and $F_{max} = 1.4$ based on the LEM result with a piezometric line (FS $\approx$ 1.2). Compare the LEM and FEM results and note whether the FEM finds the same localized toe failure or reveals a different failure mechanism. Also note that the FEM does not require you to specify which side to analyze -- it naturally finds the critical failure mechanism.
-
-Solution: [xslope_earth_dam_fem_KEY.zip](files/xslope_earth_dam_fem_KEY.zip)
+Sources: Griffiths, D. V., and Lane, P. A. (1999). "Slope stability analysis by finite elements." *Géotechnique*, 49(3), 387–403.

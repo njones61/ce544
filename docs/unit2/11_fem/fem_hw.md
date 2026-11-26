@@ -1,96 +1,125 @@
-# Homework: Finite Element Slope Stability Analysis
+# Homework - Strength Reduction
 
-In this assignment, you will perform finite element slope stability analyses on two problems using the Shear Strength Reduction Method (SSRM). For each problem, start with the provided XSLOPE input file and add Young's modulus ($E$) and Poisson's ratio ($\nu$) for each material. Then run both the LEM and FEM notebooks and compare the results.
+In this homework you will build two slopes in XSLOPE Studio and solve each by limit equilibrium and by strength reduction: an earth dam with its reservoir full and before filling, and a slope solved on three meshes. [Tutorial FEM-1](https://xslope.org/en/latest/tutorials/fem01_strength_reduction/){:target="_blank"} shows each step.
 
-**LEM Notebook:** <a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Record your answers on this answer sheet, which has a section for each part:
 
-**FEM Notebook:** <a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_fem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+[fem_hw_answers.docx](files/fem_hw_answers.docx)
 
-## Part 1 - Non-Circular Failure Surface
+## Problem 1 - Griffiths and Lane's Earth Dam
 
-This is the same problem from [XSLOPE Class Exercise 2, Problem 3](../04_xslope/xslope_class2.md). Note how the FEM method naturally finds the non-circular failure mechanism through the thin weak clay layer without any prior assumption about the failure surface shape.
+Griffiths and Lane (1999) analyzed an earth dam section (their Example 6) with homogenized properties, with the reservoir full and before it was filled. The dam is 21.3 m high on a 7.3 m foundation, and the reservoir stands 17.1 m above the foundation. With the reservoir full, the phreatic surface runs in a straight line from where the reservoir meets the upstream face to the downstream toe.
 
-![part2c_fig.png](../04_xslope/images/part2c_fig.png)
+![gl_earth_dam.png](images/gl_earth_dam.png){width="946"}
 
-### a. Add Elastic Properties
+**(a) The model**
 
-Start with the LEM solution file and add the following elastic properties:
+Start with **File → New** in **LEM** mode and set **Units** to SI in **Global parameters**. Each table of points below is laid out like Studio's editors, x then y, so you can copy its values and paste them in.
 
-| Soil | $E$ (psf) | $\nu$ |
-|------|:---------:|:-----:|
-| Sand Fill ($c'$ = 0, $\phi'$ = 37°) | 1,000,000 | 0.30 |
-| Sand ($c'$ = 0, $\phi'$ = 33°) | 700,000 | 0.30 |
-| Soft Clay ($S_u$ = 200 psf, $\phi$ = 0) | 60,000 | 0.40 |
-| Dense Sand ($c'$ = 0, $\phi'$ = 37°) | 1,500,000 | 0.28 |
+The dam and its foundation are one material, so the section is one profile line, over a rigid base at El. 0 (**Max depth** = 0):
 
-The soft clay is modeled with $E/S_u \approx 300$ and $\nu = 0.40$ to avoid numerical issues with near-incompressibility. The sand layers use typical values from correlations for granular soils.
+| x | y |
+|:---:|:---:|
+| 0 | 7.3 |
+| 33.5 | 7.3 |
+| 99.83 | 28.6 |
+| 107.13 | 28.6 |
+| 157.9 | 7.3 |
+| 191.4 | 7.3 |
 
-Starter template: [xslope_noncircular.xlsx](../04_xslope/files/xslope_noncircular.xlsx)
+The material:
 
-### b. Run the LEM Analysis
+| Parameter | Value |
+|-----------|-------|
+| γ | 18.2 kN/m³ |
+| c′ | 13.8 kPa |
+| φ′ | 37° |
+| t_cut | 0 |
+| E | 100,000 kPa |
+| ν | 0.3 |
+| u | `piezo` |
 
-Upload the file to the LEM notebook. Run the analysis using a non-circular failure surface. Note the critical factor of safety for each case.
+Enter the phreatic surface as the piezometric line:
 
-### c. Run the FEM Analysis
+| x | y |
+|:---:|:---:|
+| 0 | 24.4 |
+| 86.751 | 24.4 |
+| 157.9 | 7.3 |
+| 191.4 | 7.3 |
 
-Upload the same file to the FEM notebook. Use the LEM result to select appropriate values of $F_{min}$ and $F_{max}$ for the SSRM bisection. Note the computed factor of safety and examine the shear strain plot.
+Leave **Water loads** on `auto`, so that XSLOPE makes the reservoir's load on the upstream face from the line. Add a starting circle with Xo = 130, Yo = 60, and Depth = 7.3. Save the model with **File → Save As**.
 
-### d. Compare Results
+**(b) The reservoir full**
 
-Compare the LEM and FEM results. In your comparison, consider the following:
+Click **Run → Run LEM…** with Spencer and **Auto search**. What is the factor of safety, and which face does the critical circle cut?
 
-1. How does the FEM factor of safety compare to the LEM results?
-2. Does the FEM shear strain plot confirm the non-circular failure mechanism through the weak clay layer?
+Switch the mode strip to **FEM**. Click **Run → Build Mesh…**, set **Target element size** to 2, and build. Click **Run → Run FEM…** and **Run**. What is the factor of safety? Compare both with Griffiths and Lane's 1.9 by strength reduction and 1.90 by limit equilibrium. Save a PNG of the shear strain at failure.
 
-*Thought exercise only - you do not need to submit answers to these questions.*
+Enter your answers in part (b) of the answer sheet.
 
-Save a copy of your input file (XLSX), the mesh file (JSON) and a PNG image of both the LEM and FEM solution plots (PNG). 
+**(c) Before filling**
 
-## Part 2 - Johnson Reservoir
+Save the model under a new name, and in **Materials** change **u** to `none`. Build the mesh again and run FEM. What is the factor of safety? Compare it with Griffiths and Lane's 2.4.
 
-This problem applies the FEM method to the Johnson Reservoir dam from the [Seepage/Slope Integration Homework](../07_seep_slope/seep_slope_hw.md). A starter zip archive is provided that includes the Excel input file with the dam geometry, strength properties, seepage material properties, and seepage boundary conditions already set up. The archive also includes the seepage solution (mesh and pore pressures) so you do not need to run the seepage analysis again.
+Which face fails, full and empty? Filling the reservoir lowers the factor of safety by about a quarter, though the water pushes on the upstream face. Why?
 
-![johnson_res.png](../../unit1/10_xslope_unconfined/images/johnson_res.png){width="900"}
+Enter your answers in part (c) of the answer sheet.
 
-### a. Add Elastic Properties
+## Problem 2 - Torggler's Slope and the Mesh
 
-Open the Excel input file from the zip archive and add the following elastic properties ($E$ and $\nu$) to the **mat** sheet:
+Torggler (2016) analyzed a 10 m slope at 30° in a soft clay by strength reduction in PLAXIS, as the first problem of a study of piles in slopes, and found a factor of safety of 1.111. XSLOPE runs it as one of its verification problems.
 
-| Material | $\gamma$ (pcf) | $c'$ (psf) | $\phi'$ (deg) | $E$ (psf) | $\nu$ |
-|:--------:|:------:|:------:|:------:|:---------:|:-----:|
-| Shell    |  130   |  100   |   35   | 1,000,000 | 0.30  |
-| Core     |  125   |  400   |   18   |   300,000 | 0.35  |
-| Foundation | 127  |  100   |   27   |   700,000 | 0.30  |
+![torggler.png](images/torggler.png){width="651"}
 
-Also, be sure to change the pore pressure option to `seep` for all materials in the **mat** sheet so that the LEM and FEM analyses will use the pore pressures from the seepage solution.
+**(a) The model**
 
-Save the updated Excel file and re-zip it with the mesh and seepage solution files.
+Start with **File → New** in **LEM** mode, with **Units** set to SI. The section is one profile line, over a rigid base at El. 0 (**Max depth** = 0):
 
-Starter template: [xslope_johnson_res_fem.zip](files/xslope_johnson_res_fem.zip)
+| x | y |
+|:---:|:---:|
+| 0 | 20 |
+| 20 | 20 |
+| 37.32 | 30 |
+| 57 | 30 |
 
-### b. Run the LEM Analysis
+The material:
 
-Upload the zip archive to the LEM notebook and run the slope stability analysis on the downstream side using Spencer's method. Note the critical factor of safety.
+| Parameter | Value |
+|-----------|-------|
+| γ | 16 kN/m³ |
+| c′ | 10 kPa |
+| φ′ | 15° |
+| t_cut | 0 |
+| E | 2,000 kPa |
+| ν | 0.4 |
+| u | `none` |
 
-### c. Run the FEM Analysis
+Add a starting circle with Xo = 28.66, Yo = 40, and Depth = 20, and save the model.
 
-Upload the same zip archive to the FEM notebook. Use the LEM result to select appropriate values of $F_{min}$ and $F_{max}$ for the SSRM bisection. Run the FEM analysis and note the computed factor of safety.
+**(b) Limit equilibrium**
 
-### d. Compare Results
+Click **Run → Run LEM…** with Spencer and **Auto search**. What is the factor of safety?
 
-Compare the LEM and FEM results. 
+Enter your answer in part (b) of the answer sheet.
 
-1. How does the FEM factor of safety compare to the LEM result?
-2. Examine the FEM shear strain plot. Does it reveal the same failure mechanism as the LEM analysis?
-3. Note that unlike the LEM analysis, you did not need to specify whether to analyze the upstream or downstream side. Which side does the FEM identify as critical?
+**(c) Strength reduction at three mesh sizes**
 
-*Thought exercise only - you do not need to submit answers to these questions.*
+Switch to **FEM**. Build a mesh at a target element size of 2 m and run FEM; note the number of elements and the factor of safety. Repeat at 1 m and at 0.7 m. The 0.7 m run takes a few minutes.
 
-Save a copy of your input file (XLSX), the mesh file (JSON), the seepage solution file (CSV), and a PNG image of both the LEM and FEM solution plots (PNG). 
+What did refining the mesh change, and why? Which size would you use? Save a PNG of the shear strain at failure on your finest mesh, beside Spencer's critical circle. How do your numbers compare with Spencer's and with Torggler's 1.111?
+
+Enter your answers in part (c) of the answer sheet.
 
 ## Submission
 
- Zip up all files described above for both problems into a single zip archive. Upload your zip archive to Canvas.
+Put the following files in a zip archive:
+
+- The earth dam models from Problem 1, full and before filling
+- Torggler's slope from Problem 2
+- The answer sheet, with your pictures, saved as a PDF
+
+Upload the zip archive to Canvas.
 
 !!! note "Do not put your name or NetID in the file"
     Canvas records who submitted each file, so your name is not needed
@@ -102,18 +131,12 @@ Save a copy of your input file (XLSX), the mesh file (JSON), the seepage solutio
 
 **Total: 30 points**
 
-### Part 1 - Non-Circular Failure Surface (15 points)
-
 | Criteria | Points |
 |----------|:------:|
-| Elastic properties ($E$, $\nu$) entered correctly for all four materials | 5 |
-| LEM analysis run with non-circular failure surface | 5 |
-| FEM analysis produces correct factor of safety | 5 |
+| Problem 1a: Earth dam model as given | 4 |
+| Problem 1b: Spencer and strength reduction with the reservoir full, compared with Griffiths and Lane, and the shear strain | 6 |
+| Problem 1c: Strength reduction before filling, which face fails, and why filling lowers F | 6 |
+| Problem 2a-b: Torggler's slope as given, and Spencer's factor of safety | 4 |
+| Problem 2c: Strength reduction at the three mesh sizes, what refining changed and why, the size you would use, and the comparison | 10 |
 
-### Part 2 - Johnson Reservoir (15 points)
-
-| Criteria | Points |
-|----------|:------:|
-| Elastic properties ($E$, $\nu$) entered correctly and pore pressure set to `seep` | 5 |
-| LEM analysis run with seepage-derived pore pressures | 5 |
-| FEM analysis produces correct factor of safety | 5 |
+Sources: Griffiths, D. V., and Lane, P. A. (1999). "Slope stability analysis by finite elements." *Géotechnique*, 49(3), 387–403. Torggler, T. (2016). [*Numerical Studies of Embedded Beam Row in Safety Analysis in PLAXIS 2D*](https://diglib.tugraz.at/download.php?id=5891c94c5ba8d&location=browse){:target="_blank"}. MSc thesis, Graz University of Technology.
