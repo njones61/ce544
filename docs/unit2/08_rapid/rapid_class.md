@@ -83,19 +83,19 @@ Set 2 describes the dam long after the drawdown, once it has finished draining a
 
 Solutions: [xslope_earth_dam_up_STEADY_solution.xlsx](files/xslope_earth_dam_up_STEADY_solution.xlsx) and [xslope_earth_dam_up_TRANSIENT_solution.xlsx](files/xslope_earth_dam_up_TRANSIENT_solution.xlsx).
 
-**Part a.** The shell (14.4 ft/day) and the sand (1.44 ft/day) are 100 to 10,000 times more pervious than the clay (0.0144 ft/day) and the core (0.00144 ft/day). Any pore pressure that shearing generates in them drains away as fast as it is generated, so they keep their drained strengths, computed with the pore pressures the seepage solution gives them in each stage. The full-pool solution carries 3.22 ft³/day per ft and the lowered pool 0.942.
+**Part a.** The shell (14.4 ft/day) and the sand (1.44 ft/day) are 100 to 10,000 times more pervious than the clay (0.0144 ft/day) and the core (0.00144 ft/day). Any pore pressure that shearing generates in them drains away as fast as it is generated, so they keep their drained strengths, computed with the pore pressures the seepage solution gives them in each stage. The full-pool solution carries 3.22 ft³/day per ft and the lowered pool 0.943.
 
 With **Rapid drawdown** ticked, the search finds F = 1.228:
 
 | Stage | F |
 |:-----:|:-:|
-| 1, full pool, drained | 2.282 |
+| 1, full pool, drained | 2.281 |
 | 2, drawn down, undrained | 1.234 |
 | 3, drawn down, drained | **1.228** |
 
 The critical circle starts on the upstream face just above the toe (x = 3), runs along the bottom of the clay (el. 197), and comes out on the downstream face just past the crest (x = 331). Stage 3 governs, but only just. On two core slices near the crest the drained strength came out lower than the undrained strength and replaced it. Of the circle's 39 slices, 26 have their bases in the clay, 9 in the core, and 4 in the shell.
 
-With **Rapid drawdown** unticked, the dam at full pool has F = 1.904, on a shallower circle from x = −8 to x = 284. Stage 1's 2.282 is higher because it is computed on the drawdown's critical circle, not this one. The drawdown takes the factor of safety from 1.90 to 1.23. It removes the water that pressed on the upstream face, while the core and the clay keep the strength the full pool gave them.
+With **Rapid drawdown** unticked, the dam at full pool has F = 1.904, on a shallower circle from x = −8 to x = 284. Stage 1's 2.281 is higher because it is computed on the drawdown's critical circle, not this one. The drawdown takes the factor of safety from 1.90 to 1.23. It removes the water that pressed on the upstream face, while the core and the clay keep the strength the full pool gave them.
 
 **Part b.** The water in the upstream shell has nearly followed the pool down: its head at (150, 240) is 255.5 ft, about 6 ft above the 249.9 ft it settles at once the dam has finished draining (Solution 2). The clay and the sand under the upstream slope have come about two-thirds of the way down, from 286 to 294 ft at full pool to 260 to 262 ft, against the 245 to 248 ft they settle at. The sand is pervious, but the clay seals it from the reservoir, so its head can come down only as fast as the clay lets its water out. The core hasn't moved: 279 ft in the middle, as at full pool, against 240 ft in Solution 2.
 
@@ -104,7 +104,7 @@ The search finds F = 1.165:
 | Stage | F |
 |:-----:|:-:|
 | 1, full pool, drained | 2.199 |
-| 2, drawn down, undrained | 1.249 |
+| 2, drawn down, undrained | 1.248 |
 | 3, drawn down, drained | **1.165** |
 
 The circle is nearly the same, from x = −17 on the ground in front of the toe to x = 330, along the bottom of the clay. Stage 2 is about the same as in part a, because it sets the strengths of the core and the clay from the stage 1 stresses, and their pore pressures at t = 57 don't enter it. Stage 3 checks the drained strength at those pore pressures. With the clay and the core still holding much of the full pool's head, the drained strength came out lower than the undrained strength on 13 of the 26 clay slices, along the upstream half of the circle, and on 6 of the 9 core slices.
