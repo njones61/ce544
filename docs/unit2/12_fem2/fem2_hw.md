@@ -24,7 +24,7 @@ Enter your answers in Problem 1 of the answer sheet.
 
 ## Problem 2 - A Jointed Rock Face
 
-A 12 m rock face at 60°. A base plane dips 30° from 5 m behind the crest to the toe, and the rock above it is cut by joints. You will run the same slope with two joint patterns: a set of columns 1.5 m apart, and an irregular blocky mass. Every joint, the base plane included, has no cohesion and a friction angle of 35°. The rock is elastic.
+A 12 m rock face at 60°. A base plane dips 30° from 5 m behind the crest to the toe, and the rock above it is cut by joints. You will run the same slope with two joint patterns: a set of columns 1.5 m apart, and an irregular blocky mass. Every joint, the base plane included, has no cohesion and a friction angle of 40°. The rock is elastic.
 
 The columns:
 
