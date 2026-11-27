@@ -1,6 +1,6 @@
 # Homework - Strength Reduction with Structures
 
-In this homework you will run strength reduction on two models with joints in them: a dry-stacked block wall, and a rock slope with a slab on a bedding plane. [Tutorial FEM-3](https://xslope.org/en/latest/tutorials/fem03_block_wall_joints/){:target="_blank"} and [Tutorial FEM-5](https://xslope.org/en/latest/tutorials/fem05_rock_slope_joints/){:target="_blank"} show each step.
+In this homework you will run strength reduction on models with joints in them: a dry-stacked block wall, and a rock face cut by joints in two different patterns. [Tutorial FEM-3](https://xslope.org/en/latest/tutorials/fem03_block_wall_joints/){:target="_blank"} and [Tutorial FEM-5](https://xslope.org/en/latest/tutorials/fem05_rock_slope_joints/){:target="_blank"} show each step.
 
 Record your answers on this answer sheet, which has a section for each problem:
 
@@ -22,19 +22,25 @@ Open this file in XSLOPE Studio: [xslope_block_wall.xlsx](files/xslope_block_wal
 
 Enter your answers in Problem 1 of the answer sheet.
 
-## Problem 2 - A Rock Slab
+## Problem 2 - A Jointed Rock Face
 
-A 12 m rock face at 60°, cut by a bedding plane that dips 35° out of the face and a vertical release joint 2 m behind the crest. Both joints have no cohesion and a friction angle of 40°. The rock is elastic.
+A 12 m rock face at 60°. A base plane dips 30° from 5 m behind the crest to the toe, and the rock above it is cut by joints. You will run the same slope with two joint patterns: a set of columns 1.5 m apart, and an irregular blocky mass. Every joint, the base plane included, has no cohesion and a friction angle of 35°. The rock is elastic.
 
-![rock_slab.png](images/rock_slab.png){width="600"}
+The columns:
 
-Open this file in XSLOPE Studio: [xslope_rock_joints.xlsx](files/xslope_rock_joints.xlsx)
+![rock_columns.png](images/rock_columns.png){width="700"}
 
-**(a)** For a block sliding on a plane with friction only, F = tan φ / tan β, where β is the dip of the plane. What is F for this slab?
+The blocky mass, as XSLOPE draws its inputs:
 
-**(b)** Switch to **FEM**. Build a mesh at a target size of 1.5, then run FEM with **Max iterations per trial** at 100,000 and **Failure criterion** on **Hybrid** (about three minutes). What is F? Compare it with (a).
+![rock_blocks.png](images/rock_blocks.png){width="971"}
 
-**(c)** Open **Joints** and set **phi** to 45 on both joints. Repeat (a) and (b). Do the two methods still agree? Why would they, for this slope?
+Open these files in XSLOPE Studio: [xslope_rock_columns.xlsx](files/xslope_rock_columns.xlsx) and [xslope_rock_blocks.xlsx](files/xslope_rock_blocks.xlsx)
+
+**(a)** Open the columns. Switch to **FEM**, build a mesh at a target size of 1.5, then run FEM with **Max iterations per trial** at 100,000 and **Failure criterion** on **Hybrid** (about two minutes). What is F? Set **Field state** to **Last converged** and save a PNG of the deformed blocks.
+
+**(b)** Repeat (a) with the blocky mass (about five minutes).
+
+**(c)** The two factors of safety are close. Which rock mass topples and which slides? How do the deformed blocks and the joint states show it?
 
 Enter your answers in Problem 2 of the answer sheet.
 
@@ -43,8 +49,7 @@ Enter your answers in Problem 2 of the answer sheet.
 Put the following files in a zip archive:
 
 - The block wall model from Problem 1
-- The rock slab model from Problem 2, with the joints at 45°
-- The answer sheet, with your picture, saved as a PDF
+- The answer sheet, with your pictures, saved as a PDF
 
 Upload the zip archive to Canvas.
 
@@ -63,5 +68,5 @@ Upload the zip archive to Canvas.
 | Problem 1a: F and the picture of the deformed wall | 6 |
 | Problem 1b: The largest slip on each contact | 6 |
 | Problem 1c: Which contact slipped most, and why a base sliding check misses it | 6 |
-| Problem 2a-b: The hand solution and strength reduction at 40° | 6 |
-| Problem 2c: Both at 45°, and why they agree | 6 |
+| Problem 2a-b: F and the picture of the deformed blocks, for each pattern | 6 |
+| Problem 2c: Which mass topples and which slides, and how the pictures show it | 6 |
