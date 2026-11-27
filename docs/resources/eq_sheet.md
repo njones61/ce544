@@ -190,10 +190,6 @@
 
 >$H = d_{base} - d_{wt} \qquad h_t = d_{base} - \left(d_{exc} + d_m\right)$
 
-**Dewater App (Theis Summed over Wells and Rate Changes):**  
-
->$H^2 - h^2 = \sum_{i,\,j}\dfrac{\Delta q_j}{2\pi k}\,W\left(u_{ij}\right) \qquad u_{ij} = \dfrac{r_i^2 S_y}{4kH\left(t - t_j\right)}$
-
 **Drainage Time, Anisotropic Soil:**  
 
 >$t_d = \dfrac{4 S_y H}{k_v}$
@@ -228,33 +224,11 @@
 
 >$\Delta = \dfrac{1}{2}\left[\left(x_j - x_i\right)\left(y_k - y_i\right) - \left(x_k - x_i\right)\left(y_j - y_i\right)\right]$
 
-## Seepage Analysis in XSLOPE
-
-**Pressure Head and Pore Pressure:**  
-
->$\psi = h - y \qquad u = \gamma_w\,(h - y)$
-
-**Unsaturated Conductivity:**  
-
->$k = k_r(\psi)\,k_s \qquad \text{Gardner: } k_r = \dfrac{1}{1 + a|\psi|^n}$
-
-**Flow Lines for Square Cells:**  
-
->$N_f = \dfrac{q\,N_d}{k\,\Delta h}$
-
 ## Transient Seepage
-
-**Governing Equation (2D Transient):**  
-
->$\dfrac{\partial}{\partial x}\left(k_x\dfrac{\partial h}{\partial x}\right) + \dfrac{\partial}{\partial y}\left(k_y\dfrac{\partial h}{\partial y}\right) = S\,\dfrac{\partial h}{\partial t}$
 
 **Storativity of a Layer $b$ Thick:**  
 
 >$S = S_s\,b$
-
-**Storage Coefficient in XSLOPE (Linear Front):**  
-
->$S = S_s \ (\psi \ge 0) \qquad S = \dfrac{S_y}{|h_0|} \ (h_0 < \psi < 0) \qquad S \approx 0 \ (\psi \le h_0)$
 
 **Drainage Rate of a Zone:**  
 
