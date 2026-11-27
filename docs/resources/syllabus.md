@@ -29,25 +29,25 @@ After successfully completing this course, you should:
 
 ## Lecture Format
 
-The course will be taught in a "flipped" format. For each class period, you are expected to carefully study the "pre-class" content which will consist of videos and/or reading. A link to the pre-class content for each lecture will be provided on the Learning Suite schedule. You should complete the pre-class content before the associated calss period. The class period will be used for discussing the pre-class content and working through exercises together. 
+The course will be taught in a "flipped" format. For each class period, you are expected to carefully study the "pre-class" content which will consist of videos and/or reading. In Canvas, each class period is listed under its unit's module, with links to its pre-class content, quiz, in-class exercise, and homework. You should complete the pre-class content before the associated calss period. The class period will be used for discussing the pre-class content and working through exercises together. 
 
 ## Quizzes
 
 There will be pre-class quiz associated with each lecture based on the pre-class content. Each quiz is worth 7 
-points. The first question which is worth 2 pts, is "Did you complete the pre-class content?". Then there will be 4 
-questions based on that content, and finally there will be an open response question where you are asked if there 
-was anything from the pre-class content that was not clear that you would like to review in class. The quizzes will 
-be on Learning Suite and will be due 15 minutes prior to class. I will drop your 3 lowest quiz scores.
+points. The first question, worth 3 points, is "Did you watch the pre-class video?". Then there will be 4 
+questions based on that content, 1 point each, and finally an open response question, worth no points, where you are 
+asked if there was anything from the pre-class content that was not clear that you would like to review in class. The quizzes will 
+be on Canvas and will be due 15 minutes prior to class. I will drop your 3 lowest quiz scores.
 
 ## Exams
 
-Exams will be given on-line. You will have a 2-3 days to take the exam. The exam will be timed and you will have 3 hours to complete it. The exam will be closed book, closed notes, and closed internet. You may not discuss the exam with anyone else until the exam period is over. You may not use any other person to help you with the exam. You may not use any other person's work as your own.
+Exams will be given on-line. Exam 1 is open for a week after the seepage unit ends, and Exam 2 is open during the final exam period. Each exam is timed: you will have 4 hours to complete it once you start. The exam will be closed book, closed notes, and closed internet. You may not discuss the exam with anyone else until the exam period is over. You may not use any other person to help you with the exam. You may not use any other person's work as your own.
 
 Since we are covering two distinct topics, there will be two exams. The first exam will cover the seepage portion of the class and the second exam will cover the slope stability portion.
 
 ## Homework
 
-The homework is essential to reinforce the topics covered in class. The homework will also prepare you for the exams. You will upload your homework to Learning Suite and our TA will grade it. Homework will be due on Learning Suite on the due date indicated - typically 1 week after the class period. Late homework will be reduced by 10% per day up to a maximum penalty of 50%.
+The homework is essential to reinforce the topics covered in class. The homework will also prepare you for the exams. You will upload your homework to Canvas and our TA will grade it. Homework is due at 11:59 pm on the date shown in Canvas, typically 1 week after the class period. Late homework will be reduced by 10% per day up to a maximum penalty of 50%.
 
 ## Academic Honesty
 
@@ -56,22 +56,20 @@ I encourage you to work together on the homework as long as everyone is contribu
 
 ## Grades
 
-Grades will be assigned based on the following formula. See Learning Suite for a complete list of scores and grades.
+Grades will be assigned based on the following formula. Your scores and grades are on Canvas.
 
 | Item | Percentage |
 |------|------------|
 | Homework | 25% |
-| Case Study | 7% |
-| Exam #1 | 30% |
-| Exam #2 | 30% |
+| Term Project | 10% |
+| Exam #1 | 28.5% |
+| Exam #2 | 28.5% |
 | Quizzes | 8% |
 | Total | 100% |
 
-## Microsoft Teams
+## Announcements and Questions
 
-There will be a **Micorsoft Teams** group for this class. You will be invited to join the group by the instructor. The group will be used for announcements, discussions, and questions. You are encouraged to ask questions and participate in discussions. We will also use the group for virtual office hours. I can jump on video chat to help you with your homework or answer questions.
-
-You can access Teams through the web interface or by downloading the app to your computer or phone. You should get in the habit of checking the group regularly for announcements and discussions. You can also set up notifications to be alerted when there is new activity in the group.
+Announcements go out through Canvas, and Canvas emails them to you unless you turn that off in your notification settings. Post questions about the course in the Canvas discussions, where everyone can see the answers, or ask me in class.
 
 ## Textbooks
 

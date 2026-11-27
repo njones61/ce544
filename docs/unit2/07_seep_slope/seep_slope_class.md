@@ -1,105 +1,78 @@
 # Exercise - Seepage/Slope Stability Integration
 
-In this exercise, we will combine seepage and slope stability analyses using XSLOPE. We will first run a seepage analysis to compute pore pressures and then use those pore pressures in a slope stability analysis. 
+In this exercise you will go back to two slopes you have already solved with a piezometric line, take their pore pressures from a finite element seepage analysis instead, and compare the factors of safety. Both analyses run in one XSLOPE Studio file. In **Seepage** mode, you build the mesh and run the seepage analysis. Then you set **u** to `seep` for each material, and the stability analysis in **LEM** mode reads its pore pressures from the seepage solution.
 
-Use the XSLOPE Google Colab seepage notebook for the seepage analysis:
+## Problem 1 - The Spreadsheet Slope
 
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_seep.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+This is the slope you solved by hand in the method of slices spreadsheets ([Ordinary Method of Slices](../02_limiteq1/limiteq1_class.md), [Janbu and Bishop](../03_limiteq2/limiteq2_class.md), and [Spencer](../03_limiteq2/limiteq2_hw.md)) and in XSLOPE in Problem 1 of [Stability Analysis with XSLOPE, Part 2](../04_xslope/xslope_class2.md), with the same soils and the same piezometric line.
 
-Use the XSLOPE Google Colab LEM notebook for the slope stability analysis:
+![class_slope.png](../04_xslope/images/class_slope.png){width="950"}
 
-<a href="https://colab.research.google.com/github/njones61/xslope/blob/main/notebooks/xslope_lem.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Open this file in XSLOPE Studio with **File → Open**. It is the solution model from that XSLOPE exercise, with the piezometric line and the spreadsheet circle:
 
-## Problem 1 - Method of Slices Problem with Seepage
+[xslope_spreadsheet_slope.xlsx](files/xslope_spreadsheet_slope.xlsx)
 
-This is the same problem we solved earlier in the XSLOPE exercises.
+### Part a - Piezometric line
 
-![part2a_fig.png](../05_xslope/images/part2a_fig.png)
+Run Spencer's method twice: once with **Analysis** set to **Single surface**, on the spreadsheet circle, and once with **Auto search**. Note both factors of safety and where the critical surface is.
 
-Use the following Excel input file to get started:
+### Part b - Seepage analysis
 
-[xslope_rface.xlsx](./files/xslope_rface.xlsx)
+1. In **Global parameters**, set the time unit to `day`.
 
-### Part a - Piezometric Line
+2. In the **Materials** editor, set **u** to `seep` for all three soils and enter their seepage properties:
 
-First, solve the problem using a piezometric line to define the pore pressures. Set the pore pressure option for each material to `piezo`. Enter the following piezometric line coordinates on the **piezo** sheet:
+    | Material | k1 = k2 (ft/day) | α | kr0 | h0 |
+    |:--------:|:----------------:|:-:|:------:|:--:|
+    | soil 1 | 0.5 | 0 | 0.0001 | −1 |
+    | soil 2 | 1 | 0 | 0.0001 | −1 |
+    | soil 3 | 0.01 | 0 | 0.0001 | −1 |
 
-|   x   |  y  |
-|:-----:|:---:|
-|   0   | 80  |
-|  75   | 79  |
-|  112  | 76  |
-|  140  | 70  |
-|  170  | 61  |
-| 189.5 | 52  |
-| 204.3 | 40  |
-|  320  | 40  |
+3. Switch to **Seepage** mode. In **Seep BC**, give the left edge, from (0, 0) to (0, 80), a specified head of 80 ft, where the piezometric line starts. Make the slope face and the ground beyond the toe an exit face, from (150, 84) through (174.7, 64) and (204.3, 40) to (320, 40). The right edge and the base carry no flow.
 
-Use a single starting circle (not auto search) to find the factor of safety. Use this circle:
+4. Build the mesh with the default settings, and run the seepage analysis. Where does the phreatic surface meet the slope face? The piezometric line meets it at el. 52.
 
->>$X_{0} = 175$ ft<br>
->>$Y_{0} = 100$ ft<br>
->>$Depth = 0$ ft
+5. Switch to **LEM** mode, and run the spreadsheet circle and the search again. How do the factors of safety compare with part a, and why?
 
-Use the **LEM notebook** to run the slope stability analysis. Note the factor of safety.
+Solution: [xslope_spreadsheet_slope_SEEP_solution.xlsx](files/xslope_spreadsheet_slope_SEEP_solution.xlsx). On the spreadsheet circle, F = 1.580 with the piezometric line and 1.726 with the seepage solution. The search finds 0.765 with the line, on the lower face, and 0.972 with the seepage, on a longer surface from just behind the crest (x = 146) to the toe. The seepage solution's phreatic surface meets the face at el. 46, 6 ft below the piezometric line, so the line was conservative here. Dry, the same search finds 1.133, so the water is what takes this slope below 1, and the higher water of the piezometric line takes it further.
 
-### Part b - Seepage Analysis
+## Problem 2 - The Earth Dam
 
-Now solve the same problem using a seepage analysis.
+This dam is Example 2 in Section 6.13.6 of the textbook (pp. 121–123, Figs. 6.41 to 6.43), the one you analyzed with a piezometric line in Problem 1 of the [XSLOPE LEM, Part 2](../04_xslope/xslope_hw2.md) homework. The book uses it because a piezometric line and a seepage analysis give very different answers for it.
 
-Use the following seepage properties for the three materials:
+![earth_dam.png](../04_xslope/images/earth_dam.png){width="950"}
 
-| Material | k1  | k2  | alpha | kr0    | h0 |
-|:--------:|:---:|:---:|:-----:|:------:|:--:|
-| Silt     | 0.5 | 0.5 | 0     | 0.0001 | -1 |
-| Sand     | 1   | 1   | 0     | 0.0001 | -1 |
-| Clay     | 0.01| 0.01| 0     | 0.0001 | -1 |
+Open this file, the model of the downstream side from that homework, with the piezometric line and two starting circles:
 
-1. Change the pore pressure option for each material to `seep` on the **mat** sheet.
-2. Enter the seepage properties for each material on the **mat** sheet using the values from the table above.
-3. Remove the piezometric line coordinates from the **piezo** sheet.
-4. Set up the seepage boundary conditions on the **seep bc** sheet using a specified head of H = 80 ft on the upstream boundary and an exit face on the downstream boundary.
-5. Run the seepage analysis using the **seepage notebook** and download the zip archive.
-6. Upload the zip archive to the **LEM notebook** and run the slope stability analysis. Use a single starting circle.
-7. Compare the factor of safety to the piezometric line solution from Part a.
+[xslope_earth_dam_down.xlsx](files/xslope_earth_dam_down.xlsx)
 
-Solutions:
+### Part a - Piezometric line
 
-[xslope_rface_PIEZO_KEY.xlsx](../07_seep_slope/files/xslope_rface_PIEZO_KEY.xlsx)<br>
-[xslope_rface_SEEP_KEY.xlsx](../07_seep_slope/files/xslope_rface_SEEP_KEY.xlsx)<br>
-[xslope_rface_SEEP_KEY_results.zip](../07_seep_slope/files/xslope_rface_SEEP_KEY_results.zip)
+Run an **Auto search** by Spencer's method, and note the factor of safety and where the critical circle is.
 
-## Problem 2 - Earth Dam Problem with Seepage
+### Part b - Seepage analysis
 
-This is the same problem we solved in the previous XSLOPE homework, but this time we will use a seepage analysis to define the pore pressures instead of a piezometric line.
+1. In **Global parameters**, set the time unit to `min`. The book gives the conductivities in ft/min.
 
-![earthdamfig.gif](../05_xslope/images/earthdamfig.gif)
+2. In the **Materials** editor, set **u** to `seep` for all four materials and enter their seepage properties:
 
-Start with this file: [xslope_earth_dam_down.xlsx](../07_seep_slope/files/xslope_earth_dam_down.xlsx)
+    | Material | k1 = k2 (ft/min) | α | kr0 | h0 |
+    |:--------:|:----------------:|:-:|:-----:|:--:|
+    | Shell | 1 × 10⁻² | 0 | 0.001 | −5 |
+    | Core | 1 × 10⁻⁶ | 0 | 0.001 | −5 |
+    | Clay | 1 × 10⁻⁵ | 0 | 0.001 | −5 |
+    | Sand | 1 × 10⁻³ | 0 | 0.001 | −5 |
 
-## Part a - Piezometric Line
+    h0 is −5 ft here instead of the −1 you have used before, because on a dam this size −1 is too sharp for the seepage solution to converge at the default mesh.
 
-First find a solution using a piezometric line. The input file already has the pore pressure option set to `piezo` and it contains the piezometric line coordinates on the **piezo** sheet. Use the **LEM notebook** to run the slope stability analysis. Note the factor of safety.
+3. Switch to **Seepage** mode. In **Seep BC**, give the reservoir a specified head of 302 ft, on the upstream ground and face from (−150, 227) through (0, 227) to (225, 302). Give the ground beyond the downstream toe, from (590, 227) to (740, 227), a specified head of 227 ft, for tailwater at the ground surface. Make the downstream face, from (320, 317) to (590, 227), an exit face. Leave the two side edges and the base with no boundary condition, so no water crosses them.
 
-## Part b - Seepage Analysis
+4. Build the mesh with the default settings, and run the seepage analysis. Look at the head contours under the downstream toe. Is the head in the sand higher or lower than the ground surface there? Which way is the water flowing through the clay?
 
-1. Open the Excel input file and change the pore pressure option for each material from `piezo` to `seep`. You can delete the piezometric line coordinates from the **piezo** sheet if you like (optional).
+5. Switch to **LEM** mode, and run the **Auto search** by Spencer's method again. Where is the critical surface now, and why?
 
-2. Add the following seepage material properties to the **mat** sheet:
+Solution: [xslope_earth_dam_down_SEEP_solution.xlsx](files/xslope_earth_dam_down_SEEP_solution.xlsx).
 
-| Material | k1  | k2  | alpha | kr0  | h0 |
-|:--------:|:---:|:---:|:-----:|:----:|:--:|
-| Shell    | 864   | 864   | 0     | 0.0001 | -1 |
-| Core     | 0.0864 | 0.0864 | 0  | 0.0001 | -1 |
-| Clay     | 0.864 | 0.864 | 0   | 0.0001 | -1 |
-| Sand     | 86.4   | 86.4   | 0     | 0.0001 | -1 |
+With the piezometric line, the search finds F = 1.558 on a deep circle that reaches the bottom of the clay. With the seepage solution, it goes straight to the downstream toe and finds F = 0.12: a blowout at the toe.
 
-3. Set up the seepage boundary conditions on the **seep bc** sheet. Use a specified head of H = 302 ft on the upstream boundary and an exit face on the downstream slope of the dam.
-
-4. Upload the Excel file to the **seepage notebook** and run the seepage analysis. Use base_mat=3 to view your solution. Download the zip archive. 
-
-5. Upload the zip archive to the **LEM notebook** and run the slope stability analysis using Spencer's method. Only analyze the downstream side. 
-
-Notice that the results are DRAMATICALLY different than the piezometric line solution. The factor of safety is much lower when we use the seepage-derived pore pressures. Basically, you get an uplift failure neer the toe of the dam. This is because for this case, much of the seepage flow is routed through the clay and sand layers and then it flows out through the downstream slope and you have much higher pore pressures near the toe compared to the piezometric line. The piezometric line was a very simplified representation of the pore pressures and it did not capture the high pore pressures that occur in the downstream slope due to seepage flow. This example highlights the importance of using a seepage analysis to compute pore pressures for slope stability analyses when seepage is occurring. This case is discussed in detail in our textbook starting on page 121.
-
-Solution: [earth_dam_seep_slope_KEY.zip](files/earth_dam_seep_slope_KEY.zip)
+The seepage solution shows why. Water from the reservoir flows through the sand under the dam and has to come up through the clay at the toe. Under the toe, the head in the sand is about 240.6 ft, 13.6 ft above the ground, and at el. 208, in the clay, the pore pressure is 28 ft of water, against 19 ft below a piezometric line at the ground. At the surface, that upward flow leaves the soil with almost no effective stress. A piezometric line can't represent water flowing upward, so it misses the blowout. The book shows that the line overstates the factor of safety on deeper circles too: for circles that reach the bottom of the clay, it gets 1.57 with the line and 1.37 with the seepage.

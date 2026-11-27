@@ -2,7 +2,7 @@
 
 Assume you have a 2D domain with bedding planes declining at a sharp angle as shown below. 
 
-![darcy_2d.png](images/darcy_2d.png)
+![darcy_2d.png](images/darcy_2d.png){width="450"}
 
 Recall the following equations:
 
@@ -15,7 +15,7 @@ k_{yy} = k_r sin_{\alpha}^2 + k_s cos_{\alpha}^2
 $$
 
 $$
-k_{xy} = k_{yx} = -\frac{1}{2}\left(k_r - k_s\right) sin(2\alpha)
+k_{xy} = k_{yx} = \frac{1}{2}\left(k_r - k_s\right) sin(2\alpha)
 $$
 
 Assume the following:
