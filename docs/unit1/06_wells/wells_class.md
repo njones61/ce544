@@ -9,8 +9,8 @@ The radius of influence of a well is the distance from the well at which the dra
 | Lembke    |Semi-Empirical| $R = H\sqrt{\frac{k}{2N}}$       | 
 | Weber     | Semi-Empirical | $R = 2.45\sqrt{\frac{Hkt}{n_e}}$ |
 | Kusakin   | Semi-Empirical | $R = 1.9\sqrt{\frac{Hkt}{n_e}}$  |
-| Siechardt | Empirical | $R = 3000s_w\sqrt{k}$            |
-| Kusakin   | Empirical | \(R = 575s_w\sqrt{\frac{H}{k}}\) |
+| Sichardt  | Empirical | $R = 3000s_w\sqrt{k}$            |
+| Kusakin   | Empirical | \(R = 575s_w\sqrt{Hk}\) |
 
 Where:
 
@@ -33,7 +33,7 @@ In this exercise, you will calculate the water level at the center of the well a
 
 The following equations can be used to calculate the head (h) as a function of distance (x) from the well:
 
->>$h =  H = \dfrac{q}{2\pi k D} \ln\left(\dfrac{r}{R}\right)$
+>>$h = H + \dfrac{q}{2\pi k D} \ln\left(\dfrac{r}{R}\right)$
 
 Where:
 

@@ -16,9 +16,9 @@ where:
 
 >>$q$ = flow rate (ft^3/day)<br>
 $k$ = hydraulic conductivity (ft/d)<br>
-$n_f$ = number of flow channels crossing a given flow line<br>
-$n_e$ = number of equipotential lines crossing a given flow line<br>
-$h$ = head difference between two adjacent flow lines (ft)
+$n_f$ = number of flow channels<br>
+$n_e$ = number of equipotential drops<br>
+$h$ = total head lost from the upstream side to the downstream side (ft)
 
 b) Calculate the total head, elevation head, pressure head, and pore pressure at points A, B, and C. 
 
