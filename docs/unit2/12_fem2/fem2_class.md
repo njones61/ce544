@@ -30,22 +30,26 @@ Solution:
 
 ## Problem 2 - A Sheet Pile Wall
 
-A 20 ft clay slope at 1:1 with a PZ-27 steel sheet pile wall at mid-slope, its tip fixed in the rigid base.
+A 20 ft clay slope at 1:1 with a steel sheet pile wall at mid-slope, its tip fixed in the rigid base. The file has a PZ-27 section, with a moment capacity of 152,000 lb·ft/ft. You will first run it with a lighter section.
 
 ![sheet_pile_wall.png](images/sheet_pile_wall.png){width="971"}
 
 Open this file in XSLOPE Studio: [xslope_pile_wall.xlsx](files/xslope_pile_wall.xlsx)
 
-1. Switch to **FEM**. Click **Run → Build Mesh…**, untick **Auto-size from geometry**, set **Target element size** to 2, and click **Build**. Run FEM. What is F, and where does the shear strain band go?
+1. Open **Piles** in the **Inputs** dock, press **Table view**, set **Mcap** to 60000, and click **OK**. Switch to **FEM**. Click **Run → Build Mesh…**, untick **Auto-size from geometry**, set **Target element size** to 2, and click **Build**. Run FEM. What is F, and where does the shear strain band go?
 
-2. With the wall's resistance H entered (49,000 lb/ft, the passive resistance of the soil below the slip surface), Spencer's method gives F = 1.704. Compare it with step 1. Where does the critical circle go?
+2. Click **1D Details…**, set **Field state** to **Last converged**, and select the wall. What is the largest bending moment, and where is it? Compare it with Mcap.
 
-3. Click **1D Details…**, set **Field state** to **Last converged**, and select the wall. What is the largest bending moment, and where is it? What fraction of the wall's moment capacity, 152,000 lb·ft/ft, is it?
+3. With the wall's resistance H entered (49,000 lb/ft, the passive resistance of the soil below the slip surface), Spencer's method gives F = 1.704, and its critical circle passes over the head of the wall. Compare it with step 1. Why does limit equilibrium miss the failure through the wall?
+
+4. Set **Mcap** back to 152000 and run FEM again. What is F, and where does the band go now?
 
 Solution:
 
-**1.** F = 1.730. The band runs from the head of the wall up to the crest: the soil above the wall slides out over its head.
+**1.** F = 1.621. The band runs from the slope behind the wall, through the wall, and out at the toe: the wall bends over and the soil fails with it.
 
-**2.** The two methods agree within 2%. Spencer's critical circle also passes over the head of the wall.
+**2.** 60,000 lb·ft/ft at the tip, 20 ft below the head, equal to Mcap. The wall has yielded at its fixed tip.
 
-**3.** About 84,000 lb·ft/ft, at the tip, which is fixed; the moment is zero at the free head. That is 55% of the capacity, so the soil above the wall fails before the wall does. Limit equilibrium gives no moment in the wall; only strength reduction does.
+**3.** Spencer's F is 5% higher. Limit equilibrium does not compute the bending moment in the wall, so it cannot tell that the wall yields at its tip. The H it is given is large enough that circles through the wall have a high F, and the critical circle goes over the head.
+
+**4.** F = 1.730. The band now runs from the head of the wall up to the crest: the soil above the wall slides out over its head. The largest moment is about 84,000 lb·ft/ft at the tip, 55% of Mcap, so the wall does not yield, and Spencer's 1.704 is within 2%.
