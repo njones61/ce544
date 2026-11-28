@@ -52,22 +52,6 @@ $\rho$ = 1000 kg/m³; $\mu \approx 1.0 \times 10^{-3}$ Pa·s; $d \approx d_{10}$
 
 $k_i$, $H_i$ = conductivity and thickness of layer $i$
 
-## Darcy's Law in 2D
-
-**Isotropic Soil:**  
-
->$v_x = -k\,\dfrac{\partial h}{\partial x} \qquad v_y = -k\,\dfrac{\partial h}{\partial y}$
-
-**Anisotropic Soil:**  
-
->$v_x = -k_{xx}\,\dfrac{\partial h}{\partial x} - k_{xy}\,\dfrac{\partial h}{\partial y} \qquad v_y = -k_{yx}\,\dfrac{\partial h}{\partial x} - k_{yy}\,\dfrac{\partial h}{\partial y}$
-
->$k_{xx} = k_r \cos^2\alpha + k_s \sin^2\alpha \qquad k_{yy} = k_r \sin^2\alpha + k_s \cos^2\alpha$
-
->$k_{xy} = k_{yx} = \dfrac{1}{2}(k_r - k_s)\sin(2\alpha)$
-
-$k_r$ = larger principal conductivity; $k_s$ = smaller principal conductivity, at right angles to it; $\alpha$ = angle of the $k_r$ direction, counterclockwise from $x$
-
 ## Flow Nets
 
 **Flow Rate:**  
