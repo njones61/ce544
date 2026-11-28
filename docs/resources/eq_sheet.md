@@ -66,7 +66,7 @@ $k_i$, $H_i$ = conductivity and thickness of layer $i$
 
 >$k_{xy} = k_{yx} = \dfrac{1}{2}(k_r - k_s)\sin(2\alpha)$
 
-$k_r$ = larger principal conductivity (XSLOPE's $k_1$); $k_s$ = smaller principal conductivity, at right angles to it (XSLOPE's $k_2$); $\alpha$ = angle of the $k_r$ direction, counterclockwise from $x$
+$k_r$ = larger principal conductivity; $k_s$ = smaller principal conductivity, at right angles to it; $\alpha$ = angle of the $k_r$ direction, counterclockwise from $x$
 
 ## Flow Nets
 
@@ -235,34 +235,6 @@ $k_v$ = vertical conductivity; $t_d$ = about the time for the water table to cat
 >$q = k_w\,\dfrac{H^2 - h_t^2}{2b_w} \qquad Q = P\,q$
 
 $k_w$ = conductivity of the wall; $b_w$ = wall thickness; $P$ = length of the wall around the site; $q$ per unit length of wall
-
-## Finite Element Method
-
-**Global System:**  
-
->$[T]\{h\} = \{q\}$
-
-$[T]$ = global transmissibility matrix; $\{h\}$ = heads at the nodes; $\{q\}$ = flows supplied at the nodes
-
-**1D Element:**  
-
->$C = \dfrac{kA}{L} \qquad q_1 = C\,(h_1 - h_2) \qquad q_2 = C\,(h_2 - h_1)$
-
-$C$ = conductance; a flow $q$ at a node is positive into the element
-
-**Linear Triangle:**  
-
->$h = a_1 + a_2 x + a_3 y$
-
->$\{i\} = [B]\{h\} \qquad \{v\} = -[K]\{i\} \qquad \{Q\} = -\Delta[B]^T\{v\}$
-
->$[T] = \Delta[B]^T[K][B]$
-
->$[B] = \dfrac{1}{2\Delta}\begin{bmatrix} y_j - y_k & y_k - y_i & y_i - y_j \\ x_k - x_j & x_i - x_k & x_j - x_i \end{bmatrix}$
-
->$\Delta = \dfrac{1}{2}\left[\left(x_j - x_i\right)\left(y_k - y_i\right) - \left(x_k - x_i\right)\left(y_j - y_i\right)\right]$
-
-Nodes $i$, $j$, $k$ numbered counterclockwise; $\Delta$ = area of the triangle; $\{i\}$ = gradients $i_x$, $i_y$; $[K] = \begin{bmatrix} k_{xx} & k_{xy} \\ k_{xy} & k_{yy} \end{bmatrix}$, the conductivity matrix; $\{Q\}$ = flows at the nodes
 
 ## Transient Seepage
 
