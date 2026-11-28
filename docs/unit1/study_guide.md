@@ -6,198 +6,182 @@ The equation sheet is provided on the exam, so this guide does not ask you to me
 
 ### 1. Hydraulic Head
 
-* **Pore pressure.** The water in the soil pores is under pressure, the pore pressure. Below a water table, with the water at rest, it is hydrostatic: it grows in proportion to the depth below the water table.
-* **Piezometer.** A piezometer is an open tube with its tip at a point in the soil. Water rises in it until the weight of the water column balances the pore pressure at the tip. With still water, it fills to the water table.
-* **Head is energy.** Head is the energy of the water per unit weight, written as a length. Bernoulli's equation adds up the work it takes to move water from one point to another: lifting it, changing its speed, and pushing it from one pressure to another.
-* **Elevation head.** The height of the point above a datum. The datum can be anywhere, but every point in a problem must use the same one. Only differences in head matter, and those come out the same for any datum.
-* **Pressure head.** The pore pressure divided by the unit weight of water. It is the height the water rises in a piezometer above the point.
-* **Velocity head.** The part of the head from the water's speed. Groundwater moves so slowly that it is negligible: even at 1 ft/s it is only about a sixtieth of a foot, and seepage is far slower than that. So it is dropped.
-* **Total head for groundwater.** Elevation head plus pressure head. Physically, it is the elevation of the water level in a piezometer at the point. Think of it as how high the water would stand in a tube placed there.
-* **What makes water flow.** Water flows from higher total head to lower total head. Neither the pressure alone nor the elevation alone decides the direction.
-* **Still water, no flow.** In a tank of soil under still water, a deep point has a higher pressure than a shallow one, but it is lower by exactly the same amount. The total heads are equal, and no water flows.
-* **Equal pressure, flow anyway.** In a soil column where the pore pressure is the same at the top and the bottom, the top point is higher, so its total head is higher, and water flows down. At equal elevations, the point with the higher pressure has the higher head.
-* **Head along a flow path.** In a column or tube of uniform soil with a constant cross-section, the total head drops linearly along the flow path. To find the pore pressure at a point: find its total head by proportion along the path, subtract its elevation to get the pressure head, and multiply by the unit weight of water.
-* **Common mistakes.** Confusing pressure head with total head, using different datums for different points, and assuming water flows from high pressure to low pressure.
+* **Head is energy per unit weight of water**, written as a length.
+    * **Elevation head:** height above a datum. Any datum works, but use one per problem; only differences in head matter.
+    * **Pressure head:** pore pressure divided by the unit weight of water: how high water rises in a piezometer above the point.
+    * **Velocity head:** negligible for groundwater, so it is dropped.
+    * **Total head** = elevation head + pressure head: the elevation of the water level in a piezometer at the point.
+* **Pore pressure.** Below a still water table it is hydrostatic, growing with depth. A piezometer fills until its water column balances the pore pressure at its tip.
+* **Water flows from high total head to low total head**, not from high pressure or from high elevation.
+    * Still water in a tank of soil: a deeper point has more pressure but less elevation, so the heads are equal and nothing flows.
+    * Equal pressure at the top and bottom of a column: the top has the higher head, so water flows down.
+* **Head along a flow path.** In uniform soil with a constant cross-section, total head drops linearly. For the pore pressure at a point: total head by proportion, minus elevation, times the unit weight of water.
+* **Common mistakes:** confusing pressure head with total head, mixing datums, and assuming water flows from high pressure to low.
 
 ### 2. Darcy's Law
 
-* **Darcy's experiment.** In 1856, Henry Darcy measured flow through sand columns for the water filters of Dijon, France. The flow rate was proportional to the head difference and to the area, and inversely proportional to the length of the sample. The constant of proportionality, $k$, depends on the soil.
-* **Hydraulic conductivity, $k$.** How easily water passes through a soil, in units of velocity. It is also called the coefficient of permeability.
-* **$k$ varies enormously.** It spans about twelve orders of magnitude, from more than 1 cm/s in clean gravel to $10^{-10}$ cm/s or less in unweathered clay. A measured $k$ for the site is worth far more than a value from a table, and an estimate within an order of magnitude is often the best available.
-* **Hydraulic gradient.** The head lost per unit length of flow path. It has no units. A gradient of 0.1 means the water loses 1 ft of head for every 10 ft it travels. It is a gradient in total head, not in pressure.
-* **Where the path narrows.** If the flow area gets smaller along the path, the same flow must pass through less area, so the gradient increases and the head falls faster.
-* **The minus sign.** Head decreases in the direction of flow, so when the gradient is written as a rate of change along the path, $i = -dh/ds$, the minus sign makes it positive.
-* **Discharge velocity.** The flow rate divided by the gross area, soil grains and voids together. It is the speed the water would have if it filled the whole cross-section. Use it, or the flow rate, for volumes of flow.
-* **Seepage velocity.** The average speed of the water in the pores. The same flow squeezes through only the pore space, so the water moves faster than the discharge velocity. Use it for how fast water, and anything dissolved in it, actually travels.
-* **Effective porosity.** Not all pores carry flow. Dead-end pores and voids packed with fines hold water that is nearly still. The effective porosity is the fraction of the cross-section that actually carries flow. In sand and gravel it is close to the total porosity. In clay it can be far smaller, as low as 0.01 against a total porosity of 0.40 to 0.70. Measured values for clays vary a great deal, so use a site value when travel time matters.
-* **Travel time.** The distance along the flow path divided by the seepage velocity. The path follows a flow line, crossing the head contours at right angles. If the gradient changes along the path (it increases near a well), add up the times for pieces where it is about constant.
-* **Travel time mistake.** Using the discharge velocity overestimates the travel time by a factor of one over the effective porosity. You would think a contaminant arrives later than it really does, which is the unsafe direction. Dispersion also brings the first arrivals somewhat sooner than the average.
-* **When Darcy's law holds.** It assumes laminar flow in the pores, so that the head loss is proportional to the velocity. A Reynolds number for the pores checks this; Darcy's law holds below about 1 to 10. That covers nearly all seepage through soils. It may fail at high velocities in clean coarse gravel and rockfill, and close to a pumping well.
-* **Layered soils.** Most deposits are layered, and the layers' $k$ values can differ by orders of magnitude. An equivalent $k$ lets you treat the stack as one soil, but its value depends on the direction of flow.
-* **Flow along the layers.** Every layer has the same gradient, and the flows add. The equivalent $k$ is a thickness-weighted average, and the flow goes mostly through the most permeable layers: a thin gravel layer can carry most of the water.
-* **Flow across the layers.** The same flow passes through every layer, and the head losses add. The equivalent $k$ is a harmonic average, controlled by the least permeable layer, and the head loss concentrates there: a thin clay layer can take nearly all of the head. The pore pressure also changes most steeply across the low-$k$ layer.
-* **Why layered soil is anisotropic.** The equivalent $k$ along the layers is always at least as large as the one across them. That is one reason a layered soil conducts water better horizontally than vertically.
+* **Darcy's law.** Flow is proportional to the head difference and the area, and inversely proportional to the length (Darcy, 1856, sand filters in Dijon).
+* **Hydraulic conductivity, $k$:** how easily water passes through a soil, in units of velocity.
+    * It spans about twelve orders of magnitude, from clean gravel to unweathered clay.
+    * A site measurement beats a table value; within an order of magnitude is often the best estimate.
+* **Hydraulic gradient:** head lost per unit length of path. It has no units, and it is a gradient in total head, not pressure. Where the flow area narrows, the gradient steepens.
+* **Two velocities.**
+    * **Discharge velocity:** flow divided by the gross area. Use it for volumes of flow.
+    * **Seepage velocity:** discharge velocity divided by the effective porosity, the actual speed in the pores. Use it for travel time.
+    * **Effective porosity:** the fraction of the section that carries flow. Close to the total porosity in sand and gravel; far smaller in clay.
+    * Using the discharge velocity for travel time makes a contaminant arrive later than it really does: the unsafe direction.
+* **When Darcy's law holds:** laminar flow, a pore Reynolds number below about 1 to 10. That covers nearly all soils; it can fail in clean coarse gravel, rockfill, and right at a pumping well.
+* **Layered soils.**
+    * **Along the layers:** same gradient, flows add. The equivalent $k$ is a weighted average, and the most permeable layer carries most of the water.
+    * **Across the layers:** same flow, head losses add. The equivalent $k$ is controlled by the least permeable layer, which takes most of the head loss.
+    * $k$ along the layers is always at least $k$ across them, one reason layered soil conducts better horizontally.
 
 ### 3. Governing Equations
 
-* **Darcy's law in 2D.** In a cross-section, the velocity has an $x$ (horizontal) and a $y$ (vertical) component. In an isotropic soil, $k$ is the same in every direction, and each component comes from the gradient in its own direction.
-* **Anisotropy.** In an anisotropic soil, $k$ depends on direction. Soil is deposited in layers, and water moves more easily along the bedding than across it. The directions of largest and smallest $k$ are the principal axes, at right angles to each other.
-* **Tilted principal axes.** When the bedding is tilted from $x$ and $y$, the velocity in $x$ depends on the gradient in both $x$ and $y$, and so does the velocity in $y$. The matrix that relates velocity to gradient is the conductivity tensor. Its cross terms vanish when the principal axes line up with $x$ and $y$.
-* **In practice.** In most deposits the horizontal conductivity is larger than the vertical one, because the soil was laid down in layers.
-* **Where the governing equation comes from.** A mass balance on a small box of soil, with Darcy's law for the velocities. The assumptions: the soil is saturated, Darcy's law is valid, mass is conserved, and the water's density is constant.
-* **Conservation of mass.** The water that flows into a piece of soil, minus the water that flows out, plus what any source adds or minus what any sink removes, equals the change in the water stored there. For steady flow with no sources or sinks, whatever flows into a piece of soil flows out of it.
-* **What the equation gives.** For steady, saturated flow the result is one equation in the head. In a uniform, isotropic soil it is the Laplace equation. Its solution is the head everywhere in the section. Velocities, pore pressures, and flow rates all follow from the head.
-* **Three ways to solve it.** Flow nets (graphical), analytical solutions (formulas for simple geometry), and numerical solutions. Finite differences use a regular grid. Finite elements can follow any boundary and can be made small where the head changes quickly. XSLOPE uses finite elements.
-* **Boundary conditions.** Every method needs a condition on every part of the boundary. Without them there is no unique answer.
-* **Known (specified) head.** Where the ground is under a reservoir, the sea, a ditch, or a pumped-down excavation, the head is the water level above it.
-* **No flow.** No water crosses an impervious base, a sheet pile, or a line of symmetry. For example, midway between two identical drains, the water on each side goes to its own drain, so none crosses the midline. The far sides of a model are often no-flow, placed far enough away that they don't affect the flow near the structure.
-* **Exit face.** A slope where water may seep out, such as the downstream face of a dam. It is also called a seepage face. Where water comes out, the pressure is zero, so the head equals the elevation. Where on the face it comes out is not known ahead of time; the solution finds it.
-* **Known (specified) flux.** A known rate of water crossing the boundary, such as rain recharging the ground.
-* **The free surface is not a boundary condition.** In unconfined flow, the top of the saturated zone (the phreatic surface) is part of the answer: the line where the pressure is zero. You do not specify it.
-* **Reading a solution.** Head contours crowd together where the head falls quickly. In a uniform soil, such as around the tip of a sheet pile, that means a high gradient and fast flow. Across a low-$k$ zone, such as a clay core, it means the zone takes most of the head loss, not that much water flows there.
+* **Anisotropy.** $k$ depends on direction. The directions of largest and smallest $k$ (the principal axes) are at right angles. In most deposits, horizontal $k$ exceeds vertical $k$ because of layering. When the bedding is tilted, a gradient in $x$ alone also drives flow in $y$.
+* **The governing equation.**
+    * Comes from a mass balance on a small piece of soil plus Darcy's law. Assumes saturated soil, Darcy's law valid, constant water density.
+    * Steady flow with no sources or sinks: what flows in flows out. In uniform isotropic soil it is the Laplace equation.
+    * Its solution is the head everywhere; velocities, pore pressures, and flow rates follow from it.
+* **Three ways to solve it:** flow nets (graphical), analytical solutions (simple geometry), and numerical methods (finite differences, finite elements).
+* **Boundary conditions.** Every part of the boundary needs one, or there is no unique answer.
+    * **Specified head:** ground under a reservoir, ditch, or pumped excavation; the head is the water level.
+    * **No flow:** impervious base, sheet pile, line of symmetry, the far ends of a model.
+    * **Exit face (seepage face):** where water may leave a slope. Pressure is zero where it leaves; where it leaves is part of the answer.
+    * **Specified flux:** a known rate across the boundary, such as recharge.
+    * **The phreatic surface is not a boundary condition.** It is part of the answer: the line of zero pressure.
+* **Reading a solution.** Crowded head contours mean head is lost quickly. In uniform soil that means high gradient and fast flow; across a low-$k$ zone it means the zone takes the head loss, not that much water flows there.
 
 ### 4. Flow Nets
 
-* **What a flow net is.** A graphical solution of the Laplace equation: two-dimensional, steady, saturated flow in an isotropic soil. It is made of flow lines, the paths the water follows, and equipotential lines, lines of constant total head.
-* **Equipotential lines.** Two piezometers with their tips on the same equipotential line show the same water level, even if the tips are at different depths.
-* **Boundaries in the net.** A ground surface under water is an equipotential line: its head is the water level above it. An impervious base and the buried face of a sheet pile are flow lines: water moves along them, not across them.
-* **Rule 1: right angles.** In an isotropic soil, water flows in the direction of the steepest drop in total head, which is perpendicular to the lines of constant head. So flow lines and equipotential lines cross at right angles.
-* **Rule 2: one cell shape.** No water crosses a flow line, so each flow channel carries the same flow through every cell along it. If every cell has the same length-to-width ratio, every channel carries the same flow and every equipotential drop is the same head loss. Squares (curvilinear squares) are easiest; a circle drawn in a square cell touches all four sides.
-* **Partial channels and drops.** A net rarely comes out even. Count a partial drop or channel as a fraction.
-* **Corners.** Where boundaries meet at an angle other than 90°, the corner cell cannot be square. Check it by subdividing: you should get three squares and one cell the same shape as the original.
-* **Unconfined flow.** In flow through an earth dam, the top of the saturated zone is not known in advance. It is called the line of seepage, the free surface, or the phreatic surface.
-* **The line of seepage is two things.** It is a flow line, because no water crosses it. It is also a line of zero pressure, so on it the total head equals the elevation. Since each drop is the same head loss, the equipotential lines meet it at equal steps of elevation. It leaves the upstream face at right angles, because that face is an equipotential line.
-* **Reading heads and pressures.** Each equipotential drop is the total head lost divided by the number of drops. Count drops from the upstream side to get the total head at a point, subtract the point's elevation to get the pressure head, and multiply by the unit weight of water to get the pore pressure.
-* **Reading gradients.** Every cell has the same head drop, so where the cells are small, the gradient and the velocity are high. Small cells mark the places to worry about, such as the tip of a sheet pile.
-* **Flow rate.** The flow depends only on $k$, the total head lost, and the shape factor: the number of flow channels over the number of drops. The geometry enters only through the shape of the net. A longer flow path, with more drops for the same channels, means less flow.
-* **Flow per unit length.** A flow from a 2D section is per unit length of the structure, for example per foot of wall. Multiply by the length for the total.
-* **Anisotropic soils.** The Laplace equation holds only for isotropic soil. In an anisotropic soil drawn at true scale, flow lines and equipotential lines do not cross at right angles.
-* **Transformed section.** Rescale the horizontal distances so the soil behaves as if it were isotropic (when $k_x$ is larger than $k_y$, the section gets narrower), draw a net with square cells, and stretch it back. The numbers of channels and drops don't change. The flow rate uses the geometric mean of $k_x$ and $k_y$.
-* **Common mistakes.** Cells that are not square, lines that don't cross at right angles, forgetting that the line of seepage has zero pressure, and using $k_x$ or $k_y$ alone for an anisotropic soil.
+* **What a flow net is:** a graphical solution for 2D, steady, saturated flow in isotropic soil, made of flow lines and equipotential lines (lines of constant total head).
+    * Ground under water is an equipotential line; an impervious base and a sheet pile are flow lines.
+* **Rules for drawing.**
+    * Flow lines and equipotential lines cross at right angles.
+    * Every cell is the same shape (squares are easiest), so every channel carries the same flow and every drop is the same head loss.
+    * Count partial channels and drops as fractions; check corner cells by subdividing them.
+* **Reading the net.**
+    * **Head and pressure:** count drops from upstream for the total head, subtract the elevation for the pressure head, multiply by the unit weight of water.
+    * **Gradient:** small cells mean high gradient and velocity, such as at a sheet pile tip.
+    * **Flow rate:** depends only on $k$, the total head lost, and the ratio of flow channels to drops. It is per unit length of the structure.
+* **Unconfined flow (earth dams).** The line of seepage (phreatic surface) is not known in advance.
+    * It is both a flow line and a line of zero pressure, so equipotentials meet it at equal steps of elevation.
+    * It leaves the upstream face at right angles.
+* **Anisotropic soil.** A true-scale net is not square. Draw it on a transformed section (horizontal distances rescaled), and use the geometric mean of $k_x$ and $k_y$.
+* **Common mistakes:** cells that are not square, lines not at right angles, forgetting zero pressure on the line of seepage, and using $k_x$ or $k_y$ alone.
 
 ### 5. Analytical Solutions
 
-* **2D profile model.** A vertical cross section through the problem: an embankment, a pair of sheet piles around an excavation, or a cut through a valley. It works when the flow is mainly in that vertical plane, with little flow at right angles to it.
-* **Why analytical solutions.** For simple geometry, the governing equation can be solved as a formula. That gives quick estimates and shows what controls the answer.
-* **Dupuit assumption 1.** The exit point is at the tailwater. In reality, the line of seepage comes out on the downstream face above the tailwater, and the water runs down the face below the exit point.
-* **Dupuit assumption 2.** The gradient is the same all the way down a vertical line, so the flow is horizontal. This is good when the flow is mainly horizontal.
-* **Dupuit assumption 3.** The gradient equals the slope of the free surface. The water really flows along the surface, so the true gradient is the sine of the slope angle, and Dupuit uses the tangent. Up to about 10° they differ by less than 2%; at 30° by 15%; at 50° by more than 50%. Most free surfaces are gentle, so it usually works.
-* **When Dupuit fails.** Where the free surface is steep, such as close to a drain or a well. Even there, the Dupuit flow rate can still be right while the shape of the free surface is wrong: this is true near a drain and for the unconfined well equation.
-* **Dupuit–Forchheimer equation.** With these assumptions, continuity in a vertical strip of soil says the square of the saturated thickness varies linearly with distance.
-* **Rectangular section.** Between two water levels on an impervious base, the free surface is a parabola that gets steeper downstream. The same flow has to pass through a thinner saturated thickness, so the gradient increases. The flow depends on the difference between the squares of the two water depths, not just the difference in levels.
-* **With infiltration.** Rain adds water along the way, so the flow changes along the section instead of staying constant. Evaporation does the reverse.
-* **Confined layer.** In a layer of constant thickness between two confining layers, the flow area does not change, the head drops in a straight line, and the flow is proportional to the head difference.
-* **Using it in practice.** Rectangular-section solutions estimate flow from a line source (a river, stream, or pond) to a line sink (a drain, trench, or excavation). They are screening estimates. A short drain also collects water around its ends and from the landward side, so the real flow is larger than the 2D answer. Check a design with a numerical model.
-* **Earth dam.** In Casagrande's solution, the line of seepage is a parabola that starts a little upstream of where the reservoir meets the upstream face (0.3 times the horizontal length of the wetted face), corrected to leave the face at right angles. It comes out on the downstream face some distance up from the toe.
-* **How the dam solution works.** First find, from the geometry, how far up the downstream face the water exits. Then compute the flow through the vertical section under the exit point, with the gradient equal to the slope of the free surface there, which is the slope of the downstream face. The assumptions: the Dupuit assumptions, Darcy's law, a parabolic line of seepage, and an impervious base.
+* **Why use them.** For simple geometry, a formula gives a quick estimate and shows what controls the answer. A 2D section works when flow is mainly in that vertical plane.
+* **Dupuit assumptions.**
+    * The exit point is at the tailwater (really it is higher, on the downstream face).
+    * Flow is horizontal: the gradient is the same all the way down a vertical line.
+    * The gradient equals the slope of the free surface (the tangent, where the sine is correct). Good for gentle surfaces, within 2% up to about 10°; poor where the surface is steep, near a drain or well, though the flow rate often stays right.
+* **Rectangular section.** The free surface is a parabola that steepens downstream, because the same flow passes through a thinner saturated thickness. Infiltration makes the flow change along the section.
+* **Confined layer.** Constant flow area, so the head drops linearly and the flow is proportional to the head difference.
+* **In practice:** screening estimates of flow from a line source (river) to a line sink (drain). A real drain also collects water around its ends, so check a design with a numerical model.
+* **Earth dam (Casagrande).** The line of seepage is a parabola, corrected to leave the upstream face at right angles. Find where it exits on the downstream face, then compute the flow below that point with the gradient equal to the slope of the face.
 
-### 6. Well Equations
+### 6. Wells
 
-* **Wells are radial flow.** The well equations are not a cross-section. Water flows toward the well from every side, in plan, and the equations follow it along the radius.
-* **Confined aquifer.** A permeable layer between an impermeable base and a confining layer above it, the aquitard. It stays full as the head drops, so the flow area does not change.
-* **Cone of depression.** Pumping lowers the piezometric surface (the level water would rise to in wells in a confined aquifer), or the water table, into a cone around the well. The drawdown is how far the head has fallen from its starting level.
-* **Thiem assumptions.** A homogeneous aquifer of constant thickness and infinite extent, an impermeable aquitard, a well that fully penetrates the aquifer, a horizontal initial water level and layer boundaries, no head loss at the well, and steady flow.
-* **Why the cone is steep near the well.** Water flows radially inward through cylinders that get smaller toward the well. The same flow through less area needs a larger gradient. In a confined aquifer, the head plotted against the log of distance is a straight line, which is why pumping tests are plotted on semi-log paper. In an unconfined aquifer it is $h^2$ that plots as a straight line.
-* **Radius of influence, $R$.** The distance at which the drawdown dies out. It enters the equations only through a logarithm, so the answer is not very sensitive to it. A rough estimate from a formula such as Sichardt's is good enough.
-* **Transmissivity.** $k$ times the aquifer thickness: how much water the full thickness of the aquifer can carry.
-* **Steady pumping tests.** Pump at a known rate, measure the drawdown, and back-calculate $k$. The limits: the method works well only in high-$k$ soils, it gives an average horizontal $k$ over a large region, it is hard to tell when steady state has been reached, and flow unrelated to the well (a sloping water table) can confuse it. Observation wells remove the need to know $R$.
-* **Superposition, confined.** The confined equation is linear in the head, so the drawdowns from several wells add. Between the wells the cones overlap, and the drawdown is deeper than either well makes alone. That is how a ring of dewatering wells lowers the water across a site.
-* **Unconfined aquifer.** The water table itself is drawn down. The saturated thickness shrinks near the well, so the flow area shrinks too, and the flow has a vertical component.
-* **Unconfined well equation.** Built on the Dupuit assumptions, it gives the correct flow rate, but the shape of the water table near the well is wrong.
-* **Superposition, unconfined.** The governing equation is linear in the square of the saturated thickness, so it is $H^2 - h^2$ that adds, not the drawdown. Adding drawdowns leaves the water table too high, most of all between the wells, where the saturated thickness is smallest.
-* **Superposition in time.** A change in a well's pumping rate acts like a new well at the same spot, pumping the change from that time on. When a pump stops, add a well pumping $-q$ from that time, and the water level recovers.
-* **Where the water comes from at first.** When the pump starts, the water comes out of storage around the well, and the cone grows. If it reaches a boundary that supplies water, such as a river or lake, it stops growing and the flow becomes steady.
-* **Storativity (confined).** When the head drops, the soil compresses slightly and the water expands slightly, releasing a little water. Per unit area per unit drop in head, that is the storativity. It is tiny (about $10^{-5}$ to $10^{-3}$) and larger for a thicker aquifer.
-* **Specific yield (unconfined).** When the water table drops, the pores near it drain by gravity. Per unit area per unit drop, that is the specific yield, about 0.1 to 0.3. It is less than the porosity because the soil holds some water against gravity. It is far larger than storativity, so an unconfined aquifer gives up much more water for the same drop, and its cone spreads much more slowly.
-* **Theis solution.** Transient drawdown in an infinite confined aquifer pumped at a constant rate. It has no $R$: with no boundary to supply water, the cone keeps growing. The drawdown depends on distance and time together, through $r^2/t$.
-* **Cooper–Jacob.** Late in the test, or close to the well, the Theis solution becomes the Thiem equation with an $R$ that grows with the square root of time. So the $R$ in a steady equation really stands for a pumping time.
-* **Unconfined transient flow.** The same solution works in the $H^2 - h^2$ form with the specific yield, as long as the drawdown is small compared with the aquifer thickness. With a large specific yield, the cone can take years to spread far.
-* **Transient pumping tests.** Plot drawdown against the log of time. The later points fall on a straight line; its slope gives the transmissivity and its intercept gives the storage, with no wait for steady state. The earliest points fall below the line, so fit the later ones.
-* **Delayed yield.** In an unconfined test, the aquifer first releases water elastically, as a confined one does, and the pores drain later. Fit the late points, or the specific yield comes out far too small.
+* **Wells are radial flow** in plan, not a cross-section. The cone of depression is steep near the well because the same flow passes through ever smaller cylinders.
+* **Confined aquifer, steady (Thiem).**
+    * The aquifer stays full, so the flow area does not change. Head plots as a straight line against the log of distance.
+    * **Assumptions:** homogeneous, constant thickness, infinite extent, fully penetrating well, horizontal starting level, steady flow.
+    * **Radius of influence, $R$:** enters only through a logarithm, so a rough estimate is enough.
+    * **Transmissivity:** $k$ times the aquifer thickness.
+    * **Superposition:** drawdowns from several wells add, which is how a ring of wells lowers water across a site.
+* **Unconfined aquifer, steady.**
+    * The water table itself drops, so the flow area shrinks near the well.
+    * The equation gives the right flow rate but the wrong water table shape near the well.
+    * **Superposition:** $H^2 - h^2$ adds, not drawdown. Adding drawdowns leaves the water table too high between wells.
+* **Steady pumping tests.** Back-calculate $k$ from the rate and drawdown. Gives an average horizontal $k$ over a large area; works best in high-$k$ soils; steady state is hard to judge. Observation wells remove the need to know $R$.
+* **Transient flow.**
+    * At first, water comes from storage around the well and the cone grows, until it reaches a source such as a river.
+    * **Storativity (confined):** water released by compression of the soil and expansion of the water. Tiny.
+    * **Specific yield (unconfined):** water drained from the pores as the water table drops, about 0.1 to 0.3. Far larger than storativity, so the cone spreads much more slowly.
+    * **Theis:** an infinite confined aquifer has no $R$; the cone keeps growing. Drawdown depends on $r^2/t$.
+    * **Cooper–Jacob:** late in time, Theis becomes Thiem with an $R$ that grows with time. A steady $R$ really stands for a pumping time.
+    * **Unconfined:** same solution in the $H^2 - h^2$ form with specific yield, while drawdown is small compared with the thickness.
+    * **Rate changes:** a change in rate acts as a new well pumping the change; stopping a pump adds a well pumping $-q$.
+* **Transient pumping tests.** Plot drawdown against log time and fit the later points: slope gives transmissivity, intercept gives storage. In unconfined tests the early points come from elastic release (delayed yield), so fit the late ones.
 
 ### 7. Construction Dewatering
 
-* **Goal.** Lower the water so an excavation can be built in the dry.
-* **Wellpoints.** Closely spaced small wells on a header pipe, pumped by suction and usually jetted into place. Suction limits the lift to about 5 to 6 m (15 to 20 ft) below the header, so a deeper excavation needs a second stage of wellpoints on a bench. They suit sands and silty sands.
-* **Deep wells.** Larger wells, each with a submersible pump that pushes the water up, so there is no suction limit. Fewer wells, farther apart, for deeper drawdowns and more permeable soils.
-* **Sumps and ditches.** Pumping from the floor of the excavation. This works for shallow drawdowns in gravel, rock, or stiff clay, but in sands it can wash out fines and loosen the bottom.
-* **French drains and trenches.** Gravel-filled trenches that drain by gravity to a sump. They work along a line, for example to cut off water coming from a river. A bio-polymer slurry trench builds a deeper drain without an open trench: the slurry holds the trench open and then biodegrades.
-* **Slurry cutoff wall.** A trench around the site filled with a very low-$k$ soil-bentonite mix and keyed into the low-$k$ layer below the aquifer. It cuts off inflow from outside, so the wells inside pump only the stored water and the leakage through the wall.
-* **Why use a wall.** When wells alone would pump too much (very permeable ground, or a river or lake nearby). When drawdown outside would settle neighboring buildings or dry up neighbors' wells. When the discharge is hard to get rid of or must be treated. The wall costs money; it buys smaller pumps, fewer wells, far less water, and little drawdown outside. Defects and a poor key leak more than an intact wall, so allow a margin.
-* **Choosing a method.** The soil's permeability, the drawdown needed, and how long the system must run decide it.
-* **Design questions.** What pumping rate? How many wells, and where? Would a drain or trench be better? Analytical solutions are often used; numerical models such as MODFLOW give more accuracy.
-* **Heads from the low-$k$ layer.** The well equations measure heads up from the bottom of the aquifer. The goal is water at or below the required level everywhere inside the excavation by the deadline.
-* **The deadline drives the design.** It is a transient problem. Each well follows the Theis solution in the $H^2 - h^2$ form, and $H^2 - h^2$ adds over all the wells and over every change in the pumping rate. The middle of the excavation, farthest from the wells, comes down last.
-* **$Q_{min}$.** The smallest total pumping rate that gets the water down everywhere in the excavation by the deadline. Pump less, and the middle is still too high on the deadline.
-* **A well can go dry.** The more a well pumps, the deeper its cone. Pump too much, and the water at the well reaches the bottom of the aquifer: there is no saturated thickness left to carry more flow. A bigger pump does not help; it only pumps the well dry.
-* **Pumping schedule.** As the cones spread, each well can take less, so the rate is cut back over time to keep every well from going dry. Once the excavation is dewatered, the rate drops to a much lower holding rate. Size the pumps for $Q_{min}$, and plan the discharge for the holding rate.
-* **Shorter or longer deadline.** A shorter deadline needs a higher rate but pumps less water in total. With a long deadline, the cone spreads far out, and the wells drain a much larger area to get the same drawdown under the excavation. Each set of wells has a fastest possible time; no rate can beat it.
-* **Number of wells.** The deadline sets the fewest wells that can work. Beyond that, more wells shorten the fastest possible time and add a margin, but they barely change the total rate: the rate is set by the water that has to come out.
-* **Layout.** Moving wells to where the water comes down last, such as the middle of the long sides, saves only a few percent of the pumping. The deadline, the number of wells, and $k$ matter far more.
-* **Sensitivity to $k$.** $Q_{min}$ is highly sensitive to $k$. A $k$ well above the estimate takes much more pumping. A lower $k$ is the dangerous mistake: the ground can't feed the wells fast enough, they go dry, and no rate meets the deadline. The fix is more wells, which is hard once the job has started. Get $k$ from a pumping test and run the design over a range around it: pump capacity for the high end, enough wells for the low end.
-* **Anisotropic soil.** In layered deposits the horizontal $k$ is several to many times the vertical $k$. The heads at the well screens fall fast, but the water stored near the water table has to drain down across the layers, so the water table lags. The well equations ignore vertical flow, so estimate the time the water table takes to drain down. A short deadline compared with that drainage time takes more pumping, so add a margin to the pump capacity.
-* **Modeling a cutoff wall.** Leakage through the wall is like flow to a trench, using the wall's $k$ and thickness. The well equations assume no boundaries, and the wall is one, so a design with a wall needs a numerical solution, with the wall as a band of low $k$.
-* **Analytical or numerical model.** A full numerical model is worth it when the layering or far boundaries (rivers, lakes, recharge) matter. Otherwise the answer is so sensitive to $k$ that the extra effort may not buy much, and a preliminary design is usually enough, because pumps are oversized and the rate is adjusted on site. Check any numerical model against a case you can solve by hand.
+* **Goal:** lower the water so an excavation can be built in the dry.
+* **Methods.** The choice depends on permeability, drawdown needed, and how long the system runs.
+    * **Wellpoints:** closely spaced suction wells, limited to about 5 to 6 m of lift per stage. Sands and silty sands.
+    * **Deep wells:** submersible pumps, no suction limit. Deeper drawdowns, more permeable soils.
+    * **Sumps and ditches:** pumping from the excavation floor. Shallow drawdowns in gravel, rock, or stiff clay; in sand they can wash out fines.
+    * **French drains and trenches:** gravity drains along a line.
+    * **Slurry cutoff wall:** a low-$k$ wall keyed into the low-$k$ layer below. It cuts off inflow, so wells pump only stored water and leakage. Worth it when wells alone would pump too much, when outside drawdown would hurt neighbors, or when discharge is hard to dispose of.
+* **Designing to a deadline.** Water must be at or below the target everywhere inside the excavation by the deadline; the middle comes down last.
+    * **$Q_{min}$:** the smallest total pumping rate that meets the deadline.
+    * **A well can go dry:** pump too hard and the saturated thickness at the well runs out. A bigger pump does not help.
+    * **Schedule:** the rate is cut back as cones spread, then drops to a holding rate. Size pumps for $Q_{min}$.
+    * **Deadline:** shorter needs a higher rate but less total water. Each set of wells has a fastest possible time.
+    * **Wells and layout:** more wells shorten the fastest time and add margin but barely change the total rate. Moving wells saves only a few percent.
+* **Uncertainty in $k$.** $Q_{min}$ is very sensitive to $k$. Too high a $k$ means more pumping; too low means wells go dry and no rate works. Design over a range: pumps for the high end, wells for the low end.
+* **Anisotropic soil.** Heads at the well screens fall fast, but the water table lags while stored water drains down across the layers. Add a margin.
+* **Analytical or numerical.** Leakage through a cutoff wall is like flow to a trench, but a wall is a boundary the well equations cannot include, so it needs a numerical model. A numerical model is also worth it when layering or far boundaries matter. Check it against a case you can solve by hand.
 
 ### 8. The Finite Element Method
 
-* **The idea.** Divide the section into small elements joined at nodes. The unknowns are the heads at the nodes. The answer is approximate; smaller elements give a closer answer.
-* **Why finite elements.** Elements can follow any boundary and any number of soil zones, and they can be made small where the head changes quickly. The price is complexity and computing, which is why a program does it.
-* **Three steps.** Inside each element, the head varies simply between its nodal heads. Darcy's law turns that head into flows at the element's nodes. At each node, the flows from the elements around it must balance: they add to zero, or to a known flow at a boundary. That gives one equation per node, together a matrix equation for the heads.
-* **1D element.** A tube of soil between two nodes. Its flow is its conductance ($k$ times the area, over the length) times the head difference. What enters at one end leaves at the other.
-* **Elements in series.** The same flow passes through every element, so the largest head drop is across the element with the smallest conductance. It is the same idea as flow across soil layers.
-* **Assembly.** Each element's small matrix is added into the global matrix at the rows and columns of its nodes. Where elements share a node, their entries add.
-* **The global matrix.** It has one row per node. It is symmetric, and with sensible node numbering it is banded, because each node is linked only to its neighbors. That makes it easy to store and solve, which is what makes meshes with tens of thousands of nodes practical.
-* **Boundary conditions in the matrix.** A specified head replaces its node's row. A specified flow, such as a well or recharge, goes into the flow vector. A boundary node with nothing specified has zero flow, so it is automatically a no-flow boundary. A forgotten boundary condition is silently a no-flow boundary.
-* **After solving.** Once the heads are known, the flows at the specified-head nodes come from the node equations, and the velocity in each element comes from its gradient.
-* **Zones and elements.** Each element belongs to one soil zone with its own $k$, so zone boundaries must follow element edges. The mesh generator fits the elements to the zones.
-* **Element types.** Linear triangles (3 nodes), quadratic triangles (6), linear quadrilaterals (4), and quadratic quadrilaterals (8 and 9). In a linear triangle the head is a flat plane, so the gradient and velocity are constant over the element. Quadratic elements let the head curve inside an element, so they are more accurate for the same number of nodes. Triangles mesh any shape more flexibly; quadrilaterals often give faster, more accurate solutions.
-* **Element matrix.** For any element, it depends on the element's geometry and its conductivity. For the linear triangle it comes from three steps: heads to gradient, gradient to velocity (Darcy's law), and velocity to flows at the nodes.
-* **Sheet piles in a mesh.** The pile is a thin slot. The elements on its two sides do not share nodes, so water has to go around the tip.
-* **Where the errors are largest.** Where the gradient is highest: at the tips of sheet piles and cutoffs, at corners, drains, and exit points, and at boundaries between soils of very different $k$.
-* **Refine locally.** For flow under a sheet pile, a coarse mesh refined at the pile tip can be more accurate than a uniformly fine mesh with more than twice as many nodes. On a uniform mesh, quadratic elements beat linear ones; once the tip is refined they are about the same, because the error comes from the tip.
-* **Good mesh practice.** Use small elements where the head changes quickly, let the element size change gradually rather than in jumps, and keep elements well shaped, without long thin slivers.
-* **Is the mesh fine enough?** Refine it and solve again. If the answer you care about (a flow rate, an exit gradient, a pore pressure) stops changing, the mesh is fine enough.
+* **The idea.** Divide the section into elements joined at nodes; the unknowns are the nodal heads. Elements follow any boundary and soil zone, and can be small where the head changes fast. The answer is approximate.
+* **How it works.**
+    * Inside an element, head varies simply between its nodes; Darcy's law turns that into flows at the nodes.
+    * At each node, the flows must balance: one equation per node.
+    * **1D element:** flow is the conductance ($k$ times area over length) times the head difference. In series, the largest head drop is across the smallest conductance, as with soil layers.
+    * **Assembly:** element matrices add into one global matrix, which is symmetric and banded, so large meshes are practical.
+* **Boundary conditions in the matrix.** A specified head fixes its node; a specified flow goes in the flow vector; a node with nothing specified is no flow. A forgotten boundary condition is silently a no-flow boundary.
+* **Elements and meshes.**
+    * Linear triangles have a constant gradient; quadratic elements let the head curve and are more accurate per node.
+    * Zone boundaries must follow element edges. A sheet pile is a slot whose two sides do not share nodes.
+* **Accuracy.**
+    * Errors are largest where the gradient is highest: pile tips, corners, drains, exit points, and contacts between very different $k$.
+    * Refining locally there beats refining everywhere. Change element size gradually and avoid slivers.
+    * The mesh is fine enough when refining it no longer changes the answer you care about.
 
 ### 9. Seepage Analysis in XSLOPE
 
-* **Why XSLOPE does seepage.** Slope stability needs pore pressures. The seepage analysis computes them on the same model, and they go straight into a stability analysis later in the course.
-* **What it gives.** Total head, pore pressure, velocity, gradient, total flow, and the flow net.
-* **Meshing.** XSLOPE meshes the soil zones automatically, using the element type and target size you choose. Linear triangles are adequate for seepage alone. A finite element stability analysis needs quadratic elements. The mesh can be made finer near features where the head changes quickly, such as pile tips, corners, and thin zones.
-* **Steady or transient.** Steady: the heads do not change with time, and there is one solution. Transient: the heads change with time, the model needs storage properties, the boundary values can change with time, and there is a solution at each time.
-* **Confined or unconfined.** Confined: the soil is saturated everywhere and the boundaries are known, so one solve gives the heads. Unconfined: the location of the phreatic surface is part of the answer, so XSLOPE iterates. A model with an exit face is treated as unconfined. Here "confined" means no phreatic surface; it is not the same as a confined aquifer in the well equations.
-* **Conductivity input.** $k_1$ (the larger), $k_2$ (the smaller, at right angles), and the angle of $k_1$ counterclockwise from $x$. Isotropic: $k_1 = k_2$. Horizontal layering: $k_1$ horizontal, $k_2$ vertical, and an angle of 0.
-* **Unsaturated soil.** Above the phreatic surface, the pores hold air and water, the pressure is negative, and water still moves, but less easily. XSLOPE multiplies the saturated $k$ by a relative conductivity between 0 and 1 that depends on the pressure head (head minus elevation).
-* **Does the unsaturated model matter?** XSLOPE has several models for the relative conductivity, used only in unconfined problems. For stability, the choice hardly matters. On a zoned dam, the models gave the same phreatic surface to within half a foot; the total flow differed by about 5%. If you need the flow through a dam with a lot of unsaturated soil, the choice deserves more thought.
-* **Boundary condition types.** Specified head: the head held along a line (a pool, the tailwater). Specified flux: a rate of water across the boundary (rain, drains). Exit face: a slope where water may leave; it takes no value, because where the water leaves is part of the answer. No flow: everything not specified (rock, the ends of the section, a sheet pile). A fifth type, the reservoir boundary, is for a moving pool in a transient analysis.
-* **No-flow is invisible.** You never enter a no-flow boundary, so the only way to check it is to see where the boundary markers stop on the mesh.
-* **How an unconfined problem is solved.** Solve with the saturated $k$ everywhere. Compute the pressure head at every point. Where it is negative, reduce $k$ by the relative conductivity. Solve again, and repeat until the heads stop changing. The phreatic surface is the line of zero pressure head.
-* **How the exit face is handled.** Mark the whole slope as exit face. As it iterates, XSLOPE sorts the exit face nodes into wet nodes, where water leaves and the head equals the elevation, and dry nodes, where nothing crosses. It stops when that set stops changing.
-* **Sheet piles and blankets.** A sheet pile is modeled as a thin crack in the geometry, so the water has to go around its tip. An impervious clay blanket on the ground upstream of a pile is a no-flow boundary that lengthens the flow path.
-* **Checking a confined solution.** With no sources inside, every computed head must lie between the highest and lowest specified heads. A head outside that range means a mistake in the model.
-* **Gradient and piping.** The gradient shows where the head falls fastest. Where water comes out of the ground at a gradient near the critical value, about 1, it can start carrying soil with it.
-* **Singular points.** The gradient is largest at sharp points of the boundary, such as the tip of a sheet pile and the upstream edge of an impervious blanket. At those points the exact gradient is infinite, so a finer mesh just reports a higher number. Read a design gradient a short distance away. A gradient near zero at the ends of the model says the model is wide enough.
-* **Zoned earth dam.** With a clay core far less permeable than the shell and the foundation, almost the whole head drop happens across the core, the phreatic surface falls steeply through it, and most of the flow goes under the dam through the foundation.
-* **Pore pressure.** Positive below the phreatic surface and negative (suction) above it. The stability analysis uses the positive pressures and ignores suction unless you ask for it. So the pressures that matter are set by the saturated conductivities and the boundary conditions.
-* **Flow nets on zoned sections.** Square cells need a single $k$: the base material's. Choose the zone the water mostly flows through. The wrong choice gives less than one flow channel, or hundreds. The flow net is drawn from the computed flow, so it is a way to read the solution, not a check on it.
+* **Why it is here.** Slope stability needs pore pressures, and the seepage analysis computes them on the same model.
+* **Analysis types.**
+    * **Steady or transient:** one solution, or a solution at each time.
+    * **Confined or unconfined:** with no phreatic surface, one solve; with one (or any exit face), the program iterates. This "confined" is not the same as a confined aquifer.
+* **Inputs.**
+    * **Conductivity:** a larger and a smaller $k$ at right angles, and the angle of the larger. Horizontal layering: larger $k$ horizontal, angle 0.
+    * **Boundary conditions:** specified head, specified flux, exit face, reservoir (transient), and no flow, which is everything left unmarked. Check where the markers stop.
+    * A sheet pile is a crack in the geometry; an impervious blanket is a no-flow boundary that lengthens the flow path.
+* **Unconfined solution.**
+    * Above the phreatic surface the pressure is negative and $k$ is reduced. The program solves, reduces $k$ where pressure is negative, and repeats until the heads settle.
+    * Exit face nodes are sorted into wet (water leaves, head = elevation) and dry.
+    * The choice of unsaturated model hardly matters for stability; it matters more for the flow rate.
+* **Checking and reading results.**
+    * **Confined check:** every head must lie between the highest and lowest specified heads.
+    * **Piping:** water leaving the ground at a gradient near 1 can carry soil with it.
+    * **Singular points:** at a pile tip or blanket edge the exact gradient is infinite, so a finer mesh just reports more. Read the design gradient a short distance away.
+    * **Model width:** a gradient near zero at the ends says the model is wide enough.
+    * **Zoned dam:** a clay core takes almost all the head loss, and most of the flow goes under the dam.
+    * **Stability uses the positive pressures** and ignores suction unless you ask for it.
+    * **Flow nets on zoned sections** use one material's $k$. They are a way to read the solution, not a check on it.
 
 ### 10. Transient Seepage
 
-* **Why transient.** Many problems are governed by conditions that are still changing: a reservoir drawn down over weeks, a storm, a river in flood. The pore pressures that matter depend on when you look.
-* **What it adds.** Storage properties for each material (specific storage and specific yield), a schedule of boundary values over time, a run duration and the times to save, and a starting state. The result is a series of saved solutions called frames.
-* **The equation.** The steady equation plus a storage term: the flow into a piece of soil minus the flow out equals the rate at which water is stored there (negative when the soil releases water). With no storage, it is the steady equation.
-* **Time stepping.** The solution steps through time. Each step is a finite element solve that starts from the heads at the end of the step before. Steps are short while the heads change fast and long when they barely move.
-* **Specific storage.** The water released by a unit volume of saturated soil when the head drops by one, from compressing the soil and expanding the water. It acts below the phreatic surface. Its units are 1/length.
-* **Specific yield.** The water drained from the pores as the phreatic surface falls through them, per unit area per unit drop. It acts only in the band the phreatic surface is crossing. It is much the larger effect.
-* **Opposite trends.** A soft clay is the most compressible soil, so it has the largest specific storage, but it holds its water against gravity, so it has the smallest specific yield. A clean gravel is the reverse.
-* **How fast a zone drains.** About the vertical $k$ over the specific yield: the conductivity that moves the water, over the volume that has to move. Compare it with how fast the boundary moves. If the pool falls faster than a zone can drain, that zone lags behind and holds water.
-* **Starting state.** A transient run starts from a steady solution with every boundary at its value at time zero; that is the first frame. Holding the boundary at its starting value for a short time lets you check that the next frame matches. Solve the model as steady first: it checks the model, and it is the reference for everything after.
-* **Saved frames.** The run takes many steps but keeps only the saved times. A time you did not save needs a new run. Never interpolate between two frames: a blend of two solutions is not a solution of anything.
-* **Specified head or reservoir boundary.** Both hold submerged nodes at the pool level. A specified head boundary holds every node at its value all the time, even nodes above a falling pool, which pulls water out of the face as a suction: wrong for a pool face, right for a drain. A reservoir boundary holds submerged nodes at the current level, makes uncovered nodes an exit face, and keeps nodes the water hasn't reached yet as no-flow.
-* **What happens in a drawdown.** The phreatic surface in the dam lags behind the pool. It leaves the upstream face above the pool, and the still-saturated soil seeps back out into the reservoir. The exit point moves down the face with the pool. That lag is the water pressure a steady analysis at the low pool would miss.
-* **A dam with a clay core.** In the shell, the phreatic surface follows the pool down a few meters behind it. In the core it barely moves while the pool falls, and the core then drains over months.
-* **Reading frames.** Each frame reports inflow and outflow separately, because water comes out of storage. During a drawdown the inflow can drop to zero and the outflow can be many times the steady flow, all of it from storage. Transient frames have no flow lines: a flow net needs the inflow to equal the outflow for every piece of soil, which is not true while storage is changing. Use velocity vectors instead.
-* **Head histories and water budget.** Following a few points through the frames shows the lag: a point in the shell falls with the pool, while a point in the core falls much less and later. The run's water budget, the water that left against the water released from storage, is its own check.
+* **Why transient.** Many problems depend on conditions that are still changing: a reservoir drawdown, a storm, a flood. The pore pressures depend on when you look.
+* **Storage.** The steady equation plus a storage term.
+    * **Specific storage:** water released by compression below the phreatic surface. Units of 1/length.
+    * **Specific yield:** water drained as the phreatic surface falls through the pores. Much the larger effect.
+    * **Opposite trends:** soft clay has the largest specific storage and the smallest specific yield; clean gravel is the reverse.
+    * **Drainage rate:** about vertical $k$ over specific yield. If the pool falls faster than a zone can drain, that zone holds water.
+* **Running an analysis.**
+    * It starts from a steady solution with the boundaries at their time-zero values. Solve it as steady first.
+    * Only saved times (frames) are kept. Never interpolate between frames.
+    * **Specified head vs reservoir boundary:** a specified head holds nodes above a falling pool at their value, which wrongly pulls water out of the face. A reservoir boundary turns uncovered nodes into exit face.
+* **Reading a drawdown.**
+    * The phreatic surface lags behind the pool, and water seeps back out of the upstream face. That lag is the pressure a steady analysis at the low pool misses.
+    * A clay core barely moves while the pool falls and drains over months.
+    * Inflow and outflow differ because water comes out of storage, so transient frames have no flow nets. Use velocity vectors.
+    * Head histories at a few points show the lag; the water budget is a check on the run.
 
 ---
 
