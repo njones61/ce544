@@ -12,7 +12,7 @@ $h_w$ = depth below the water table; $\gamma_w$ = 9.81 kN/m³ = 62.4 lb/ft³
 
 >$h = z + \dfrac{v^2}{2g} + \dfrac{u}{\gamma_w} \qquad h_{el} = z \qquad h_{vel} = \dfrac{v^2}{2g} \qquad h_p = \dfrac{u}{\gamma_w}$
 
-$z$ = elevation above the datum (the vertical coordinate is $y$ in the 2D equations below)
+$z$ = elevation above the datum
 
 **Total Head for Groundwater:**  
 
