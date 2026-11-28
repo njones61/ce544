@@ -1,6 +1,8 @@
 # Equation Sheet
 
-## Hydraulic Head
+## Seepage
+
+### Hydraulic Head
 
 **Pore Pressure (Static Water Table):**  
 
@@ -18,7 +20,7 @@ $z$ = elevation above the datum
 
 >$h = z + \dfrac{u}{\gamma_w}$
 
-## Darcy's Law
+### Darcy's Law
 
 **Darcy's Law:**  
 
@@ -52,7 +54,7 @@ $\rho$ = 1000 kg/m³; $\mu \approx 1.0 \times 10^{-3}$ Pa·s; $d \approx d_{10}$
 
 $k_i$, $H_i$ = conductivity and thickness of layer $i$
 
-## Flow Nets
+### Flow Nets
 
 **Flow Rate:**  
 
@@ -74,7 +76,7 @@ Here $h$ = total head at the point (count drops from the upstream side); $h_{el}
 
 $n_f$ and $n_e$ counted on the transformed net; $h$ = total head lost
 
-## Analytical Solutions
+### Analytical Solutions
 
 **Rectangular Section, Unconfined:**  
 
@@ -106,7 +108,7 @@ $B$ = thickness of the confined layer; $H_o$, $H_D$ = heads at $x = 0$ and $x = 
 
 $H$ = depth of the pool; $\Delta$ = horizontal length of the upstream face under water; $a$ = where the pool meets the upstream face; $a'$ = a point $0.3\Delta$ upstream of $a$; $d$ = horizontal distance from $a'$ to the downstream toe; $\alpha$ = angle of the downstream face from horizontal; $L$ = distance up the downstream face from the toe to the exit point
 
-## Wells
+### Wells
 
 **Thiem Equation (Confined Aquifer):**  
 
@@ -198,7 +200,7 @@ $i$ = each well, at distance $r_i$ from the point; $j$ = each change in that wel
 
 Plot against the log of time and fit the later points. $\Delta s$ or $\Delta(H^2 - h^2)$ = change over one log cycle; $t_0$ = time where the line crosses zero; $r$ = distance to the observation well
 
-## Construction Dewatering
+### Construction Dewatering
 
 **Flow to a Trench:** use the Rectangular Section, Unconfined $q$, per unit length of trench ($D$ = distance from the source to the trench).
 
@@ -220,7 +222,7 @@ $k_v$ = vertical conductivity; $t_d$ = about the time for the water table to cat
 
 $k_w$ = conductivity of the wall; $b_w$ = wall thickness; $P$ = length of the wall around the site; $q$ per unit length of wall
 
-## Transient Seepage
+### Transient Seepage
 
 **Storativity of a Layer:**  
 
@@ -233,6 +235,104 @@ $S_s$ = specific storage (1/length); $b$ = layer thickness
 >$\mathrm{rate} \approx \dfrac{k_v}{S_y}$
 
 $k_v$ = vertical conductivity; the rate is how fast the water table can fall through the zone. Compare it with how fast the pool falls.
+
+## Slope Stability
+
+### Shear Strength
+
+**Effective Stress and Mohr–Coulomb:**  
+
+>$\sigma' = \sigma - u \qquad \tau_f = c' + \sigma'\tan\phi' \qquad s_u = \dfrac{(\sigma_1 - \sigma_3)_f}{2} = \dfrac{q_u}{2}$
+
+$\tau_f$ = shear strength; $c'$, $\phi'$ = effective cohesion and friction angle; $s_u$ = undrained shear strength ($\phi = 0$); $q_u$ = unconfined compressive strength
+
+**Unit Weights:**  
+
+>$\gamma_{sat} = \left(\dfrac{1 + w}{1 + w G_s}\right)G_s\,\gamma_w \qquad \gamma' = \gamma_{sat} - \gamma_w$
+
+$w$ = water content; $G_s$ = specific gravity of the solids; $\gamma'$ = effective (buoyant) unit weight
+
+**Pore Pressure from a Piezometric Line:**  
+
+>$u = \gamma_w\,\Delta z$
+
+$\Delta z$ = vertical distance from the point up to the piezometric line
+
+### Factor of Safety
+
+>$F = \dfrac{s}{\tau} \qquad c_d = \dfrac{c}{F} \qquad \tan\phi_d = \dfrac{\tan\phi}{F}$
+
+$s$ = shear strength; $\tau$ = shear stress needed for equilibrium; $c_d$, $\phi_d$ = developed (mobilized) strength
+
+**Tension Crack Depth:**  
+
+>$z_c = \dfrac{2c_d}{\gamma\tan\left(45^\circ - \phi_d/2\right)}$
+
+### Infinite Slope
+
+**Seepage Parallel to the Slope:**  
+
+>$F = \dfrac{c'}{\gamma z}\,\dfrac{2}{\sin 2\beta} + \dfrac{\gamma - m\gamma_w}{\gamma}\,\dfrac{\tan\phi'}{\tan\beta}$
+
+$z$ = vertical depth to the slip surface; $\beta$ = slope angle; $m$ = height of the water table above the slip surface as a fraction of $z$ ($m = 0$ dry, $m = 1$ water table at the ground surface). Total stress ($\phi = 0$): $F = \dfrac{s_u}{\gamma z}\,\dfrac{2}{\sin 2\beta}$
+
+**Submerged Slope:**  
+
+>$F = \dfrac{c'}{\gamma' z}\,\dfrac{2}{\sin 2\beta} + \dfrac{\tan\phi'}{\tan\beta}$
+
+**Cohesionless Soil, Dry or Submerged:**  
+
+>$F = \dfrac{\tan\phi'}{\tan\beta}$
+
+**Pseudostatic (Seismic):**  
+
+>$F = \dfrac{c + \left(\gamma z\cos^2\beta - k_h\gamma z\cos\beta\sin\beta\right)\tan\phi}{\gamma z\cos\beta\sin\beta + k_h\gamma z\cos^2\beta}$
+
+>Yield coefficient ($F = 1$), cohesionless, dry: $k_y = \tan(\phi - \beta)$
+
+$k_h$ = horizontal seismic coefficient
+
+### Method of Slices (Circular Surface)
+
+**Slice Geometry:**  
+
+>$W = \Delta x\sum \gamma_i h_i \qquad \Delta l = \dfrac{\Delta x}{\cos\alpha}$
+
+$\Delta x$ = slice width; $h_i$, $\gamma_i$ = height and unit weight of each material in the slice; $\alpha$ = angle of the slice base from horizontal (positive where the base rises toward the crest); $\Delta l$ = length of the slice base
+
+**Swedish Method ($\phi = 0$):**  
+
+>$F = \dfrac{\sum c\,\Delta l}{\sum W\sin\alpha}$
+
+**Ordinary Method of Slices:**  
+
+>$F = \dfrac{\sum\left[c'\Delta l + \left(W\cos\alpha - u\,\Delta l\cos^2\alpha\right)\tan\phi'\right]}{\sum W\sin\alpha}$
+
+**Bishop's Simplified Method:**  
+
+>$F = \dfrac{\sum\left[\dfrac{c'\Delta l\cos\alpha + \left(W - u\,\Delta l\cos\alpha\right)\tan\phi'}{\cos\alpha + \left(\sin\alpha\tan\phi'\right)/F}\right]}{\sum W\sin\alpha}$
+
+$u$ = pore pressure at the middle of the slice base. $F$ is on both sides: guess $F$, compute, and repeat with the new value until it stops changing.
+
+### Reliability
+
+**Taylor Series:**  
+
+>$\Delta F_i = \left|F_i^+ - F_i^-\right| \qquad \sigma_F = \sqrt{\sum\left(\dfrac{\Delta F_i}{2}\right)^2} \qquad \mathrm{COV}_F = \dfrac{\sigma_F}{F_{MLV}}$
+
+$F_i^+$, $F_i^-$ = $F$ with parameter $i$ at its most likely value plus and minus one standard deviation, all others at their most likely values; $F_{MLV}$ = $F$ with every parameter at its most likely value
+
+**Standard Deviation from a Range (Three-Sigma Rule):**  
+
+>$\sigma = \dfrac{\mathrm{HCV} - \mathrm{LCV}}{6}$
+
+HCV, LCV = highest and lowest conceivable values
+
+**Reliability Index and Probability of Failure:**  
+
+>$\beta_N = \dfrac{F_{MLV} - 1}{\sigma_F} \qquad \beta_{LN} = \dfrac{\ln\left(F_{MLV}\big/\sqrt{1 + \mathrm{COV}_F^2}\right)}{\sqrt{\ln\left(1 + \mathrm{COV}_F^2\right)}} \qquad P_f = 1 - \Phi(\beta) \qquad R = 1 - P_f$
+
+$\beta_N$ = normal distribution of $F$; $\beta_{LN}$ = lognormal; $\Phi$ = standard normal cumulative distribution
 
 ## Constants and Unit Conversions
 
