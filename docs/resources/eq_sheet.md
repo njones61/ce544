@@ -322,11 +322,11 @@ $u$ = pore pressure at the middle of the slice base. $F$ is on both sides: guess
 
 $F_i^+$, $F_i^-$ = $F$ with parameter $i$ at its most likely value plus and minus one standard deviation, all others at their most likely values; $F_{MLV}$ = $F$ with every parameter at its most likely value
 
-**Standard Deviation from a Range (Three-Sigma Rule):**  
+**Standard Deviation from a Range:**  
 
->$\sigma = \dfrac{\mathrm{HCV} - \mathrm{LCV}}{6}$
+>$\sigma = \dfrac{\mathrm{HCV} - \mathrm{LCV}}{N_\sigma}$
 
-HCV, LCV = highest and lowest conceivable values
+HCV, LCV = highest and lowest conceivable values; $N_\sigma$ = 6 (three-sigma rule), or about 4 because estimated ranges are usually too narrow
 
 **Reliability Index and Probability of Failure:**  
 
